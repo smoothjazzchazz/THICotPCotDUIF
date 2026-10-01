@@ -1,14 +1,14 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
+  title:        "Temporal Protocol Machine"      # Project title
   author:       ""      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "An open-source, post-fabrication-programmable symbol transducer: every bit the chip hears or says, including its plain-GPIO mode, passes through a loadable waveform interpreter. A digital reservoir and a conventional classifier sit behind one symbol-event interface; a deterministic core consumes and emits timestamped symbols; a mirrored TX table and a reflex table turn symbols back into waveforms. New line codes, and even raw pin access, are data, not silicon."
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  tiles: "6x4"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
   top_module:  "tt_um_example"
@@ -23,34 +23,34 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "MOSI"
+  ui[1]: "CS"
+  ui[2]: "SCK"
+  ui[3]: "extra protocol in / debug"
+  ui[4]: "extra protocol in / debug"
+  ui[5]: "extra protocol in / debug"
+  ui[6]: "extra protocol in / debug"
+  ui[7]: "extra protocol in / debug"
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "MISO"
+  uo[1]: "extra protocol out / debug"
+  uo[2]: "extra protocol out / debug"
+  uo[3]: "extra protocol out / debug"
+  uo[4]: "extra protocol out / debug"
+  uo[5]: "extra protocol out / debug"
+  uo[6]: "extra protocol out / debug"
+  uo[7]: "extra protocol out / debug"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "bidirectional protocol pin"
+  uio[1]: "bidirectional protocol pin"
+  uio[2]: "bidirectional protocol pin"
+  uio[3]: "bidirectional protocol pin"
+  uio[4]: "bidirectional protocol pin"
+  uio[5]: "bidirectional protocol pin"
+  uio[6]: "bidirectional protocol pin"
+  uio[7]: "bidirectional protocol pin"
 
 # Do not change!
 yaml_version: 6
