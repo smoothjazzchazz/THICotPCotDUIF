@@ -21,28 +21,29 @@ Pass only if all of these are true:
 
 ## G1 — 28 Oct 2026
 
-Work: Python golden model, assembler, reservoir study.
+Work: Python golden model, assembler, reservoir study. The study looks for a temporal shape the nodes can hold, and checks that the boring settings file can carry UART, SPI, and I2C as firmware. See [doctrine.md](doctrine.md).
 
-The study must cover:
+Traces to generate:
 
-- UART at ±3% baud error
+- the candidate hero shape (a short pattern defined across time, not a clocked UART bit)
+- UART at ±3% baud error, as a stepping-stone trace
 - USB-LS-like NRZI at ±1.5%, edge jitter ±1/8 bit, 6-bit stuffed runs
 - PS/2 and Manchester
-- glitches, dropouts, and unrelated traffic
+- glitches, dropouts, unrelated traffic, and at least one stranger wiggle that should be pattern 7
 
-Record, for the reservoir and for a conventional decoder (edge-timing DPLL or run-length) at matched cell count: symbol accuracy, false positives, latency, and cells.
+Record, for both listeners, symbol accuracy, false positives, latency, and whether node state for the hero shape is visibly distinct. Also record cells. A gap versus the edge listener on UART is data for the disagreement bit, not a grade.
 
-Open parameters, not yet fixed: nodes (12, 16, or 24), state bits, leak set, quantization (1 or 2 bits), `M`, topology seed.
+Open parameters, not yet fixed: nodes (12, 16, or 24), state bits, leak set, quantization (1 or 2 bits), `M`, topology seed. If 1-bit Hamming cannot hold the hero shape, try a richer readout before declaring the shape impossible. Area still has to fit at G0.
 
-Also due at or before G1 (v0.31): the receive-aperture decision (per-lane pin selects or literal classes), made in the golden model and recorded here, and the degenerate pass-through configuration demonstrated in the model.
+Also due at or before G1: the receive-aperture decision (per-lane pin selects or literal classes), made in the golden model and recorded here, and the boring pass-through file demonstrated in the model.
 
-Decision, using the proposed bar:
+Decision:
 
-- **Go** if a 16–24 node reservoir reaches at least 99% symbol accuracy at the stated jitter, on at least 2 of 3 target codes, within about 2K cells.
-- **Partial** if the reservoir is the recommended front end only for the codes that pass, and the on-die conventional classifier (or the degenerate configuration) is recommended for the rest.
-- **No-go** if the conventional classifier becomes the primary front end and the reservoir ships as the research configuration. The silicon is the same under every outcome (v0.31 section 6); only the recommended weight files differ.
+- **Show** if at least one temporal shape is recognized well enough to demo load, decode, and re-emit, and pattern 7 rejects a stranger. The numeric bar for that shape is written in `work/study/` when the shape is chosen.
+- **Cover** if the boring file is good enough that UART, SPI, and I2C can be firmware plus that file. This is required either way.
+- **Thin** if the hero shape does not stick. The chip still ships both listeners and pattern 7. Do not add a pin path, and do not retune the project into a normal UART. Write what was tried.
 
-Write the decision and the measurements in `work/study/`. "About 2K cells" and 99% are the proposed bar, not a measured result.
+Write the traces, the hero choice, and both listeners' numbers in `work/study/`.
 
 ## G2 — 2 Dec 2026
 
@@ -69,17 +70,18 @@ AI-generated tests or properties are logged with how each was validated.
 
 ## Freeze — 4 Jan 2027
 
-Each v0.31 section 10 demonstration is marked pass, fail, or deferred:
+Each demonstration in [doctrine.md](doctrine.md) is marked pass, fail, or deferred:
 
-1. UART TX out of a pin as TX-table symbols, then programmable.
-2. GPIO mode loaded as weights, shown with the pass-through equivalence proof.
-3. Hero: a line code the silicon was never designed for (NEC-IR-like or 1-Wire-style), loaded post-fab, decoded and re-emitted.
-4. Reflex exchange (I2C ACK or SPI slave response) with zero core instructions in the fast path.
-5. Dual-front-end disagreement capture and the class-7 unknown-waveform flag.
-6. UART, SPI, and I2C as firmware plus weight files, measured under baud error and jitter versus the on-die conventional classifier.
-7. USB low-speed device-side exchange in simulation; on silicon only if electrical checks have passed. On-chip snapshot teaching only if Tier 3 survived.
+1. A temporal line code loaded as weights plus a transmit table, decoded and re-emitted.
+2. Pattern 7 on a wiggle outside the loaded set.
+3. Reservoir node state readable during that shape.
+4. Sticky disagreement between the two listeners.
+5. A reflex reply (I2C ACK or SPI slave response) with the program counter unchanged during the reply.
+6. UART, then SPI, then I2C, each as a further loaded file. They work. They are not scored against a normal decoder.
+7. The boring settings file, checked against a small edge detector (proof or recorded bounded check).
+8. USB low-speed in simulation only, unless pad checks have passed. On-chip prototype snapshot only if area remains.
 
-`docs/info.md`, the README, and the `info.yaml` pinout match the RTL that was frozen.
+`docs/info.md`, the README, and the `info.yaml` pinout match the RTL that was frozen. The submission narrative follows the order above, not UART-first.
 
 ## Submit buffer — 5–18 Jan 2027
 

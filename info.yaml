@@ -3,7 +3,7 @@ project:
   title:        "Temporal Protocol Machine"      # Project title
   author:       ""      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "An open-source, post-fabrication-programmable symbol transducer: every bit the chip hears or says, including its plain-GPIO mode, passes through a loadable waveform interpreter. A digital reservoir and a conventional classifier sit behind one symbol-event interface; a deterministic core consumes and emits timestamped symbols; a mirrored TX table and a reflex table turn symbols back into waveforms. New line codes, and even raw pin access, are data, not silicon."
+  description:  "An open-source waveform translator. After fabrication, loaded weights and tables make the same pins speak a new temporal line code or a familiar one such as UART, SPI, or I2C. A reservoir and a second listener emit timestamped symbols, including an unrecognized-wiggle mark. A core and a reflex table reply with waveforms."
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 

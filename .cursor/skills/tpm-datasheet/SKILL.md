@@ -5,13 +5,13 @@ description: Edits Tiny Tapeout info.yaml and docs/info.md for the Temporal Prot
 
 # Datasheet
 
-Read `knowledgebase/authority.md` before editing `info.yaml` or `docs/info.md`.
+Read `knowledgebase/authority.md` and `knowledgebase/doctrine.md` before editing `info.yaml` or `docs/info.md`.
 
 ## Allowed
 
 - Title, the v0.3 one-liner, and `tiles: "6x4"`.
 - Pin names from v0.3 section 5.5 only. Host pins are `ui[2]` SCK, `ui[1]` CS, `ui[0]` MOSI, `uo[0]` MISO. Other pins keep the group role already written. Do not assign a protocol to a specific `uio` bit.
-- Test text that describes the method (golden model, lockstep, the named formal properties, the section 8 demos) and says the checked-in top is still the template adder until Tier 1 replaces it.
+- Test text that describes the method (golden model, lockstep, the named formal properties) and the demonstration order in `knowledgebase/doctrine.md`. Say the checked-in top is still the template adder until Tier 1 replaces it. Do not present UART accuracy as the point of the chip.
 - External hardware that v0.3 names: host SPI master, external pull-up for open-drain, CAN transceiver. State that pad behaviour is not verified.
 
 ## Not allowed

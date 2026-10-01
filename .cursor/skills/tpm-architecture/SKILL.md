@@ -5,14 +5,15 @@ description: Applies the Temporal Protocol Machine v0.31 contracts when editing 
 
 # Architecture
 
-Read `knowledgebase/architecture.md`, `knowledgebase/v03-delta.md`, and `knowledgebase/v02-delta.md` before editing.
+Read `knowledgebase/architecture.md`, `knowledgebase/doctrine.md`, `knowledgebase/v03-delta.md`, and `knowledgebase/v02-delta.md` before editing.
 
 ## Build only this
 
 - The core never touches a pin. All input is symbol events; all output is symbols through the TX table. "Raw GPIO" is the degenerate weight configuration, not a wire.
 - Tier 1 first: one context, program RAM (128 words, 64 fallback), host SPI loader, symbol-layer datapath with the degenerate configuration, TX table.
 - Tier 2 behind the symbol-event interface: `{class 3 bits, start-timestamp 12 bits}`, RX FIFO 8 deep, sticky overflow, TX FIFO 16 by 3 bits, reflex table (8 entries, armed by the core), dual classifiers (reservoir plus Δt/run-length), CRC/LFSR width ≤ 16.
-- Reservoir update is the integer equation in the architecture note. 16 nodes, fixed sparse taps, weights `±2^s` or 0. It never drives a pin.
+- Reservoir update is the integer equation in the architecture note. 16 nodes, fixed sparse taps, weights `±2^s` or 0. It never drives a pin. Node state is readable by the host or on the debug pins.
+- Familiar protocols are firmware plus loaded files. Do not reshape the datapath to win at UART, SPI, or I2C.
 
 ## Do not build
 

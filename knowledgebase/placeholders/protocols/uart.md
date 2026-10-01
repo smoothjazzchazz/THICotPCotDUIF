@@ -2,7 +2,7 @@
 
 status: missing
 
-Blocks a UART program being treated as tested, and blocks demos 1, 2, and 3 at the freeze. v0.3 assigns UART receive to the symbol layer and UART transmit to the TX table. Framing and parity are core work. The study condition already stated in v0.3 is ±3% baud error. That condition is not a framing specification.
+Blocks a UART program being treated as tested. UART is a stepping-stone protocol: transmit via the TX table, receive via the boring settings file plus firmware. It is not the hero demo. v0.3's ±3% baud-error trace is still a study input. It is not a framing specification, and it is not a score to win.
 
 Required:
 

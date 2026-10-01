@@ -6,6 +6,8 @@ Spec files are append-only. Never edit a released version; a change is a new del
 
 **Contest requirements** are the filed announcement in [competition/](competition/README.md): process, 6×4 tiles, deadline, open source, and the area budget stated there. v0.3 section 2 is a compliance matrix, not the announcement. If they disagree on a contest rule, the filed announcement wins.
 
+**Goals, success, and demo order** are [doctrine.md](doctrine.md). Where an older pitch treats a bake-off against a normal decoder as the point of the chip, doctrine wins. Mechanisms (no pin path, symbol events, reservoir, reflex, both listeners) stay v0.31.
+
 ## Tags
 
 - **[EST]** — back-of-envelope. Not a specification. Replace with synthesis or measurement before treating it as a number.
@@ -18,14 +20,16 @@ Do not promote a tagged or open item into `info.yaml`, `docs/info.md`, the READM
 
 We can say:
 
-- firmware-programmable symbol transducer / protocol machine
-- deterministic, bit-exact, reservoir-based symbol layer, loadable with new line codes after fabrication
-- every pin-level behaviour, including plain GPIO, is a loadable configuration — once that configuration exists
-- a measured comparison against a conventional front end, on the same silicon
-- open toolchain and verification
+- a waveform translator: new line codes after fabrication are loaded files, inside the chip's timing and pin limits
+- UART, SPI, and I2C work as further loaded files
+- deterministic, bit-exact reservoir, with node state readable
+- pattern 7 for an unrecognized wiggle, and a sticky disagreement between the two listeners
+- open toolchain, lockstep, and the filed checks
 
 We must not say:
 
+- that the chip is the best, or even a competitive, UART, SPI, or I2C decoder
+- that the project is a scoreboard against a normal decoder
 - the chip understands or learns arbitrary protocols
 - on-chip training
 - it beats FSMs or DPLLs

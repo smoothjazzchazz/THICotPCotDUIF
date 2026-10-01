@@ -10,7 +10,7 @@ v0.3 as amended by v0.31 is authoritative (v0.31 wins where they disagree). v0.2
 - **[EST]** and **[VERIFY]** are not specifications. Do not copy them into `info.yaml`, `docs/info.md`, the README, or RTL comments as facts.
 - v0.3 section 11 (Hardcaml vs Verilog, boards, 48 MHz, USB vs CAN, owners) stays unanswered until the team decides in `knowledgebase/`.
 - Do not search for and commit pad manuals, protocol standards, or tutorials. Extend `knowledgebase/placeholders/` and leave `status: missing`.
-- Say only what v0.3 section 12 plus v0.31 section 9 allow. No on-chip training, no "beats an FSM", no clock frequency before post-route STA, no I2C or USB compliance, no Ethernet on silicon, no "formally verified" before the proof is filed.
+- Say only what v0.3 section 12, v0.31 section 9, and `knowledgebase/doctrine.md` allow. No on-chip training, no "beats an FSM", no clock frequency before post-route STA, no I2C or USB compliance, no Ethernet on silicon, no "formally verified" before the proof is filed. Do not pitch the chip as a UART accuracy contest.
 
 ```text
 # Bad: clock_hz: 50000000 because the template period is 20 ns

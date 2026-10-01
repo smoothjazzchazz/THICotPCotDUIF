@@ -5,7 +5,7 @@ Code that is not the Tiny Tapeout template lives here. Synthesizable RTL does no
 Do not rename `src/project.v` or `tt_um_example`.
 
 - [model/](model/) — Python golden model, the ISA reference
-- [study/](study/) — reservoir traces and the G1 comparison
+- [study/](study/) — reservoir traces and the hero-shape study
 - [fw/](fw/) — UART, SPI, and I2C programs
 - [formal/](formal/) — properties named in v0.3 section 7
 - [verification/](verification/) — lockstep and protocol test logs

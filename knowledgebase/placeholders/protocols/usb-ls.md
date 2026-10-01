@@ -2,7 +2,7 @@
 
 status: missing
 
-Blocks the USB low-speed demo being treated as electrically real, and blocks any compliance sentence. v0.3 targets device-side USB low-speed on silicon (Tier 2): symbol layer for J, K, SE0, sync, and EOP; core for NRZI, unstuffing, CRC5 and CRC16, and handshake. Simulation of token-in and handshake-out is the demo even if electrical checks fail. Section 11 leaves USB low-speed versus CAN as the hero stretch. Pad levels and pull-ups are **[VERIFY]**. The board clock is a separate placeholder.
+Blocks the USB low-speed exchange being treated as electrically real, and blocks any compliance sentence. If simulated, the symbol layer names J, K, and SE0 and the program does NRZI, unstuffing, and CRC. USB low-speed is a simulation unless pad checks pass. It is not the hero. The hero is a loaded temporal line code. Pad levels and pull-ups are **[VERIFY]**. The board clock is a separate placeholder.
 
 Required:
 

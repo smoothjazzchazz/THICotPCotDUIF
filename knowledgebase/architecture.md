@@ -74,7 +74,7 @@ Classes are programmer-defined. They may be line states (J, K, SE0, idle) or sho
 
 ## Host, config, pins
 
-SPI-slave loader. Sampled through synchronizers in the `clk` domain. Program RAM is volatile. The host reloads it after reset. Config (reservoir, prototypes, TX table, pin map) is a shift chain: serial load, no address decode.
+SPI-slave loader. Sampled through synchronizers in the `clk` domain. Program RAM is volatile. The host reloads it after reset. Config (reservoir, prototypes, TX table, pin map) is a shift chain: serial load, no address decode. Reservoir node state is readable by the host, or on the debug pins, so a shape can be watched in the nodes and not only as a class id.
 
 Pin assignment from v0.3 section 5.5, with `ui[2:0] = SCK/CS/MOSI` applied from the high index:
 
@@ -84,7 +84,7 @@ Pin assignment from v0.3 section 5.5, with `ui[2:0] = SCK/CS/MOSI` applied from 
 
 ## G1 outcome handling (v0.31 section 6, replacing v0.3 section 6.5)
 
-Both classifiers are on die regardless of G1. A G1 no-go means the conventional classifier becomes the primary front end and the reservoir ships as the research configuration, reported honestly. The silicon is the same either way; only the recommended weight files differ. Do not build a second pin interface under any outcome.
+Both listeners are on die either way. G1 does not pick a winner. **Show** means a hero shape sticks and pattern 7 rejects a stranger. **Thin** means that shape did not stick: keep both listeners, do not add a pin path, and do not redesign around UART. Stepping-stone protocols use the boring file plus firmware. See [doctrine.md](doctrine.md).
 
 ## Not decided
 
@@ -93,7 +93,6 @@ From v0.3 section 11 — do not encode an answer in the tree:
 - Hardcaml or Verilog as the primary source
 - which FPGA board and whether a Tiny Tapeout dev board is available
 - whether the board can supply 48 MHz
-- hero stretch demo beyond the line-code hero: USB low-speed or CAN
 - named owners per workstream
 
 From v0.31 — decided in the golden model before G1, not in RTL:

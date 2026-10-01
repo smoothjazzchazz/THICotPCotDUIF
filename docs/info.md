@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-An open-source, post-fabrication-programmable symbol transducer. Every bit the chip hears or says — including its plain-GPIO mode — passes through a loadable waveform interpreter. On receive, a small digital reservoir, with weights trained off-chip and loaded after fabrication, sits beside a conventional windowed-timing classifier; both turn raw pin waveforms into timestamped symbols behind one symbol-event interface. A deterministic core consumes those symbols. A mirrored transmit table and a reflex table turn symbols back into pin waveforms. New line codes, and even raw pin access, are data, not new silicon.
+An open-source waveform translator. After fabrication, a host loads weights and tables and the same pins speak that file, within the chip's timing and pin limits. UART, SPI, and I2C are further files: they have to work, and the chip is not built to be the best decoder of them. On receive, a small digital reservoir, with weights trained off-chip, sits beside an edge-and-run-length listener. Both emit timestamped symbols. A deterministic core consumes those symbols. A transmit table and a reflex table turn symbols back into pin waveforms. Pattern 7 means the wiggle matched nothing that was loaded. Node state can be read while a shape arrives.
 
 The core never touches a pin. All input arrives as symbol events and all output leaves as symbols through the transmit table; the instruction set has no pin-level operations. There is no pin-level bypass: a degenerate symbol-layer configuration — pass-through taps, zeroed recurrence, level and edge prototypes — makes the layer act as a synchronizer plus edge detector, so plain GPIO behaviour is itself a loadable configuration through the same silicon. The reservoir never drives pins. It emits symbols only, and the core and the reflex table decide. There is no analyzer feature and no general neural-network claim.
 
@@ -33,15 +33,16 @@ The Python golden model of the core and the symbol layer is the single ISA refer
 
 Formal checks, with SymbiYosys or Hardcaml tooling on generated RTL: program-counter bounds; `WAIT N` is exact; reflex and core transmissions are serialized with no silent drop; FIFOs never silently drop (the flag is set); reservoir saturation bounds; a bounded fading-memory property; and an equivalence check that the degenerate pass-through configuration matches a reference synchronizer-plus-edge-detector state machine. A gate-level run uses the template gate-level test. FPGA bring-up uses the template ice40up5k flow. Tests or properties that are AI-generated are logged with how each was validated.
 
-Intended demonstrations, in order:
+Intended demonstrations, in this order. UART transmit out of a pin is the first engineering milestone, not the first scene:
 
-1. UART TX out of a pin as transmit-table symbols, then the same transmit made programmable.
-2. Plain GPIO mode loaded as a weight file, alongside its equivalence check.
-3. A line code the silicon was never designed for, loaded after fabrication as weights plus a transmit table, decoded and re-emitted.
-4. A reflex exchange (an I2C ACK or an SPI slave response) with zero core instructions in the fast path.
-5. Disagreement capture between the two classifiers, and the class-7 unknown-waveform flag on a waveform outside the loaded set.
-6. UART, SPI, and I2C as firmware plus weight files, measured under baud error and jitter against the on-die conventional classifier.
-7. A USB low-speed device-side exchange (token in, handshake out) in simulation, and on silicon only if the electrical checks pass. On-chip snapshot teaching only if Tier 3 is kept.
+1. A temporal line code loaded as weights plus a transmit table, decoded and re-emitted.
+2. Pattern 7 on a wiggle outside the loaded set.
+3. Reservoir node state read out while that shape arrives.
+4. A sticky disagreement between the reservoir and the edge listener.
+5. A reflex exchange (an I2C ACK or an SPI slave response) with the program counter unchanged during the reply.
+6. UART, then SPI, then I2C, each as another loaded file.
+7. The boring settings file checked against a small edge detector.
+8. A USB low-speed exchange in simulation, and on silicon only if the electrical checks pass. An on-chip prototype snapshot only if area remains.
 
 These checks are the method. They are not results. The template adder is what is in the repository until Tier 1 lands.
 

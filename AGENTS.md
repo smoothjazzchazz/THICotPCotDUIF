@@ -1,6 +1,6 @@
 # Agent notes
 
-v0.3 as amended by v0.31 is the design. v0.2 is history. The core never touches a pin; there is no pin-level bypass. Read `knowledgebase/README.md` before changing RTL, firmware, models, the study, or the datasheet.
+v0.3 as amended by v0.31 is the design. v0.2 is history. The core never touches a pin; there is no pin-level bypass. Goals and demo order are `knowledgebase/doctrine.md`: familiar protocols must work and are not the thing to optimize. Read `knowledgebase/README.md` before changing RTL, firmware, models, the study, or the datasheet.
 
 ## Frozen template
 

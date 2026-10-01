@@ -2,7 +2,7 @@
 
 status: missing
 
-Blocks treating CAN as implemented on silicon. v0.3 uses the symbol layer for edge resync and dominant or recessive classes, and the core for stuffing, CRC15, arbitration read-back, and the sample point. An external transceiver is required. Confidence in v0.3 is medium. Section 11 leaves the hero demo (USB low-speed or CAN) open.
+Blocks treating CAN as implemented on silicon. v0.3 uses the symbol layer for edge resync and dominant or recessive classes, and the core for stuffing, CRC15, arbitration read-back, and the sample point. An external transceiver is required. CAN is optional coverage, not the hero.
 
 Required:
 

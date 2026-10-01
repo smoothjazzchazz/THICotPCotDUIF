@@ -1,7 +1,7 @@
 # Reservoir study
 
-Python study for G1. Required traces and the go / partial / no-go bar are in [knowledgebase/phases.md](../../knowledgebase/phases.md).
+Python study for G1. The question is whether one temporal shape sticks in the nodes well enough to load, decode, and re-emit, and whether the boring settings file can carry UART, SPI, and I2C as firmware. Rules are in [knowledgebase/doctrine.md](../../knowledgebase/doctrine.md) and [knowledgebase/phases.md](../../knowledgebase/phases.md).
 
-Write measurements here. Do not treat the proposed 99% or about 2K cell bar as a result.
+Record both listeners. A worse UART result than the edge listener is data, not a failed study.
 
 No study is in this directory yet.
