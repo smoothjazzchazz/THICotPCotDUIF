@@ -1,0 +1,25 @@
+---
+description: Keep the Tiny Tapeout template paths and module names intact
+alwaysApply: true
+---
+
+# Template freeze
+
+Do not rename, move, or restructure:
+
+- `src/project.v` and module `tt_um_example`
+- `test/Makefile` (`PROJECT_SOURCES`, the cocotb include)
+- `.github/workflows/`
+- `src/config.json`
+- `info.yaml` keys or `yaml_version` (do not add or remove pins)
+
+Adapting `test/tb.v` and `test/test.py` to the design is allowed. Replacing the template flow is not.
+
+New synthesizable Verilog is a new file in `src/`. In the same change, append it to `info.yaml` `source_files` and to `PROJECT_SOURCES`.
+
+Python models, firmware, the reservoir study, and formal notes go under `work/`, not into `test/` or `src/`.
+
+```text
+# Bad: rename the top, or drop project.v from PROJECT_SOURCES
+# Good: src/core.v added, and both source lists updated together
+```
