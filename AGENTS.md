@@ -14,7 +14,7 @@ Items marked **[EST]** or **[VERIFY]**, and v0.3 section 11, are not specificati
 
 `clock_hz` stays 0 until post-route STA passes. Do not claim I2C or USB electrical compliance, on-chip training, Ethernet on silicon, or "formally verified" anything before the proof artifact is filed.
 
-Spec files are append-only: never edit a released version, add a delta document. Branch and tag rules are in `knowledgebase/versioning.md`; new branches come off `cmos5l`.
+Spec files are append-only: never edit a released version, add a delta document. Branch and tag rules are in `knowledgebase/versioning.md`; new branches come off `cmos5l-v0.31`.
 
 ## Gates
 

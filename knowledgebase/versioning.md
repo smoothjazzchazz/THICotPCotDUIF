@@ -15,16 +15,16 @@ Specs are root-level files named `Temporal Protocol Machine_ Pitch and Architect
 | Ref | Meaning | Rule |
 | --- | --- | --- |
 | tag `template-cmos5l` | Pristine CMOS5L Tiny Tapeout template (commit `9ac3df6`) | Never moves. The integrity check diffs against it |
-| branch `cmos5l` | **Trunk.** CMOS5L template + specs + knowledgebase + work | All new branches are cut from here. All merges land here |
+| branch `cmos5l-v0.31` | **Trunk.** CMOS5L template + specs + knowledgebase + work | All new branches are cut from here. All merges land here |
 | branch `main`, `cmos51` | Generic Tiny Tapeout template (initial import; `cmos51` is a stale duplicate of `main`) | Do not commit to these. Not the competition template |
 | branch `ttihp0p2` (remote) | TTIHP 0p2 shuttle template | Wrong shuttle for this competition. Do not branch from it |
 | tags `spec-v0.2`, `spec-v0.3`, `spec-v0.31` | Commit where each spec version landed | Never move |
 
-The competition requires the **CMOS5L** template, so `cmos5l` is the only valid base. A branch cut from `main`, `cmos51`, or `ttihp0p2` is on the wrong template and must be recreated, not merged.
+The competition requires the **CMOS5L** template (letter L, not the digit 1). The trunk is `cmos5l-v0.31`. A branch cut from `main`, `cmos51`, or `ttihp0p2` is on the wrong template and must be recreated, not merged. Renaming the trunk does not move tag `template-cmos5l`.
 
 ## Branch naming
 
-Short-lived branches off `cmos5l`, merged back when their artifact lands:
+Short-lived branches off `cmos5l-v0.31`, merged back when their artifact lands:
 
 - `feat/<block>` — RTL (for example `feat/tx-table`)
 - `model/<topic>`, `study/<topic>` — golden model and reservoir study
@@ -34,7 +34,7 @@ Short-lived branches off `cmos5l`, merged back when their artifact lands:
 
 ## Template integrity
 
-Before merging to `cmos5l`, run from the repo root:
+Before merging to `cmos5l-v0.31`, run from the repo root:
 
 ```text
 python work/tools/check_template.py
