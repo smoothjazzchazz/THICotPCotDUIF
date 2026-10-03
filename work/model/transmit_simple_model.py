@@ -3,6 +3,7 @@ TX_TABLE = {0:[0,0], 1:[0,1], 2:[1,0], 3:[1,1]} #temporary, not aligned with pro
 class Transmitter:
     def __init__(self, symbols):
         self.symbols = list(symbols)
+        # Completed requests stay in the list; this index skips past them.
         self.symbol_index = 0
         self.position = 0
 

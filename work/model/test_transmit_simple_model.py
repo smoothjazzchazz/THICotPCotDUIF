@@ -15,6 +15,7 @@ class TransmitterTests(unittest.TestCase):
     def test_arrival_during_playback(self):
         transmitter = Transmitter([2])
         self.assertEqual(transmitter.step(), 1)
+        # A new request must wait for the current pattern to finish.
         transmitter.send(1)
         self.assertEqual(transmitter.step(), 0)
         self.assertEqual([transmitter.step() for _ in range(2)], [0, 1])

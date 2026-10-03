@@ -7,6 +7,7 @@ class SystemTests(unittest.TestCase):
     def test_recognized_pulses(self):
         input_levels = [0, 1, 1, 0, 0, 1, 1, 1, 1, 0] + [0] * 8
         trace = run_simulation(input_levels)
+        # Keys are emission ticks; start_tick records the earlier pulse start.
         expected_events = {
             3: {"class_id": 0, "start_tick": 1},
             9: {"class_id": 1, "start_tick": 5},
@@ -30,6 +31,7 @@ class SystemTests(unittest.TestCase):
 
     def test_unknown_pulse(self):
         trace = run_simulation([0, 1, 1, 1, 0, 0, 0, 0])
+        # The trailing idle ticks also check for an unintended delayed response.
         for tick, row in enumerate(trace):
             self.assertIsNone(row["output_level"])
             if tick == 4:

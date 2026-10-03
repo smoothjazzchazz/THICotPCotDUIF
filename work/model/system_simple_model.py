@@ -41,6 +41,7 @@ class Controller:
 
         event = rx_queue.popleft()
         class_id = event["class_id"]
+        # Class 7 stays unknown even if the response mapping includes it.
         if class_id == 7 or class_id not in self.class_to_transmit_symbol:
             return f"consume class {class_id}"
 
@@ -96,6 +97,7 @@ def print_trace(title, trace):
             event_text = f"class {event['class_id']}, start {event['start_tick']}"
 
         output_text = "idle"
+        # Testing truthiness here would incorrectly display level 0 as idle.
         if row["output_level"] is not None:
             output_text = str(row["output_level"])
 
