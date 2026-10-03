@@ -1,7 +1,7 @@
 # Tiny Tapeout project information
 project:
   title:        "Temporal Protocol Machine"      # Project title
-  author:       ""      # Your name
+  author:       "Michael Lamiman, Daniel Tkachuk"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "An open-source waveform translator. After fabrication, loaded weights and tables make the same pins speak a new temporal line code or a familiar one such as UART, SPI, or I2C. A reservoir and a second listener emit timestamped symbols, including an unrecognized-wiggle mark. A core and a reflex table reply with waveforms."
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
