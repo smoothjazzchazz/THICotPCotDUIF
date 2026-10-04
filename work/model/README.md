@@ -4,9 +4,10 @@ This small scaffold demonstrates input waveform → recognized symbol → contro
 decision → output waveform. It uses Python's standard library, one input lane,
 and one output lane. Each loop iteration is one simulated tick; nothing sleeps.
 
-The receiver uses **run-length recognition**, not a reservoir. The skeleton checks
+The original system example uses **run-length recognition**, not a reservoir. The skeleton checks
 component interaction, not reservoir effectiveness, hardware timing, or project
-completion. It is not the planned golden model or ISA reference described in v0.3
+completion. A separate experimental reservoir and comparison study are described
+below. Neither is the completed golden model or ISA reference described in v0.3
 section 7, and it does not establish that a project gate has passed.
 
 ```text
@@ -101,11 +102,15 @@ For example, change the first pulse from two high samples to three and watch its
 class change to `7` and its response disappear. The checks below describe the
 original example, so intentional behavior changes may require updating them.
 
-Later, the receiver can contain the reservoir, readout, conventional classifier,
-and stabilizer while preserving the same `{class_id, start_tick}` event interface.
-This scaffold does not implement those blocks, training, an instruction
-interpreter, reflex arbitration, protocol framing, a hardware loader, RTL, or
-electrical behavior.
+`run_simulation(input_levels, receiver=...)` also accepts an experimental reservoir
+receiver with the same `{class_id, start_tick}` event interface. The trace records
+its `receiver_state` observations; `high_count` is `None` for that receiver.
+The supplied receiver retains its state until its caller resets it. The default
+pulse example still constructs fresh components on every call.
+
+The system scaffold does not implement an instruction interpreter, reflex
+arbitration, protocol framing, a hardware loader, finite FIFOs, RTL, or electrical
+behavior.
 
 ## Small checks
 
@@ -118,3 +123,69 @@ python3 -B -m unittest discover -s work/model -p 'test_*.py' -v
 The two system checks cover the expected events and output ticks, and unknown-pulse
 consumption without a response. The existing three transmitter checks cover its
 current simple API and playback behavior.
+
+## Experimental reservoir receiver
+
+[`reservoir_model.py`](reservoir_model.py) adds the following concrete stages:
+
+```text
+sample -> FeatureExtractor -> IntegerReservoir -> HammingReadout or LinearReadout
+       -> DecisionRule -> Stabilizer -> {class_id, start_tick}
+```
+
+The reservoir and receiver use only Python's standard library. Training and plots
+live in [`work/study/`](../study/README.md), with separate dependencies.
+Optional configuration selection lives in
+[`work/study/select_reservoir.py`](../study/select_reservoir.py). The study runner's
+`--select-reservoir` flag screens candidate settings and chooses one shared
+configuration on training/validation data. It leaves this model's arithmetic and
+the default fixed-configuration generator unchanged; see the study README for
+the command, selection criteria and test-data boundaries.
+
+Experimental choices, not amendments to the released design:
+
+- One input lane, already sampled once per receiver tick. Features are signed
+  level (-1/+1), signed edge (-1/0/+1), and `age.bit_length()`, capped at 7:
+  edge age 0 maps to 0, age 1 to 1, ages 2–3 to 2, and so on.
+  Reset assumes previous input 0 and edge age 0. This does not settle the four-lane
+  aperture or a hardware encoding.
+- Defaults are 16 nodes, signed six-bit state, three recurrent and two feature
+  taps per node. The seeded generator chooses topology, initial weights and
+  leaks once. Config files preserve the actual tap lists, not only the seed.
+- All updates use the previous state. Right shift is arithmetic, accumulation
+  uses unbounded Python integers, and saturation to [-32, 31] happens once after
+  the complete sum. Intermediate RTL widths remain to be chosen.
+- Readouts see the newly updated state in the same tick. Hamming quantizes with
+  `state >= 0`; linear scoring can use those bits or signed values divided by 32.
+  Linear coefficients and scores are floating point research values.
+- Higher scores win. Hamming scores are negative distances. Ties reject to class
+  7; score and margin thresholds are specific to each readout. The study uses
+  prototypes for two known patterns and background; unknown is rejection.
+  It does not define the final hardware packing of all eight prototype slots.
+- The stabilizer emits once a changed class holds for M ticks, including class 7.
+  First class after reset is eligible. Timestamps mark the candidate run's start
+  modulo 4096. No synchronizer or extra hardware pipeline latency is modeled.
+- Saturation bounds states but does not establish fading memory. For example,
+  the zero-input leak update keeps state 1 unchanged at leak shift 2. A focused
+  test preserves this known arithmetic behavior instead of claiming convergence.
+
+Each receiver exposes `observation` with features, states, scores and candidate
+class. `to_dict()` and `from_dict()` save/load its configuration, and `reset()`
+clears runtime state. In the study, every readout sees identical cached states;
+each has an independent stabilizer. Reload checks replay the uncached receiver.
+
+To connect a saved study configuration to the original controller/TX scaffold:
+
+```python
+import json
+from pathlib import Path
+from work.model.reservoir_model import ReservoirReceiver
+from work.model.system_simple_model import run_simulation
+
+settings = json.loads(Path("work/study/results/latest/config.json").read_text())
+receiver = ReservoirReceiver.from_dict(settings["methods"]["linear_full"]["receiver"])
+trace = run_simulation([0, 1, 1, 0, 0], receiver=receiver)
+```
+
+This shows the interface; that short input is not a complete trained pulse-order
+pattern. The controller responds only to classes 0 and 1, as in the original demo.

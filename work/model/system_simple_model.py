@@ -50,8 +50,10 @@ class Controller:
         return f"request symbol {symbol_id}"
 
 
-def run_simulation(input_levels):
-    receiver = PulseReceiver({2: 0, 4: 1})
+def run_simulation(input_levels, receiver=None):
+    # Both receivers emit class IDs and timestamps that the controller can use.
+    if receiver is None:
+        receiver = PulseReceiver({2: 0, 4: 1})
     rx_queue = deque()
     controller = Controller({0: 2, 1: 1})
     transmitter = Transmitter([])
@@ -69,7 +71,8 @@ def run_simulation(input_levels):
         trace.append({
             "tick": tick,
             "input_level": input_level,
-            "high_count": receiver.high_count,
+            "high_count": getattr(receiver, "high_count", None),
+            "receiver_state": getattr(receiver, "observation", {}),
             "rx_event": rx_event,
             "controller_action": controller_action,
             "output_level": output_level,
@@ -102,7 +105,7 @@ def print_trace(title, trace):
             output_text = str(row["output_level"])
 
         print(
-            f"{row['tick']:>4} | {row['input_level']:>5} | {row['high_count']:>10} | "
+            f"{row['tick']:>4} | {row['input_level']:>5} | {str(row['high_count']):>10} | "
             f"{event_text:<16} | {row['controller_action']:<18} | {output_text:>6}"
         )
         ticks.append(f"{row['tick']:>4}")
