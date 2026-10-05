@@ -1,0 +1,772 @@
+{
+  "config": {
+    "name": "boolean64_r90_wide",
+    "kind": "boolean",
+    "n": 64,
+    "rule": 90,
+    "wide_bias": true,
+    "seed": 29
+  },
+  "readout": {
+    "type": "ridge",
+    "weights": [
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        -269,
+        -35,
+        -334
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        -98,
+        353,
+        -561
+      ],
+      [
+        -453,
+        27,
+        590
+      ],
+      [
+        -13,
+        292,
+        -906
+      ],
+      [
+        326,
+        66,
+        1063
+      ],
+      [
+        158,
+        680,
+        -1133
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        158,
+        680,
+        -1133
+      ],
+      [
+        326,
+        66,
+        1063
+      ],
+      [
+        -13,
+        292,
+        -906
+      ],
+      [
+        -453,
+        27,
+        590
+      ],
+      [
+        -98,
+        353,
+        -561
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        -269,
+        -35,
+        -334
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        -173,
+        -715,
+        1128
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        -1,
+        -327,
+        901
+      ],
+      [
+        -625,
+        -361,
+        817
+      ],
+      [
+        -447,
+        66,
+        953
+      ],
+      [
+        -215,
+        -711,
+        404
+      ],
+      [
+        618,
+        322,
+        -1180
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        618,
+        322,
+        -1180
+      ],
+      [
+        -215,
+        -711,
+        404
+      ],
+      [
+        -447,
+        66,
+        953
+      ],
+      [
+        -625,
+        -361,
+        817
+      ],
+      [
+        -1,
+        -327,
+        901
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        -173,
+        -715,
+        1128
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        -230,
+        -746,
+        399
+      ],
+      [
+        -269,
+        -35,
+        -334
+      ],
+      [
+        -58,
+        -357,
+        171
+      ],
+      [
+        -625,
+        -361,
+        817
+      ],
+      [
+        -504,
+        36,
+        224
+      ],
+      [
+        -158,
+        -680,
+        1133
+      ],
+      [
+        675,
+        353,
+        -451
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        675,
+        353,
+        -451
+      ],
+      [
+        -158,
+        -680,
+        1133
+      ],
+      [
+        -504,
+        36,
+        224
+      ],
+      [
+        -625,
+        -361,
+        817
+      ],
+      [
+        -58,
+        -357,
+        171
+      ],
+      [
+        -269,
+        -35,
+        -334
+      ],
+      [
+        -230,
+        -746,
+        399
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        -269,
+        -35,
+        -334
+      ],
+      [
+        -155,
+        322,
+        -1290
+      ],
+      [
+        -453,
+        27,
+        590
+      ],
+      [
+        44,
+        323,
+        -176
+      ],
+      [
+        269,
+        35,
+        334
+      ],
+      [
+        215,
+        711,
+        -404
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ],
+      [
+        215,
+        711,
+        -404
+      ],
+      [
+        269,
+        35,
+        334
+      ],
+      [
+        44,
+        323,
+        -176
+      ],
+      [
+        -453,
+        27,
+        590
+      ],
+      [
+        -155,
+        322,
+        -1290
+      ],
+      [
+        -269,
+        -35,
+        -334
+      ],
+      [
+        -326,
+        -66,
+        -1063
+      ]
+    ],
+    "bias": [
+      326,
+      66,
+      1063
+    ],
+    "ridge": 0.001,
+    "floor": 8192,
+    "margin": 0,
+    "bits": 12,
+    "bias_bits": 12,
+    "wide_bias": false,
+    "scale": 32768.0
+  },
+  "task": "biphase",
+  "name": "boolean64_r90_wide",
+  "seed": 29,
+  "arithmetic": "q12",
+  "metrics": {
+    "aggregate": {
+      "tp": 54,
+      "fp": 91,
+      "known": 335,
+      "unknown": 168,
+      "unknown_tp": 119,
+      "unknown_accept": 48,
+      "spurious_unknown": 241,
+      "ticks": 33352,
+      "transactions": 125,
+      "transaction_ok": 1,
+      "precision": 0.3724137931034483,
+      "recall": 0.16119402985074627,
+      "f1": 0.225,
+      "unknown_recall": 0.7083333333333334,
+      "unknown_acceptance": 0.2857142857142857,
+      "false_per_1000": 2.7284720556488367,
+      "transaction_success": 0.008,
+      "latency_median": 10.0,
+      "latency_p95": 10.0,
+      "timestamp_abs_p95": 1.0
+    },
+    "conditions": {
+      "clean": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4537,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "jitter": {
+        "tp": 18,
+        "fp": 34,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 7,
+        "unknown_accept": 17,
+        "spurious_unknown": 13,
+        "ticks": 4619,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.34615384615384615,
+        "recall": 0.375,
+        "f1": 0.36,
+        "unknown_recall": 0.2916666666666667,
+        "unknown_acceptance": 0.7083333333333334,
+        "false_per_1000": 7.3609006278415245,
+        "transaction_success": 0.0,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "glitches": {
+        "tp": 0,
+        "fp": 2,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 46,
+        "ticks": 4590,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.4357298474945534,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "mixed": {
+        "tp": 18,
+        "fp": 26,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 9,
+        "unknown_accept": 15,
+        "spurious_unknown": 19,
+        "ticks": 4555,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.4090909090909091,
+        "recall": 0.375,
+        "f1": 0.391304347826087,
+        "unknown_recall": 0.375,
+        "unknown_acceptance": 0.625,
+        "false_per_1000": 5.70801317233809,
+        "transaction_success": 0.0,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "novel": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4551,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.05555555555555555,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "idle": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 5962,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "recovery": {
+        "tp": 18,
+        "fp": 29,
+        "known": 47,
+        "unknown": 24,
+        "unknown_tp": 7,
+        "unknown_accept": 16,
+        "spurious_unknown": 19,
+        "ticks": 4538,
+        "transactions": 17,
+        "transaction_ok": 0,
+        "precision": 0.3829787234042553,
+        "recall": 0.3829787234042553,
+        "f1": 0.3829787234042553,
+        "unknown_recall": 0.2916666666666667,
+        "unknown_acceptance": 0.6666666666666666,
+        "false_per_1000": 6.390480387836051,
+        "transaction_success": 0.0,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      }
+    },
+    "rows": [
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4537,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 18,
+        "fp": 34,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 7,
+        "unknown_accept": 17,
+        "spurious_unknown": 13,
+        "ticks": 4619,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 0,
+        "fp": 2,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 46,
+        "ticks": 4590,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 18,
+        "fp": 26,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 9,
+        "unknown_accept": 15,
+        "spurious_unknown": 19,
+        "ticks": 4555,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4551,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 5962,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 18,
+        "fp": 29,
+        "known": 47,
+        "unknown": 24,
+        "unknown_tp": 7,
+        "unknown_accept": 16,
+        "spurious_unknown": 19,
+        "ticks": 4538,
+        "transactions": 17,
+        "transaction_ok": 0,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          9,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "status": "analytical EST; no synthesis, frequency, or RTL equivalence evidence",
+    "persistent_entries": 64,
+    "history_state_bits": 64,
+    "front_end_and_output_state_bits": 43,
+    "dynamic_state_bits": 107,
+    "feature_count": 64,
+    "nonlinear_products_per_gate": 0,
+    "product_kind": "small integer products; some sign selections",
+    "readout_storage_bits": 2340,
+    "topology_bits": 8,
+    "threshold_and_config_bits": 45,
+    "parameter_bits": 2393,
+    "contributions_per_gate": 192,
+    "accumulator_bits": 17,
+    "score_abs_bound": 49199.0,
+    "margin_subtract_bits": 18,
+    "state_operations": {
+      "boolean_rule_evaluations_per_sample": 64,
+      "input_overwrites_per_sample": 4
+    },
+    "front_end_per_sample": "2 lane majority votes, packed compare, counter increment, gate compare",
+    "stabilization": "one-shot after 10 observed idle ticks; registered class and timestamp; M=1",
+    "in_budget": true,
+    "schedule": "State updates every sample. Feature/readout computed at observed end only. Sequential MAC needs contributions cycles/gate; no clock ratio proved."
+  },
+  "seconds": 1.008111032017041
+}

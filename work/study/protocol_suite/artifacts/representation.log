@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/daniel/stuff/THICotPCotDUIF/work/study/protocol_suite/run.py", line 98, in <module>
+    main()
+  File "/home/daniel/stuff/THICotPCotDUIF/work/study/protocol_suite/run.py", line 94, in main
+    screen(args.name or args.stage,read(args.config) if args.config else None,tuple(map(int,args.seeds.split(","))))
+  File "/home/daniel/stuff/THICotPCotDUIF/work/study/protocol_suite/run.py", line 77, in screen
+    "config":config,"metrics":metrics,"resources":count(config,readout),
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/stuff/THICotPCotDUIF/work/study/protocol_suite/resources.py", line 28, in count
+    bound.extend([basebound[model.pairs[:,0]]*basebound[model.pairs[:,1]],np.full(n,27**2)])
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+IndexError: index 48 is out of bounds for axis 0 with size 48

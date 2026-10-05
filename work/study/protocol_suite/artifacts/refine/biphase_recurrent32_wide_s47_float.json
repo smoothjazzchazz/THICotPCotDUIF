@@ -1,0 +1,514 @@
+{
+  "config": {
+    "name": "recurrent32_wide",
+    "kind": "recurrent",
+    "n": 32,
+    "leaks": [
+      1
+    ],
+    "wide_bias": true,
+    "seed": 47
+  },
+  "readout": {
+    "type": "ridge",
+    "weights": [
+      [
+        0.0023152610832663386,
+        -0.00500531973955024,
+        0.00014051939974130706
+      ],
+      [
+        -0.002525739363512114,
+        0.005460348806727264,
+        -0.00015329389062148055
+      ],
+      [
+        0.00021047828029487325,
+        -0.00045502906722861186,
+        1.2774490885516727e-05
+      ],
+      [
+        -0.00408466857528742,
+        0.007934034593649055,
+        -0.0017613467927091496
+      ],
+      [
+        -0.0021047828029098553,
+        0.004550290672263365,
+        -0.00012774490884623054
+      ],
+      [
+        0.0025257393635113503,
+        -0.005460348806722769,
+        0.0001532938906206953
+      ],
+      [
+        0.0016838262423589843,
+        -0.003640232537828892,
+        0.00010219592708413373
+      ],
+      [
+        -0.005051478726996094,
+        0.010920697613409802,
+        -0.0003065877812399347
+      ],
+      [
+        -0.002315261083263519,
+        0.005005319739547671,
+        -0.00014051939974099733
+      ],
+      [
+        0.000631434840877969,
+        -0.0013650872016809762,
+        3.83234726551818e-05
+      ],
+      [
+        0.0016838262423589843,
+        -0.003640232537828892,
+        0.00010219592708413373
+      ],
+      [
+        0.013079120830567639,
+        -0.015164005859141674,
+        0.0034026684940353853
+      ],
+      [
+        0.0027362176437689405,
+        -0.005915377873903931,
+        0.00016606838149764116
+      ],
+      [
+        0.0027362176437696764,
+        -0.005915377873905523,
+        0.00016606838149768586
+      ],
+      [
+        -0.0010523914014562456,
+        0.002275145336133559,
+        -6.387245442302902e-05
+      ],
+      [
+        -0.0014733479620688788,
+        0.003185203470624149,
+        -8.942143619968328e-05
+      ],
+      [
+        0.008310376133434667,
+        -0.009637417091653692,
+        0.0005257802893085091
+      ],
+      [
+        0.007716607943205972,
+        -0.002579702978112754,
+        -0.006404345880603872
+      ],
+      [
+        -0.00042095656058974606,
+        0.000910058134457223,
+        -2.554898177103343e-05
+      ],
+      [
+        0.18027536099482966,
+        -0.20164513194719969,
+        0.022442640853806803
+      ],
+      [
+        -0.002965892910411698,
+        0.010535505286379095,
+        -0.009202379889897097
+      ],
+      [
+        0.0025257393635104808,
+        -0.005460348806722419,
+        0.00015329389062092975
+      ],
+      [
+        0.009400434185570135,
+        -0.006219935515974353,
+        -0.006302149953513108
+      ],
+      [
+        0.0029466959241431917,
+        -0.006370406941252136,
+        0.00017884287239972296
+      ],
+      [
+        -0.0035781307649527237,
+        0.007735494142854183,
+        -0.00021716634504434433
+      ],
+      [
+        -0.003788609045277932,
+        0.008190523210095496,
+        -0.00022994083593286683
+      ],
+      [
+        -0.008434234468232509,
+        0.008369104056680702,
+        0.0013502622705731488
+      ],
+      [
+        -0.0010523914014563748,
+        0.0022751453361333236,
+        -6.387245442345996e-05
+      ],
+      [
+        0.0012628696817559043,
+        -0.002730174403362998,
+        7.66469453107418e-05
+      ],
+      [
+        -0.001052391401456111,
+        0.002275145336132704,
+        -6.387245442329701e-05
+      ],
+      [
+        0.00042095656058974606,
+        -0.000910058134457223,
+        2.554898177103343e-05
+      ],
+      [
+        -0.00021047828029487325,
+        0.00045502906722861186,
+        -1.2774490885516727e-05
+      ]
+    ],
+    "bias": [
+      -0.21552975902197394,
+      0.4659497648421499,
+      -0.01308107866677057
+    ],
+    "ridge": 0.001,
+    "floor": 0.45,
+    "margin": 0.0
+  },
+  "task": "biphase",
+  "name": "recurrent32_wide",
+  "seed": 47,
+  "arithmetic": "float",
+  "metrics": {
+    "aggregate": {
+      "tp": 5,
+      "fp": 9,
+      "known": 335,
+      "unknown": 168,
+      "unknown_tp": 160,
+      "unknown_accept": 7,
+      "spurious_unknown": 331,
+      "ticks": 33352,
+      "transactions": 125,
+      "transaction_ok": 1,
+      "precision": 0.35714285714285715,
+      "recall": 0.014925373134328358,
+      "f1": 0.02865329512893983,
+      "unknown_recall": 0.9523809523809523,
+      "unknown_acceptance": 0.041666666666666664,
+      "false_per_1000": 0.2698488846246102,
+      "transaction_success": 0.008,
+      "latency_median": 10.0,
+      "latency_p95": 11.0,
+      "timestamp_abs_p95": 2.0
+    },
+    "conditions": {
+      "clean": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4537,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "jitter": {
+        "tp": 1,
+        "fp": 2,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 22,
+        "unknown_accept": 2,
+        "spurious_unknown": 47,
+        "ticks": 4619,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.3333333333333333,
+        "recall": 0.020833333333333332,
+        "f1": 0.0392156862745098,
+        "unknown_recall": 0.9166666666666666,
+        "unknown_acceptance": 0.08333333333333333,
+        "false_per_1000": 0.43299415457891316,
+        "transaction_success": 0.0,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "glitches": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4590,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "mixed": {
+        "tp": 2,
+        "fp": 3,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 21,
+        "unknown_accept": 3,
+        "spurious_unknown": 46,
+        "ticks": 4555,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.4,
+        "recall": 0.041666666666666664,
+        "f1": 0.07547169811320754,
+        "unknown_recall": 0.875,
+        "unknown_acceptance": 0.125,
+        "false_per_1000": 0.6586169045005489,
+        "transaction_success": 0.0,
+        "latency_median": 10.5,
+        "latency_p95": 10.95,
+        "timestamp_abs_p95": 1.95
+      },
+      "novel": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4551,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.05555555555555555,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "idle": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 5962,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "recovery": {
+        "tp": 2,
+        "fp": 4,
+        "known": 47,
+        "unknown": 24,
+        "unknown_tp": 21,
+        "unknown_accept": 2,
+        "spurious_unknown": 46,
+        "ticks": 4538,
+        "transactions": 17,
+        "transaction_ok": 0,
+        "precision": 0.3333333333333333,
+        "recall": 0.0425531914893617,
+        "f1": 0.07547169811320754,
+        "unknown_recall": 0.875,
+        "unknown_acceptance": 0.08333333333333333,
+        "false_per_1000": 0.881445570736007,
+        "transaction_success": 0.0,
+        "latency_median": 10.5,
+        "latency_p95": 10.95,
+        "timestamp_abs_p95": 1.95
+      }
+    },
+    "rows": [
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4537,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 1,
+        "fp": 2,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 22,
+        "unknown_accept": 2,
+        "spurious_unknown": 47,
+        "ticks": 4619,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [
+          10
+        ],
+        "timing_errors": [
+          1
+        ]
+      },
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4590,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 2,
+        "fp": 3,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 21,
+        "unknown_accept": 3,
+        "spurious_unknown": 46,
+        "ticks": 4555,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [
+          11,
+          10
+        ],
+        "timing_errors": [
+          2,
+          1
+        ]
+      },
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4551,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 5962,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 2,
+        "fp": 4,
+        "known": 47,
+        "unknown": 24,
+        "unknown_tp": 21,
+        "unknown_accept": 2,
+        "spurious_unknown": 46,
+        "ticks": 4538,
+        "transactions": 17,
+        "transaction_ok": 0,
+        "latencies": [
+          10,
+          11
+        ],
+        "timing_errors": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "status": "analytical EST; no synthesis, frequency, or RTL equivalence evidence",
+    "persistent_entries": 32,
+    "history_state_bits": 192,
+    "front_end_and_output_state_bits": 43,
+    "dynamic_state_bits": 235,
+    "feature_count": 32,
+    "nonlinear_products_per_gate": 0,
+    "product_kind": "small integer products; some sign selections",
+    "readout_storage_bits": 6336,
+    "topology_bits": 931,
+    "threshold_and_config_bits": 139,
+    "parameter_bits": 7406,
+    "contributions_per_gate": 96,
+    "accumulator_bits": null,
+    "score_abs_bound": 11.693877960526283,
+    "margin_subtract_bits": null,
+    "state_operations": {
+      "signed_tap_contributions_per_sample": 160,
+      "shifts_per_sample": 64,
+      "leak_add_sub_per_sample": 64,
+      "saturations_per_sample": 32
+    },
+    "front_end_per_sample": "2 lane majority votes, packed compare, counter increment, gate compare",
+    "stabilization": "one-shot after 10 observed idle ticks; registered class and timestamp; M=1",
+    "in_budget": true,
+    "schedule": "State updates every sample. Feature/readout computed at observed end only. Sequential MAC needs contributions cycles/gate; no clock ratio proved."
+  },
+  "seconds": 0.8752553259837441
+}

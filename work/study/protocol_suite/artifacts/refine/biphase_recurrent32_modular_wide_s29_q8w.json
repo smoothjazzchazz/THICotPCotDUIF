@@ -1,0 +1,722 @@
+{
+  "config": {
+    "name": "recurrent32_modular_wide",
+    "kind": "recurrent",
+    "n": 32,
+    "leaks": [
+      1,
+      3
+    ],
+    "groups": 2,
+    "wide_bias": true,
+    "seed": 29
+  },
+  "readout": {
+    "type": "ridge",
+    "weights": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -5,
+        4,
+        -4
+      ],
+      [
+        -4,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -14,
+        24,
+        -9
+      ],
+      [
+        -3,
+        -1,
+        1
+      ],
+      [
+        -2,
+        1,
+        -1
+      ],
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        2,
+        -2,
+        2
+      ],
+      [
+        -7,
+        5,
+        -5
+      ],
+      [
+        2,
+        -1,
+        2
+      ],
+      [
+        -2,
+        -1,
+        2
+      ],
+      [
+        -4,
+        3,
+        -3
+      ],
+      [
+        1,
+        -1,
+        1
+      ],
+      [
+        -2,
+        2,
+        -2
+      ],
+      [
+        -69,
+        67,
+        2
+      ],
+      [
+        27,
+        -52,
+        24
+      ],
+      [
+        70,
+        -76,
+        5
+      ],
+      [
+        6,
+        -12,
+        5
+      ],
+      [
+        -3,
+        -1,
+        3
+      ],
+      [
+        -4,
+        3,
+        -3
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        23,
+        -5,
+        -20
+      ],
+      [
+        -4,
+        44,
+        -42
+      ],
+      [
+        25,
+        -19,
+        -5
+      ],
+      [
+        0,
+        7,
+        -10
+      ],
+      [
+        79,
+        -89,
+        11
+      ],
+      [
+        11,
+        -2,
+        -11
+      ],
+      [
+        -11,
+        -95,
+        105
+      ],
+      [
+        10,
+        5,
+        -13
+      ],
+      [
+        22,
+        -51,
+        29
+      ]
+    ],
+    "bias": [
+      270,
+      -200,
+      225
+    ],
+    "ridge": 0.001,
+    "floor": 256,
+    "margin": 123,
+    "bits": 8,
+    "bias_bits": 10,
+    "wide_bias": true,
+    "scale": 1024.0
+  },
+  "task": "biphase",
+  "name": "recurrent32_modular_wide",
+  "seed": 29,
+  "arithmetic": "q8w",
+  "metrics": {
+    "aggregate": {
+      "tp": 102,
+      "fp": 42,
+      "known": 335,
+      "unknown": 168,
+      "unknown_tp": 141,
+      "unknown_accept": 26,
+      "spurious_unknown": 220,
+      "ticks": 33352,
+      "transactions": 125,
+      "transaction_ok": 6,
+      "precision": 0.7083333333333334,
+      "recall": 0.3044776119402985,
+      "f1": 0.42588726513569936,
+      "unknown_recall": 0.8392857142857143,
+      "unknown_acceptance": 0.15476190476190477,
+      "false_per_1000": 1.2592947949148476,
+      "transaction_success": 0.048,
+      "latency_median": 10.0,
+      "latency_p95": 10.0,
+      "timestamp_abs_p95": 1.0
+    },
+    "conditions": {
+      "clean": {
+        "tp": 21,
+        "fp": 6,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 18,
+        "unknown_accept": 6,
+        "spurious_unknown": 27,
+        "ticks": 4537,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "precision": 0.7777777777777778,
+        "recall": 0.4375,
+        "f1": 0.56,
+        "unknown_recall": 0.75,
+        "unknown_acceptance": 0.25,
+        "false_per_1000": 1.3224597751818383,
+        "transaction_success": 0.05555555555555555,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "jitter": {
+        "tp": 9,
+        "fp": 7,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 21,
+        "unknown_accept": 3,
+        "spurious_unknown": 35,
+        "ticks": 4619,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "precision": 0.5625,
+        "recall": 0.1875,
+        "f1": 0.28125,
+        "unknown_recall": 0.875,
+        "unknown_acceptance": 0.125,
+        "false_per_1000": 1.515479541026196,
+        "transaction_success": 0.05555555555555555,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "glitches": {
+        "tp": 18,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 30,
+        "ticks": 4590,
+        "transactions": 18,
+        "transaction_ok": 2,
+        "precision": 1.0,
+        "recall": 0.375,
+        "f1": 0.5454545454545454,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.1111111111111111,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "mixed": {
+        "tp": 6,
+        "fp": 11,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 19,
+        "unknown_accept": 5,
+        "spurious_unknown": 36,
+        "ticks": 4555,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.35294117647058826,
+        "recall": 0.125,
+        "f1": 0.18461538461538463,
+        "unknown_recall": 0.7916666666666666,
+        "unknown_acceptance": 0.20833333333333334,
+        "false_per_1000": 2.4149286498353457,
+        "transaction_success": 0.0,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "novel": {
+        "tp": 20,
+        "fp": 5,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 19,
+        "unknown_accept": 5,
+        "spurious_unknown": 28,
+        "ticks": 4551,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "precision": 0.8,
+        "recall": 0.4166666666666667,
+        "f1": 0.547945205479452,
+        "unknown_recall": 0.7916666666666666,
+        "unknown_acceptance": 0.20833333333333334,
+        "false_per_1000": 1.098659635245001,
+        "transaction_success": 0.05555555555555555,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "idle": {
+        "tp": 14,
+        "fp": 4,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 22,
+        "unknown_accept": 2,
+        "spurious_unknown": 32,
+        "ticks": 5962,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "precision": 0.7777777777777778,
+        "recall": 0.2916666666666667,
+        "f1": 0.42424242424242425,
+        "unknown_recall": 0.9166666666666666,
+        "unknown_acceptance": 0.08333333333333333,
+        "false_per_1000": 0.6709158000670916,
+        "transaction_success": 0.05555555555555555,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "recovery": {
+        "tp": 14,
+        "fp": 9,
+        "known": 47,
+        "unknown": 24,
+        "unknown_tp": 18,
+        "unknown_accept": 5,
+        "spurious_unknown": 32,
+        "ticks": 4538,
+        "transactions": 17,
+        "transaction_ok": 0,
+        "precision": 0.6086956521739131,
+        "recall": 0.2978723404255319,
+        "f1": 0.4,
+        "unknown_recall": 0.75,
+        "unknown_acceptance": 0.20833333333333334,
+        "false_per_1000": 1.9832525341560159,
+        "transaction_success": 0.0,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      }
+    },
+    "rows": [
+      {
+        "tp": 21,
+        "fp": 6,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 18,
+        "unknown_accept": 6,
+        "spurious_unknown": 27,
+        "ticks": 4537,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 9,
+        "fp": 7,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 21,
+        "unknown_accept": 3,
+        "spurious_unknown": 35,
+        "ticks": 4619,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 18,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 30,
+        "ticks": 4590,
+        "transactions": 18,
+        "transaction_ok": 2,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 6,
+        "fp": 11,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 19,
+        "unknown_accept": 5,
+        "spurious_unknown": 36,
+        "ticks": 4555,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 20,
+        "fp": 5,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 19,
+        "unknown_accept": 5,
+        "spurious_unknown": 28,
+        "ticks": 4551,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 14,
+        "fp": 4,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 22,
+        "unknown_accept": 2,
+        "spurious_unknown": 32,
+        "ticks": 5962,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 14,
+        "fp": 9,
+        "known": 47,
+        "unknown": 24,
+        "unknown_tp": 18,
+        "unknown_accept": 5,
+        "spurious_unknown": 32,
+        "ticks": 4538,
+        "transactions": 17,
+        "transaction_ok": 0,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "status": "analytical EST; no synthesis, frequency, or RTL equivalence evidence",
+    "persistent_entries": 32,
+    "history_state_bits": 192,
+    "front_end_and_output_state_bits": 43,
+    "dynamic_state_bits": 235,
+    "feature_count": 32,
+    "nonlinear_products_per_gate": 0,
+    "product_kind": "small integer products; some sign selections",
+    "readout_storage_bits": 798,
+    "topology_bits": 931,
+    "threshold_and_config_bits": 43,
+    "parameter_bits": 1772,
+    "contributions_per_gate": 96,
+    "accumulator_bits": 16,
+    "score_abs_bound": 18087.0,
+    "margin_subtract_bits": 17,
+    "state_operations": {
+      "signed_tap_contributions_per_sample": 160,
+      "shifts_per_sample": 64,
+      "leak_add_sub_per_sample": 64,
+      "saturations_per_sample": 32
+    },
+    "front_end_per_sample": "2 lane majority votes, packed compare, counter increment, gate compare",
+    "stabilization": "one-shot after 10 observed idle ticks; registered class and timestamp; M=1",
+    "in_budget": true,
+    "schedule": "State updates every sample. Feature/readout computed at observed end only. Sequential MAC needs contributions cycles/gate; no clock ratio proved."
+  },
+  "seconds": 0.9315293919644319
+}

@@ -1,0 +1,502 @@
+{
+  "config": {
+    "name": "recurrent32_wide",
+    "kind": "recurrent",
+    "n": 32,
+    "leaks": [
+      1
+    ],
+    "wide_bias": true,
+    "seed": 47
+  },
+  "readout": {
+    "type": "ridge",
+    "weights": [
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        -1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        0
+      ],
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        2,
+        0
+      ],
+      [
+        -1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        0
+      ],
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -2,
+        3,
+        -2
+      ],
+      [
+        3,
+        -2,
+        -1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        -12,
+        11
+      ],
+      [
+        -28,
+        30,
+        -3
+      ],
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        4,
+        -3,
+        -1
+      ],
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        -1,
+        2,
+        0
+      ],
+      [
+        -1,
+        2,
+        0
+      ],
+      [
+        13,
+        -5,
+        -8
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "bias": [
+      -57,
+      97,
+      -10
+    ],
+    "ridge": 0.001,
+    "floor": 58,
+    "margin": 0,
+    "bits": 6,
+    "bias_bits": 8,
+    "wide_bias": true,
+    "scale": 128.0
+  },
+  "task": "pulse",
+  "name": "recurrent32_wide",
+  "seed": 47,
+  "arithmetic": "q6w",
+  "metrics": {
+    "aggregate": {
+      "tp": 0,
+      "fp": 0,
+      "known": 336,
+      "unknown": 167,
+      "unknown_tp": 167,
+      "unknown_accept": 0,
+      "spurious_unknown": 338,
+      "ticks": 19685,
+      "transactions": 125,
+      "transaction_ok": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "unknown_recall": 1.0,
+      "unknown_acceptance": 0.0,
+      "false_per_1000": 0.0,
+      "transaction_success": 0.0,
+      "latency_median": null,
+      "latency_p95": null,
+      "timestamp_abs_p95": null
+    },
+    "conditions": {
+      "clean": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 2563,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "jitter": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 2579,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "glitches": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 2583,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "mixed": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 49,
+        "ticks": 2518,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "novel": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 2555,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "idle": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4300,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      },
+      "recovery": {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 23,
+        "unknown_tp": 23,
+        "unknown_accept": 0,
+        "spurious_unknown": 49,
+        "ticks": 2587,
+        "transactions": 17,
+        "transaction_ok": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 0.0,
+        "transaction_success": 0.0,
+        "latency_median": null,
+        "latency_p95": null,
+        "timestamp_abs_p95": null
+      }
+    },
+    "rows": [
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 2563,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 2579,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 2583,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 49,
+        "ticks": 2518,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 2555,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 48,
+        "ticks": 4300,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      },
+      {
+        "tp": 0,
+        "fp": 0,
+        "known": 48,
+        "unknown": 23,
+        "unknown_tp": 23,
+        "unknown_accept": 0,
+        "spurious_unknown": 49,
+        "ticks": 2587,
+        "transactions": 17,
+        "transaction_ok": 0,
+        "latencies": [],
+        "timing_errors": []
+      }
+    ]
+  },
+  "resources": {
+    "status": "analytical EST; no synthesis, frequency, or RTL equivalence evidence",
+    "persistent_entries": 32,
+    "history_state_bits": 192,
+    "front_end_and_output_state_bits": 43,
+    "dynamic_state_bits": 235,
+    "feature_count": 32,
+    "nonlinear_products_per_gate": 0,
+    "product_kind": "small integer products; some sign selections",
+    "readout_storage_bits": 600,
+    "topology_bits": 931,
+    "threshold_and_config_bits": 37,
+    "parameter_bits": 1568,
+    "contributions_per_gate": 96,
+    "accumulator_bits": 13,
+    "score_abs_bound": 2453.0,
+    "margin_subtract_bits": 14,
+    "state_operations": {
+      "signed_tap_contributions_per_sample": 160,
+      "shifts_per_sample": 64,
+      "leak_add_sub_per_sample": 64,
+      "saturations_per_sample": 32
+    },
+    "front_end_per_sample": "2 lane majority votes, packed compare, counter increment, gate compare",
+    "stabilization": "one-shot after 10 observed idle ticks; registered class and timestamp; M=1",
+    "in_budget": true,
+    "schedule": "State updates every sample. Feature/readout computed at observed end only. Sequential MAC needs contributions cycles/gate; no clock ratio proved."
+  },
+  "seconds": 0.5623906999826431
+}

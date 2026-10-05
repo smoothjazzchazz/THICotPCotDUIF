@@ -1,0 +1,1053 @@
+{
+  "config": {
+    "name": "run16_binary_linear",
+    "kind": "run",
+    "n": 16,
+    "degree": 1,
+    "duration_code": "threshold",
+    "thresholds": [
+      4,
+      7,
+      10
+    ],
+    "guard": true,
+    "guard_slack": 1,
+    "wide_bias": true,
+    "seed": 11
+  },
+  "readout": {
+    "type": "ridge",
+    "weights": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        9,
+        -18
+      ],
+      [
+        -1,
+        -1,
+        0
+      ],
+      [
+        -1,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        -2
+      ],
+      [
+        2,
+        -1,
+        -2
+      ],
+      [
+        0,
+        1,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        -9,
+        -8,
+        18
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        1,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -2,
+        2,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        1,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        -1,
+        2,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        -1,
+        1
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        -1,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        -2,
+        2,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        -1,
+        1,
+        0
+      ],
+      [
+        -1,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "bias": [
+      0,
+      1,
+      2
+    ],
+    "ridge": 0.3,
+    "floor": 16,
+    "margin": 0,
+    "support_bounds": [
+      15,
+      15,
+      1,
+      8
+    ],
+    "bits": 6,
+    "bias_bits": 3,
+    "wide_bias": true,
+    "scale": 64.0
+  },
+  "task": "context",
+  "name": "run16_binary_linear",
+  "seed": 11,
+  "arithmetic": "q6w",
+  "metrics": {
+    "aggregate": {
+      "tp": 143,
+      "fp": 182,
+      "known": 335,
+      "unknown": 168,
+      "unknown_tp": 166,
+      "unknown_accept": 1,
+      "spurious_unknown": 14,
+      "ticks": 41439,
+      "transactions": 125,
+      "transaction_ok": 16,
+      "precision": 0.44,
+      "recall": 0.42686567164179107,
+      "f1": 0.43333333333333335,
+      "unknown_recall": 0.9880952380952381,
+      "unknown_acceptance": 0.005952380952380952,
+      "false_per_1000": 4.391997876396631,
+      "transaction_success": 0.128,
+      "latency_median": 10.0,
+      "latency_p95": 10.0,
+      "timestamp_abs_p95": 1.0
+    },
+    "conditions": {
+      "clean": {
+        "tp": 22,
+        "fp": 26,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 0,
+        "ticks": 5646,
+        "transactions": 18,
+        "transaction_ok": 5,
+        "precision": 0.4583333333333333,
+        "recall": 0.4583333333333333,
+        "f1": 0.4583333333333333,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 4.605030109812256,
+        "transaction_success": 0.2777777777777778,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "jitter": {
+        "tp": 27,
+        "fp": 21,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 0,
+        "ticks": 5738,
+        "transactions": 18,
+        "transaction_ok": 6,
+        "precision": 0.5625,
+        "recall": 0.5625,
+        "f1": 0.5625,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 3.6598117811084,
+        "transaction_success": 0.3333333333333333,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "glitches": {
+        "tp": 17,
+        "fp": 30,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 23,
+        "unknown_accept": 0,
+        "spurious_unknown": 2,
+        "ticks": 5657,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "precision": 0.3617021276595745,
+        "recall": 0.3541666666666667,
+        "f1": 0.35789473684210527,
+        "unknown_recall": 0.9583333333333334,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 5.3031642213187205,
+        "transaction_success": 0.05555555555555555,
+        "latency_median": 10.0,
+        "latency_p95": 10.2,
+        "timestamp_abs_p95": 1.1999999999999993
+      },
+      "mixed": {
+        "tp": 13,
+        "fp": 30,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 23,
+        "unknown_accept": 1,
+        "spurious_unknown": 6,
+        "ticks": 5681,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.3023255813953488,
+        "recall": 0.2708333333333333,
+        "f1": 0.2857142857142857,
+        "unknown_recall": 0.9583333333333334,
+        "unknown_acceptance": 0.041666666666666664,
+        "false_per_1000": 5.280760429501848,
+        "transaction_success": 0.0,
+        "latency_median": 10.0,
+        "latency_p95": 10.399999999999999,
+        "timestamp_abs_p95": 1.3999999999999986
+      },
+      "novel": {
+        "tp": 20,
+        "fp": 28,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 0,
+        "ticks": 5748,
+        "transactions": 18,
+        "transaction_ok": 3,
+        "precision": 0.4166666666666667,
+        "recall": 0.4166666666666667,
+        "f1": 0.4166666666666667,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 4.8712595685455815,
+        "transaction_success": 0.16666666666666666,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "idle": {
+        "tp": 26,
+        "fp": 22,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 0,
+        "ticks": 7362,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "precision": 0.5416666666666666,
+        "recall": 0.5416666666666666,
+        "f1": 0.5416666666666666,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 2.9883183917413745,
+        "transaction_success": 0.0,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      },
+      "recovery": {
+        "tp": 18,
+        "fp": 25,
+        "known": 47,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 6,
+        "ticks": 5607,
+        "transactions": 17,
+        "transaction_ok": 1,
+        "precision": 0.4186046511627907,
+        "recall": 0.3829787234042553,
+        "f1": 0.4,
+        "unknown_recall": 1.0,
+        "unknown_acceptance": 0.0,
+        "false_per_1000": 4.458712323880863,
+        "transaction_success": 0.058823529411764705,
+        "latency_median": 10.0,
+        "latency_p95": 10.0,
+        "timestamp_abs_p95": 1.0
+      }
+    },
+    "rows": [
+      {
+        "tp": 22,
+        "fp": 26,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 0,
+        "ticks": 5646,
+        "transactions": 18,
+        "transaction_ok": 5,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 27,
+        "fp": 21,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 0,
+        "ticks": 5738,
+        "transactions": 18,
+        "transaction_ok": 6,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 17,
+        "fp": 30,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 23,
+        "unknown_accept": 0,
+        "spurious_unknown": 2,
+        "ticks": 5657,
+        "transactions": 18,
+        "transaction_ok": 1,
+        "latencies": [
+          11,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 13,
+        "fp": 30,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 23,
+        "unknown_accept": 1,
+        "spurious_unknown": 6,
+        "ticks": 5681,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [
+          11,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 20,
+        "fp": 28,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 0,
+        "ticks": 5748,
+        "transactions": 18,
+        "transaction_ok": 3,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 26,
+        "fp": 22,
+        "known": 48,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 0,
+        "ticks": 7362,
+        "transactions": 18,
+        "transaction_ok": 0,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "tp": 18,
+        "fp": 25,
+        "known": 47,
+        "unknown": 24,
+        "unknown_tp": 24,
+        "unknown_accept": 0,
+        "spurious_unknown": 6,
+        "ticks": 5607,
+        "transactions": 17,
+        "transaction_ok": 1,
+        "latencies": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "timing_errors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "status": "analytical EST; no synthesis, frequency, or RTL equivalence evidence",
+    "persistent_entries": 16,
+    "history_state_bits": 103,
+    "front_end_and_output_state_bits": 43,
+    "dynamic_state_bits": 146,
+    "feature_count": 80,
+    "nonlinear_products_per_gate": 0,
+    "product_kind": "XNOR/sign selection",
+    "readout_storage_bits": 1449,
+    "topology_bits": 0,
+    "threshold_and_config_bits": 68,
+    "parameter_bits": 1517,
+    "contributions_per_gate": 240,
+    "accumulator_bits": 8,
+    "score_abs_bound": 89.0,
+    "margin_subtract_bits": 9,
+    "state_operations": {
+      "run_bit_moves_per_transition": 112,
+      "run_counter_increment_per_sample": 1,
+      "signal_derived_history_clear": true
+    },
+    "front_end_per_sample": "2 lane majority votes, packed compare, counter increment, gate compare",
+    "stabilization": "one-shot after 10 observed idle ticks; registered class and timestamp; M=1",
+    "in_budget": true,
+    "schedule": "State updates every sample. Feature/readout computed at observed end only. Sequential MAC needs contributions cycles/gate; no clock ratio proved."
+  },
+  "seconds": 0.19842414796585217
+}
