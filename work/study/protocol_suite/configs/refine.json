@@ -1,0 +1,16 @@
+[
+  {"name":"run8_block_guard","kind":"run","n":8,"degree":2,"expansion":"block","guard":true,"wide_bias":true},
+  {"name":"run12_block_guard","kind":"run","n":12,"degree":2,"expansion":"block","guard":true,"wide_bias":true},
+  {"name":"run16_block_wide","kind":"run","n":16,"degree":2,"expansion":"block","wide_bias":true},
+  {"name":"run16_block_guard","kind":"run","n":16,"degree":2,"expansion":"block","guard":true,"wide_bias":true},
+  {"name":"run20_block_guard","kind":"run","n":20,"degree":2,"expansion":"block","guard":true,"wide_bias":true},
+  {"name":"run16_guard_unfiltered","kind":"run","n":16,"degree":2,"expansion":"block","guard":true,"wide_bias":true,"filtered":false},
+  {"name":"run16_linear_guard","kind":"run","n":16,"degree":1,"guard":true,"wide_bias":true},
+  {"name":"template64_guard","kind":"run","n":16,"degree":1,"template":64,"guard":true},
+  {"name":"recurrent32_wide","kind":"recurrent","n":32,"leaks":[1],"wide_bias":true},
+  {"name":"recurrent32_multiscale_wide","kind":"recurrent","n":32,"leaks":[1,2,3,4],"wide_bias":true},
+  {"name":"recurrent32_modular_wide","kind":"recurrent","n":32,"leaks":[1,3],"groups":2,"wide_bias":true},
+  {"name":"boolean64_r90_wide","kind":"boolean","n":64,"rule":90,"wide_bias":true},
+  {"name":"boolean64_r30_wide","kind":"boolean","n":64,"rule":30,"wide_bias":true},
+  {"name":"sample20_poly_wide","kind":"sample","n":20,"degree":2,"wide_bias":true}
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "binary_duration",
+    "config": {
+      "name": "run16_binary_duration",
+      "kind": "run",
+      "n": 16,
+      "degree": 2,
+      "expansion": "block",
+      "duration_code": "threshold",
+      "thresholds": [
+        4,
+        7,
+        10
+      ],
+      "guard": true,
+      "guard_count": false,
+      "guard_slack": 1,
+      "wide_bias": true
+    },
+    "arithmetic": "q8w"
+  },
+  {
+    "id": "binary_strict",
+    "config": {
+      "name": "run16_binary_slack",
+      "kind": "run",
+      "n": 16,
+      "degree": 2,
+      "expansion": "block",
+      "duration_code": "threshold",
+      "thresholds": [
+        4,
+        7,
+        10
+      ],
+      "guard": true,
+      "guard_slack": 1,
+      "wide_bias": true
+    },
+    "arithmetic": "q8w"
+  },
+  {
+    "id": "raw_duration",
+    "config": {
+      "name": "run16_raw_duration",
+      "kind": "run",
+      "n": 16,
+      "degree": 2,
+      "expansion": "block",
+      "guard": true,
+      "guard_count": false,
+      "guard_slack": 1,
+      "wide_bias": true
+    },
+    "arithmetic": "q12"
+  },
+  {
+    "id": "linear_binary",
+    "config": {
+      "name": "run16_binary_linear",
+      "kind": "run",
+      "n": 16,
+      "degree": 1,
+      "duration_code": "threshold",
+      "thresholds": [
+        4,
+        7,
+        10
+      ],
+      "guard": true,
+      "guard_slack": 1,
+      "wide_bias": true,
+      "guard_count": false
+    },
+    "arithmetic": "q8w"
+  },
+  {
+    "id": "sample20_latched",
+    "config": {
+      "name": "sample20_poly_latched",
+      "kind": "sample",
+      "n": 20,
+      "degree": 2,
+      "latch": true,
+      "wide_bias": true
+    },
+    "arithmetic": "q8w"
+  },
+  {
+    "id": "sample96_sparse",
+    "config": {
+      "name": "sample96_poly_sparse",
+      "kind": "sample",
+      "n": 96,
+      "degree": 2,
+      "stride": 3,
+      "latch": true,
+      "wide_bias": true
+    },
+    "arithmetic": "q8w"
+  },
+  {
+    "id": "recurrent32",
+    "config": {
+      "name": "recurrent32_multiscale_latched",
+      "kind": "recurrent",
+      "n": 32,
+      "leaks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "latch": true,
+      "wide_bias": true
+    },
+    "arithmetic": "q8w"
+  },
+  {
+    "id": "template64",
+    "config": {
+      "name": "template64_guard",
+      "kind": "run",
+      "n": 16,
+      "degree": 1,
+      "template": 64,
+      "guard": true
+    },
+    "arithmetic": "integer"
+  }
+]

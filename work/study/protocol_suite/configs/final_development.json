@@ -1,0 +1,5 @@
+[
+ {"name":"run16_binary_duration","kind":"run","n":16,"degree":2,"expansion":"block","duration_code":"threshold","thresholds":[4,7,10],"guard":true,"guard_count":false,"guard_slack":1,"wide_bias":true},
+ {"name":"run16_binary_allpairs","kind":"run","n":16,"degree":2,"expansion":"block_all","duration_code":"threshold","thresholds":[4,7,10],"guard":true,"guard_count":false,"guard_slack":1,"wide_bias":true},
+ {"name":"run16_raw_duration","kind":"run","n":16,"degree":2,"expansion":"block","guard":true,"guard_count":false,"guard_slack":1,"wide_bias":true}
+]

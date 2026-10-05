@@ -1,0 +1,9 @@
+[
+ {"name":"run16_binary_guard","kind":"run","n":16,"degree":2,"expansion":"block","duration_code":"threshold","thresholds":[4,7,10],"guard":true,"wide_bias":true},
+ {"name":"run16_binary_slack","kind":"run","n":16,"degree":2,"expansion":"block","duration_code":"threshold","thresholds":[4,7,10],"guard":true,"guard_slack":1,"wide_bias":true},
+ {"name":"run16_binary_linear","kind":"run","n":16,"degree":1,"duration_code":"threshold","thresholds":[4,7,10],"guard":true,"guard_slack":1,"wide_bias":true},
+ {"name":"run16_raw_slack","kind":"run","n":16,"degree":2,"expansion":"block","guard":true,"guard_slack":1,"wide_bias":true},
+ {"name":"sample20_poly_latched","kind":"sample","n":20,"degree":2,"latch":true,"wide_bias":true},
+ {"name":"sample96_poly_sparse","kind":"sample","n":96,"degree":2,"stride":3,"latch":true,"wide_bias":true},
+ {"name":"recurrent32_multiscale_latched","kind":"recurrent","n":32,"leaks":[1,2,3,4],"latch":true,"wide_bias":true}
+]
