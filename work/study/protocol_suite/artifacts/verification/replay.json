@@ -1,0 +1,847 @@
+{
+  "independent_nominal_labels": 1920,
+  "models": [
+    {
+      "model": "binary_duration_pulse_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2687,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "binary_duration_pulse_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2687,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "binary_duration_pulse_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2687,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "binary_strict_pulse_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2687,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "binary_strict_pulse_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2687,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "binary_strict_pulse_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2687,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "raw_duration_pulse_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2687,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "raw_duration_pulse_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2687,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "raw_duration_pulse_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2687,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "linear_binary_pulse_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "linear_binary_pulse_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "linear_binary_pulse_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "sample20_latched_pulse_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "sample20_latched_pulse_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "sample20_latched_pulse_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "sample96_sparse_pulse_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "sample96_sparse_pulse_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "sample96_sparse_pulse_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "recurrent32_pulse_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "recurrent32_pulse_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "recurrent32_pulse_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2687
+    },
+    {
+      "model": "template64_pulse_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "template64_pulse_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "template64_pulse_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "binary_duration_biphase_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2701,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "binary_duration_biphase_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2701,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "binary_duration_biphase_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2701,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "binary_strict_biphase_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2701,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "binary_strict_biphase_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2701,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "binary_strict_biphase_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2701,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "raw_duration_biphase_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2701,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "raw_duration_biphase_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2701,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "raw_duration_biphase_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2701,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "linear_binary_biphase_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "linear_binary_biphase_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "linear_binary_biphase_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "sample20_latched_biphase_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "sample20_latched_biphase_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "sample20_latched_biphase_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "sample96_sparse_biphase_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "sample96_sparse_biphase_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "sample96_sparse_biphase_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "recurrent32_biphase_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "recurrent32_biphase_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "recurrent32_biphase_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2701
+    },
+    {
+      "model": "template64_biphase_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "template64_biphase_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "template64_biphase_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "binary_duration_clockdata_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2693,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "binary_duration_clockdata_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2693,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "binary_duration_clockdata_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2693,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "binary_strict_clockdata_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2693,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "binary_strict_clockdata_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2693,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "binary_strict_clockdata_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2693,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "raw_duration_clockdata_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2693,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "raw_duration_clockdata_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2693,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "raw_duration_clockdata_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2693,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "linear_binary_clockdata_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "linear_binary_clockdata_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "linear_binary_clockdata_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "sample20_latched_clockdata_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "sample20_latched_clockdata_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "sample20_latched_clockdata_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "sample96_sparse_clockdata_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "sample96_sparse_clockdata_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "sample96_sparse_clockdata_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "recurrent32_clockdata_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "recurrent32_clockdata_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "recurrent32_clockdata_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2693
+    },
+    {
+      "model": "template64_clockdata_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "template64_clockdata_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "template64_clockdata_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "binary_duration_context_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2691,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "binary_duration_context_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2691,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "binary_duration_context_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2691,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "binary_strict_context_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2691,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "binary_strict_context_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2691,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "binary_strict_context_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2691,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "raw_duration_context_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2691,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "raw_duration_context_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2691,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "raw_duration_context_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2691,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "linear_binary_context_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "linear_binary_context_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "linear_binary_context_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "sample20_latched_context_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "sample20_latched_context_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "sample20_latched_context_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "sample96_sparse_context_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "sample96_sparse_context_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "sample96_sparse_context_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "recurrent32_context_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "recurrent32_context_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "recurrent32_context_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2691
+    },
+    {
+      "model": "template64_context_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "template64_context_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "template64_context_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "binary_duration_transfer_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2688,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "binary_duration_transfer_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2688,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "binary_duration_transfer_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2688,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "binary_strict_transfer_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2688,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "binary_strict_transfer_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2688,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "binary_strict_transfer_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2688,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "raw_duration_transfer_0",
+      "streams_replayed": 64,
+      "scalar_gates": 2688,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "raw_duration_transfer_1",
+      "streams_replayed": 64,
+      "scalar_gates": 2688,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "raw_duration_transfer_2",
+      "streams_replayed": 64,
+      "scalar_gates": 2688,
+      "stateful_checkpoint_streams": 7,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "linear_binary_transfer_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "linear_binary_transfer_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "linear_binary_transfer_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "sample20_latched_transfer_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "sample20_latched_transfer_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "sample20_latched_transfer_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "sample96_sparse_transfer_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "sample96_sparse_transfer_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "sample96_sparse_transfer_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "recurrent32_transfer_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "recurrent32_transfer_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "recurrent32_transfer_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 2688
+    },
+    {
+      "model": "template64_transfer_0",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "template64_transfer_1",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    },
+    {
+      "model": "template64_transfer_2",
+      "streams_replayed": 64,
+      "scalar_gates": 0,
+      "stateful_checkpoint_streams": 0,
+      "integer_bound_gates": 0
+    }
+  ],
+  "passed": true,
+  "frozen_source_hashes_unchanged": true
+}
