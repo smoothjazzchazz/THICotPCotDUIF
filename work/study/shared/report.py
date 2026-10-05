@@ -13,8 +13,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-from work.study.comparison import METHODS
-from work.study.signals import CLASS_IDS, CLASS_NAMES
+from work.study.shared.comparison import METHODS
+from work.study.shared.signals import CLASS_IDS, CLASS_NAMES
 
 
 COLORS = ("#237c79", "#7498ad", "#c15e30", "#626775")

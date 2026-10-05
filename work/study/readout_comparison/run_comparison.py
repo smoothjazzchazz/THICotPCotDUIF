@@ -1,4 +1,4 @@
-"""Run with: python -m work.study.run_comparison --output work/study/results/latest"""
+"""Run with: python -m work.study.readout_comparison.run_comparison --output work/study/results/latest"""
 
 import argparse
 from dataclasses import asdict
@@ -10,11 +10,11 @@ from pathlib import Path
 import platform
 
 from work.model.reservoir_model import make_reservoir_config
-from work.study.comparison import (
+from work.study.shared.comparison import (
     METHODS, collect_states, evaluate, measure, train_and_select, verify_reload,
 )
-from work.study.select_reservoir import candidate_configs, select_reservoir, state_diagnostics
-from work.study.signals import make_stream
+from work.study.readout_comparison.select_reservoir import candidate_configs, select_reservoir, state_diagnostics
+from work.study.shared.signals import make_stream
 
 
 def write_json(path, value):
@@ -78,9 +78,9 @@ def run(args):
         hold = settings.get("receiver", settings)["hold_ticks"]
         # Pool detections across conditions rather than averaging their F1 scores.
         aggregate[method], _ = measure(all_streams, predictions, hold)
-    source_root = Path(__file__).resolve().parents[2]
+    source_root = Path(__file__).resolve().parents[3]
     sources = sorted((source_root / "work/model").glob("*.py"))
-    sources += sorted((source_root / "work/study").glob("*.py"))
+    sources += sorted((source_root / "work/study").glob("[!._]*/*.py"))
     result = {
         "scope": "Synthetic pulse-order study; shared integer reservoir, interchangeable readouts",
         "reservoir_seed": config.seed, "arguments": {**vars(args), "output": str(output)},
@@ -101,7 +101,7 @@ def run(args):
     write_json(output / "metrics.json", result)
     with gzip.open(output / "traces.json.gz", "wt") as handle:
         json.dump(saved_traces, handle, allow_nan=False)
-    from work.study.report import write_report
+    from work.study.shared.report import write_report
     write_report(output, result, *trace_example)
     for name, title in METHODS.items():
         row = aggregate[name]

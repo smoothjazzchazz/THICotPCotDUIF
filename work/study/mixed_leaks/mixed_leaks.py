@@ -10,12 +10,12 @@ from itertools import product
 
 import numpy as np
 
-from work.study.comparison import collect_states, evaluate, train_and_select
-from work.study.select_reservoir import (
+from work.study.shared.comparison import collect_states, evaluate, train_and_select
+from work.study.readout_comparison.select_reservoir import (
     candidate_configs, initial_state_diagnostics, joint_validation_key,
     rejection_reasons, state_diagnostics,
 )
-from work.study.signals import RECOGNITION_TICKS, SignalStream, WARMUP_TICKS
+from work.study.shared.signals import RECOGNITION_TICKS, SignalStream, WARMUP_TICKS
 
 
 # Fixed before held-out evaluation. These are study choices, not chip requirements.

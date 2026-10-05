@@ -1,4 +1,4 @@
-"""Separate mixed-leak study; run with python -m work.study.run_mixed_leaks."""
+"""Separate mixed-leak study; run with python -m work.study.mixed_leaks.run_mixed_leaks."""
 
 import argparse
 from dataclasses import asdict
@@ -10,16 +10,16 @@ from pathlib import Path
 import platform
 
 from work.model.reservoir_model import ReservoirConfig
-from work.study.comparison import collect_states, evaluate, measure, select_reference, verify_reload
-from work.study.mixed_leaks import EXPERIMENT, fit_candidates, memory_probe_streams
-from work.study.run_comparison import write_json
-from work.study.signals import make_stream
+from work.study.shared.comparison import collect_states, evaluate, measure, select_reference, verify_reload
+from work.study.mixed_leaks.mixed_leaks import EXPERIMENT, fit_candidates, memory_probe_streams
+from work.study.readout_comparison.run_comparison import write_json
+from work.study.shared.signals import make_stream
 
 
 def reserve_output(output):
     """Refuse protected trees and nonempty output, including symlink aliases."""
     output = output.resolve()
-    results = Path(__file__).resolve().parent / "results"
+    results = Path(__file__).resolve().parents[1] / "results"
     for name in ("latest", "selected"):
         protected = (results / name).resolve()
         if output == protected or protected in output.parents or output in protected.parents:
@@ -54,7 +54,7 @@ def held_out_streams(development_seeds):
 
 def evaluate_candidate(output, name, frozen, reference, conditions, record, provenance):
     """Replay saved receivers; save all held-out traces and reuse the original report."""
-    from work.study.report import write_report
+    from work.study.shared.report import write_report
 
     directory = output / name
     directory.mkdir()
@@ -102,9 +102,9 @@ def evaluate_candidate(output, name, frozen, reference, conditions, record, prov
 
 def run(output):
     output = reserve_output(output)
-    source_root = Path(__file__).resolve().parents[2]
+    source_root = Path(__file__).resolve().parents[3]
     sources = sorted((source_root / "work/model").glob("*.py"))
-    sources += sorted((source_root / "work/study").glob("*.py"))
+    sources += sorted((source_root / "work/study").glob("[!._]*/*.py"))
     provenance = {
         "scope": "Fixed seed24 taps, per-node leaks only; one 16-node six-bit integer reservoir",
         "experiment": EXPERIMENT,
@@ -170,7 +170,7 @@ def run(output):
     result = {**provenance, "selected_candidate": audit["selected_candidate"], "candidates": results,
               "reload_verified": True, "config_unchanged_after_test": True}
     write_json(output / "metrics.json", result)
-    from work.study.mixed_leak_report import write_mixed_report
+    from work.study.mixed_leaks.mixed_leak_report import write_mixed_report
     write_mixed_report(output, audit, result)
     print(f"Report: {output / 'report.html'}", flush=True)
     return result

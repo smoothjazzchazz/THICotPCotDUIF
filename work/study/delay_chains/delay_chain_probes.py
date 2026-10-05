@@ -5,9 +5,9 @@ from itertools import product
 import numpy as np
 
 from work.model.reservoir_model import FeatureExtractor, IntegerReservoir
-from work.study.comparison import collect_states
-from work.study.delay_chains import EXPERIMENT
-from work.study.signals import RECOGNITION_TICKS, SignalStream, WARMUP_TICKS
+from work.study.shared.comparison import collect_states
+from work.study.delay_chains.delay_chains import EXPERIMENT
+from work.study.shared.signals import RECOGNITION_TICKS, SignalStream, WARMUP_TICKS
 
 
 def pulse_probe(first, second, gap, class_id):

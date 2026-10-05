@@ -3,10 +3,10 @@
 From the repository root:
 
 ```sh
-work/study/.venv/bin/python -B -m work.study.run_delay_chains
+work/study/.venv/bin/python -B -m work.study.delay_chains.run_delay_chains
 ```
 
-Open [the report](results/delay-chains-test105/report.html). The separate runner
+Open [the report](../results/delay-chains-test105/report.html). The separate runner
 requires a new output directory and refuses paths within existing result trees,
 including the original and mixed-leak runs and resolved symlink aliases. It also
 refuses test seed 105 if local saved JSON evidence already records its use.
@@ -192,4 +192,4 @@ match across all four configurations; every test and nominal probe passed
 streaming replay. All frozen hashes remain unchanged. All 17 plots were visually
 inspected. Of 236 pre-existing files checked, only the intentional README links
 changed; original Python sources and saved artifacts remain byte-identical.
-See [verification.json](results/delay-chains-test105/verification.json).
+See [verification.json](../results/delay-chains-test105/verification.json).

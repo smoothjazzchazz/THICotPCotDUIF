@@ -5,8 +5,8 @@ from html import escape
 
 import numpy as np
 
-from work.study.comparison import METHODS
-from work.study.report import plt, save_figure
+from work.study.shared.comparison import METHODS
+from work.study.shared.report import plt, save_figure
 
 
 def write_mixed_report(output, audit, result):

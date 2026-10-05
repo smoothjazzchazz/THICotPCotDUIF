@@ -12,14 +12,14 @@ import numpy as np
 from work.model.reservoir_model import (
     DecisionRule, FeatureExtractor, IntegerReservoir, ReservoirConfig, ReservoirReceiver,
 )
-from work.study.comparison import collect_states, fit_readout, verify_reload
-from work.study.delay_chains import EXPERIMENT, choose_chain, delay_candidates
-from work.study.delay_chain_probes import boundary_diagnostics, first_pulse_delay, verify_chain
-from work.study.mixed_leaks import memory_diagnostics, memory_probe_streams, mixed_candidates
-from work.study.run_delay_chains import development_streams, reserve_output, run, seed_inventory
-from work.study.run_mixed_leaks import development_streams as original_development_streams
-from work.study.select_reservoir import candidate_configs
-from work.study.signals import make_stream
+from work.study.shared.comparison import collect_states, fit_readout, verify_reload
+from work.study.delay_chains.delay_chains import EXPERIMENT, choose_chain, delay_candidates
+from work.study.delay_chains.delay_chain_probes import boundary_diagnostics, first_pulse_delay, verify_chain
+from work.study.mixed_leaks.mixed_leaks import memory_diagnostics, memory_probe_streams, mixed_candidates
+from work.study.delay_chains.run_delay_chains import development_streams, reserve_output, run, seed_inventory
+from work.study.mixed_leaks.run_mixed_leaks import development_streams as original_development_streams
+from work.study.readout_comparison.select_reservoir import candidate_configs
+from work.study.shared.signals import make_stream
 
 
 class DelayChainTests(unittest.TestCase):
@@ -142,7 +142,7 @@ class DelayChainTests(unittest.TestCase):
         self.assertEqual(development_streams(), original_development_streams())
         for folder in ("latest", "selected", "mixed-leaks-seed24-test104/subdirectory"):
             with self.assertRaisesRegex(ValueError, "Protected"):
-                reserve_output(Path(__file__).parent / "results" / folder)
+                reserve_output(Path(__file__).resolve().parents[1] / "results" / folder)
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory)
             with self.assertRaisesRegex(ValueError, "new"):
@@ -164,11 +164,11 @@ class DelayChainTests(unittest.TestCase):
                 self.assertFalse((output / "test_streams.json").exists())
                 raise RuntimeError("Reached test generation after freeze")
 
-            with patch("work.study.run_delay_chains.seed_inventory", return_value={}), \
-                    patch("work.study.run_delay_chains.boundary_diagnostics", return_value={}), \
-                    patch("work.study.run_delay_chains.fit_candidates", return_value=({"selected_candidate": None, "candidates": []}, {})), \
-                    patch("work.study.run_delay_chains.select_reference", return_value={}), \
-                    patch("work.study.run_delay_chains.held_out_streams", side_effect=stop_at_test_generation):
+            with patch("work.study.delay_chains.run_delay_chains.seed_inventory", return_value={}), \
+                    patch("work.study.delay_chains.run_delay_chains.boundary_diagnostics", return_value={}), \
+                    patch("work.study.delay_chains.run_delay_chains.fit_candidates", return_value=({"selected_candidate": None, "candidates": []}, {})), \
+                    patch("work.study.delay_chains.run_delay_chains.select_reference", return_value={}), \
+                    patch("work.study.delay_chains.run_delay_chains.held_out_streams", side_effect=stop_at_test_generation):
                 with self.assertRaisesRegex(RuntimeError, "after freeze"):
                     run(output)
 

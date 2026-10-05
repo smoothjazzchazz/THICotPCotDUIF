@@ -4,8 +4,8 @@ import unittest
 from unittest.mock import patch
 
 from work.model.reservoir_model import ReservoirConfig, make_reservoir_config
-from work.study.select_reservoir import candidate_configs, initial_state_diagnostics, select_reservoir
-from work.study.signals import make_stream
+from work.study.readout_comparison.select_reservoir import candidate_configs, initial_state_diagnostics, select_reservoir
+from work.study.shared.signals import make_stream
 
 
 def responsive_config(seed):
@@ -44,7 +44,7 @@ class ReservoirSelectionTests(unittest.TestCase):
         self.assertEqual(initial_state_diagnostics(bad, [0] * 128)["maximum_tail_gap"], 63)
 
     def test_failed_screen_does_not_fit_or_silently_choose_a_candidate(self):
-        with patch("work.study.select_reservoir.train_and_select") as fit:
+        with patch("work.study.readout_comparison.select_reservoir.train_and_select") as fit:
             config, readouts, report = select_reservoir(
                 self.train, self.validation, [("original", make_reservoir_config(23))])
         fit.assert_not_called()
@@ -63,7 +63,7 @@ class ReservoirSelectionTests(unittest.TestCase):
                     for name, score in zip(("hamming", "linear_bits", "linear_full"), f1)}
 
         candidates = [("first", responsive_config(1)), ("second", responsive_config(2))]
-        with patch("work.study.select_reservoir.train_and_select", side_effect=fitted_readouts) as fit:
+        with patch("work.study.readout_comparison.select_reservoir.train_and_select", side_effect=fitted_readouts) as fit:
             config, readouts, report = select_reservoir(self.train, self.validation, candidates)
         self.assertEqual(config.seed, 2)
         self.assertEqual(report["selected_candidate"], "second")

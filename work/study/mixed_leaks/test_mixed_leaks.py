@@ -10,13 +10,13 @@ from unittest.mock import patch
 import numpy as np
 
 from work.model.reservoir_model import DecisionRule, ReservoirConfig, ReservoirReceiver
-from work.study.comparison import collect_states, fit_readout, verify_reload
-from work.study.mixed_leaks import (
+from work.study.shared.comparison import collect_states, fit_readout, verify_reload
+from work.study.mixed_leaks.mixed_leaks import (
     eligibility_reasons, fit_candidates, memory_diagnostics, memory_probe_streams, mixed_candidates,
 )
-from work.study.run_mixed_leaks import reserve_output
-from work.study.select_reservoir import candidate_configs
-from work.study.signals import make_stream, run_length_predictions
+from work.study.mixed_leaks.run_mixed_leaks import reserve_output
+from work.study.readout_comparison.select_reservoir import candidate_configs
+from work.study.shared.signals import make_stream, run_length_predictions
 
 
 class MixedLeakTests(unittest.TestCase):
@@ -95,8 +95,8 @@ class MixedLeakTests(unittest.TestCase):
             readout = fit_readout(train, [state], kind)
             methods[kind] = {"receiver": ReservoirReceiver(config, readout, DecisionRule(0, 0)).to_dict(),
                              "validation": stats}
-        with patch("work.study.mixed_leaks.mixed_candidates", return_value=[("uniform0", config)]), \
-                patch("work.study.mixed_leaks.train_and_select", return_value=methods):
+        with patch("work.study.mixed_leaks.mixed_leaks.mixed_candidates", return_value=[("uniform0", config)]), \
+                patch("work.study.mixed_leaks.mixed_leaks.train_and_select", return_value=methods):
             audit, frozen = fit_candidates(train, validation, memory_probe_streams(), progress=lambda _: None)
         self.assertIsNone(audit["selected_candidate"])
         record = audit["candidates"][0]
@@ -128,7 +128,7 @@ class MixedLeakTests(unittest.TestCase):
     def test_original_results_and_existing_outputs_are_protected(self):
         for path in ("latest", "selected", "selected/subdirectory"):
             with self.assertRaisesRegex(ValueError, "Protected"):
-                reserve_output(Path(__file__).parent / "results" / path)
+                reserve_output(Path(__file__).resolve().parents[1] / "results" / path)
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder)
             (path / "keep.txt").write_text("keep")

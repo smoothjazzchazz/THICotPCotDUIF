@@ -136,7 +136,7 @@ sample -> FeatureExtractor -> IntegerReservoir -> HammingReadout or LinearReadou
 The reservoir and receiver use only Python's standard library. Training and plots
 live in [`work/study/`](../study/README.md), with separate dependencies.
 Optional configuration selection lives in
-[`work/study/select_reservoir.py`](../study/select_reservoir.py). The study runner's
+[`work/study/readout_comparison/select_reservoir.py`](../study/readout_comparison/select_reservoir.py). The study runner's
 `--select-reservoir` flag screens candidate settings and chooses one shared
 configuration on training/validation data. It leaves this model's arithmetic and
 the default fixed-configuration generator unchanged; see the study README for

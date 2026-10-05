@@ -6,7 +6,7 @@ from work.model.reservoir_model import (
     DecisionRule, FeatureExtractor, HammingReadout, IntegerReservoir,
     LinearReadout, ReservoirReceiver, Stabilizer,
 )
-from work.study.signals import CLASS_IDS, WARMUP_TICKS, run_length_predictions
+from work.study.shared.signals import CLASS_IDS, WARMUP_TICKS, run_length_predictions
 
 
 METHODS = {

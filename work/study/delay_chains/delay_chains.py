@@ -7,12 +7,12 @@ arithmetic or readout policy changes here. Only the two chains can be selected.
 from copy import deepcopy
 
 from work.model.reservoir_model import ReservoirConfig
-from work.study.comparison import collect_states, evaluate, train_and_select
-from work.study.mixed_leaks import (
+from work.study.shared.comparison import collect_states, evaluate, train_and_select
+from work.study.mixed_leaks.mixed_leaks import (
     EXPERIMENT as MIXED_EXPERIMENT, eligibility_reasons, memory_diagnostics,
     mixed_candidates, probe_readout_diagnostics,
 )
-from work.study.select_reservoir import (
+from work.study.readout_comparison.select_reservoir import (
     candidate_configs, initial_state_diagnostics, joint_validation_key, state_diagnostics,
 )
 

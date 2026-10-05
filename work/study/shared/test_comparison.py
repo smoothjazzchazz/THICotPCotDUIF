@@ -4,10 +4,10 @@ import unittest
 import numpy as np
 
 from work.model.reservoir_model import DecisionRule, ReservoirReceiver, make_reservoir_config
-from work.study.comparison import (
+from work.study.shared.comparison import (
     choose_classes, collect_states, fit_readout, measure, score_states, verify_reload,
 )
-from work.study.signals import SignalStream, make_stream, run_length_predictions
+from work.study.shared.signals import SignalStream, make_stream, run_length_predictions
 
 
 class ComparisonTests(unittest.TestCase):

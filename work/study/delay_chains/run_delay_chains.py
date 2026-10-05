@@ -1,4 +1,4 @@
-"""Opt-in finite delay-chain study: python -m work.study.run_delay_chains."""
+"""Opt-in finite delay-chain study: python -m work.study.delay_chains.run_delay_chains."""
 
 import argparse
 from dataclasses import asdict
@@ -11,12 +11,12 @@ from pathlib import Path
 import platform
 
 from work.model.reservoir_model import ReservoirConfig
-from work.study.comparison import collect_states, evaluate, measure, select_reference, verify_reload
-from work.study.delay_chains import EXPERIMENT, decision_counts, delay_candidates, fit_candidates
-from work.study.delay_chain_probes import boundary_diagnostics, verify_chain
-from work.study.mixed_leaks import memory_probe_streams, probe_readout_diagnostics
-from work.study.run_comparison import write_json
-from work.study.signals import make_stream
+from work.study.shared.comparison import collect_states, evaluate, measure, select_reference, verify_reload
+from work.study.delay_chains.delay_chains import EXPERIMENT, decision_counts, delay_candidates, fit_candidates
+from work.study.delay_chains.delay_chain_probes import boundary_diagnostics, verify_chain
+from work.study.mixed_leaks.mixed_leaks import memory_probe_streams, probe_readout_diagnostics
+from work.study.readout_comparison.run_comparison import write_json
+from work.study.shared.signals import make_stream
 
 
 def digest(path):
@@ -26,7 +26,7 @@ def digest(path):
 def reserve_output(output):
     """Require a new path outside every existing saved-results directory."""
     output = output.resolve()
-    results = Path(__file__).resolve().parent / "results"
+    results = Path(__file__).resolve().parents[1] / "results"
     for path in results.iterdir() if results.exists() else []:
         protected = path.resolve()
         if path.is_dir() and (output == protected or protected in output.parents
@@ -94,7 +94,7 @@ def add_event_counts(metrics):
 
 def evaluate_candidate(output, record, candidate, reference, conditions, provenance):
     """Reuse event matching, metrics, replay and the original per-receiver plots."""
-    from work.study.report import write_report
+    from work.study.shared.report import write_report
 
     name = record["name"]
     directory = output / name
@@ -167,10 +167,10 @@ def save_probe_replay(output, probes, frozen, audit):
 
 def run(output):
     output = reserve_output(output)
-    source_root = Path(__file__).resolve().parents[2]
+    source_root = Path(__file__).resolve().parents[3]
     inventory = seed_inventory(source_root / "work/study/results")
     sources = sorted((source_root / "work/model").glob("*.py"))
-    sources += sorted((source_root / "work/study").glob("*.py"))
+    sources += sorted((source_root / "work/study").glob("[!._]*/*.py"))
     provenance = {
         "scope": "Two predetermined zero-leak delay chains; two legacy controls; one reservoir at a time",
         "experiment": EXPERIMENT, "created_utc": datetime.now(timezone.utc).isoformat(),
@@ -232,7 +232,7 @@ def run(output):
     result = {**provenance, "selected_candidate": audit["selected_candidate"], "candidates": results,
               "reload_verified": True, "frozen_artifacts_unchanged": True, "freeze": freeze}
     write_json(output / "metrics.json", result)
-    from work.study.delay_chain_report import write_delay_report
+    from work.study.delay_chains.delay_chain_report import write_delay_report
     write_delay_report(output, audit, result, timing)
     print(f"Report: {output / 'report.html'}", flush=True)
     return result

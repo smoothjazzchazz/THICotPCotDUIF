@@ -8,8 +8,8 @@ from copy import deepcopy
 import numpy as np
 
 from work.model.reservoir_model import FeatureExtractor, IntegerReservoir, make_reservoir_config
-from work.study.comparison import collect_states, select_reference, train_and_select
-from work.study.signals import WARMUP_TICKS
+from work.study.shared.comparison import collect_states, select_reference, train_and_select
+from work.study.shared.signals import WARMUP_TICKS
 
 
 PRIMARY_READOUTS = ("hamming", "linear_full")

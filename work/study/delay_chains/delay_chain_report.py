@@ -6,8 +6,8 @@ from html import escape
 import numpy as np
 from matplotlib.patches import Rectangle
 
-from work.study.comparison import METHODS
-from work.study.report import plt, save_figure
+from work.study.shared.comparison import METHODS
+from work.study.shared.report import plt, save_figure
 
 
 def plot_chain_position(output, timing):

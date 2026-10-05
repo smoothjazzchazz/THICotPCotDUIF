@@ -3,10 +3,10 @@
 Run from the repository root using the existing environment:
 
 ```sh
-work/study/.venv/bin/python -B -m work.study.run_mixed_leaks
+work/study/.venv/bin/python -B -m work.study.mixed_leaks.run_mixed_leaks
 ```
 
-Open [`results/mixed-leaks-seed24-test104/report.html`](results/mixed-leaks-seed24-test104/report.html).
+Open [`results/mixed-leaks-seed24-test104/report.html`](../results/mixed-leaks-seed24-test104/report.html).
 Use `--output work/study/results/another-new-directory` for a repeat. The runner
 refuses nonempty directories and any path inside or containing `results/latest/`
 or `results/selected/`, including resolved symlinks. Results remain Git-ignored.
