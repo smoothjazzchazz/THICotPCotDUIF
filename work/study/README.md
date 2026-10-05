@@ -5,6 +5,12 @@ re-emitted, including class 7 for unknown input. Goals and gates are in
 [doctrine.md](../../knowledgebase/doctrine.md) and
 [phases.md](../../knowledgebase/phases.md).
 
+## Protocol study suite
+
+[protocol_suite/](protocol_suite/README.md) is an empty scaffold for future
+reservoir exploration across multiple signal formats and protocols. It currently
+contains only a README, with no benchmarks, implementations, or run commands.
+
 ## Experiments
 
 Start with the [broader research result](broad_search/REPORT.md): a study-only
@@ -63,7 +69,8 @@ source paths. The experiment READMEs link to the corresponding saved reports.
 
 ## Checks
 
-The existing discovery command finds tests inside all four folders:
+The discovery command below finds the existing study tests recursively. The
+empty protocol suite adds no tests yet.
 
 ```sh
 work/study/.venv/bin/python -B -m unittest discover -s work/study -p 'test_*.py' -v

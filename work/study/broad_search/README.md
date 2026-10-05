@@ -5,6 +5,10 @@ Start with the [results and explanation](REPORT.md), then the
 [before-search plan](PLAN.md) and [complete experiment ledger](LEDGER.md).
 No hardware specification or project gate was changed.
 
+The separate [protocol study suite](../protocol_suite/README.md) reserves space
+for future exploration across multiple signal formats. It is currently an empty
+scaffold; this directory retains the existing pulse-order experiments and evidence.
+
 ## Inspect the implementation
 
 * [Polynomial memory](../polynomial_memory/README.md): selected NGRC/NVAR approach.
