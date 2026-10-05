@@ -297,6 +297,12 @@ pairs, including pairs sharing the same final pulse, before increasing model siz
 
 ## Extend the experiment
 
+For the separate, opt-in mixed per-node leak experiment, see
+[`MIXED_LEAKS.md`](MIXED_LEAKS.md). It keeps seed24's selected connections and
+weights fixed, adds task-memory probes and stricter eligibility, and writes to a
+new results directory. The commands, candidates and selection policy above are
+unchanged.
+
 For new waveform families, add a task adapter that produces `SignalStream` records from waveform
 samples and independently defined target windows. Keep training and evaluation
 separate. Multi-pin inputs, framing, real protocol coverage, hardware arithmetic,
