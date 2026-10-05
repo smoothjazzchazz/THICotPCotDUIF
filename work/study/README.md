@@ -5,11 +5,18 @@ re-emitted, including class 7 for unknown input. Goals and gates are in
 [doctrine.md](../../knowledgebase/doctrine.md) and
 [phases.md](../../knowledgebase/phases.md).
 
+Read the [comprehensive experiment report](EXPERIMENT_REPORT.md) for the waveform
+families, architectures, measured strengths, failures, reasoning and hardware
+limits across all study stages.
+
 ## Protocol study suite
 
-[protocol_suite/](protocol_suite/README.md) is an empty scaffold for future
-reservoir exploration across multiple signal formats and protocols. It currently
-contains only a README, with no benchmarks, implementations, or run commands.
+[protocol_suite/](protocol_suite/README.md) contains the completed synthetic
+multi-family study, including fresh confirmation and cold reproduction. Its
+[report](protocol_suite/REPORT.md) describes the strong long-context results of
+16-run Boolean memory and the unresolved tradeoff between malformed-input
+rejection and noisy clock/data recall. It does not establish named-protocol
+compliance or a project gate pass.
 
 ## Experiments
 
@@ -69,8 +76,8 @@ source paths. The experiment READMEs link to the corresponding saved reports.
 
 ## Checks
 
-The discovery command below finds the existing study tests recursively. The
-empty protocol suite adds no tests yet.
+The discovery command below finds the study tests recursively, including the
+protocol suite's contract, scoring, causality and checkpoint tests.
 
 ```sh
 work/study/.venv/bin/python -B -m unittest discover -s work/study -p 'test_*.py' -v
