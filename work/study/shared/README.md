@@ -10,3 +10,9 @@ All three experiments use these helpers:
 
 The reservoir model lives in [work/model/](../../model/README.md).
 See the [study index](../README.md) for experiment runners and verification commands.
+
+The separate [broader search](../broad_search/README.md) adds [broad.py](broad.py)
+for causal alternative reservoirs, four-class fitting, coefficient quantization
+and snapshot replay, and [resources.py](resources.py) for analytical resource
+accounting. It reuses the original `signals.py` and `comparison.py` event rules;
+the historical helpers and model remain unchanged.
