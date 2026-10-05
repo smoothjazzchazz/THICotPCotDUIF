@@ -1,0 +1,41 @@
+{
+  "status": "analytical counts only; no RTL, synthesis, STA or pad evidence",
+  "recommended_family": "16-entry run memory, 5 binary features/run, selected pair products, q8 readout",
+  "run_payload_bits": 80,
+  "validity_counter_bits_conservative": 5,
+  "support_state_bits": 18,
+  "front_end_output_sync_bits": 55,
+  "parallel_dynamic_bits": 158,
+  "feature_count": 600,
+  "pair_sign_operations_per_gate": 520,
+  "coefficient_contributions_per_gate": 1800,
+  "loaded_parameter_bits_range": [
+    14485,
+    14499
+  ],
+  "max_accumulator_bits": 14,
+  "margin_subtraction_bits": 15,
+  "fixed_implementation_point": {
+    "coefficient_bits": 8,
+    "bias_bits": 8,
+    "score_bits": 18,
+    "margin_difference_bits": 19,
+    "parameter_bits": 14512,
+    "explanation": "All frozen binary configurations fit signed 8-bit biases. Provision fixed 18-bit scores from the worst case 601*128=76928, independent of fitted sparsity; 19-bit subtraction. Floor/margin storage is 18 bits. Reject future loaded configurations outside these bounds rather than silently widening hardware. Per-config minimal counts above are estimates, not distinct fabricated word widths."
+  },
+  "extra_computation": {
+    "per_sample": "2 lane-majority votes (6 AND + 4 OR if literal), edge/idle compares, 8-bit age increment/saturation, 16-bit tick increment",
+    "per_transition": "3 five-bit duration comparisons, 8-bit count increment, two five-bit min/max comparisons, up to 80 packed history-bit moves; reset validity on observed long-idle-to-activity",
+    "per_gate": "16 shared slot-validity signals, 600 feature-valid enables, 520 pair XNOR/sign operations, 1800 coefficient sign/zero selections and additions, 3 bias loads, 3-way argmax, floor/margin checks, 4 support comparisons, timestamp subtraction and output register"
+  },
+  "accounting_note": "Frozen resources.py conservatively lists 112 raw-token bit moves per transition for binary memory; physical binary payload moves are 80. This clarification changes no configuration, decision, parameter count or confirmation result.",
+  "serial_schedule": {
+    "measured_min_gate_spacing_ticks": 11,
+    "mac_only_min_clocks_per_sample_at_that_spacing": 164,
+    "coefficient_contribution_cycles_per_gate": 1800,
+    "one_feature_issue_cycle_extra_if_serial": 600,
+    "additional_state_estimate": 168,
+    "detail": "Latch 80 run bits plus validity, use 3 accumulators, feature/class counters, busy bit and pending timestamp. Allows live receive state to keep updating. Throughput needs clock/tick ratio and scheduling validation; added emission delay is not in sampled-stream metrics."
+  },
+  "excluded_system_blocks": "RX/TX FIFOs, core/firmware, loader, TX table and physical pads; these are outside the recognizer and still consume chip resources"
+}

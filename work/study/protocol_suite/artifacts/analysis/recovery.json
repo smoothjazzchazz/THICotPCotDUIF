@@ -1,0 +1,98 @@
+{
+  "binary_duration": {
+    "pulse": {
+      "first_complete_correct": 21,
+      "after_dropout_correct": 22,
+      "streams": 24,
+      "startup_false_known": 12
+    },
+    "biphase": {
+      "first_complete_correct": 24,
+      "after_dropout_correct": 23,
+      "streams": 24,
+      "startup_false_known": 3
+    },
+    "clockdata": {
+      "first_complete_correct": 24,
+      "after_dropout_correct": 21,
+      "streams": 24,
+      "startup_false_known": 12
+    },
+    "context": {
+      "first_complete_correct": 21,
+      "after_dropout_correct": 23,
+      "streams": 24,
+      "startup_false_known": 4
+    },
+    "transfer": {
+      "first_complete_correct": 21,
+      "after_dropout_correct": 24,
+      "streams": 24,
+      "startup_false_known": 1
+    }
+  },
+  "binary_strict": {
+    "pulse": {
+      "first_complete_correct": 21,
+      "after_dropout_correct": 24,
+      "streams": 24,
+      "startup_false_known": 0
+    },
+    "biphase": {
+      "first_complete_correct": 21,
+      "after_dropout_correct": 22,
+      "streams": 24,
+      "startup_false_known": 0
+    },
+    "clockdata": {
+      "first_complete_correct": 18,
+      "after_dropout_correct": 12,
+      "streams": 24,
+      "startup_false_known": 3
+    },
+    "context": {
+      "first_complete_correct": 21,
+      "after_dropout_correct": 21,
+      "streams": 24,
+      "startup_false_known": 0
+    },
+    "transfer": {
+      "first_complete_correct": 21,
+      "after_dropout_correct": 23,
+      "streams": 24,
+      "startup_false_known": 1
+    }
+  },
+  "raw_duration": {
+    "pulse": {
+      "first_complete_correct": 24,
+      "after_dropout_correct": 24,
+      "streams": 24,
+      "startup_false_known": 5
+    },
+    "biphase": {
+      "first_complete_correct": 22,
+      "after_dropout_correct": 24,
+      "streams": 24,
+      "startup_false_known": 1
+    },
+    "clockdata": {
+      "first_complete_correct": 24,
+      "after_dropout_correct": 21,
+      "streams": 24,
+      "startup_false_known": 12
+    },
+    "context": {
+      "first_complete_correct": 18,
+      "after_dropout_correct": 19,
+      "streams": 24,
+      "startup_false_known": 6
+    },
+    "transfer": {
+      "first_complete_correct": 21,
+      "after_dropout_correct": 24,
+      "streams": 24,
+      "startup_false_known": 2
+    }
+  }
+}
