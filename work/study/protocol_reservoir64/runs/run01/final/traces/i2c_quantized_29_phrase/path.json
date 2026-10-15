@@ -1,0 +1,1050 @@
+{
+  "expected_ascii": "House Improvement Committee",
+  "expected_hex": "486f75736520496d70726f76656d656e7420436f6d6d6974746565",
+  "recovered_by_controller": [
+    72,
+    111,
+    117,
+    115,
+    101,
+    32,
+    73,
+    109,
+    112,
+    114,
+    111,
+    118,
+    101,
+    109,
+    101,
+    110,
+    116,
+    32,
+    67,
+    111,
+    109,
+    109,
+    105,
+    116,
+    116,
+    101,
+    101
+  ],
+  "independently_decoded_output": [],
+  "result": {
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 27,
+      "insertions": 0,
+      "expected": 27,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "expected": 27,
+      "recovered": 27,
+      "exact": true,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 531,
+        "emitted": 531,
+        "correct": 529,
+        "wrong_class": 1,
+        "missing": 1,
+        "false_known": 1,
+        "false_invalid": 0,
+        "duplicates": 0,
+        "errors": 3
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 143,
+          "correct": 143,
+          "missed_or_wrong": 0
+        },
+        "BIT1": {
+          "expected": 121,
+          "correct": 121,
+          "missed_or_wrong": 0
+        },
+        "START": {
+          "expected": 2,
+          "correct": 1,
+          "missed_or_wrong": 1
+        },
+        "STOP": {
+          "expected": 1,
+          "correct": 0,
+          "missed_or_wrong": 1
+        },
+        "FALL": {
+          "expected": 264,
+          "correct": 264,
+          "missed_or_wrong": 0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0
+        }
+      },
+      "timing_error": {
+        "n": 529,
+        "minimum": 0,
+        "mean": 0.0,
+        "maximum": 0
+      }
+    },
+    "response_latency": {
+      "n": 56,
+      "minimum": 1,
+      "mean": 1.0,
+      "maximum": 1
+    },
+    "deadline_misses": 1,
+    "controller_errors": 1,
+    "buffer_overflows": 0,
+    "peer_read": [],
+    "independent_peer_agree": true,
+    "peer_acks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "peer_timeout": false,
+    "foreign_address_ack": false,
+    "stretch_waits": {
+      "n": 27,
+      "minimum": 9,
+      "mean": 9.0,
+      "maximum": 9
+    },
+    "recovery_success": null,
+    "ticks": 5589,
+    "input_presented_bytes": 27,
+    "attempted_payload_bytes": 27,
+    "independent_bus_transactions": [
+      {
+        "start": 32,
+        "bytes": [
+          100,
+          72,
+          111,
+          117,
+          115,
+          101,
+          32,
+          73,
+          109,
+          112,
+          114,
+          111,
+          118,
+          101,
+          109,
+          101,
+          110,
+          116,
+          32,
+          67,
+          111,
+          109,
+          109,
+          105,
+          116,
+          116,
+          101,
+          101
+        ],
+        "acks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "end": 5345,
+        "partial_bits": 1
+      },
+      {
+        "start": 5345,
+        "bytes": [
+          101
+        ],
+        "acks": [
+          false
+        ],
+        "end": 5555,
+        "partial_bits": 1
+      }
+    ],
+    "passes": false
+  },
+  "command_log": [
+    [
+      33,
+      0,
+      0,
+      false,
+      32
+    ],
+    [
+      33,
+      1,
+      0,
+      false,
+      32
+    ],
+    [
+      203,
+      1,
+      0,
+      true,
+      202
+    ],
+    [
+      223,
+      1,
+      0,
+      false,
+      222
+    ],
+    [
+      383,
+      1,
+      0,
+      true,
+      382
+    ],
+    [
+      383,
+      0,
+      0,
+      true,
+      382
+    ],
+    [
+      401,
+      0,
+      0,
+      false,
+      382
+    ],
+    [
+      412,
+      1,
+      0,
+      false,
+      411
+    ],
+    [
+      572,
+      1,
+      0,
+      true,
+      571
+    ],
+    [
+      572,
+      0,
+      0,
+      true,
+      571
+    ],
+    [
+      590,
+      0,
+      0,
+      false,
+      571
+    ],
+    [
+      601,
+      1,
+      0,
+      false,
+      600
+    ],
+    [
+      761,
+      1,
+      0,
+      true,
+      760
+    ],
+    [
+      761,
+      0,
+      0,
+      true,
+      760
+    ],
+    [
+      779,
+      0,
+      0,
+      false,
+      760
+    ],
+    [
+      790,
+      1,
+      0,
+      false,
+      789
+    ],
+    [
+      950,
+      1,
+      0,
+      true,
+      949
+    ],
+    [
+      950,
+      0,
+      0,
+      true,
+      949
+    ],
+    [
+      968,
+      0,
+      0,
+      false,
+      949
+    ],
+    [
+      979,
+      1,
+      0,
+      false,
+      978
+    ],
+    [
+      1139,
+      1,
+      0,
+      true,
+      1138
+    ],
+    [
+      1139,
+      0,
+      0,
+      true,
+      1138
+    ],
+    [
+      1157,
+      0,
+      0,
+      false,
+      1138
+    ],
+    [
+      1168,
+      1,
+      0,
+      false,
+      1167
+    ],
+    [
+      1328,
+      1,
+      0,
+      true,
+      1327
+    ],
+    [
+      1328,
+      0,
+      0,
+      true,
+      1327
+    ],
+    [
+      1346,
+      0,
+      0,
+      false,
+      1327
+    ],
+    [
+      1357,
+      1,
+      0,
+      false,
+      1356
+    ],
+    [
+      1517,
+      1,
+      0,
+      true,
+      1516
+    ],
+    [
+      1517,
+      0,
+      0,
+      true,
+      1516
+    ],
+    [
+      1535,
+      0,
+      0,
+      false,
+      1516
+    ],
+    [
+      1546,
+      1,
+      0,
+      false,
+      1545
+    ],
+    [
+      1706,
+      1,
+      0,
+      true,
+      1705
+    ],
+    [
+      1706,
+      0,
+      0,
+      true,
+      1705
+    ],
+    [
+      1724,
+      0,
+      0,
+      false,
+      1705
+    ],
+    [
+      1735,
+      1,
+      0,
+      false,
+      1734
+    ],
+    [
+      1895,
+      1,
+      0,
+      true,
+      1894
+    ],
+    [
+      1895,
+      0,
+      0,
+      true,
+      1894
+    ],
+    [
+      1913,
+      0,
+      0,
+      false,
+      1894
+    ],
+    [
+      1924,
+      1,
+      0,
+      false,
+      1923
+    ],
+    [
+      2084,
+      1,
+      0,
+      true,
+      2083
+    ],
+    [
+      2084,
+      0,
+      0,
+      true,
+      2083
+    ],
+    [
+      2102,
+      0,
+      0,
+      false,
+      2083
+    ],
+    [
+      2113,
+      1,
+      0,
+      false,
+      2112
+    ],
+    [
+      2273,
+      1,
+      0,
+      true,
+      2272
+    ],
+    [
+      2273,
+      0,
+      0,
+      true,
+      2272
+    ],
+    [
+      2291,
+      0,
+      0,
+      false,
+      2272
+    ],
+    [
+      2302,
+      1,
+      0,
+      false,
+      2301
+    ],
+    [
+      2462,
+      1,
+      0,
+      true,
+      2461
+    ],
+    [
+      2462,
+      0,
+      0,
+      true,
+      2461
+    ],
+    [
+      2480,
+      0,
+      0,
+      false,
+      2461
+    ],
+    [
+      2491,
+      1,
+      0,
+      false,
+      2490
+    ],
+    [
+      2651,
+      1,
+      0,
+      true,
+      2650
+    ],
+    [
+      2651,
+      0,
+      0,
+      true,
+      2650
+    ],
+    [
+      2669,
+      0,
+      0,
+      false,
+      2650
+    ],
+    [
+      2680,
+      1,
+      0,
+      false,
+      2679
+    ],
+    [
+      2840,
+      1,
+      0,
+      true,
+      2839
+    ],
+    [
+      2840,
+      0,
+      0,
+      true,
+      2839
+    ],
+    [
+      2858,
+      0,
+      0,
+      false,
+      2839
+    ],
+    [
+      2869,
+      1,
+      0,
+      false,
+      2868
+    ],
+    [
+      3029,
+      1,
+      0,
+      true,
+      3028
+    ],
+    [
+      3029,
+      0,
+      0,
+      true,
+      3028
+    ],
+    [
+      3047,
+      0,
+      0,
+      false,
+      3028
+    ],
+    [
+      3058,
+      1,
+      0,
+      false,
+      3057
+    ],
+    [
+      3218,
+      1,
+      0,
+      true,
+      3217
+    ],
+    [
+      3218,
+      0,
+      0,
+      true,
+      3217
+    ],
+    [
+      3236,
+      0,
+      0,
+      false,
+      3217
+    ],
+    [
+      3247,
+      1,
+      0,
+      false,
+      3246
+    ],
+    [
+      3407,
+      1,
+      0,
+      true,
+      3406
+    ],
+    [
+      3407,
+      0,
+      0,
+      true,
+      3406
+    ],
+    [
+      3425,
+      0,
+      0,
+      false,
+      3406
+    ],
+    [
+      3436,
+      1,
+      0,
+      false,
+      3435
+    ],
+    [
+      3596,
+      1,
+      0,
+      true,
+      3595
+    ],
+    [
+      3596,
+      0,
+      0,
+      true,
+      3595
+    ],
+    [
+      3614,
+      0,
+      0,
+      false,
+      3595
+    ],
+    [
+      3625,
+      1,
+      0,
+      false,
+      3624
+    ],
+    [
+      3785,
+      1,
+      0,
+      true,
+      3784
+    ],
+    [
+      3785,
+      0,
+      0,
+      true,
+      3784
+    ],
+    [
+      3803,
+      0,
+      0,
+      false,
+      3784
+    ],
+    [
+      3814,
+      1,
+      0,
+      false,
+      3813
+    ],
+    [
+      3974,
+      1,
+      0,
+      true,
+      3973
+    ],
+    [
+      3974,
+      0,
+      0,
+      true,
+      3973
+    ],
+    [
+      3992,
+      0,
+      0,
+      false,
+      3973
+    ],
+    [
+      4003,
+      1,
+      0,
+      false,
+      4002
+    ],
+    [
+      4163,
+      1,
+      0,
+      true,
+      4162
+    ],
+    [
+      4163,
+      0,
+      0,
+      true,
+      4162
+    ],
+    [
+      4181,
+      0,
+      0,
+      false,
+      4162
+    ],
+    [
+      4192,
+      1,
+      0,
+      false,
+      4191
+    ],
+    [
+      4352,
+      1,
+      0,
+      true,
+      4351
+    ],
+    [
+      4352,
+      0,
+      0,
+      true,
+      4351
+    ],
+    [
+      4370,
+      0,
+      0,
+      false,
+      4351
+    ],
+    [
+      4381,
+      1,
+      0,
+      false,
+      4380
+    ],
+    [
+      4541,
+      1,
+      0,
+      true,
+      4540
+    ],
+    [
+      4541,
+      0,
+      0,
+      true,
+      4540
+    ],
+    [
+      4559,
+      0,
+      0,
+      false,
+      4540
+    ],
+    [
+      4570,
+      1,
+      0,
+      false,
+      4569
+    ],
+    [
+      4730,
+      1,
+      0,
+      true,
+      4729
+    ],
+    [
+      4730,
+      0,
+      0,
+      true,
+      4729
+    ],
+    [
+      4748,
+      0,
+      0,
+      false,
+      4729
+    ],
+    [
+      4759,
+      1,
+      0,
+      false,
+      4758
+    ],
+    [
+      4919,
+      1,
+      0,
+      true,
+      4918
+    ],
+    [
+      4919,
+      0,
+      0,
+      true,
+      4918
+    ],
+    [
+      4937,
+      0,
+      0,
+      false,
+      4918
+    ],
+    [
+      4948,
+      1,
+      0,
+      false,
+      4947
+    ],
+    [
+      5108,
+      1,
+      0,
+      true,
+      5107
+    ],
+    [
+      5108,
+      0,
+      0,
+      true,
+      5107
+    ],
+    [
+      5126,
+      0,
+      0,
+      false,
+      5107
+    ],
+    [
+      5137,
+      1,
+      0,
+      false,
+      5136
+    ],
+    [
+      5297,
+      1,
+      0,
+      true,
+      5296
+    ],
+    [
+      5297,
+      0,
+      0,
+      true,
+      5296
+    ],
+    [
+      5315,
+      0,
+      0,
+      false,
+      5296
+    ],
+    [
+      5326,
+      1,
+      0,
+      false,
+      5325
+    ],
+    [
+      5346,
+      0,
+      0,
+      false,
+      5345
+    ],
+    [
+      5346,
+      1,
+      0,
+      false,
+      5345
+    ]
+  ],
+  "controller_errors": [
+    [
+      5345,
+      "invalid"
+    ]
+  ]
+}

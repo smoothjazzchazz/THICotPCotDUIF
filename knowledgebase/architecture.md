@@ -1,6 +1,8 @@
-# Architecture contract
+# Reference architecture contract
 
 Restated from v0.3 sections 4 and 5, as amended by v0.31. Area totals, cell counts, and clock rates in v0.3 section 6 and v0.31 section 8 are **[EST]** or **[VERIFY]** and are not repeated here. See [authority.md](authority.md).
+
+This page governs the reference implementation. [experiments.md](experiments.md) permits alternatives to every mechanism below, including the reservoir, symbol interface, two listeners, controller, and pin paths. Experimental departures do not amend this contract or pass its gates.
 
 **The core never touches a pin.** All input reaches the core as symbol events. All output leaves as symbols through the TX table. There is no pin-level bypass wire; "raw GPIO" is a degenerate symbol-layer configuration (a weight file), not a path around the symbol layer.
 
@@ -51,7 +53,7 @@ An event is `{class (3 bits), start-timestamp (12 bits)}`.
 
    `s' = sat(s − (s >> k) + Σ w·x)`
 
-   Integer only, so the RTL is bit-exact with the model. Contractive by construction (fading memory).
+   Integer arithmetic is intended to support a bit-exact model and RTL. Matching arithmetic and fading memory require checks; saturation and a leak term alone do not establish convergence. See the [recorded initialization failures](../work/study/EXPERIMENT_REPORT.md#mixed-leak-timescales).
 5. Baseline readout: quantize each node to 1 bit (2 bits is Tier 3). Hamming distance to 8 prototype vectors in parallel (XOR and popcount). Argmax with margin. Prototypes load from the host. On-chip snapshot capture is Tier 3. A ternary linear readout is a study option, adopted only if the accuracy gap justifies the area.
 6. **Second classifier (v0.31):** a windowed Δt-template / run-length classifier sits beside the reservoir. A config selection chooses which front end feeds the stabilizer; a debug mode exposes both for disagreement capture (class 7 plus a sticky disagree flag).
 7. Stabilizer and RX FIFO, as in the symbol-event contract.
@@ -88,7 +90,7 @@ Both listeners are on die either way. G1 does not pick a winner. **Show** means 
 
 ## Not decided
 
-From v0.3 section 11 — do not encode an answer in the tree:
+From v0.3 section 11 — do not treat an experimental assumption as a reference-design decision:
 
 - Hardcaml or Verilog as the primary source
 - which FPGA board and whether a Tiny Tapeout dev board is available

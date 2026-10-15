@@ -1,0 +1,154 @@
+{
+  "expected_ascii": "House Improvement Committee",
+  "expected_hex": "486f75736520496d70726f76656d656e7420436f6d6d6974746565",
+  "recovered_by_controller": [],
+  "independently_decoded_output": [],
+  "result": {
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 27,
+      "insertions": 0,
+      "expected": 27,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 27,
+      "insertions": 0,
+      "expected": 27,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 270,
+        "emitted": 197,
+        "correct": 45,
+        "wrong_class": 135,
+        "missing": 90,
+        "false_known": 7,
+        "false_invalid": 10,
+        "duplicates": 7,
+        "errors": 242
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 105,
+          "correct": 30,
+          "missed_or_wrong": 75
+        },
+        "BIT1": {
+          "expected": 111,
+          "correct": 14,
+          "missed_or_wrong": 97
+        },
+        "START": {
+          "expected": 27,
+          "correct": 1,
+          "missed_or_wrong": 26
+        },
+        "STOP": {
+          "expected": 27,
+          "correct": 0,
+          "missed_or_wrong": 27
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0
+        }
+      },
+      "timing_error": {
+        "n": 45,
+        "minimum": -1,
+        "mean": -0.6888888888888889,
+        "maximum": 0
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 27,
+    "controller_errors": 13,
+    "buffer_overflows": 0,
+    "recovery_success": null,
+    "malformed_false_bytes": null,
+    "ticks": 5596,
+    "input_presented_bytes": 27,
+    "passes": false
+  },
+  "command_log": [],
+  "controller_errors": [
+    [
+      83,
+      "invalid"
+    ],
+    [
+      275,
+      "invalid"
+    ],
+    [
+      468,
+      "invalid"
+    ],
+    [
+      628,
+      "invalid"
+    ],
+    [
+      1428,
+      "invalid"
+    ],
+    [
+      1588,
+      "invalid"
+    ],
+    [
+      1715,
+      "invalid"
+    ],
+    [
+      1908,
+      "invalid"
+    ],
+    [
+      2500,
+      "invalid"
+    ],
+    [
+      2708,
+      "invalid"
+    ],
+    [
+      3155,
+      "invalid"
+    ],
+    [
+      3828,
+      "invalid"
+    ],
+    [
+      3988,
+      "invalid"
+    ]
+  ]
+}

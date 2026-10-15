@@ -1,0 +1,11 @@
+{
+  "status": "not_started",
+  "reason": "UART/I2C frozen end-to-end gate failed",
+  "additional_source_blocks": [
+    "checked packet field layout",
+    "CRC5/CRC16 polynomials and bit order",
+    "sync/EOP acceptance and handshake timing",
+    "configured-device transaction profile"
+  ],
+  "fit_steps": 0
+}

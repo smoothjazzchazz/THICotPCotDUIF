@@ -1,6 +1,6 @@
 # What changed from v0.3 to v0.31
 
-Source: v0.31 section 0. Build the v0.31 column. The v0.3 bypass is not in scope.
+Source: v0.31 section 0. The reference implementation follows the v0.31 column. Experiments may revisit these choices, including bypass paths, under [experiments.md](experiments.md).
 
 - **Pin access.** v0.3: the core reads and drives pins directly, and a bypass path always exists. v0.31: the core never touches a pin. All input arrives as symbol events, all output leaves as symbols through the TX table. The ISA has no pin-level I/O.
 - **Bypass.** v0.3: a silicon path around the symbol layer. v0.31: a **weight file** — a degenerate symbol-layer configuration that acts as a synchronizer plus edge detector. The escape hatch is data through the same silicon, and it gets a formal equivalence proof against a reference FSM.

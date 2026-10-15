@@ -10,6 +10,8 @@ Specs are root-level files named `Temporal Protocol Machine_ Pitch and Architect
 - Current chain: **v0.2** (history, do not build) → **v0.3** (base) → **v0.31** (current amendment). See [authority.md](authority.md) for precedence.
 - The evolution trail (v0.2 → v0.3 → v0.31 and the delta pages) is kept deliberately: it is source material for the final writeup.
 
+[experiments.md](experiments.md) is this fork's experimental-scope amendment. It authorizes alternative models without changing the reference hardware spec. An experiment needs no new spec version; adopting its architecture into the reference design does. Released spec files remain unchanged in either case.
+
 ## Git layout
 
 | Ref | Meaning | Rule |

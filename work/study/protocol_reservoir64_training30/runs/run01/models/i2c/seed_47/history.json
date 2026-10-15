@@ -1,0 +1,1422 @@
+[
+  {
+    "epoch": 1,
+    "steps": 94,
+    "train_loss": 1.5998120170016077,
+    "dev_loss": 0.43629203413197126,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 2.3694045939992066,
+    "gradient_norm_mean": 0.9091408415208362,
+    "gradient_norm_max": 3.0496129076776954,
+    "clipped_updates": 32,
+    "gradient_group_norm_mean": {
+      "wx": 0.3045828328966656,
+      "wh": 0.20033962619731924,
+      "b": 0.34984222468484116,
+      "wo": 0.6841781820761258,
+      "bo": 0.24117794565337952
+    },
+    "live": {
+      "strict_exchanges": 0,
+      "valid_exchanges": 9,
+      "byte_exact_exchanges": 1,
+      "aligned_bytes": 0,
+      "expected_bytes": 136,
+      "aligned_byte_fraction": 0.0,
+      "boundary_f1": 0.735632183908046,
+      "macro_f1": 0.9024419925146068,
+      "false_events": 47,
+      "event_errors": 89,
+      "ticks": 5843,
+      "events": {
+        "BIT0": {
+          "correct": 112,
+          "expected": 112,
+          "emitted": 112,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIT1": {
+          "correct": 126,
+          "expected": 126,
+          "emitted": 137,
+          "precision": 0.9197080291970803,
+          "recall": 1.0,
+          "f1": 0.9581749049429658
+        },
+        "START": {
+          "correct": 32,
+          "expected": 55,
+          "emitted": 32,
+          "precision": 1.0,
+          "recall": 0.5818181818181818,
+          "f1": 0.735632183908046
+        },
+        "STOP": {
+          "correct": 32,
+          "expected": 45,
+          "emitted": 32,
+          "precision": 1.0,
+          "recall": 0.7111111111111111,
+          "f1": 0.8311688311688312
+        },
+        "FALL": {
+          "correct": 232,
+          "expected": 238,
+          "emitted": 232,
+          "precision": 1.0,
+          "recall": 0.9747899159663865,
+          "f1": 0.9872340425531915
+        },
+        "INVALID": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 43,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "selection_key": [
+      0,
+      1,
+      0,
+      0.735632183908046,
+      0.9024419925146068,
+      -0.00804381310970392,
+      -0.43629203413197126
+    ]
+  },
+  {
+    "epoch": 2,
+    "steps": 188,
+    "train_loss": 0.2262499543786626,
+    "dev_loss": 0.12654405863435045,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 4.9260158039996895,
+    "gradient_norm_mean": 0.20556554672112973,
+    "gradient_norm_max": 0.7417457441494841,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.08879612724387512,
+      "wh": 0.056673134041247124,
+      "b": 0.0642824982858444,
+      "wo": 0.1600026084354029,
+      "bo": 0.02438416892822718
+    }
+  },
+  {
+    "epoch": 3,
+    "steps": 282,
+    "train_loss": 0.0712044252474535,
+    "dev_loss": 0.05467734146351199,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 7.40232479199949,
+    "gradient_norm_mean": 0.09749138780874621,
+    "gradient_norm_max": 0.47485491671126157,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.04051321980270769,
+      "wh": 0.03205879199540977,
+      "b": 0.037706415971385396,
+      "wo": 0.0708607215515671,
+      "bo": 0.011745516125513084
+    },
+    "live": {
+      "strict_exchanges": 0,
+      "valid_exchanges": 9,
+      "byte_exact_exchanges": 8,
+      "aligned_bytes": 120,
+      "expected_bytes": 136,
+      "aligned_byte_fraction": 0.8823529411764706,
+      "boundary_f1": 0.9908256880733946,
+      "macro_f1": 0.9973047543530441,
+      "false_events": 11,
+      "event_errors": 12,
+      "ticks": 65047,
+      "events": {
+        "BIT0": {
+          "correct": 1845,
+          "expected": 1845,
+          "emitted": 1845,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIT1": {
+          "correct": 1273,
+          "expected": 1273,
+          "emitted": 1284,
+          "precision": 0.9914330218068536,
+          "recall": 1.0,
+          "f1": 0.9956980836918263
+        },
+        "START": {
+          "correct": 54,
+          "expected": 55,
+          "emitted": 54,
+          "precision": 1.0,
+          "recall": 0.9818181818181818,
+          "f1": 0.9908256880733946
+        },
+        "STOP": {
+          "correct": 45,
+          "expected": 45,
+          "emitted": 45,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "FALL": {
+          "correct": 3118,
+          "expected": 3118,
+          "emitted": 3118,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "INVALID": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "selection_key": [
+      0,
+      8,
+      120,
+      0.9908256880733946,
+      0.9973047543530441,
+      -0.00016910849078358725,
+      -0.05467734146351199
+    ]
+  },
+  {
+    "epoch": 4,
+    "steps": 376,
+    "train_loss": 0.03439058952433906,
+    "dev_loss": 0.030315477890558842,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 11.710436966999623,
+    "gradient_norm_mean": 0.053657438315013094,
+    "gradient_norm_max": 0.1866587944622587,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.021796515236119748,
+      "wh": 0.018619380706326443,
+      "b": 0.022042538779257975,
+      "wo": 0.03804275804945848,
+      "bo": 0.006260832649969059
+    }
+  },
+  {
+    "epoch": 5,
+    "steps": 470,
+    "train_loss": 0.020553190386854964,
+    "dev_loss": 0.019411033420431382,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 14.179134111000167,
+    "gradient_norm_mean": 0.03394239278190066,
+    "gradient_norm_max": 0.12490522092985294,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.013857427689687597,
+      "wh": 0.011984195795037452,
+      "b": 0.01415989309610624,
+      "wo": 0.02377043375607229,
+      "bo": 0.003804347514220069
+    }
+  },
+  {
+    "epoch": 6,
+    "steps": 564,
+    "train_loss": 0.013820780294023512,
+    "dev_loss": 0.013550385129416512,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 16.588009295999655,
+    "gradient_norm_mean": 0.02363875262097086,
+    "gradient_norm_max": 0.09646744815985449,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.009814501819017055,
+      "wh": 0.008379410853544222,
+      "b": 0.009816627996460596,
+      "wo": 0.016430792343094462,
+      "bo": 0.002565309351471149
+    },
+    "live": {
+      "strict_exchanges": 0,
+      "valid_exchanges": 9,
+      "byte_exact_exchanges": 9,
+      "aligned_bytes": 136,
+      "expected_bytes": 136,
+      "aligned_byte_fraction": 1.0,
+      "boundary_f1": 1.0,
+      "macro_f1": 0.9991812430219575,
+      "false_events": 11,
+      "event_errors": 11,
+      "ticks": 67927,
+      "events": {
+        "BIT0": {
+          "correct": 1924,
+          "expected": 1924,
+          "emitted": 1924,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIT1": {
+          "correct": 1338,
+          "expected": 1338,
+          "emitted": 1349,
+          "precision": 0.9918458117123795,
+          "recall": 1.0,
+          "f1": 0.9959062151097878
+        },
+        "START": {
+          "correct": 55,
+          "expected": 55,
+          "emitted": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "STOP": {
+          "correct": 45,
+          "expected": 45,
+          "emitted": 45,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "FALL": {
+          "correct": 3262,
+          "expected": 3262,
+          "emitted": 3262,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "INVALID": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "selection_key": [
+      0,
+      9,
+      136,
+      1.0,
+      0.9991812430219575,
+      -0.00016193855168048052,
+      -0.013550385129416512
+    ]
+  },
+  {
+    "epoch": 7,
+    "steps": 658,
+    "train_loss": 0.009995523588714963,
+    "dev_loss": 0.010082363776367188,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 20.72910945699914,
+    "gradient_norm_mean": 0.017472061660040786,
+    "gradient_norm_max": 0.07771262508790922,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0073879014068507325,
+      "wh": 0.006205712462351507,
+      "b": 0.007183796177345821,
+      "wo": 0.012081408233511247,
+      "bo": 0.0018470424705868797
+    }
+  },
+  {
+    "epoch": 8,
+    "steps": 752,
+    "train_loss": 0.007598214057918503,
+    "dev_loss": 0.00785202302405678,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 23.013843398999597,
+    "gradient_norm_mean": 0.01350397802057333,
+    "gradient_norm_max": 0.0641582653309044,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.005799518860191023,
+      "wh": 0.004798014244281791,
+      "b": 0.005518278055105572,
+      "wo": 0.009292954436978997,
+      "bo": 0.0013990256537087535
+    }
+  },
+  {
+    "epoch": 9,
+    "steps": 846,
+    "train_loss": 0.005988370725761247,
+    "dev_loss": 0.006319883086522346,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 25.317170177000662,
+    "gradient_norm_mean": 0.010814842893419227,
+    "gradient_norm_max": 0.05397802559119889,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0047044029306188475,
+      "wh": 0.003844332674949781,
+      "b": 0.004403329044705845,
+      "wo": 0.007402634533356251,
+      "bo": 0.0011011322990367518
+    },
+    "live": {
+      "strict_exchanges": 0,
+      "valid_exchanges": 9,
+      "byte_exact_exchanges": 9,
+      "aligned_bytes": 136,
+      "expected_bytes": 136,
+      "aligned_byte_fraction": 1.0,
+      "boundary_f1": 1.0,
+      "macro_f1": 0.9991812430219575,
+      "false_events": 11,
+      "event_errors": 11,
+      "ticks": 67927,
+      "events": {
+        "BIT0": {
+          "correct": 1924,
+          "expected": 1924,
+          "emitted": 1924,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIT1": {
+          "correct": 1338,
+          "expected": 1338,
+          "emitted": 1349,
+          "precision": 0.9918458117123795,
+          "recall": 1.0,
+          "f1": 0.9959062151097878
+        },
+        "START": {
+          "correct": 55,
+          "expected": 55,
+          "emitted": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "STOP": {
+          "correct": 45,
+          "expected": 45,
+          "emitted": 45,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "FALL": {
+          "correct": 3262,
+          "expected": 3262,
+          "emitted": 3262,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "INVALID": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "selection_key": [
+      0,
+      9,
+      136,
+      1.0,
+      0.9991812430219575,
+      -0.00016193855168048052,
+      -0.006319883086522346
+    ]
+  },
+  {
+    "epoch": 10,
+    "steps": 940,
+    "train_loss": 0.004849803429742752,
+    "dev_loss": 0.005213908485590272,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 29.372300607999932,
+    "gradient_norm_mean": 0.008899640848845142,
+    "gradient_norm_max": 0.046132650001618355,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.003912901772478077,
+      "wh": 0.003166673577642377,
+      "b": 0.003619583661304932,
+      "wo": 0.006056376579548299,
+      "bo": 0.0008928440862954611
+    }
+  },
+  {
+    "epoch": 11,
+    "steps": 1034,
+    "train_loss": 0.004011764770110963,
+    "dev_loss": 0.004385070528410943,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 31.696901176999745,
+    "gradient_norm_mean": 0.007477671381076992,
+    "gradient_norm_max": 0.039946745126678035,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0033178807979837265,
+      "wh": 0.0026648943114141424,
+      "b": 0.0030444179879345837,
+      "wo": 0.005058120266899835,
+      "bo": 0.000741624513431997
+    }
+  },
+  {
+    "epoch": 12,
+    "steps": 1128,
+    "train_loss": 0.0033752021524913263,
+    "dev_loss": 0.003745465601993501,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 34.094968396000695,
+    "gradient_norm_mean": 0.006385844380058108,
+    "gradient_norm_max": 0.03496587954228402,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0028561194021491394,
+      "wh": 0.0022803583821152393,
+      "b": 0.002607080938409662,
+      "wo": 0.004293661481656525,
+      "bo": 0.000629115410547358
+    },
+    "live": {
+      "strict_exchanges": 0,
+      "valid_exchanges": 9,
+      "byte_exact_exchanges": 9,
+      "aligned_bytes": 136,
+      "expected_bytes": 136,
+      "aligned_byte_fraction": 1.0,
+      "boundary_f1": 1.0,
+      "macro_f1": 0.9991812430219575,
+      "false_events": 11,
+      "event_errors": 11,
+      "ticks": 67927,
+      "events": {
+        "BIT0": {
+          "correct": 1924,
+          "expected": 1924,
+          "emitted": 1924,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIT1": {
+          "correct": 1338,
+          "expected": 1338,
+          "emitted": 1349,
+          "precision": 0.9918458117123795,
+          "recall": 1.0,
+          "f1": 0.9959062151097878
+        },
+        "START": {
+          "correct": 55,
+          "expected": 55,
+          "emitted": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "STOP": {
+          "correct": 45,
+          "expected": 45,
+          "emitted": 45,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "FALL": {
+          "correct": 3262,
+          "expected": 3262,
+          "emitted": 3262,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "INVALID": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "selection_key": [
+      0,
+      9,
+      136,
+      1.0,
+      0.9991812430219575,
+      -0.00016193855168048052,
+      -0.003745465601993501
+    ]
+  },
+  {
+    "epoch": 13,
+    "steps": 1222,
+    "train_loss": 0.0028792210582781145,
+    "dev_loss": 0.00324008623484449,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 38.24248090400033,
+    "gradient_norm_mean": 0.005524492289468679,
+    "gradient_norm_max": 0.03087919285608243,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0024884638409476646,
+      "wh": 0.001977079699825463,
+      "b": 0.002263770603828543,
+      "wo": 0.00369287914199303,
+      "bo": 0.0005420036086610378
+    }
+  },
+  {
+    "epoch": 14,
+    "steps": 1316,
+    "train_loss": 0.00248458151679774,
+    "dev_loss": 0.0028328617186011065,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 40.6267734030007,
+    "gradient_norm_mean": 0.004829870759003079,
+    "gradient_norm_max": 0.027470710187859036,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0021895711661281962,
+      "wh": 0.001732175175575724,
+      "b": 0.001987113835111937,
+      "wo": 0.0032106608901955845,
+      "bo": 0.00047254240263767337
+    }
+  },
+  {
+    "epoch": 15,
+    "steps": 1410,
+    "train_loss": 0.002164999760871457,
+    "dev_loss": 0.0024992344090342005,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 43.21876543799954,
+    "gradient_norm_mean": 0.00425954980246214,
+    "gradient_norm_max": 0.024587772878876337,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0019423858527386883,
+      "wh": 0.001530587575582937,
+      "b": 0.0017596256555435913,
+      "wo": 0.0028168017141187228,
+      "bo": 0.0004159777735311999
+    },
+    "live": {
+      "strict_exchanges": 0,
+      "valid_exchanges": 9,
+      "byte_exact_exchanges": 9,
+      "aligned_bytes": 136,
+      "expected_bytes": 136,
+      "aligned_byte_fraction": 1.0,
+      "boundary_f1": 1.0,
+      "macro_f1": 0.9991812430219575,
+      "false_events": 11,
+      "event_errors": 11,
+      "ticks": 67927,
+      "events": {
+        "BIT0": {
+          "correct": 1924,
+          "expected": 1924,
+          "emitted": 1924,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIT1": {
+          "correct": 1338,
+          "expected": 1338,
+          "emitted": 1349,
+          "precision": 0.9918458117123795,
+          "recall": 1.0,
+          "f1": 0.9959062151097878
+        },
+        "START": {
+          "correct": 55,
+          "expected": 55,
+          "emitted": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "STOP": {
+          "correct": 45,
+          "expected": 45,
+          "emitted": 45,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "FALL": {
+          "correct": 3262,
+          "expected": 3262,
+          "emitted": 3262,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "INVALID": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "selection_key": [
+      0,
+      9,
+      136,
+      1.0,
+      0.9991812430219575,
+      -0.00016193855168048052,
+      -0.0024992344090342005
+    ]
+  },
+  {
+    "epoch": 16,
+    "steps": 1504,
+    "train_loss": 0.001902291571734778,
+    "dev_loss": 0.0022219636685218845,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 47.04936864299998,
+    "gradient_norm_mean": 0.0037842756472904505,
+    "gradient_norm_max": 0.022120452082579928,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0017350278142029077,
+      "wh": 0.0013620509794565014,
+      "b": 0.0015695451397570936,
+      "wo": 0.0024903784938214695,
+      "bo": 0.0003691114848285923
+    }
+  },
+  {
+    "epoch": 17,
+    "steps": 1598,
+    "train_loss": 0.001683526364786973,
+    "dev_loss": 0.001988630927684491,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 49.264951449000364,
+    "gradient_norm_mean": 0.00338324101110589,
+    "gradient_norm_max": 0.02066810847087804,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0015589605892565594,
+      "wh": 0.001219329524422982,
+      "b": 0.0014086194684314358,
+      "wo": 0.0022164708706581752,
+      "bo": 0.00032970203447986056
+    }
+  },
+  {
+    "epoch": 18,
+    "steps": 1692,
+    "train_loss": 0.001499289788785008,
+    "dev_loss": 0.00179009133539489,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 51.53864273900035,
+    "gradient_norm_mean": 0.003041227329334706,
+    "gradient_norm_max": 0.01974014628225957,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0014078618946096598,
+      "wh": 0.0010971708223913364,
+      "b": 0.0012708674193988188,
+      "wo": 0.0019841725423385376,
+      "bo": 0.00029615907991401393
+    },
+    "live": {
+      "strict_exchanges": 0,
+      "valid_exchanges": 9,
+      "byte_exact_exchanges": 9,
+      "aligned_bytes": 136,
+      "expected_bytes": 136,
+      "aligned_byte_fraction": 1.0,
+      "boundary_f1": 1.0,
+      "macro_f1": 0.9991812430219575,
+      "false_events": 11,
+      "event_errors": 11,
+      "ticks": 67927,
+      "events": {
+        "BIT0": {
+          "correct": 1924,
+          "expected": 1924,
+          "emitted": 1924,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIT1": {
+          "correct": 1338,
+          "expected": 1338,
+          "emitted": 1349,
+          "precision": 0.9918458117123795,
+          "recall": 1.0,
+          "f1": 0.9959062151097878
+        },
+        "START": {
+          "correct": 55,
+          "expected": 55,
+          "emitted": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "STOP": {
+          "correct": 45,
+          "expected": 45,
+          "emitted": 45,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "FALL": {
+          "correct": 3262,
+          "expected": 3262,
+          "emitted": 3262,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "INVALID": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "selection_key": [
+      0,
+      9,
+      136,
+      1.0,
+      0.9991812430219575,
+      -0.00016193855168048052,
+      -0.00179009133539489
+    ]
+  },
+  {
+    "epoch": 19,
+    "steps": 1786,
+    "train_loss": 0.0013425846105215747,
+    "dev_loss": 0.0016194737618142948,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 55.401119616999495,
+    "gradient_norm_mean": 0.002746802005653923,
+    "gradient_norm_max": 0.01886708658921598,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0012768687860146124,
+      "wh": 0.0009916579969061878,
+      "b": 0.0011518582080878542,
+      "wo": 0.0017853465611122436,
+      "bo": 0.0002673301176882726
+    }
+  },
+  {
+    "epoch": 20,
+    "steps": 1880,
+    "train_loss": 0.0012081107216949233,
+    "dev_loss": 0.001471486044912691,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 57.763363965999815,
+    "gradient_norm_mean": 0.002491069002627254,
+    "gradient_norm_max": 0.01804412673214878,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0011618924593502695,
+      "wh": 0.0008997708865093415,
+      "b": 0.001048275481581338,
+      "wo": 0.001613850418163591,
+      "bo": 0.0002423670043339945
+    }
+  },
+  {
+    "epoch": 21,
+    "steps": 1974,
+    "train_loss": 0.001091702947316949,
+    "dev_loss": 0.0013401723076185744,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 60.23687888600034,
+    "gradient_norm_mean": 0.002303479933328119,
+    "gradient_norm_max": 0.017267570357697347,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0011034633499577508,
+      "wh": 0.000823915284416895,
+      "b": 0.0009585791797189187,
+      "wo": 0.0014663421391613227,
+      "bo": 0.00022096689827155673
+    },
+    "live": {
+      "strict_exchanges": 0,
+      "valid_exchanges": 9,
+      "byte_exact_exchanges": 9,
+      "aligned_bytes": 136,
+      "expected_bytes": 136,
+      "aligned_byte_fraction": 1.0,
+      "boundary_f1": 1.0,
+      "macro_f1": 0.9991812430219575,
+      "false_events": 11,
+      "event_errors": 11,
+      "ticks": 67927,
+      "events": {
+        "BIT0": {
+          "correct": 1924,
+          "expected": 1924,
+          "emitted": 1924,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIT1": {
+          "correct": 1338,
+          "expected": 1338,
+          "emitted": 1349,
+          "precision": 0.9918458117123795,
+          "recall": 1.0,
+          "f1": 0.9959062151097878
+        },
+        "START": {
+          "correct": 55,
+          "expected": 55,
+          "emitted": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "STOP": {
+          "correct": 45,
+          "expected": 45,
+          "emitted": 45,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "FALL": {
+          "correct": 3262,
+          "expected": 3262,
+          "emitted": 3262,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "INVALID": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "selection_key": [
+      0,
+      9,
+      136,
+      1.0,
+      0.9991812430219575,
+      -0.00016193855168048052,
+      -0.0013401723076185744
+    ]
+  },
+  {
+    "epoch": 22,
+    "steps": 2068,
+    "train_loss": 0.000990493411246265,
+    "dev_loss": 0.0012291837629936845,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 64.34912847499982,
+    "gradient_norm_mean": 0.002106500756707887,
+    "gradient_norm_max": 0.016559042246111242,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0010112891494886724,
+      "wh": 0.000759157313571441,
+      "b": 0.0008813721273850273,
+      "wo": 0.0013402272000261218,
+      "bo": 0.00020283811624333193
+    }
+  },
+  {
+    "epoch": 23,
+    "steps": 2162,
+    "train_loss": 0.0009013124329700114,
+    "dev_loss": 0.001127917385149332,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 66.750319666,
+    "gradient_norm_mean": 0.001987829466081761,
+    "gradient_norm_max": 0.0158350830277096,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0010002215225118237,
+      "wh": 0.0007003363821219189,
+      "b": 0.0008060430538951256,
+      "wo": 0.0012213984593103715,
+      "bo": 0.00018517988105303085
+    }
+  },
+  {
+    "epoch": 24,
+    "steps": 2256,
+    "train_loss": 0.0008232358760003087,
+    "dev_loss": 0.0010395668271040279,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 69.23744421800075,
+    "gradient_norm_mean": 0.0017677268320981934,
+    "gradient_norm_max": 0.015167401324140862,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0008529661959670896,
+      "wh": 0.000635261004474036,
+      "b": 0.0007432735064149188,
+      "wo": 0.0011204238168576479,
+      "bo": 0.00017024616821613529
+    },
+    "live": {
+      "strict_exchanges": 0,
+      "valid_exchanges": 9,
+      "byte_exact_exchanges": 9,
+      "aligned_bytes": 136,
+      "expected_bytes": 136,
+      "aligned_byte_fraction": 1.0,
+      "boundary_f1": 1.0,
+      "macro_f1": 1.0,
+      "false_events": 11,
+      "event_errors": 11,
+      "ticks": 67927,
+      "events": {
+        "BIT0": {
+          "correct": 1924,
+          "expected": 1924,
+          "emitted": 1924,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIT1": {
+          "correct": 1338,
+          "expected": 1338,
+          "emitted": 1338,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "START": {
+          "correct": 55,
+          "expected": 55,
+          "emitted": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "STOP": {
+          "correct": 45,
+          "expected": 45,
+          "emitted": 45,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "FALL": {
+          "correct": 3262,
+          "expected": 3262,
+          "emitted": 3262,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "INVALID": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 11,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "selection_key": [
+      0,
+      9,
+      136,
+      1.0,
+      1.0,
+      -0.00016193855168048052,
+      -0.0010395668271040279
+    ]
+  },
+  {
+    "epoch": 25,
+    "steps": 2350,
+    "train_loss": 0.0007536562662161116,
+    "dev_loss": 0.0009597833352669966,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 73.37611305700011,
+    "gradient_norm_mean": 0.0016867569403273505,
+    "gradient_norm_max": 0.01452416578028681,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0008559740669006667,
+      "wh": 0.0005952492288124927,
+      "b": 0.0006843413661294837,
+      "wo": 0.001027382784652943,
+      "bo": 0.00015627001023177888
+    }
+  },
+  {
+    "epoch": 26,
+    "steps": 2444,
+    "train_loss": 0.0006922321180879161,
+    "dev_loss": 0.0008866559691114519,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 75.78853101799905,
+    "gradient_norm_mean": 0.0015373804656629787,
+    "gradient_norm_max": 0.013914611491522786,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0007721938911414085,
+      "wh": 0.0005437483617710709,
+      "b": 0.0006334676159731299,
+      "wo": 0.0009463914571971094,
+      "bo": 0.00014424410940097967
+    }
+  },
+  {
+    "epoch": 27,
+    "steps": 2538,
+    "train_loss": 0.0006369212963077191,
+    "dev_loss": 0.0008226308401030944,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 78.18831254600082,
+    "gradient_norm_mean": 0.0013949529066958888,
+    "gradient_norm_max": 0.013352324763172604,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0006848631927324933,
+      "wh": 0.000498143071036692,
+      "b": 0.0005873235332782186,
+      "wo": 0.0008735832614198943,
+      "bo": 0.00013329576126066108
+    },
+    "live": {
+      "strict_exchanges": 0,
+      "valid_exchanges": 9,
+      "byte_exact_exchanges": 9,
+      "aligned_bytes": 136,
+      "expected_bytes": 136,
+      "aligned_byte_fraction": 1.0,
+      "boundary_f1": 1.0,
+      "macro_f1": 1.0,
+      "false_events": 11,
+      "event_errors": 11,
+      "ticks": 67927,
+      "events": {
+        "BIT0": {
+          "correct": 1924,
+          "expected": 1924,
+          "emitted": 1924,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIT1": {
+          "correct": 1338,
+          "expected": 1338,
+          "emitted": 1338,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "START": {
+          "correct": 55,
+          "expected": 55,
+          "emitted": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "STOP": {
+          "correct": 45,
+          "expected": 45,
+          "emitted": 45,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "FALL": {
+          "correct": 3262,
+          "expected": 3262,
+          "emitted": 3262,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "INVALID": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 11,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "selection_key": [
+      0,
+      9,
+      136,
+      1.0,
+      1.0,
+      -0.00016193855168048052,
+      -0.0008226308401030944
+    ]
+  },
+  {
+    "epoch": 28,
+    "steps": 2632,
+    "train_loss": 0.0005878479154971814,
+    "dev_loss": 0.0007620378171925142,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 82.18311340400032,
+    "gradient_norm_mean": 0.0013331958686557453,
+    "gradient_norm_max": 0.012786174212345411,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0006753082018730236,
+      "wh": 0.00047090839284734664,
+      "b": 0.0005469265899840182,
+      "wo": 0.0008091304114718797,
+      "bo": 0.00012388293813604573
+    }
+  },
+  {
+    "epoch": 29,
+    "steps": 2726,
+    "train_loss": 0.0005429262673485067,
+    "dev_loss": 0.0007088397699768434,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 84.46724507699946,
+    "gradient_norm_mean": 0.0011937110777404604,
+    "gradient_norm_max": 0.012266828264351617,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0005819446351064813,
+      "wh": 0.00042668728388190185,
+      "b": 0.0005085317066242154,
+      "wo": 0.0007497083182007057,
+      "bo": 0.00011490814652282446
+    }
+  },
+  {
+    "epoch": 30,
+    "steps": 2820,
+    "train_loss": 0.0005025988308195732,
+    "dev_loss": 0.0006600445580334086,
+    "train_loss_note": "valid-tick weighted online loss before each optimizer update",
+    "elapsed_seconds": 86.74294471100075,
+    "gradient_norm_mean": 0.001110511769156936,
+    "gradient_norm_max": 0.011741216839117925,
+    "clipped_updates": 0,
+    "gradient_group_norm_mean": {
+      "wx": 0.0005432466005577092,
+      "wh": 0.0003960904758811308,
+      "b": 0.0004736391318823739,
+      "wo": 0.0006957559694436565,
+      "bo": 0.00010680982768965435
+    },
+    "live": {
+      "strict_exchanges": 9,
+      "valid_exchanges": 9,
+      "byte_exact_exchanges": 9,
+      "aligned_bytes": 136,
+      "expected_bytes": 136,
+      "aligned_byte_fraction": 1.0,
+      "boundary_f1": 1.0,
+      "macro_f1": 1.0,
+      "false_events": 0,
+      "event_errors": 0,
+      "ticks": 67927,
+      "events": {
+        "BIT0": {
+          "correct": 1924,
+          "expected": 1924,
+          "emitted": 1924,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIT1": {
+          "correct": 1338,
+          "expected": 1338,
+          "emitted": 1338,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "START": {
+          "correct": 55,
+          "expected": 55,
+          "emitted": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "STOP": {
+          "correct": 45,
+          "expected": 45,
+          "emitted": 45,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "FALL": {
+          "correct": 3262,
+          "expected": 3262,
+          "emitted": 3262,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "INVALID": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "correct": 0,
+          "expected": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "selection_key": [
+      9,
+      9,
+      136,
+      1.0,
+      1.0,
+      0.0,
+      -0.0006600445580334086
+    ]
+  }
+]

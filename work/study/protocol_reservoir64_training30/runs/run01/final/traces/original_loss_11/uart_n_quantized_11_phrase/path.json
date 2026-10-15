@@ -1,0 +1,278 @@
+{
+  "expected_ascii": "House Improvement Committee",
+  "expected_hex": "486f75736520496d70726f76656d656e7420436f6d6d6974746565",
+  "recovered_by_controller": [],
+  "independently_decoded_output": [],
+  "result": {
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 27,
+      "insertions": 0,
+      "expected": 27,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 27,
+      "insertions": 0,
+      "expected": 27,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 270,
+        "emitted": 280,
+        "correct": 112,
+        "wrong_class": 100,
+        "missing": 58,
+        "false_known": 24,
+        "false_invalid": 44,
+        "duplicates": 2,
+        "errors": 226
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 105,
+          "correct": 51,
+          "missed_or_wrong": 54,
+          "emitted": 77,
+          "precision": 0.6623376623376623,
+          "recall": 0.4857142857142857,
+          "f1": 0.5604395604395604
+        },
+        "BIT1": {
+          "expected": 111,
+          "correct": 60,
+          "missed_or_wrong": 51,
+          "emitted": 89,
+          "precision": 0.6741573033707865,
+          "recall": 0.5405405405405406,
+          "f1": 0.6
+        },
+        "START": {
+          "expected": 27,
+          "correct": 1,
+          "missed_or_wrong": 26,
+          "emitted": 37,
+          "precision": 0.02702702702702703,
+          "recall": 0.037037037037037035,
+          "f1": 0.03125
+        },
+        "STOP": {
+          "expected": 27,
+          "correct": 0,
+          "missed_or_wrong": 27,
+          "emitted": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 75,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 112,
+        "minimum": -2,
+        "mean": -1.2142857142857142,
+        "maximum": -1
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 27,
+    "controller_errors": 37,
+    "buffer_overflows": 0,
+    "recovery_success": null,
+    "malformed_false_bytes": null,
+    "ticks": 5597,
+    "input_presented_bytes": 27,
+    "passes": false
+  },
+  "command_log": [],
+  "controller_errors": [
+    [
+      38,
+      "invalid"
+    ],
+    [
+      149,
+      "invalid"
+    ],
+    [
+      308,
+      "invalid"
+    ],
+    [
+      468,
+      "restart"
+    ],
+    [
+      548,
+      "invalid"
+    ],
+    [
+      628,
+      "restart"
+    ],
+    [
+      742,
+      "invalid"
+    ],
+    [
+      838,
+      "invalid"
+    ],
+    [
+      950,
+      "invalid"
+    ],
+    [
+      1268,
+      "invalid"
+    ],
+    [
+      1318,
+      "invalid"
+    ],
+    [
+      1478,
+      "invalid"
+    ],
+    [
+      1700,
+      "restart"
+    ],
+    [
+      1748,
+      "invalid"
+    ],
+    [
+      1798,
+      "invalid"
+    ],
+    [
+      1908,
+      "restart"
+    ],
+    [
+      2022,
+      "invalid"
+    ],
+    [
+      2180,
+      "invalid"
+    ],
+    [
+      2228,
+      "invalid"
+    ],
+    [
+      2342,
+      "invalid"
+    ],
+    [
+      2438,
+      "invalid"
+    ],
+    [
+      2548,
+      "invalid"
+    ],
+    [
+      2598,
+      "invalid"
+    ],
+    [
+      2758,
+      "invalid"
+    ],
+    [
+      2870,
+      "invalid"
+    ],
+    [
+      2982,
+      "invalid"
+    ],
+    [
+      3188,
+      "invalid"
+    ],
+    [
+      3300,
+      "invalid"
+    ],
+    [
+      3348,
+      "invalid"
+    ],
+    [
+      3460,
+      "invalid"
+    ],
+    [
+      3508,
+      "invalid"
+    ],
+    [
+      3590,
+      "invalid"
+    ],
+    [
+      3718,
+      "invalid"
+    ],
+    [
+      3878,
+      "invalid"
+    ],
+    [
+      4102,
+      "invalid"
+    ],
+    [
+      4262,
+      "invalid"
+    ],
+    [
+      4581,
+      "timeout"
+    ]
+  ]
+}

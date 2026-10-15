@@ -1,0 +1,55 @@
+{
+  "delay_ticks": 1,
+  "expected_runs": 5,
+  "family": "relative_order",
+  "idle_ticks": 20,
+  "kind": "stream_templates",
+  "mapping": {
+    "0": 0,
+    "1": 1
+  },
+  "max_frame_ticks": 512,
+  "max_runs": 31,
+  "minimum_margin": 0.0,
+  "minimum_score": -0.125,
+  "name": "relative_order/stream_templates",
+  "prototypes": {},
+  "responses": {
+    "0": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "1": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+    ]
+  },
+  "scales": [
+    1,
+    2
+  ],
+  "stable_ticks": 2,
+  "templates": {
+    "0": [
+      3,
+      3,
+      7,
+      3,
+      5
+    ],
+    "1": [
+      7,
+      3,
+      3,
+      3,
+      5
+    ]
+  }
+}

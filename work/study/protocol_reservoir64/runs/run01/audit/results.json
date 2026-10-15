@@ -1,0 +1,246 @@
+{
+  "arithmetic": {
+    "ticks": 384,
+    "exact_state_and_logits": true,
+    "reference": "scalar Python integer arithmetic"
+  },
+  "weights": [
+    {
+      "model": "models/i2c/readout_only",
+      "steps": 600,
+      "changes": {
+        "wx": 0.0,
+        "wh": 0.0,
+        "b": 0.0,
+        "wo": 10.155641344937099,
+        "bo": 3.0299553876155856
+      },
+      "fixed_topology": true
+    },
+    {
+      "model": "models/i2c/seed_11",
+      "steps": 600,
+      "changes": {
+        "wx": 5.210891576097772,
+        "wh": 3.715837005401015,
+        "b": 1.6484850038637693,
+        "wo": 5.631583472429935,
+        "bo": 0.4657057902935928
+      },
+      "fixed_topology": true
+    },
+    {
+      "model": "models/i2c/seed_29",
+      "steps": 600,
+      "changes": {
+        "wx": 5.033061405655541,
+        "wh": 4.220949094017995,
+        "b": 1.624981631269971,
+        "wo": 5.588075189631585,
+        "bo": 0.42827705382226267
+      },
+      "fixed_topology": true
+    },
+    {
+      "model": "models/i2c/seed_47",
+      "steps": 600,
+      "changes": {
+        "wx": 5.45291848373812,
+        "wh": 4.262567407438803,
+        "b": 1.4651441393456672,
+        "wo": 5.760543766049336,
+        "bo": 0.42484434559324175
+      },
+      "fixed_topology": true
+    },
+    {
+      "model": "models/uart_e/readout_only",
+      "steps": 600,
+      "changes": {
+        "wx": 0.0,
+        "wh": 0.0,
+        "b": 0.0,
+        "wo": 5.645073738044615,
+        "bo": 0.3988922687685941
+      },
+      "fixed_topology": true
+    },
+    {
+      "model": "models/uart_e/seed_11",
+      "steps": 600,
+      "changes": {
+        "wx": 4.707545944561045,
+        "wh": 5.82102303659771,
+        "b": 0.7896931584181621,
+        "wo": 4.912008198154289,
+        "bo": 0.2750352281509081
+      },
+      "fixed_topology": true
+    },
+    {
+      "model": "models/uart_e/seed_29",
+      "steps": 600,
+      "changes": {
+        "wx": 5.77139823175329,
+        "wh": 6.224442666781938,
+        "b": 0.8709420317269664,
+        "wo": 4.9048580024328325,
+        "bo": 0.28088750168731913
+      },
+      "fixed_topology": true
+    },
+    {
+      "model": "models/uart_e/seed_47",
+      "steps": 600,
+      "changes": {
+        "wx": 4.703710942832947,
+        "wh": 6.055999630108297,
+        "b": 0.8789978482789694,
+        "wo": 4.704497994473775,
+        "bo": 0.30036797059718195
+      },
+      "fixed_topology": true
+    },
+    {
+      "model": "models/uart_n/readout_only",
+      "steps": 552,
+      "changes": {
+        "wx": 0.0,
+        "wh": 0.0,
+        "b": 0.0,
+        "wo": 5.453949661466978,
+        "bo": 0.38803520992096796
+      },
+      "fixed_topology": true
+    },
+    {
+      "model": "models/uart_n/seed_11",
+      "steps": 552,
+      "changes": {
+        "wx": 4.494312217787009,
+        "wh": 5.5007076895869025,
+        "b": 0.7793848776961415,
+        "wo": 4.838826105416058,
+        "bo": 0.28043408185407065
+      },
+      "fixed_topology": true
+    },
+    {
+      "model": "models/uart_n/seed_29",
+      "steps": 552,
+      "changes": {
+        "wx": 5.724489768578004,
+        "wh": 6.18331929749924,
+        "b": 0.9002869455388786,
+        "wo": 4.772105903173994,
+        "bo": 0.27847230430324316
+      },
+      "fixed_topology": true
+    },
+    {
+      "model": "models/uart_n/seed_47",
+      "steps": 552,
+      "changes": {
+        "wx": 4.227344995990678,
+        "wh": 5.794944861665813,
+        "b": 0.8569789317031792,
+        "wo": 4.622160207380873,
+        "bo": 0.29271132238052383
+      },
+      "fixed_topology": true
+    }
+  ],
+  "replay": [
+    {
+      "trace": "i2c_float_11_phrase",
+      "ticks": 10449,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "i2c_float_29_phrase",
+      "ticks": 5589,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "i2c_float_47_phrase",
+      "ticks": 10449,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "i2c_quantized_11_phrase",
+      "ticks": 10449,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "i2c_quantized_29_phrase",
+      "ticks": 5589,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "i2c_quantized_47_phrase",
+      "ticks": 10449,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_e_float_11_phrase",
+      "ticks": 6028,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_e_float_29_phrase",
+      "ticks": 6028,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_e_float_47_phrase",
+      "ticks": 6028,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_e_quantized_11_phrase",
+      "ticks": 6028,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_e_quantized_29_phrase",
+      "ticks": 6028,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_e_quantized_47_phrase",
+      "ticks": 6028,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_n_float_11_phrase",
+      "ticks": 5596,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_n_float_29_phrase",
+      "ticks": 5596,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_n_float_47_phrase",
+      "ticks": 5596,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_n_quantized_11_phrase",
+      "ticks": 5596,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_n_quantized_29_phrase",
+      "ticks": 5596,
+      "exact_entire_path": true
+    },
+    {
+      "trace": "uart_n_quantized_47_phrase",
+      "ticks": 5596,
+      "exact_entire_path": true
+    }
+  ],
+  "audit_sha256": "a630c43fb65720f675e0d26079cc105725914c44a10c8a80b027340bb057ff4f"
+}

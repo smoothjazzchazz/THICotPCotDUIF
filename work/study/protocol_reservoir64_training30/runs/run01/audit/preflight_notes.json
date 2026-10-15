@@ -1,0 +1,10 @@
+{
+  "preflight_attempts": [
+    {"status": "implementation_failure_before_any_training", "reason": "NumPy int64 tap indices were not JSON serializable", "fix": "convert audit indices to Python int", "log": "preflight_attempt1.log"},
+    {"status": "implementation_failure_before_any_training", "reason": "New independent cell reconstruction reused parity-bit variable as frame-width flag", "fix": "derive width directly from immutable profile name"},
+    {"status": "passed", "log": "preflight.log"}
+  ],
+  "retained_checker_misses": "Two jittered clean training transactions exceed the conventional fixed-period decoder's timing tolerance; all exact cell-center labels were independently reconstructed and checked. See checker_timing.json.",
+  "source_evolution": "Generation plan records then-existing sources; preflight records the complete sources used for training, and final freeze records all final sources. No training recipe changed after fitting began.",
+  "padding": "I2C whole transactions produce unequal stream lengths; padding is loss-masked, actual active batch exposure is explicit in exposure.json, and 2820 optimizer updates still exceed 2x600. No padding counts toward unique transaction ticks."
+}

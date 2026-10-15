@@ -1,0 +1,2879 @@
+{
+  "background_events": [],
+  "conditions": {
+    "known_back_to_back": {
+      "cases": 16,
+      "correct_known": 15,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 15,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 16,
+      "known_recall": 0.9375,
+      "missed_observations": 0,
+      "rejected_known": 1,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_clean": {
+      "cases": 16,
+      "correct_known": 16,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 16,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 16,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_glitch": {
+      "cases": 16,
+      "correct_known": 16,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 16,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 16,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_jitter": {
+      "cases": 16,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 0,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 16,
+      "known_recall": 0.0,
+      "missed_observations": 0,
+      "rejected_known": 16,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "recovery_known": {
+      "cases": 8,
+      "correct_known": 8,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 8,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "unknown_extra_edges": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_junk": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_missing_delimiter": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_missing_edges": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_near_long": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_partial": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_prefix_splice": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_count": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_duration": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_prefix": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_suffix": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_suffix_splice": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    }
+  },
+  "details": [
+    {
+      "case_id": "gap_order-heldout-000",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 77,
+          "start_tick": 27
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-001",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 157,
+          "start_tick": 107
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-002",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 213,
+          "start_tick": 164
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-003",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 291,
+          "start_tick": 241
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-004",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 358,
+          "start_tick": 308
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-005",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 424,
+          "start_tick": 372
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-006",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 489,
+          "start_tick": 439
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-007",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 573,
+          "start_tick": 519
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-008",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 681,
+          "start_tick": 585
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-009",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 772,
+          "start_tick": 720
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-010",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 850,
+          "start_tick": 800
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-011",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 915,
+          "start_tick": 862
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-012",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1012,
+          "start_tick": 932
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-013",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1099,
+          "start_tick": 1049
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-014",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1156,
+          "start_tick": 1113
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-015",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1228,
+          "start_tick": 1178
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-016",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1303,
+          "start_tick": 1250
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-017",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1372,
+          "start_tick": 1318
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-018",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1469,
+          "start_tick": 1416
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-019",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1528,
+          "start_tick": 1478
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-020",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 1579,
+          "start_tick": 1529
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-021",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1659,
+          "start_tick": 1609
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-022",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 1729,
+          "start_tick": 1679
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-023",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 1814,
+          "start_tick": 1764
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-024",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1878,
+          "start_tick": 1828
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-025",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1950,
+          "start_tick": 1898
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-026",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2020,
+          "start_tick": 1971
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-027",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2094,
+          "start_tick": 2057
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-028",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2178,
+          "start_tick": 2125
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-029",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2275,
+          "start_tick": 2222
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-030",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2369,
+          "start_tick": 2319
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-031",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2463,
+          "start_tick": 2413
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-032",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2546,
+          "start_tick": 2493
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-033",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2616,
+          "start_tick": 2562
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-034",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2690,
+          "start_tick": 2643
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-035",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 2778,
+          "start_tick": 2728
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-036",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2880,
+          "start_tick": 2784
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-037",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2971,
+          "start_tick": 2921
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-038",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3037,
+          "start_tick": 2983
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-039",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3115,
+          "start_tick": 3067
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-040",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 3199,
+          "start_tick": 3149
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-041",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 3250,
+          "start_tick": 3200
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-042",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 3330,
+          "start_tick": 3280
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-043",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3420,
+          "start_tick": 3371
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-044",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 3482,
+          "start_tick": 3432
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-045",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 3539,
+          "start_tick": 3489
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-046",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3600,
+          "start_tick": 3554
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-047",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 3663,
+          "start_tick": 3613
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-048",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3742,
+          "start_tick": 3689
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-049",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3825,
+          "start_tick": 3771
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-050",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3914,
+          "start_tick": 3861
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-051",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3973,
+          "start_tick": 3920
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-052",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4039,
+          "start_tick": 3991
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-053",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4118,
+          "start_tick": 4068
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-054",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4179,
+          "start_tick": 4129
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-055",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4303,
+          "start_tick": 4212
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-056",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4374,
+          "start_tick": 4320
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-057",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4475,
+          "start_tick": 4383
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-058",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 4560,
+          "start_tick": 4510
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-059",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4624,
+          "start_tick": 4574
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-060",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4689,
+          "start_tick": 4646
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-061",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 4744,
+          "start_tick": 4694
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-062",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4795,
+          "start_tick": 4745
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-063",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4876,
+          "start_tick": 4825
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-064",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 4948,
+          "start_tick": 4898
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-065",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 5023,
+          "start_tick": 4973
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-066",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 5078,
+          "start_tick": 5028
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-067",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 5139,
+          "start_tick": 5089
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-068",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5204,
+          "start_tick": 5154
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-069",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5285,
+          "start_tick": 5231
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-070",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5376,
+          "start_tick": 5326
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-071",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5450,
+          "start_tick": 5407
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-072",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5546,
+          "start_tick": 5493
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-073",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5608,
+          "start_tick": 5558
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-074",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5695,
+          "start_tick": 5643
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-075",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5807,
+          "start_tick": 5711
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-076",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5933,
+          "start_tick": 5842
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-077",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 6009,
+          "start_tick": 5959
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-078",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6069,
+          "start_tick": 6015
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-079",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6153,
+          "start_tick": 6103
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-080",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6250,
+          "start_tick": 6197
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-081",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6342,
+          "start_tick": 6289
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-082",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 6426,
+          "start_tick": 6376
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-083",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 6477,
+          "start_tick": 6427
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-084",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6556,
+          "start_tick": 6507
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-085",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 6627,
+          "start_tick": 6577
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-086",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6699,
+          "start_tick": 6645
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-087",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 6780,
+          "start_tick": 6730
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-088",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 6859,
+          "start_tick": 6809
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-089",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 6940,
+          "start_tick": 6890
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-090",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7055,
+          "start_tick": 6955
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-091",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7152,
+          "start_tick": 7099
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-092",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7221,
+          "start_tick": 7167
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-093",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7286,
+          "start_tick": 7236
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-094",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7333,
+          "start_tick": 7296
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-095",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7395,
+          "start_tick": 7342
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-096",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7471,
+          "start_tick": 7418
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-097",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7558,
+          "start_tick": 7506
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-098",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7643,
+          "start_tick": 7589
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-099",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7687,
+          "start_tick": 7651
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-100",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 7780,
+          "start_tick": 7730
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-101",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7869,
+          "start_tick": 7819
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-102",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7938,
+          "start_tick": 7888
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-103",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 8015,
+          "start_tick": 7965
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-104",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 8066,
+          "start_tick": 8016
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-105",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 8146,
+          "start_tick": 8096
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-106",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 8203,
+          "start_tick": 8153
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-107",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8294,
+          "start_tick": 8244
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-108",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 8386,
+          "start_tick": 8336
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-109",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8468,
+          "start_tick": 8417
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-110",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 8553,
+          "start_tick": 8503
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-111",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8637,
+          "start_tick": 8587
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-112",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8718,
+          "start_tick": 8665
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-113",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8810,
+          "start_tick": 8756
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-114",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8912,
+          "start_tick": 8831
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-115",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 8994,
+          "start_tick": 8944
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-116",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9130,
+          "start_tick": 9034
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-117",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9215,
+          "start_tick": 9162
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-118",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9289,
+          "start_tick": 9239
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-119",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9358,
+          "start_tick": 9308
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-120",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9435,
+          "start_tick": 9382
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-121",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9520,
+          "start_tick": 9466
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-122",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9583,
+          "start_tick": 9540
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-123",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9646,
+          "start_tick": 9598
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-124",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 9713,
+          "start_tick": 9663
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-125",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 9764,
+          "start_tick": 9714
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-126",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 9844,
+          "start_tick": 9794
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-127",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 9937,
+          "start_tick": 9887
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-128",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10029,
+          "start_tick": 9979
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-129",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10082,
+          "start_tick": 10034
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-130",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 10147,
+          "start_tick": 10097
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-131",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 10225,
+          "start_tick": 10175
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-132",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10297,
+          "start_tick": 10254
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-133",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10353,
+          "start_tick": 10303
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-134",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10428,
+          "start_tick": 10376
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-135",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10498,
+          "start_tick": 10445
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-136",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10580,
+          "start_tick": 10530
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-137",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10661,
+          "start_tick": 10611
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-138",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10755,
+          "start_tick": 10701
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-139",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10826,
+          "start_tick": 10773
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-140",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10953,
+          "start_tick": 10853
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-141",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11037,
+          "start_tick": 10984
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-142",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11099,
+          "start_tick": 11045
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-143",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11205,
+          "start_tick": 11104
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-144",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 11283,
+          "start_tick": 11233
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-145",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 11358,
+          "start_tick": 11308
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-146",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 11409,
+          "start_tick": 11359
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-147",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 11489,
+          "start_tick": 11439
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-148",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11572,
+          "start_tick": 11523
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-149",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11644,
+          "start_tick": 11595
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-150",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 11715,
+          "start_tick": 11665
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-151",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 11794,
+          "start_tick": 11744
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-152",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 11857,
+          "start_tick": 11807
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "gap_order-heldout-153",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11925,
+          "start_tick": 11873
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-154",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12051,
+          "start_tick": 11960
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-155",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12196,
+          "start_tick": 12095
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-156",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 12280,
+          "start_tick": 12230
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-157",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12371,
+          "start_tick": 12318
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-158",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12441,
+          "start_tick": 12391
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-159",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12504,
+          "start_tick": 12454
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-160",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12601,
+          "start_tick": 12547
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-161",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12689,
+          "start_tick": 12636
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-162",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12777,
+          "start_tick": 12724
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-163",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12870,
+          "start_tick": 12816
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-164",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12930,
+          "start_tick": 12880
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-165",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13017,
+          "start_tick": 12974
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "gap_order-heldout-166",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 13076,
+          "start_tick": 13026
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "gap_order-heldout-167",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 13127,
+          "start_tick": 13077
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    }
+  ],
+  "latency": {
+    "from_end": {
+      "max": 21,
+      "mean": 21,
+      "min": 21,
+      "n": 55
+    },
+    "from_start": {
+      "max": 52,
+      "mean": 52,
+      "min": 52,
+      "n": 55
+    },
+    "timestamp_shift": {
+      "max": 2,
+      "mean": 2,
+      "min": 2,
+      "n": 55
+    }
+  },
+  "responses": {
+    "decision_to_response": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 55
+    },
+    "pending_tail_samples": 0,
+    "request_mismatch_ticks": [],
+    "requests": [
+      {
+        "decision_tick": 77,
+        "end_tick": 84,
+        "start_tick": 78,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 157,
+        "end_tick": 163,
+        "start_tick": 158,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 291,
+        "end_tick": 298,
+        "start_tick": 292,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 358,
+        "end_tick": 364,
+        "start_tick": 359,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1099,
+        "end_tick": 1105,
+        "start_tick": 1100,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1528,
+        "end_tick": 1534,
+        "start_tick": 1529,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1579,
+        "end_tick": 1586,
+        "start_tick": 1580,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1659,
+        "end_tick": 1665,
+        "start_tick": 1660,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1729,
+        "end_tick": 1736,
+        "start_tick": 1730,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1814,
+        "end_tick": 1821,
+        "start_tick": 1815,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1878,
+        "end_tick": 1884,
+        "start_tick": 1879,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 2778,
+        "end_tick": 2784,
+        "start_tick": 2779,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 3199,
+        "end_tick": 3206,
+        "start_tick": 3200,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 3250,
+        "end_tick": 3256,
+        "start_tick": 3251,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 3330,
+        "end_tick": 3336,
+        "start_tick": 3331,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 3482,
+        "end_tick": 3489,
+        "start_tick": 3483,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 3539,
+        "end_tick": 3545,
+        "start_tick": 3540,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 3663,
+        "end_tick": 3670,
+        "start_tick": 3664,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 4560,
+        "end_tick": 4567,
+        "start_tick": 4561,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 4744,
+        "end_tick": 4750,
+        "start_tick": 4745,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 4948,
+        "end_tick": 4954,
+        "start_tick": 4949,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 5023,
+        "end_tick": 5030,
+        "start_tick": 5024,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 5078,
+        "end_tick": 5084,
+        "start_tick": 5079,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 5139,
+        "end_tick": 5146,
+        "start_tick": 5140,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 6009,
+        "end_tick": 6016,
+        "start_tick": 6010,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 6426,
+        "end_tick": 6433,
+        "start_tick": 6427,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 6477,
+        "end_tick": 6483,
+        "start_tick": 6478,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 6627,
+        "end_tick": 6634,
+        "start_tick": 6628,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 6780,
+        "end_tick": 6787,
+        "start_tick": 6781,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 6859,
+        "end_tick": 6865,
+        "start_tick": 6860,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 6940,
+        "end_tick": 6946,
+        "start_tick": 6941,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 7780,
+        "end_tick": 7787,
+        "start_tick": 7781,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 8015,
+        "end_tick": 8021,
+        "start_tick": 8016,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 8066,
+        "end_tick": 8073,
+        "start_tick": 8067,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 8146,
+        "end_tick": 8153,
+        "start_tick": 8147,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 8203,
+        "end_tick": 8209,
+        "start_tick": 8204,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 8386,
+        "end_tick": 8392,
+        "start_tick": 8387,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 8553,
+        "end_tick": 8560,
+        "start_tick": 8554,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 8994,
+        "end_tick": 9000,
+        "start_tick": 8995,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 9713,
+        "end_tick": 9720,
+        "start_tick": 9714,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 9764,
+        "end_tick": 9770,
+        "start_tick": 9765,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 9844,
+        "end_tick": 9851,
+        "start_tick": 9845,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 9937,
+        "end_tick": 9943,
+        "start_tick": 9938,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 10147,
+        "end_tick": 10154,
+        "start_tick": 10148,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 10225,
+        "end_tick": 10231,
+        "start_tick": 10226,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 11283,
+        "end_tick": 11289,
+        "start_tick": 11284,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 11358,
+        "end_tick": 11364,
+        "start_tick": 11359,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 11409,
+        "end_tick": 11416,
+        "start_tick": 11410,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 11489,
+        "end_tick": 11496,
+        "start_tick": 11490,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 11715,
+        "end_tick": 11722,
+        "start_tick": 11716,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 11794,
+        "end_tick": 11800,
+        "start_tick": 11795,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 11857,
+        "end_tick": 11863,
+        "start_tick": 11858,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 12280,
+        "end_tick": 12287,
+        "start_tick": 12281,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 13076,
+        "end_tick": 13083,
+        "start_tick": 13077,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 13127,
+        "end_tick": 13133,
+        "start_tick": 13128,
+        "symbol": 0
+      }
+    ],
+    "waveform_mismatch_ticks": []
+  },
+  "totals": {
+    "background_known": 0,
+    "background_samples": 3466,
+    "background_unknown": 0,
+    "cases": 168,
+    "correct_known": 55,
+    "decision_timing_errors": 0,
+    "duplicates": 0,
+    "early_or_late_known": 0,
+    "exact_cases": 151,
+    "explicit_unknown": 96,
+    "false_known_events": 0,
+    "known_cases": 72,
+    "missed_observations": 0,
+    "rejected_known": 17,
+    "timestamp_errors": 0,
+    "unknown_cases": 96,
+    "wrong_class_events": 0
+  }
+}

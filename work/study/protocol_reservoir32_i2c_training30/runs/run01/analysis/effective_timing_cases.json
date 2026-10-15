@@ -1,0 +1,117 @@
+{
+  "cases": [
+    {
+      "condition": "phrase",
+      "low": 10,
+      "high": 10,
+      "jitter_applied": false,
+      "unused_ratio": null,
+      "unused_jitter_field": null
+    },
+    {
+      "condition": "every_byte",
+      "low": 10,
+      "high": 10,
+      "jitter_applied": false,
+      "unused_ratio": null,
+      "unused_jitter_field": null
+    },
+    {
+      "condition": "random_binary",
+      "low": 10,
+      "high": 10,
+      "jitter_applied": false,
+      "unused_ratio": null,
+      "unused_jitter_field": null
+    },
+    {
+      "condition": "long_message",
+      "low": 10,
+      "high": 10,
+      "jitter_applied": false,
+      "unused_ratio": null,
+      "unused_jitter_field": null
+    },
+    {
+      "condition": "repeated_patterns",
+      "low": 10,
+      "high": 10,
+      "jitter_applied": false,
+      "unused_ratio": null,
+      "unused_jitter_field": null
+    },
+    {
+      "condition": "fast_clock",
+      "low": 8,
+      "high": 8,
+      "jitter_applied": false,
+      "unused_ratio": 0.97,
+      "unused_jitter_field": null
+    },
+    {
+      "condition": "slow_clock",
+      "low": 12,
+      "high": 12,
+      "jitter_applied": false,
+      "unused_ratio": 1.03,
+      "unused_jitter_field": null
+    },
+    {
+      "condition": "jitter",
+      "low": 10,
+      "high": 10,
+      "jitter_applied": true,
+      "unused_ratio": null,
+      "unused_jitter_field": 1
+    },
+    {
+      "condition": "fast_with_jitter",
+      "low": 8,
+      "high": 12,
+      "jitter_applied": false,
+      "unused_ratio": 0.97,
+      "unused_jitter_field": 1
+    },
+    {
+      "condition": "slow_with_jitter",
+      "low": 12,
+      "high": 8,
+      "jitter_applied": false,
+      "unused_ratio": 1.03,
+      "unused_jitter_field": 1
+    },
+    {
+      "condition": "malformed_recovery",
+      "low": 10,
+      "high": 10,
+      "jitter_applied": false,
+      "unused_ratio": null,
+      "unused_jitter_field": null
+    },
+    {
+      "condition": "idle_and_disturbance",
+      "low": 10,
+      "high": 10,
+      "jitter_applied": false,
+      "unused_ratio": null,
+      "unused_jitter_field": null
+    },
+    {
+      "condition": "stop_then_read",
+      "low": 10,
+      "high": 10,
+      "jitter_applied": false,
+      "unused_ratio": null,
+      "unused_jitter_field": null
+    },
+    {
+      "condition": "unrelated_address",
+      "low": 10,
+      "high": 10,
+      "jitter_applied": false,
+      "unused_ratio": null,
+      "unused_jitter_field": null
+    }
+  ],
+  "note": "The unchanged inherited I2C scorer enables jitter only for the case named jitter. It ignores ratio and the generic jitter field. The combined-case names therefore denote fixed asymmetric 8/12 and 12/8 timing, not combined jitter or ratio sweeps."
+}

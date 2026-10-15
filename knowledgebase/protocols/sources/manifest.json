@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "access_date": "2026-10-12",
+  "hash_algorithm": "sha256",
+  "hash_scope": "Exact downloaded bytes, including non-retained documents; not publisher authentication",
+  "sources": [
+    {
+      "id": "U1",
+      "title": "Universal Asynchronous Receiver/Transmitter (UART) for KeyStone Devices User Guide",
+      "publisher": "Texas Instruments",
+      "revision": "SPRUGP1, November 2010",
+      "accessed": "2026-10-12",
+      "url": "https://www.ti.com/lit/ug/sprugp1/sprugp1.pdf",
+      "official_url": "https://www.ti.com/lit/ug/sprugp1/sprugp1.pdf",
+      "package_member": null,
+      "reviewed_sections": [
+        "2.1",
+        "2.4 Figure 2-3",
+        "2.5",
+        "3.6 Table 3-9",
+        "3.8 Table 3-12"
+      ],
+      "sha256": "263c16b488911a352470fc785241f1dc0e8bcd9d6982cb5359ea77ad84adb837",
+      "bytes": 598397,
+      "retained_path": null,
+      "redistribution_decision": "Link only. Final notice permits some data book/data sheet reproduction; permission for this user guide is not unambiguous."
+    },
+    {
+      "id": "U2",
+      "title": "UART protocol and error overview",
+      "publisher": "Texas Instruments",
+      "revision": "3 October 2022",
+      "accessed": "2026-10-12",
+      "url": "https://www.ti.com/video/6313217959112",
+      "official_url": "https://www.ti.com/video/6313217959112",
+      "package_member": null,
+      "reviewed_sections": [
+        "Protocol framing transcript",
+        "Baud error and sampling discussion"
+      ],
+      "sha256": null,
+      "bytes": null,
+      "retained_path": null,
+      "redistribution_decision": "No affirmative repository redistribution permission established."
+    },
+    {
+      "id": "U3",
+      "title": "Low Voltage Translation For SPI, UART, RGMII, JTAG Interfaces",
+      "publisher": "Texas Instruments",
+      "revision": "SCEA065B, March 2021",
+      "accessed": "2026-10-12",
+      "url": "https://www.ti.com/lit/an/scea065b/scea065b.pdf",
+      "official_url": "https://www.ti.com/lit/an/scea065b/scea065b.pdf",
+      "package_member": null,
+      "reviewed_sections": [
+        "2.3"
+      ],
+      "sha256": "04f505a04d01c54bacb0041bf03408dd34b866a6e0ffe8d3bb0c4c4590a2710d",
+      "bytes": 1983958,
+      "retained_path": null,
+      "redistribution_decision": "No affirmative repository redistribution permission established."
+    },
+    {
+      "id": "I1",
+      "title": "I2C-bus specification and user manual",
+      "publisher": "NXP Semiconductors",
+      "revision": "UM10204 rev. 7.0, 1 October 2021",
+      "accessed": "2026-10-12",
+      "url": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+      "official_url": "https://www.nxp.com/docs/en/user-guide/UM10204.pdf",
+      "package_member": null,
+      "reviewed_sections": [
+        "Table 1",
+        "3.1.1-3.1.16",
+        "6.1 Tables 10-11",
+        "7.1"
+      ],
+      "sha256": "dc91f00f65584e06ef36e26c93bf9d91a95fb3c8a1830a9223e53caf678b36af",
+      "bytes": 750958,
+      "retained_path": null,
+      "redistribution_decision": "Link only. Copyright reserved; affirmative redistribution permission not found."
+    },
+    {
+      "id": "B0",
+      "title": "USB 2.0 specification package",
+      "publisher": "USB-IF",
+      "revision": "Package dated 3 June 2025",
+      "accessed": "2026-10-12",
+      "url": "https://usb.org/sites/default/files/usb_20_20250603.zip",
+      "official_url": "https://www.usb.org/document-library/usb-20-specification",
+      "package_member": null,
+      "reviewed_sections": [
+        "Package inventory"
+      ],
+      "sha256": "5fe9c53c04033818af396e8852b3acbca5c3a76ba92fab549fd81cd0ea7b3692",
+      "bytes": 14489344,
+      "retained_path": null,
+      "redistribution_decision": "Link only. Package availability is not a redistribution license."
+    },
+    {
+      "id": "B1",
+      "title": "Universal Serial Bus Specification",
+      "publisher": "USB specification promoters / USB-IF",
+      "revision": "Revision 2.0, 27 April 2000",
+      "accessed": "2026-10-12",
+      "url": "https://usb.org/sites/default/files/usb_20_20250603.zip",
+      "official_url": "https://www.usb.org/document-library/usb-20-specification",
+      "package_member": "usb_20_20250603/usb_20_20240927/usb_20_20240927/usb_20.pdf",
+      "reviewed_sections": [
+        "5.4-5.8",
+        "7.1.5-7.1.12",
+        "7.1.18.1",
+        "8",
+        "9"
+      ],
+      "sha256": "d39698a33486c399124af92bd02e4f978fd9a836b5cf4e52e6e4633eb1d89f61",
+      "bytes": 5983789,
+      "retained_path": null,
+      "redistribution_decision": "No affirmative repository redistribution permission established."
+    },
+    {
+      "id": "B2",
+      "title": "Errata for USB Revision 2.0",
+      "publisher": "USB specification promoters / USB-IF",
+      "revision": "7 December 2000",
+      "accessed": "2026-10-12",
+      "url": "https://usb.org/sites/default/files/usb_20_20250603.zip",
+      "official_url": "https://www.usb.org/document-library/usb-20-specification",
+      "package_member": "usb_20_20250603/usb_20_20240927/usb_20_20240927/errata-092800-1207001.pdf",
+      "reviewed_sections": [
+        "Chapters 5, 7, 8, 9 corrections"
+      ],
+      "sha256": "1b94cd1cf303bdf0aba75a76d6a9333a357fa4ad626a57a76d6f132cb1498f23",
+      "bytes": 138383,
+      "retained_path": null,
+      "redistribution_decision": "No affirmative repository redistribution permission established."
+    },
+    {
+      "id": "B3",
+      "title": "Errata for USB Revision 2.0",
+      "publisher": "USB specification promoters / USB-IF",
+      "revision": "28 May 2002",
+      "accessed": "2026-10-12",
+      "url": "https://usb.org/sites/default/files/usb_20_20250603.zip",
+      "official_url": "https://www.usb.org/document-library/usb-20-specification",
+      "package_member": "usb_20_20250603/usb_20_20240927/usb_20_20240927/2002_05_28_errata.pdf",
+      "reviewed_sections": [
+        "Chapters 7, 8, 9 corrections"
+      ],
+      "sha256": "0d5d8aa0128ae08c78928765da3ab10d6ec913732e13f5357ed085a5ceabf481",
+      "bytes": 176056,
+      "retained_path": null,
+      "redistribution_decision": "No affirmative repository redistribution permission established."
+    },
+    {
+      "id": "B4",
+      "title": "Pull-up/pull-down resistors ECN",
+      "publisher": "USB specification promoters / USB-IF",
+      "revision": "Undated document in 2025 package",
+      "accessed": "2026-10-12",
+      "url": "https://usb.org/sites/default/files/usb_20_20250603.zip",
+      "official_url": "https://www.usb.org/document-library/usb-20-specification",
+      "package_member": "usb_20_20250603/usb_20_20240927/usb_20_20240927/resistor_ecn.pdf",
+      "reviewed_sections": [
+        "Summary",
+        "Changes to 7.1.5.1-7.1.5.2"
+      ],
+      "sha256": "7d54e297fd8b79706a37912a899d20dca08d01861b940f4ebe2c11498d492e51",
+      "bytes": 135192,
+      "retained_path": null,
+      "redistribution_decision": "No affirmative repository redistribution permission established."
+    },
+    {
+      "id": "B5",
+      "title": "USB 2.0 Connect Timing Update ECN",
+      "publisher": "USB specification promoters / USB-IF",
+      "revision": "4 April 2013 per USB-IF listing",
+      "accessed": "2026-10-12",
+      "url": "https://usb.org/sites/default/files/usb_20_20250603.zip",
+      "official_url": "https://www.usb.org/document-library/usb-20-specification",
+      "package_member": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Connect Timing ECN.pdf",
+      "reviewed_sections": [
+        "Summary",
+        "Attach/connect definitions"
+      ],
+      "sha256": "31528541e9d829b1401fd0c747829012c56e6d6d6b12d8f1591ff4cb6549b73b",
+      "bytes": 171397,
+      "retained_path": null,
+      "redistribution_decision": "No affirmative repository redistribution permission established."
+    },
+    {
+      "id": "B6",
+      "title": "Suspend Current Limit Changes ECN",
+      "publisher": "USB specification promoters / USB-IF",
+      "revision": "9 April 2008 per USB-IF listing",
+      "accessed": "2026-10-12",
+      "url": "https://usb.org/sites/default/files/usb_20_20250603.zip",
+      "official_url": "https://www.usb.org/document-library/usb-20-specification",
+      "package_member": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Suspend Current ECN.pdf",
+      "reviewed_sections": [
+        "Summary and scope"
+      ],
+      "sha256": "1e3375761a72c37eebd198e48bccf528a4bd153bc56cc124e1f88c72722d5019",
+      "bytes": 71263,
+      "retained_path": null,
+      "redistribution_decision": "No affirmative repository redistribution permission established."
+    },
+    {
+      "id": "B7",
+      "title": "USB 2.0 VBUS Max Limit ECN",
+      "publisher": "USB specification promoters / USB-IF",
+      "revision": "11 August 2014 per USB-IF listing",
+      "accessed": "2026-10-12",
+      "url": "https://usb.org/sites/default/files/usb_20_20250603.zip",
+      "official_url": "https://www.usb.org/document-library/usb-20-specification",
+      "package_member": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB 2.0 ECN VBUS Max Limit.pdf",
+      "reviewed_sections": [
+        "Summary and scope"
+      ],
+      "sha256": "9ea1f49b46f295e71e175d950ffaebd9edfd82f831787c40e74c2486d7773767",
+      "bytes": 49944,
+      "retained_path": null,
+      "redistribution_decision": "No affirmative repository redistribution permission established."
+    },
+    {
+      "id": "B8",
+      "title": "USB 2.0 DC Resistance ECN",
+      "publisher": "USB specification promoters / USB-IF",
+      "revision": "8 October 2021 per USB-IF listing",
+      "accessed": "2026-10-12",
+      "url": "https://usb.org/sites/default/files/usb_20_20250603.zip",
+      "official_url": "https://www.usb.org/document-library/usb-20-specification",
+      "package_member": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB 2.0 DCR ECN.pdf",
+      "reviewed_sections": [
+        "Summary and scope"
+      ],
+      "sha256": "af334155f70cf12ac9abe69b587b9144dab310da46962cbc2c211cd521c57825",
+      "bytes": 925068,
+      "retained_path": null,
+      "redistribution_decision": "No affirmative repository redistribution permission established."
+    },
+    {
+      "id": "E1",
+      "title": "IEEE Standard for Ethernet",
+      "publisher": "IEEE",
+      "revision": "IEEE Std 802.3-2012, published 28 December 2012",
+      "accessed": "2026-10-12",
+      "url": "https://www.my-wire.de/schnittstellenbeschreibung/ethernet.pdf",
+      "official_url": "https://www.ieee802.org/3/purchase/index.html",
+      "package_member": null,
+      "reviewed_sections": [
+        "3.2-3.4",
+        "4.2",
+        "Table 4-2",
+        "7.3.1.1",
+        "14.1",
+        "14.2.1",
+        "14.3"
+      ],
+      "sha256": "29774aba6d5b82524f4323214b1035603b0aa901c5f971d770049776b0a6c2af",
+      "bytes": 20249231,
+      "retained_path": null,
+      "redistribution_decision": "Link only. Copyright page requires prior written permission. Mirror byte identity against publisher copy remains unverified."
+    },
+    {
+      "id": "E2",
+      "title": "Errata to IEEE Std 802.3-2012",
+      "publisher": "IEEE",
+      "revision": "28 June 2013",
+      "accessed": "2026-10-12",
+      "url": "https://standards.ieee.org/wp-content/uploads/import/documents/erratas/802.3-2012_errata.pdf",
+      "official_url": "https://standards.ieee.org/wp-content/uploads/import/documents/erratas/802.3-2012_errata.pdf",
+      "package_member": null,
+      "reviewed_sections": [
+        "All six pages"
+      ],
+      "sha256": "aa4da251d6b6a0dc122b7c34b20df2a9aae65ff0cb2a5a06de730c741b33156e",
+      "bytes": 214708,
+      "retained_path": "ieee-802.3-2012-errata-20130628.pdf",
+      "redistribution_decision": "Retained unchanged under page 1 permission for distribution maintaining the standard utility/currency. No sale, licensing, commercial distribution, or modification. Not under repository software license."
+    },
+    {
+      "id": "E3",
+      "title": "DP83848-EP PHYTER Military Temperature Single Port 10/100 Mbps Ethernet Physical Layer Transceiver",
+      "publisher": "Texas Instruments",
+      "revision": "SLLSEC6E, June 2019; downloaded copy includes 2026 final notice",
+      "accessed": "2026-10-12",
+      "url": "https://www.ti.com/lit/ds/symlink/dp83848-ep.pdf",
+      "official_url": "https://www.ti.com/lit/ds/symlink/dp83848-ep.pdf",
+      "package_member": null,
+      "reviewed_sections": [
+        "4.7.21-4.7.22",
+        "5.3.1",
+        "5.5.1.3"
+      ],
+      "sha256": "3b5757196687af0d08a49232319170e6047ac1fbce3d097fe3a321714272b58a",
+      "bytes": 2244869,
+      "retained_path": null,
+      "redistribution_decision": "Link only. Final notice restricts other reproduction and display."
+    }
+  ]
+}

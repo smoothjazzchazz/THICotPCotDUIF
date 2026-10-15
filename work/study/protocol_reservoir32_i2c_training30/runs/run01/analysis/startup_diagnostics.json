@@ -1,0 +1,613 @@
+{
+  "traces": [
+    {
+      "trace": "traces/n32_original_loss_11/i2c_float_11_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_original_loss_11/i2c_float_11_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_original_loss_11/i2c_float_11_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_original_loss_11/i2c_float_11_phrase",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_original_loss_11/i2c_quantized_11_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_original_loss_11/i2c_quantized_11_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_original_loss_11/i2c_quantized_11_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_original_loss_11/i2c_quantized_11_phrase",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_11/i2c_float_11_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_11/i2c_float_11_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_11/i2c_float_11_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_11/i2c_float_11_phrase",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_11/i2c_quantized_11_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_11/i2c_quantized_11_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_11/i2c_quantized_11_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_11/i2c_quantized_11_phrase",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_29/i2c_float_29_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_29/i2c_float_29_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_29/i2c_float_29_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_29/i2c_float_29_phrase",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_29/i2c_quantized_29_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_29/i2c_quantized_29_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_29/i2c_quantized_29_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_29/i2c_quantized_29_phrase",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_47/i2c_float_47_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 1
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_47/i2c_float_47_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 1
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_47/i2c_float_47_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 1
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_47/i2c_float_47_phrase",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 1
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_47/i2c_quantized_47_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 1
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_47/i2c_quantized_47_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 1
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_47/i2c_quantized_47_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 1
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n32_seed_47/i2c_quantized_47_phrase",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 1
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_original_loss_11/i2c_float_11_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_original_loss_11/i2c_float_11_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_original_loss_11/i2c_float_11_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_original_loss_11/i2c_float_11_phrase",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_original_loss_11/i2c_quantized_11_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_original_loss_11/i2c_quantized_11_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_original_loss_11/i2c_quantized_11_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_original_loss_11/i2c_quantized_11_phrase",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_11/i2c_float_11_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_11/i2c_float_11_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_11/i2c_float_11_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_11/i2c_float_11_phrase",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_11/i2c_quantized_11_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_11/i2c_quantized_11_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_11/i2c_quantized_11_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_11/i2c_quantized_11_phrase",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "INVALID",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_29/i2c_float_29_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_29/i2c_float_29_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_29/i2c_float_29_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_29/i2c_float_29_phrase",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_29/i2c_quantized_29_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_29/i2c_quantized_29_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_29/i2c_quantized_29_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_29/i2c_quantized_29_phrase",
+      "first_reference_edge": 12,
+      "errors": 1,
+      "startup_events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_47/i2c_float_47_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_47/i2c_float_47_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_47/i2c_float_47_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_47/i2c_float_47_phrase",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_47/i2c_quantized_47_fast_clock",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_47/i2c_quantized_47_idle_and_disturbance",
+      "first_reference_edge": 268,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_47/i2c_quantized_47_malformed_recovery",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    },
+    {
+      "trace": "traces/n64_seed_47/i2c_quantized_47_phrase",
+      "first_reference_edge": 12,
+      "errors": 0,
+      "startup_events": [],
+      "errors_after_excluding_startup": 0
+    }
+  ],
+  "note": "Removing startup events is an offline diagnostic only. All original strict failures remain."
+}

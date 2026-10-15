@@ -1,0 +1,1109 @@
+[
+  {
+    "condition": "random_binary",
+    "valid": true,
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 24,
+      "insertions": 0,
+      "expected": 24,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 24,
+      "insertions": 0,
+      "expected": 24,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 264,
+        "emitted": 382,
+        "correct": 96,
+        "wrong_class": 126,
+        "missing": 42,
+        "false_known": 66,
+        "false_invalid": 94,
+        "duplicates": 34,
+        "errors": 328
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 102,
+          "correct": 33,
+          "missed_or_wrong": 69,
+          "emitted": 72,
+          "precision": 0.4583333333333333,
+          "recall": 0.3235294117647059,
+          "f1": 0.3793103448275862
+        },
+        "BIT1": {
+          "expected": 114,
+          "correct": 45,
+          "missed_or_wrong": 69,
+          "emitted": 52,
+          "precision": 0.8653846153846154,
+          "recall": 0.39473684210526316,
+          "f1": 0.5421686746987951
+        },
+        "START": {
+          "expected": 24,
+          "correct": 14,
+          "missed_or_wrong": 10,
+          "emitted": 65,
+          "precision": 0.2153846153846154,
+          "recall": 0.5833333333333334,
+          "f1": 0.3146067415730337
+        },
+        "STOP": {
+          "expected": 24,
+          "correct": 4,
+          "missed_or_wrong": 20,
+          "emitted": 21,
+          "precision": 0.19047619047619047,
+          "recall": 0.16666666666666666,
+          "f1": 0.17777777777777778
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 172,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 96,
+        "minimum": -2,
+        "mean": -1.25,
+        "maximum": -1
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 24,
+    "controller_errors": 65,
+    "buffer_overflows": 0,
+    "recovery_success": null,
+    "malformed_false_bytes": null,
+    "ticks": 5500,
+    "input_presented_bytes": 24,
+    "passes": false
+  },
+  {
+    "condition": "repeated_patterns",
+    "valid": true,
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 176,
+        "emitted": 389,
+        "correct": 43,
+        "wrong_class": 105,
+        "missing": 28,
+        "false_known": 205,
+        "false_invalid": 36,
+        "duplicates": 56,
+        "errors": 374
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 80,
+          "correct": 26,
+          "missed_or_wrong": 54,
+          "emitted": 179,
+          "precision": 0.1452513966480447,
+          "recall": 0.325,
+          "f1": 0.20077220077220076
+        },
+        "BIT1": {
+          "expected": 64,
+          "correct": 4,
+          "missed_or_wrong": 60,
+          "emitted": 5,
+          "precision": 0.8,
+          "recall": 0.0625,
+          "f1": 0.11594202898550725
+        },
+        "START": {
+          "expected": 16,
+          "correct": 1,
+          "missed_or_wrong": 15,
+          "emitted": 48,
+          "precision": 0.020833333333333332,
+          "recall": 0.0625,
+          "f1": 0.03125
+        },
+        "STOP": {
+          "expected": 16,
+          "correct": 12,
+          "missed_or_wrong": 4,
+          "emitted": 28,
+          "precision": 0.42857142857142855,
+          "recall": 0.75,
+          "f1": 0.5454545454545454
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 129,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 43,
+        "minimum": -2,
+        "mean": -1.441860465116279,
+        "maximum": -1
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 16,
+    "controller_errors": 48,
+    "buffer_overflows": 0,
+    "recovery_success": null,
+    "malformed_false_bytes": null,
+    "ticks": 4092,
+    "input_presented_bytes": 16,
+    "passes": false
+  },
+  {
+    "condition": "fast_clock",
+    "valid": true,
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 176,
+        "emitted": 259,
+        "correct": 63,
+        "wrong_class": 94,
+        "missing": 19,
+        "false_known": 42,
+        "false_invalid": 60,
+        "duplicates": 21,
+        "errors": 215
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 68,
+          "correct": 16,
+          "missed_or_wrong": 52,
+          "emitted": 29,
+          "precision": 0.5517241379310345,
+          "recall": 0.23529411764705882,
+          "f1": 0.32989690721649484
+        },
+        "BIT1": {
+          "expected": 76,
+          "correct": 37,
+          "missed_or_wrong": 39,
+          "emitted": 49,
+          "precision": 0.7551020408163265,
+          "recall": 0.4868421052631579,
+          "f1": 0.592
+        },
+        "START": {
+          "expected": 16,
+          "correct": 8,
+          "missed_or_wrong": 8,
+          "emitted": 52,
+          "precision": 0.15384615384615385,
+          "recall": 0.5,
+          "f1": 0.23529411764705882
+        },
+        "STOP": {
+          "expected": 16,
+          "correct": 2,
+          "missed_or_wrong": 14,
+          "emitted": 18,
+          "precision": 0.1111111111111111,
+          "recall": 0.125,
+          "f1": 0.11764705882352941
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 111,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 63,
+        "minimum": -1,
+        "mean": -0.47619047619047616,
+        "maximum": 0
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 16,
+    "controller_errors": 52,
+    "buffer_overflows": 0,
+    "recovery_success": null,
+    "malformed_false_bytes": null,
+    "ticks": 4008,
+    "input_presented_bytes": 16,
+    "passes": false
+  },
+  {
+    "condition": "slow_clock",
+    "valid": true,
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 176,
+        "emitted": 309,
+        "correct": 64,
+        "wrong_class": 77,
+        "missing": 35,
+        "false_known": 76,
+        "false_invalid": 92,
+        "duplicates": 21,
+        "errors": 280
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 74,
+          "correct": 17,
+          "missed_or_wrong": 57,
+          "emitted": 75,
+          "precision": 0.22666666666666666,
+          "recall": 0.22972972972972974,
+          "f1": 0.22818791946308725
+        },
+        "BIT1": {
+          "expected": 70,
+          "correct": 30,
+          "missed_or_wrong": 40,
+          "emitted": 40,
+          "precision": 0.75,
+          "recall": 0.42857142857142855,
+          "f1": 0.5454545454545454
+        },
+        "START": {
+          "expected": 16,
+          "correct": 14,
+          "missed_or_wrong": 2,
+          "emitted": 44,
+          "precision": 0.3181818181818182,
+          "recall": 0.875,
+          "f1": 0.4666666666666667
+        },
+        "STOP": {
+          "expected": 16,
+          "correct": 3,
+          "missed_or_wrong": 13,
+          "emitted": 14,
+          "precision": 0.21428571428571427,
+          "recall": 0.1875,
+          "f1": 0.2
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 136,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 64,
+        "minimum": -2,
+        "mean": -1.359375,
+        "maximum": -1
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 16,
+    "controller_errors": 44,
+    "buffer_overflows": 0,
+    "recovery_success": null,
+    "malformed_false_bytes": null,
+    "ticks": 4177,
+    "input_presented_bytes": 16,
+    "passes": false
+  },
+  {
+    "condition": "jitter",
+    "valid": true,
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 176,
+        "emitted": 249,
+        "correct": 60,
+        "wrong_class": 94,
+        "missing": 22,
+        "false_known": 44,
+        "false_invalid": 51,
+        "duplicates": 20,
+        "errors": 211
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 66,
+          "correct": 13,
+          "missed_or_wrong": 53,
+          "emitted": 34,
+          "precision": 0.38235294117647056,
+          "recall": 0.19696969696969696,
+          "f1": 0.26
+        },
+        "BIT1": {
+          "expected": 78,
+          "correct": 36,
+          "missed_or_wrong": 42,
+          "emitted": 46,
+          "precision": 0.782608695652174,
+          "recall": 0.46153846153846156,
+          "f1": 0.5806451612903226
+        },
+        "START": {
+          "expected": 16,
+          "correct": 11,
+          "missed_or_wrong": 5,
+          "emitted": 51,
+          "precision": 0.21568627450980393,
+          "recall": 0.6875,
+          "f1": 0.3283582089552239
+        },
+        "STOP": {
+          "expected": 16,
+          "correct": 0,
+          "missed_or_wrong": 16,
+          "emitted": 14,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 60,
+        "minimum": -2,
+        "mean": -0.7,
+        "maximum": 2
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 16,
+    "controller_errors": 51,
+    "buffer_overflows": 0,
+    "recovery_success": null,
+    "malformed_false_bytes": null,
+    "ticks": 4100,
+    "input_presented_bytes": 16,
+    "passes": false
+  },
+  {
+    "condition": "fast_with_jitter",
+    "valid": true,
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 176,
+        "emitted": 288,
+        "correct": 72,
+        "wrong_class": 80,
+        "missing": 24,
+        "false_known": 53,
+        "false_invalid": 83,
+        "duplicates": 18,
+        "errors": 240
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 74,
+          "correct": 25,
+          "missed_or_wrong": 49,
+          "emitted": 54,
+          "precision": 0.46296296296296297,
+          "recall": 0.33783783783783783,
+          "f1": 0.390625
+        },
+        "BIT1": {
+          "expected": 70,
+          "correct": 33,
+          "missed_or_wrong": 37,
+          "emitted": 41,
+          "precision": 0.8048780487804879,
+          "recall": 0.4714285714285714,
+          "f1": 0.5945945945945946
+        },
+        "START": {
+          "expected": 16,
+          "correct": 12,
+          "missed_or_wrong": 4,
+          "emitted": 42,
+          "precision": 0.2857142857142857,
+          "recall": 0.75,
+          "f1": 0.41379310344827586
+        },
+        "STOP": {
+          "expected": 16,
+          "correct": 2,
+          "missed_or_wrong": 14,
+          "emitted": 14,
+          "precision": 0.14285714285714285,
+          "recall": 0.125,
+          "f1": 0.13333333333333333
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 137,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 72,
+        "minimum": -2,
+        "mean": -0.6805555555555556,
+        "maximum": 2
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 16,
+    "controller_errors": 42,
+    "buffer_overflows": 0,
+    "recovery_success": null,
+    "malformed_false_bytes": null,
+    "ticks": 4014,
+    "input_presented_bytes": 16,
+    "passes": false
+  },
+  {
+    "condition": "slow_with_jitter",
+    "valid": true,
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 176,
+        "emitted": 242,
+        "correct": 56,
+        "wrong_class": 81,
+        "missing": 39,
+        "false_known": 47,
+        "false_invalid": 58,
+        "duplicates": 13,
+        "errors": 225
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 70,
+          "correct": 17,
+          "missed_or_wrong": 53,
+          "emitted": 38,
+          "precision": 0.4473684210526316,
+          "recall": 0.24285714285714285,
+          "f1": 0.3148148148148148
+        },
+        "BIT1": {
+          "expected": 74,
+          "correct": 24,
+          "missed_or_wrong": 50,
+          "emitted": 39,
+          "precision": 0.6153846153846154,
+          "recall": 0.32432432432432434,
+          "f1": 0.4247787610619469
+        },
+        "START": {
+          "expected": 16,
+          "correct": 13,
+          "missed_or_wrong": 3,
+          "emitted": 47,
+          "precision": 0.2765957446808511,
+          "recall": 0.8125,
+          "f1": 0.4126984126984127
+        },
+        "STOP": {
+          "expected": 16,
+          "correct": 2,
+          "missed_or_wrong": 14,
+          "emitted": 14,
+          "precision": 0.14285714285714285,
+          "recall": 0.125,
+          "f1": 0.13333333333333333
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 56,
+        "minimum": -2,
+        "mean": -1.1607142857142858,
+        "maximum": 0
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 16,
+    "controller_errors": 47,
+    "buffer_overflows": 0,
+    "recovery_success": null,
+    "malformed_false_bytes": null,
+    "ticks": 4161,
+    "input_presented_bytes": 16,
+    "passes": false
+  },
+  {
+    "condition": "malformed_recovery",
+    "valid": false,
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 13,
+      "insertions": 0,
+      "expected": 13,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 13,
+      "insertions": 0,
+      "expected": 13,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 176,
+        "emitted": 323,
+        "correct": 55,
+        "wrong_class": 110,
+        "missing": 11,
+        "false_known": 91,
+        "false_invalid": 67,
+        "duplicates": 38,
+        "errors": 279
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 79,
+          "correct": 20,
+          "missed_or_wrong": 59,
+          "emitted": 83,
+          "precision": 0.24096385542168675,
+          "recall": 0.25316455696202533,
+          "f1": 0.24691358024691357
+        },
+        "BIT1": {
+          "expected": 65,
+          "correct": 25,
+          "missed_or_wrong": 40,
+          "emitted": 33,
+          "precision": 0.7575757575757576,
+          "recall": 0.38461538461538464,
+          "f1": 0.5102040816326531
+        },
+        "START": {
+          "expected": 16,
+          "correct": 4,
+          "missed_or_wrong": 12,
+          "emitted": 50,
+          "precision": 0.08,
+          "recall": 0.25,
+          "f1": 0.12121212121212122
+        },
+        "STOP": {
+          "expected": 14,
+          "correct": 5,
+          "missed_or_wrong": 9,
+          "emitted": 18,
+          "precision": 0.2777777777777778,
+          "recall": 0.35714285714285715,
+          "f1": 0.3125
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 2,
+          "correct": 1,
+          "missed_or_wrong": 1,
+          "emitted": 139,
+          "precision": 0.007194244604316547,
+          "recall": 0.5,
+          "f1": 0.014184397163120567
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 55,
+        "minimum": -2,
+        "mean": -1.2727272727272727,
+        "maximum": -1
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 13,
+    "controller_errors": 50,
+    "buffer_overflows": 0,
+    "recovery_success": false,
+    "malformed_false_bytes": 0,
+    "ticks": 4093,
+    "input_presented_bytes": 16,
+    "passes": false
+  },
+  {
+    "condition": "idle_and_disturbance",
+    "valid": false,
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 16,
+      "insertions": 0,
+      "expected": 16,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 177,
+        "emitted": 538,
+        "correct": 82,
+        "wrong_class": 84,
+        "missing": 11,
+        "false_known": 193,
+        "false_invalid": 179,
+        "duplicates": 45,
+        "errors": 467
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 104,
+          "correct": 40,
+          "missed_or_wrong": 64,
+          "emitted": 219,
+          "precision": 0.182648401826484,
+          "recall": 0.38461538461538464,
+          "f1": 0.2476780185758514
+        },
+        "BIT1": {
+          "expected": 40,
+          "correct": 26,
+          "missed_or_wrong": 14,
+          "emitted": 41,
+          "precision": 0.6341463414634146,
+          "recall": 0.65,
+          "f1": 0.6419753086419753
+        },
+        "START": {
+          "expected": 16,
+          "correct": 14,
+          "missed_or_wrong": 2,
+          "emitted": 37,
+          "precision": 0.3783783783783784,
+          "recall": 0.875,
+          "f1": 0.5283018867924528
+        },
+        "STOP": {
+          "expected": 16,
+          "correct": 2,
+          "missed_or_wrong": 14,
+          "emitted": 9,
+          "precision": 0.2222222222222222,
+          "recall": 0.125,
+          "f1": 0.16
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 1,
+          "correct": 0,
+          "missed_or_wrong": 1,
+          "emitted": 232,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 82,
+        "minimum": -2,
+        "mean": -1.329268292682927,
+        "maximum": -1
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 16,
+    "controller_errors": 37,
+    "buffer_overflows": 0,
+    "recovery_success": false,
+    "malformed_false_bytes": null,
+    "ticks": 4685,
+    "input_presented_bytes": 16,
+    "passes": false
+  }
+]

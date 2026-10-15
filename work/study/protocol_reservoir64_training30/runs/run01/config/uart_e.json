@@ -1,0 +1,21 @@
+{
+  "profile": "uart_e",
+  "architecture_hash": "25631ac2745c1222fd229d43e2cc28f2fd1018b0eb48242b1a1e19476a491bfd",
+  "decision_margin": 0.15,
+  "weight_files": [
+    "models/uart_e/seed_11/selected.npz",
+    "models/uart_e/seed_29/selected.npz",
+    "models/uart_e/seed_47/selected.npz"
+  ],
+  "source_status": "explicit experimental assumptions; protocol source still missing",
+  "program": "uart_echo",
+  "parity": true,
+  "bit_ticks": 16,
+  "capacity": 32,
+  "deadline_ticks": 1024,
+  "clock_ratio": [
+    0.97,
+    1.03
+  ],
+  "cell_jitter_ticks": 1
+}

@@ -1,0 +1,52 @@
+{
+  "architectures": [
+    {
+      "nodes": 32,
+      "recurrent_connections": 128,
+      "density": 0.125,
+      "learned_coefficients": 616,
+      "packed_int16_coefficient_bytes": 1232,
+      "packed_int16_state_double_buffer_bytes": 128,
+      "sparse_MAC_per_tick": 576,
+      "actual_dense_numpy_MAC_per_tick": 1472,
+      "leak_products": 64,
+      "nonlinear_evaluations": 32,
+      "packed_fixed_leak_bytes": 64,
+      "packed_recurrent_index_bits": 640
+    },
+    {
+      "nodes": 64,
+      "recurrent_connections": 256,
+      "density": 0.0625,
+      "learned_coefficients": 1224,
+      "packed_int16_coefficient_bytes": 2448,
+      "packed_int16_state_double_buffer_bytes": 256,
+      "sparse_MAC_per_tick": 1152,
+      "actual_dense_numpy_MAC_per_tick": 4992,
+      "leak_products": 128,
+      "nonlinear_evaluations": 64,
+      "packed_fixed_leak_bytes": 128,
+      "packed_recurrent_index_bits": 1536
+    }
+  ],
+  "unchanged": {
+    "input_features": 6,
+    "event_classes": 8,
+    "packed_tanh_lut_bytes": 8194,
+    "i2c_storage_bytes": 4096,
+    "scheduled_command_capacity": 512,
+    "packed_scheduler_bytes": 12800,
+    "setup_deadline_ticks": 6,
+    "clock_low_high_ticks": [
+      8,
+      12
+    ],
+    "physical_clock_hz": null
+  },
+  "notes": [
+    "Logical packing estimates; NumPy actually retains dense float64 and int64 coefficient arrays.",
+    "The integer LUT is int64 in NumPy (32776 bytes); scratch, logs and Python overhead are not a hardware storage model.",
+    "Controller, previous levels, edge ages, timestamps and last decision remain unchanged.",
+    "One update per abstract tick is assumed; no hardware schedule, silicon frequency, area or power was measured."
+  ]
+}

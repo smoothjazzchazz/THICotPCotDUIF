@@ -1,0 +1,113 @@
+{
+  "seed": 11,
+  "readout_only": true,
+  "epochs": 12,
+  "steps": 552,
+  "best_epoch": 12,
+  "class_weights": [
+    1.0,
+    6.464519601632481,
+    6.160231099964427,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "steps": 46,
+      "train_loss": 1.4679289063674972,
+      "dev_loss": 1.1835609184267581,
+      "elapsed_seconds": 0.2940883780247532
+    },
+    {
+      "epoch": 2,
+      "steps": 92,
+      "train_loss": 1.1372062748465595,
+      "dev_loss": 1.12763654310411,
+      "elapsed_seconds": 0.5832038400112651
+    },
+    {
+      "epoch": 3,
+      "steps": 138,
+      "train_loss": 1.1013230214881213,
+      "dev_loss": 1.1058787712753886,
+      "elapsed_seconds": 0.8722186129889451
+    },
+    {
+      "epoch": 4,
+      "steps": 184,
+      "train_loss": 1.0845435137020718,
+      "dev_loss": 1.0935571979913141,
+      "elapsed_seconds": 1.160286656988319
+    },
+    {
+      "epoch": 5,
+      "steps": 230,
+      "train_loss": 1.0740623270276526,
+      "dev_loss": 1.0851170288286012,
+      "elapsed_seconds": 1.449119575030636
+    },
+    {
+      "epoch": 6,
+      "steps": 276,
+      "train_loss": 1.0664748093370577,
+      "dev_loss": 1.0786981405218485,
+      "elapsed_seconds": 1.7356412110384554
+    },
+    {
+      "epoch": 7,
+      "steps": 322,
+      "train_loss": 1.0605228482393383,
+      "dev_loss": 1.0735057103784424,
+      "elapsed_seconds": 2.0228939200169407
+    },
+    {
+      "epoch": 8,
+      "steps": 368,
+      "train_loss": 1.0556175548645539,
+      "dev_loss": 1.0691384232046137,
+      "elapsed_seconds": 2.3109808689914644
+    },
+    {
+      "epoch": 9,
+      "steps": 414,
+      "train_loss": 1.0514402247690313,
+      "dev_loss": 1.0653661340616343,
+      "elapsed_seconds": 2.5988551930058748
+    },
+    {
+      "epoch": 10,
+      "steps": 460,
+      "train_loss": 1.0477976100651802,
+      "dev_loss": 1.0620423477187007,
+      "elapsed_seconds": 2.8862244540359825
+    },
+    {
+      "epoch": 11,
+      "steps": 506,
+      "train_loss": 1.0445623713491579,
+      "dev_loss": 1.0590671108646834,
+      "elapsed_seconds": 3.1747275720117614
+    },
+    {
+      "epoch": 12,
+      "steps": 552,
+      "train_loss": 1.0416459344440787,
+      "dev_loss": 1.0563692385625327,
+      "elapsed_seconds": 3.4624888820108026
+    }
+  ],
+  "parameter_l2_changes": {
+    "wx": 0.0,
+    "wh": 0.0,
+    "b": 0.0,
+    "wo": 5.453949661466978,
+    "bo": 0.38803520992096796
+  },
+  "stream_count": 12,
+  "truncated_bptt": 128,
+  "training_ticks": 64937
+}

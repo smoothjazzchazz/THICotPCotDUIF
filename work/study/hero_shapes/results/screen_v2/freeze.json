@@ -1,0 +1,70 @@
+{
+  "config_hashes": {
+    "gap_order/reservoir3/config.json": "daf4abfac7b0f608b32a84a1117e29eab87df216f37febd90c29f39556c29bc6",
+    "gap_order/ring16/config.json": "85f457145d6a38ed623f6b735964e7f5ec6837e2b826484be043049273bb0787",
+    "gap_order/run_history/config.json": "cd7b7dd187d8d04c386ac9d6ddff3fe2956ce8292a582be3fcb1069cf64e07bf",
+    "gap_order/sample12/config.json": "50aef70c2e438448b61cdd7566c6fcb55be89855153442e4dfcd957198c5dca3",
+    "gap_order/sample64/config.json": "9b9578a451583bbe75d67738c21525477a803c1e289d1868831c8e47c4c41dff",
+    "gap_order/sparse16/config.json": "01f5320f5caec0840bad27a9b73eabbec14e4be23a9da6abc4671866d82f5485",
+    "gap_order/stream_intervals/config.json": "a6f0f3418e6a5b9b23dc97f506d2ae4e315c775b436e11e9f276bfd76de3f687",
+    "gap_order/stream_templates/config.json": "aa5fe6a8ab8f6ec2b96cde3ebdad54d44f98700a3c4e59738f7dc870c87e5510",
+    "pulse_order/reservoir3/config.json": "8a4a1a1b87bcfdf621f4ed47fb0a8dd2c9ce90317c3d075b2f142968f6b0a2b6",
+    "pulse_order/ring16/config.json": "61fa24ebecd5c712a3c5cccc75c23b691c3cd07e4aa85dcd09647e58c2bcf32c",
+    "pulse_order/run_history/config.json": "68a2f2ac2b4ec7e18a67f38fea95eaaf5835c5c13fd9c525680b6ffbde6f3de6",
+    "pulse_order/sample12/config.json": "ef91a5a0f0933a1d8db960e84880225e74a4379d17fbeef5c356ca06bf859380",
+    "pulse_order/sample64/config.json": "ee0549d8c0172c0fa5c7122f50a9b563dd77e0af1569dd9dba0c8e1662662dd1",
+    "pulse_order/sparse16/config.json": "d82b1da1c79a5b72f73b93ef4c4de18defa5fe07fe1e2632ee4b1d6623b88f04",
+    "pulse_order/stream_intervals/config.json": "20d3070a3f1d338b33f7372b5003ba80eeb8af8e40de00eb93dc13745d651cd1",
+    "pulse_order/stream_templates/config.json": "1e3a6c14e2b596b551fafabb88ecd6ddff2482147aa5313d708dca0d07c5db54",
+    "relative_order/reservoir3/config.json": "25b6f19b971734329ec374eae837f3ac1c1cdcb09f986fcd0e63e9056d19edb7",
+    "relative_order/ring16/config.json": "94c102c23cd6cae7b23463cae7ecae0b5f53d177aeaaf8376fc8aa98740f4e2f",
+    "relative_order/run_history/config.json": "3b6a55f33a42d7cd9092540431663c239eaf1df96e14a125345aafa3b1ba4a44",
+    "relative_order/sample12/config.json": "58b67632f1b4116db6c00931ccda907c61121b4aebc5143c6a8355761d935e3e",
+    "relative_order/sample64/config.json": "a4d84271b869ea0b75a7fa1c01dc5cb6f6267c30c4ee45b0519924de0131f29d",
+    "relative_order/sparse16/config.json": "8326418f34ecf0b67030bd1a15ac62ee2e12e313fa2b0d87461f8b27631ed361",
+    "relative_order/stream_intervals/config.json": "ab1616e9a94ce96f9eb7c3b4002cfbddc1b4c34c7d8207713d304c6c0b4ddcae",
+    "relative_order/stream_templates/config.json": "d28ed6a45357c1906aa5ea3b5b22b64d3db3cecdeadabf522251e77cf3e7cb3d"
+  },
+  "confirmation": "all 24 configurations; no revision or threshold selection from heldout",
+  "frozen_utc": "2026-10-07T18:18:55.932984+00:00",
+  "promising_before_confirmation": [
+    "pulse_order/stream_intervals",
+    "gap_order/stream_intervals",
+    "relative_order/stream_intervals"
+  ],
+  "repeats": {
+    "dev": 5,
+    "heldout": 8,
+    "train": 8
+  },
+  "scoring": "per-condition counts; exact single events; end through end+22; response samples checked separately",
+  "seeds": {
+    "dev": 29303,
+    "heldout": 94709,
+    "startup": 85703,
+    "train": 17301
+  },
+  "source_hashes": {
+    "work/model/conditioning.py": "befde69c44e9cb9cadcfcb290e992ca47abf1383e5392873ad193f9ed9a32c9e",
+    "work/model/controller.py": "457f8de37c5826afbd8436495f315fa0acab7ef9a997745d0998896cf5744075",
+    "work/model/decision.py": "e4e7650edd153d602e1fd856d1da3c65c241783fc0536aa2e1e3c53a599efe63",
+    "work/model/memory.py": "1fe26f9062bf02c9954ada8bc34fa87e7cd5dd3249acbe682ca08f3aaf5a12e9",
+    "work/model/readout.py": "e631f8b4687ee3c98dc9e789f8036d2092eed22b9f45972f1d95a60d6447d7fc",
+    "work/model/system_simple_model.py": "8f0a592b93003c1937c12de8bf932a8a923d5ff2297deaa8dcbfa1c2df6c954b",
+    "work/model/temporal.py": "a3c7ecfa82b2f6c908ce6afba365ee572543a5146c3a2ee8841e95fac27a6505",
+    "work/model/test_frame_readout.py": "eff1889e44d65366e9ec3084e181b00e2292e06d5a6e48f626afc8b152b10363",
+    "work/model/test_stages.py": "15ac75bcabedb9fabef66c93b1f7e064e625f7da4a1e4a079bc0e9f68d22f552",
+    "work/model/test_system_simple_model.py": "b2642739da0927181788628f43635d23baa104531b321d57532ea5617e9dee79",
+    "work/model/test_transmit_simple_model.py": "baf5fbbe8d0fc3f822541e904af85845e82bab2f80cbc97670a77f934cefd02f",
+    "work/model/transmit_simple_model.py": "7fb5604f34d39456426c44887d0969df466a45f391fa0e9a5e1bc64e03adbc7a",
+    "work/study/hero_shapes/__init__.py": "db829af08ce21f43c2ef64c5cea62dc5eef9d8d2c55605330120d32cf83aa824",
+    "work/study/hero_shapes/fitting.py": "e592d3b19fb1f983a2a3e662d245fa1817bdc525ab3013a6a0ef9c48d0b5545a",
+    "work/study/hero_shapes/models.py": "ee836dbf20ac1dd7002ceddcff5b13012338b7ae80f177b51b648c1a302595be",
+    "work/study/hero_shapes/replay.py": "3df6e32b6d389a915e3dd8d0e7ff012a28d12208abc88d4af9c9967ed896a0f0",
+    "work/study/hero_shapes/run_study.py": "be7dd1cc91a1ce9bf41157ce3b7a6181137f8f0a29fbed35d671b821c7590f2f",
+    "work/study/hero_shapes/scoring.py": "239d2b955530ebc38f30b1436270a385983f2fc91b20040e966e9b28a683efa3",
+    "work/study/hero_shapes/stimuli.py": "19598468e624d7ca7f5c822661ed40449fc71202c78e92c678f9aa1cc297a15c",
+    "work/study/hero_shapes/test_experiment.py": "d783a84daa5daf94b76c5042e0b19e293deeb6d332e33d9ed5be183b251bfd1d",
+    "work/study/hero_shapes/test_stimuli.py": "3d6a50b2788bd9a37ab9ae8658c574bfd833cd2ccc34f578e35c66dae8da766c"
+  }
+}

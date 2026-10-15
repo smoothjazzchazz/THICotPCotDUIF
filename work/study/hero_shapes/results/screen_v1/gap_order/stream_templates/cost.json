@@ -1,0 +1,13 @@
+{
+  "arithmetic": "per completed run: 2 relative errors/max updates; no temporal matrix products",
+  "conditioning_delay_samples": 1,
+  "latch_values": 0,
+  "loaded_values": 15,
+  "memory_values": 3,
+  "note": "three feature values are trace-only; run index and hypothesis errors carry recognition",
+  "numeric_state_values": 2,
+  "prototype_vectors": 0,
+  "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+  "score_parameter_values": 0,
+  "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+}

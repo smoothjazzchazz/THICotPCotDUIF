@@ -1,0 +1,13 @@
+{
+  "arithmetic": "actual dense loops: 304 drive products + 32 blend products + 16 tanh/sample; 256 squared differences/decision",
+  "conditioning_delay_samples": 1,
+  "latch_values": 16,
+  "loaded_values": 305,
+  "memory_values": 16,
+  "note": "sparse conceptual connectivity still uses dense Python arithmetic; floating-point sensitivity is unquantized",
+  "prototype_vectors": 16,
+  "recurrent_nonzero": 62,
+  "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+  "score_parameter_values": 256,
+  "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+}

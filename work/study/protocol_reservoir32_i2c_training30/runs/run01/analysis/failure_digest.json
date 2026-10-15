@@ -1,0 +1,166 @@
+[
+  {
+    "variant": "original_loss_11",
+    "mode": "float",
+    "valid_event_errors": 0,
+    "false_known": 0,
+    "false_invalid": 0,
+    "deadline_misses": 0,
+    "overflows": 0,
+    "failed_conditions": [],
+    "recovery": {
+      "malformed_recovery": true,
+      "idle_and_disturbance": true
+    }
+  },
+  {
+    "variant": "original_loss_11",
+    "mode": "quantized",
+    "valid_event_errors": 0,
+    "false_known": 0,
+    "false_invalid": 0,
+    "deadline_misses": 0,
+    "overflows": 0,
+    "failed_conditions": [],
+    "recovery": {
+      "malformed_recovery": true,
+      "idle_and_disturbance": true
+    }
+  },
+  {
+    "variant": "seed_11",
+    "mode": "float",
+    "valid_event_errors": 0,
+    "false_known": 0,
+    "false_invalid": 0,
+    "deadline_misses": 0,
+    "overflows": 0,
+    "failed_conditions": [],
+    "recovery": {
+      "malformed_recovery": true,
+      "idle_and_disturbance": true
+    }
+  },
+  {
+    "variant": "seed_11",
+    "mode": "quantized",
+    "valid_event_errors": 0,
+    "false_known": 0,
+    "false_invalid": 0,
+    "deadline_misses": 0,
+    "overflows": 0,
+    "failed_conditions": [],
+    "recovery": {
+      "malformed_recovery": true,
+      "idle_and_disturbance": true
+    }
+  },
+  {
+    "variant": "seed_29",
+    "mode": "float",
+    "valid_event_errors": 12,
+    "false_known": 12,
+    "false_invalid": 0,
+    "deadline_misses": 0,
+    "overflows": 0,
+    "failed_conditions": [
+      "phrase",
+      "every_byte",
+      "random_binary",
+      "long_message",
+      "repeated_patterns",
+      "fast_clock",
+      "slow_clock",
+      "jitter",
+      "fast_with_jitter",
+      "slow_with_jitter",
+      "stop_then_read",
+      "unrelated_address"
+    ],
+    "recovery": {
+      "malformed_recovery": true,
+      "idle_and_disturbance": true
+    }
+  },
+  {
+    "variant": "seed_29",
+    "mode": "quantized",
+    "valid_event_errors": 12,
+    "false_known": 12,
+    "false_invalid": 0,
+    "deadline_misses": 0,
+    "overflows": 0,
+    "failed_conditions": [
+      "phrase",
+      "every_byte",
+      "random_binary",
+      "long_message",
+      "repeated_patterns",
+      "fast_clock",
+      "slow_clock",
+      "jitter",
+      "fast_with_jitter",
+      "slow_with_jitter",
+      "stop_then_read",
+      "unrelated_address"
+    ],
+    "recovery": {
+      "malformed_recovery": true,
+      "idle_and_disturbance": true
+    }
+  },
+  {
+    "variant": "seed_47",
+    "mode": "float",
+    "valid_event_errors": 12,
+    "false_known": 0,
+    "false_invalid": 12,
+    "deadline_misses": 0,
+    "overflows": 0,
+    "failed_conditions": [
+      "phrase",
+      "every_byte",
+      "random_binary",
+      "long_message",
+      "repeated_patterns",
+      "fast_clock",
+      "slow_clock",
+      "jitter",
+      "fast_with_jitter",
+      "slow_with_jitter",
+      "stop_then_read",
+      "unrelated_address"
+    ],
+    "recovery": {
+      "malformed_recovery": true,
+      "idle_and_disturbance": true
+    }
+  },
+  {
+    "variant": "seed_47",
+    "mode": "quantized",
+    "valid_event_errors": 12,
+    "false_known": 0,
+    "false_invalid": 12,
+    "deadline_misses": 0,
+    "overflows": 0,
+    "failed_conditions": [
+      "phrase",
+      "every_byte",
+      "random_binary",
+      "long_message",
+      "repeated_patterns",
+      "fast_clock",
+      "slow_clock",
+      "jitter",
+      "fast_with_jitter",
+      "slow_with_jitter",
+      "stop_then_read",
+      "unrelated_address"
+    ],
+    "recovery": {
+      "malformed_recovery": true,
+      "idle_and_disturbance": true
+    }
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "seed": 47,
+  "readout_only": false,
+  "epochs": 12,
+  "steps": 600,
+  "best_epoch": 12,
+  "class_weights": [
+    1.0,
+    6.301365081394671,
+    6.178575997921247,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "steps": 50,
+      "train_loss": 1.3824123267428647,
+      "dev_loss": 1.1425798227572,
+      "elapsed_seconds": 0.3089648709865287
+    },
+    {
+      "epoch": 2,
+      "steps": 100,
+      "train_loss": 1.0706048031511683,
+      "dev_loss": 1.0678047903295955,
+      "elapsed_seconds": 0.6154900940018706
+    },
+    {
+      "epoch": 3,
+      "steps": 150,
+      "train_loss": 1.0081401893690405,
+      "dev_loss": 0.9956198122555577,
+      "elapsed_seconds": 0.921718318015337
+    },
+    {
+      "epoch": 4,
+      "steps": 200,
+      "train_loss": 0.9524199271728222,
+      "dev_loss": 0.9362992333569906,
+      "elapsed_seconds": 1.2278470810269937
+    },
+    {
+      "epoch": 5,
+      "steps": 250,
+      "train_loss": 0.9078790493304412,
+      "dev_loss": 0.8931585873281553,
+      "elapsed_seconds": 1.5344917210168205
+    },
+    {
+      "epoch": 6,
+      "steps": 300,
+      "train_loss": 0.8714592108459085,
+      "dev_loss": 0.8539315922029864,
+      "elapsed_seconds": 1.8399287579813972
+    },
+    {
+      "epoch": 7,
+      "steps": 350,
+      "train_loss": 0.8390435194009059,
+      "dev_loss": 0.8239607844593061,
+      "elapsed_seconds": 2.144771196995862
+    },
+    {
+      "epoch": 8,
+      "steps": 400,
+      "train_loss": 0.8138451652147378,
+      "dev_loss": 0.8005554835903121,
+      "elapsed_seconds": 2.4499678959837183
+    },
+    {
+      "epoch": 9,
+      "steps": 450,
+      "train_loss": 0.793628612864605,
+      "dev_loss": 0.7804250635886607,
+      "elapsed_seconds": 2.7559489069972187
+    },
+    {
+      "epoch": 10,
+      "steps": 500,
+      "train_loss": 0.7759224963164237,
+      "dev_loss": 0.7618621058553435,
+      "elapsed_seconds": 3.065589073987212
+    },
+    {
+      "epoch": 11,
+      "steps": 550,
+      "train_loss": 0.7589457651534495,
+      "dev_loss": 0.7436170088463224,
+      "elapsed_seconds": 3.373572538024746
+    },
+    {
+      "epoch": 12,
+      "steps": 600,
+      "train_loss": 0.7441263166233931,
+      "dev_loss": 0.7298355523889963,
+      "elapsed_seconds": 3.6820972390123643
+    }
+  ],
+  "parameter_l2_changes": {
+    "wx": 4.703710942832947,
+    "wh": 6.055999630108297,
+    "b": 0.8789978482789694,
+    "wo": 4.704497994473775,
+    "bo": 0.30036797059718195
+  },
+  "stream_count": 12,
+  "truncated_bptt": 128,
+  "training_ticks": 71488
+}

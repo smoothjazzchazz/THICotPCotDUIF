@@ -1,0 +1,59 @@
+{
+  "delay_ticks": 1,
+  "error_mode": "absolute",
+  "expected_runs": 7,
+  "family": "gap_order",
+  "idle_ticks": 20,
+  "kind": "stream_intervals",
+  "mapping": {
+    "0": 0,
+    "1": 1
+  },
+  "max_frame_ticks": 512,
+  "max_runs": 31,
+  "minimum_margin": 0.0,
+  "minimum_score": -1.0,
+  "name": "gap_order/stream_intervals",
+  "prototypes": {},
+  "responses": {
+    "0": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "1": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+    ]
+  },
+  "scales": [
+    1
+  ],
+  "stable_ticks": 2,
+  "templates": {
+    "0": [
+      4,
+      3,
+      4,
+      9,
+      4,
+      3,
+      4
+    ],
+    "1": [
+      4,
+      9,
+      4,
+      3,
+      4,
+      3,
+      4
+    ]
+  }
+}

@@ -1,0 +1,3517 @@
+{
+  "background_events": [],
+  "conditions": {
+    "known_back_to_back": {
+      "cases": 16,
+      "correct_known": 4,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 4,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 16,
+      "known_recall": 0.25,
+      "missed_observations": 0,
+      "rejected_known": 12,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_clean": {
+      "cases": 32,
+      "correct_known": 13,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 13,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 32,
+      "known_recall": 0.40625,
+      "missed_observations": 0,
+      "rejected_known": 19,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_glitch": {
+      "cases": 32,
+      "correct_known": 16,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 16,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 32,
+      "known_recall": 0.5,
+      "missed_observations": 0,
+      "rejected_known": 16,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_jitter": {
+      "cases": 32,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 0,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 32,
+      "known_recall": 0.0,
+      "missed_observations": 0,
+      "rejected_known": 32,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "recovery_known": {
+      "cases": 8,
+      "correct_known": 4,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 4,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 8,
+      "known_recall": 0.5,
+      "missed_observations": 0,
+      "rejected_known": 4,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "unknown_extra_edges": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_junk": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_missing_delimiter": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_missing_edges": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_near_long": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_out_of_scale": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_partial": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_prefix_splice": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_count": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_duration": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_prefix": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_suffix": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_suffix_splice": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    }
+  },
+  "details": [
+    {
+      "case_id": "relative_order-heldout-000",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 67,
+          "start_tick": 27
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-001",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 149,
+          "start_tick": 88
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-002",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 237,
+          "start_tick": 177
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-003",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 310,
+          "start_tick": 249
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-004",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 408,
+          "start_tick": 347
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-005",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 481,
+          "start_tick": 441
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-006",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 533,
+          "start_tick": 496
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-007",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 624,
+          "start_tick": 563
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-008",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 681,
+          "start_tick": 641
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-009",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 777,
+          "start_tick": 712
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-010",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 837,
+          "start_tick": 794
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-011",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 903,
+          "start_tick": 863
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-012",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 966,
+          "start_tick": 923
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-013",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1049,
+          "start_tick": 988
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-014",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1105,
+          "start_tick": 1064
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-015",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1250,
+          "start_tick": 1149
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-016",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1299,
+          "start_tick": 1256
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-017",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1370,
+          "start_tick": 1305
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-018",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1462,
+          "start_tick": 1401
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-019",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1505,
+          "start_tick": 1467
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-020",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1559,
+          "start_tick": 1519
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-021",
+      "condition": "unknown_out_of_scale",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1654,
+          "start_tick": 1572
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-022",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1763,
+          "start_tick": 1678
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-023",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1846,
+          "start_tick": 1806
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-024",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1937,
+          "start_tick": 1872
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-025",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2023,
+          "start_tick": 1959
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-026",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 2077,
+          "start_tick": 2037
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-027",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2118,
+          "start_tick": 2078
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-028",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 2188,
+          "start_tick": 2148
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-029",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2266,
+          "start_tick": 2226
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-030",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2312,
+          "start_tick": 2272
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-031",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2407,
+          "start_tick": 2346
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-032",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 2473,
+          "start_tick": 2433
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-033",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 2541,
+          "start_tick": 2480
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-034",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2639,
+          "start_tick": 2577
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-035",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2741,
+          "start_tick": 2680
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-036",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2841,
+          "start_tick": 2780
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-037",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2902,
+          "start_tick": 2862
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-038",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2978,
+          "start_tick": 2936
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-039",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 3051,
+          "start_tick": 2990
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-040",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3130,
+          "start_tick": 3087
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-041",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3196,
+          "start_tick": 3156
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-042",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3252,
+          "start_tick": 3212
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-043",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3336,
+          "start_tick": 3293
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-044",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3413,
+          "start_tick": 3370
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-045",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3493,
+          "start_tick": 3428
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-046",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3588,
+          "start_tick": 3523
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-047",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3685,
+          "start_tick": 3622
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-048",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3759,
+          "start_tick": 3719
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-049",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3868,
+          "start_tick": 3776
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-050",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3945,
+          "start_tick": 3911
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-051",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4063,
+          "start_tick": 3963
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-052",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4157,
+          "start_tick": 4096
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-053",
+      "condition": "unknown_out_of_scale",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4280,
+          "start_tick": 4198
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-054",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4363,
+          "start_tick": 4323
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-055",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4404,
+          "start_tick": 4364
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-056",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 4495,
+          "start_tick": 4434
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-057",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4553,
+          "start_tick": 4513
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-058",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4634,
+          "start_tick": 4573
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-059",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 4704,
+          "start_tick": 4664
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-060",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 4806,
+          "start_tick": 4745
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-061",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4902,
+          "start_tick": 4841
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-062",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4968,
+          "start_tick": 4928
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-063",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5036,
+          "start_tick": 4996
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-064",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5094,
+          "start_tick": 5054
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-065",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5191,
+          "start_tick": 5130
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-066",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 5274,
+          "start_tick": 5234
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-067",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5347,
+          "start_tick": 5287
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-068",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5452,
+          "start_tick": 5388
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-069",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5532,
+          "start_tick": 5492
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-070",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5580,
+          "start_tick": 5540
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-071",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5646,
+          "start_tick": 5602
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-072",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5706,
+          "start_tick": 5657
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-073",
+      "condition": "unknown_out_of_scale",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5799,
+          "start_tick": 5717
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-074",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5889,
+          "start_tick": 5825
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-075",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5957,
+          "start_tick": 5913
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-076",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6047,
+          "start_tick": 5986
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-077",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6149,
+          "start_tick": 6088
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-078",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6208,
+          "start_tick": 6166
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-079",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6312,
+          "start_tick": 6251
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-080",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6412,
+          "start_tick": 6348
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-081",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6517,
+          "start_tick": 6420
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-082",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 6587,
+          "start_tick": 6547
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-083",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6628,
+          "start_tick": 6588
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-084",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6719,
+          "start_tick": 6658
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-085",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6793,
+          "start_tick": 6753
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-086",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6861,
+          "start_tick": 6800
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-087",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 6925,
+          "start_tick": 6885
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-088",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7025,
+          "start_tick": 6964
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-089",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7106,
+          "start_tick": 7064
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-090",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7155,
+          "start_tick": 7113
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-091",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 7212,
+          "start_tick": 7172
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-092",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7275,
+          "start_tick": 7235
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-093",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7351,
+          "start_tick": 7290
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-094",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 7442,
+          "start_tick": 7381
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-095",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 7546,
+          "start_tick": 7485
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-096",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7639,
+          "start_tick": 7578
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-097",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7745,
+          "start_tick": 7681
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-098",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7831,
+          "start_tick": 7788
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-099",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7914,
+          "start_tick": 7849
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-100",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7985,
+          "start_tick": 7945
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-101",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8080,
+          "start_tick": 8021
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-102",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8143,
+          "start_tick": 8103
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-103",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8221,
+          "start_tick": 8187
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-104",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8303,
+          "start_tick": 8260
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-105",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8391,
+          "start_tick": 8347
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-106",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8441,
+          "start_tick": 8406
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-107",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 8512,
+          "start_tick": 8451
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-108",
+      "condition": "unknown_out_of_scale",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8627,
+          "start_tick": 8545
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-109",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8712,
+          "start_tick": 8636
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-110",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8770,
+          "start_tick": 8730
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-111",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8811,
+          "start_tick": 8771
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-112",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8884,
+          "start_tick": 8841
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-113",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 8986,
+          "start_tick": 8925
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-114",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 9068,
+          "start_tick": 9028
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-115",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9139,
+          "start_tick": 9099
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-116",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 9235,
+          "start_tick": 9174
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-117",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 9309,
+          "start_tick": 9269
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-118",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9407,
+          "start_tick": 9346
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-119",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9497,
+          "start_tick": 9436
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-120",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9598,
+          "start_tick": 9540
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-121",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9653,
+          "start_tick": 9613
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-122",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9715,
+          "start_tick": 9675
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-123",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9789,
+          "start_tick": 9728
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-124",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9874,
+          "start_tick": 9810
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-125",
+      "condition": "unknown_out_of_scale",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9984,
+          "start_tick": 9902
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-126",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10098,
+          "start_tick": 10009
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-127",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 10191,
+          "start_tick": 10130
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-128",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10246,
+          "start_tick": 10197
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-129",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10321,
+          "start_tick": 10277
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-130",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10407,
+          "start_tick": 10365
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-131",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10475,
+          "start_tick": 10431
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-132",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10607,
+          "start_tick": 10515
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-133",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10689,
+          "start_tick": 10646
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-134",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10749,
+          "start_tick": 10706
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-135",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10827,
+          "start_tick": 10766
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-136",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10873,
+          "start_tick": 10833
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-137",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10962,
+          "start_tick": 10901
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-138",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 11018,
+          "start_tick": 10978
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-139",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11059,
+          "start_tick": 11019
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-140",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11129,
+          "start_tick": 11089
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-141",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 11197,
+          "start_tick": 11157
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-142",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11294,
+          "start_tick": 11235
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-143",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 11386,
+          "start_tick": 11325
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-144",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11483,
+          "start_tick": 11424
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-145",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11552,
+          "start_tick": 11491
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-146",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11610,
+          "start_tick": 11570
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-147",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11685,
+          "start_tick": 11645
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-148",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11733,
+          "start_tick": 11693
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-149",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 11827,
+          "start_tick": 11766
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-150",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 11883,
+          "start_tick": 11843
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-151",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11949,
+          "start_tick": 11888
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-152",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12018,
+          "start_tick": 11988
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-153",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12092,
+          "start_tick": 12052
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-154",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12156,
+          "start_tick": 12113
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-155",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12248,
+          "start_tick": 12183
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-156",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12343,
+          "start_tick": 12284
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-157",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12396,
+          "start_tick": 12353
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-158",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12463,
+          "start_tick": 12402
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-159",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12566,
+          "start_tick": 12502
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-160",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12641,
+          "start_tick": 12580
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-161",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12692,
+          "start_tick": 12648
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-162",
+      "condition": "unknown_out_of_scale",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12802,
+          "start_tick": 12720
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-163",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12919,
+          "start_tick": 12842
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-164",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 12971,
+          "start_tick": 12931
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-165",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13071,
+          "start_tick": 12995
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-166",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13138,
+          "start_tick": 13098
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-167",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13179,
+          "start_tick": 13139
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-168",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13249,
+          "start_tick": 13209
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-169",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 13352,
+          "start_tick": 13291
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-170",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13401,
+          "start_tick": 13360
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-171",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13484,
+          "start_tick": 13423
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-172",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13566,
+          "start_tick": 13505
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-173",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 13645,
+          "start_tick": 13605
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-174",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13730,
+          "start_tick": 13669
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-175",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13810,
+          "start_tick": 13749
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-176",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13860,
+          "start_tick": 13820
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-177",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 13943,
+          "start_tick": 13903
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-178",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 14010,
+          "start_tick": 13949
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-179",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14072,
+          "start_tick": 14034
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-180",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14132,
+          "start_tick": 14092
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-181",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14237,
+          "start_tick": 14176
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-182",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14287,
+          "start_tick": 14244
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-183",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14350,
+          "start_tick": 14307
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-184",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 14430,
+          "start_tick": 14390
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-185",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14522,
+          "start_tick": 14463
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-186",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14586,
+          "start_tick": 14546
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-187",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14640,
+          "start_tick": 14597
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-188",
+      "condition": "unknown_out_of_scale",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14743,
+          "start_tick": 14661
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-189",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14787,
+          "start_tick": 14753
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-190",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14882,
+          "start_tick": 14818
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-191",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 14953,
+          "start_tick": 14909
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-192",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 15063,
+          "start_tick": 14987
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-193",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 15115,
+          "start_tick": 15071
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-194",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 15178,
+          "start_tick": 15138
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-195",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 15219,
+          "start_tick": 15179
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-196",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 15292,
+          "start_tick": 15249
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-197",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 15395,
+          "start_tick": 15335
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-198",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 15477,
+          "start_tick": 15416
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-199",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 15522,
+          "start_tick": 15482
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-200",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 15589,
+          "start_tick": 15549
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-201",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 15635,
+          "start_tick": 15595
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-202",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 15717,
+          "start_tick": 15676
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-203",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 15796,
+          "start_tick": 15735
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-204",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 15890,
+          "start_tick": 15829
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-205",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 15967,
+          "start_tick": 15906
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-206",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16044,
+          "start_tick": 15981
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-207",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16095,
+          "start_tick": 16055
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-208",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16176,
+          "start_tick": 16111
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-209",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16250,
+          "start_tick": 16209
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-210",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16347,
+          "start_tick": 16284
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-211",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16412,
+          "start_tick": 16372
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-212",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16483,
+          "start_tick": 16422
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-213",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16609,
+          "start_tick": 16508
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-214",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16680,
+          "start_tick": 16637
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-215",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16752,
+          "start_tick": 16688
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-216",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16833,
+          "start_tick": 16789
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-217",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16900,
+          "start_tick": 16839
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-heldout-218",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 16994,
+          "start_tick": 16929
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-219",
+      "condition": "unknown_out_of_scale",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 17112,
+          "start_tick": 17030
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-220",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 17194,
+          "start_tick": 17151
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-221",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 17262,
+          "start_tick": 17222
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-heldout-222",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 17340,
+          "start_tick": 17300
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-heldout-223",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 17381,
+          "start_tick": 17341
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    }
+  ],
+  "latency": {
+    "from_end": {
+      "max": 21,
+      "mean": 21,
+      "min": 21,
+      "n": 37
+    },
+    "from_start": {
+      "max": 63,
+      "mean": 52.21621621621622,
+      "min": 42,
+      "n": 37
+    },
+    "timestamp_shift": {
+      "max": 2,
+      "mean": 2,
+      "min": 2,
+      "n": 37
+    }
+  },
+  "responses": {
+    "decision_to_response": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 37
+    },
+    "pending_tail_samples": 0,
+    "request_mismatch_ticks": [],
+    "requests": [
+      {
+        "decision_tick": 310,
+        "end_tick": 317,
+        "start_tick": 311,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 481,
+        "end_tick": 487,
+        "start_tick": 482,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 624,
+        "end_tick": 631,
+        "start_tick": 625,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1846,
+        "end_tick": 1852,
+        "start_tick": 1847,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 2077,
+        "end_tick": 2083,
+        "start_tick": 2078,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 2188,
+        "end_tick": 2194,
+        "start_tick": 2189,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 2473,
+        "end_tick": 2479,
+        "start_tick": 2474,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 2541,
+        "end_tick": 2548,
+        "start_tick": 2542,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 3051,
+        "end_tick": 3058,
+        "start_tick": 3052,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 4495,
+        "end_tick": 4502,
+        "start_tick": 4496,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 4704,
+        "end_tick": 4710,
+        "start_tick": 4705,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 4806,
+        "end_tick": 4813,
+        "start_tick": 4807,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 5274,
+        "end_tick": 5280,
+        "start_tick": 5275,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 6587,
+        "end_tick": 6593,
+        "start_tick": 6588,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 6925,
+        "end_tick": 6931,
+        "start_tick": 6926,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 7212,
+        "end_tick": 7218,
+        "start_tick": 7213,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 7442,
+        "end_tick": 7449,
+        "start_tick": 7443,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 7546,
+        "end_tick": 7553,
+        "start_tick": 7547,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 8512,
+        "end_tick": 8519,
+        "start_tick": 8513,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 8986,
+        "end_tick": 8993,
+        "start_tick": 8987,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 9068,
+        "end_tick": 9074,
+        "start_tick": 9069,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 9235,
+        "end_tick": 9242,
+        "start_tick": 9236,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 9309,
+        "end_tick": 9315,
+        "start_tick": 9310,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 10191,
+        "end_tick": 10198,
+        "start_tick": 10192,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 11018,
+        "end_tick": 11024,
+        "start_tick": 11019,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 11197,
+        "end_tick": 11203,
+        "start_tick": 11198,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 11386,
+        "end_tick": 11393,
+        "start_tick": 11387,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 11827,
+        "end_tick": 11834,
+        "start_tick": 11828,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 11883,
+        "end_tick": 11889,
+        "start_tick": 11884,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 13352,
+        "end_tick": 13359,
+        "start_tick": 13353,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 13645,
+        "end_tick": 13651,
+        "start_tick": 13646,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 14010,
+        "end_tick": 14017,
+        "start_tick": 14011,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 14430,
+        "end_tick": 14436,
+        "start_tick": 14431,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 15178,
+        "end_tick": 15184,
+        "start_tick": 15179,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 15589,
+        "end_tick": 15595,
+        "start_tick": 15590,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 15796,
+        "end_tick": 15803,
+        "start_tick": 15797,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 15967,
+        "end_tick": 15974,
+        "start_tick": 15968,
+        "symbol": 1
+      }
+    ],
+    "waveform_mismatch_ticks": []
+  },
+  "totals": {
+    "background_known": 0,
+    "background_samples": 4738,
+    "background_unknown": 0,
+    "cases": 224,
+    "correct_known": 37,
+    "decision_timing_errors": 0,
+    "duplicates": 0,
+    "early_or_late_known": 0,
+    "exact_cases": 141,
+    "explicit_unknown": 104,
+    "false_known_events": 0,
+    "known_cases": 120,
+    "missed_observations": 0,
+    "rejected_known": 83,
+    "timestamp_errors": 0,
+    "unknown_cases": 104,
+    "wrong_class_events": 0
+  }
+}

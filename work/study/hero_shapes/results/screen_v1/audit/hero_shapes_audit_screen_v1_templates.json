@@ -1,0 +1,250 @@
+[
+  {
+    "name": "pulse_order/stream_templates",
+    "minimum_score": -0.25,
+    "minimum_margin": 0.0,
+    "probe": [
+      4,
+      4,
+      6,
+      4,
+      4
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 26,
+        "decision_tick": 67
+      }
+    ]
+  },
+  {
+    "name": "pulse_order/stream_templates",
+    "minimum_score": -0.25,
+    "minimum_margin": 0.0,
+    "probe": [
+      4,
+      4,
+      10,
+      4,
+      4
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 26,
+        "decision_tick": 71
+      }
+    ]
+  },
+  {
+    "name": "pulse_order/stream_templates",
+    "minimum_score": -0.25,
+    "minimum_margin": 0.0,
+    "probe": [
+      6,
+      4,
+      4,
+      4,
+      4
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": 1,
+        "start_tick": 26,
+        "decision_tick": 67
+      }
+    ]
+  },
+  {
+    "name": "pulse_order/stream_templates",
+    "minimum_score": -0.25,
+    "minimum_margin": 0.0,
+    "probe": [
+      10,
+      4,
+      4,
+      4,
+      4
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": 1,
+        "start_tick": 26,
+        "decision_tick": 71
+      }
+    ]
+  },
+  {
+    "name": "gap_order/stream_templates",
+    "minimum_score": -0.25,
+    "minimum_margin": 0.0,
+    "probe": [
+      4,
+      3,
+      4,
+      7,
+      4,
+      3,
+      4
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 26,
+        "decision_tick": 74
+      }
+    ]
+  },
+  {
+    "name": "gap_order/stream_templates",
+    "minimum_score": -0.25,
+    "minimum_margin": 0.0,
+    "probe": [
+      4,
+      3,
+      4,
+      11,
+      4,
+      3,
+      4
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 26,
+        "decision_tick": 78
+      }
+    ]
+  },
+  {
+    "name": "gap_order/stream_templates",
+    "minimum_score": -0.25,
+    "minimum_margin": 0.0,
+    "probe": [
+      4,
+      7,
+      4,
+      3,
+      4,
+      3,
+      4
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": 1,
+        "start_tick": 26,
+        "decision_tick": 74
+      }
+    ]
+  },
+  {
+    "name": "gap_order/stream_templates",
+    "minimum_score": -0.25,
+    "minimum_margin": 0.0,
+    "probe": [
+      4,
+      11,
+      4,
+      3,
+      4,
+      3,
+      4
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": 1,
+        "start_tick": 26,
+        "decision_tick": 78
+      }
+    ]
+  },
+  {
+    "name": "relative_order/stream_templates",
+    "minimum_score": -0.125,
+    "minimum_margin": 0.0,
+    "probe": [
+      3,
+      3,
+      5,
+      3,
+      5
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": null,
+        "start_tick": 26,
+        "decision_tick": 64
+      }
+    ]
+  },
+  {
+    "name": "relative_order/stream_templates",
+    "minimum_score": -0.125,
+    "minimum_margin": 0.0,
+    "probe": [
+      3,
+      3,
+      9,
+      3,
+      5
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": null,
+        "start_tick": 26,
+        "decision_tick": 68
+      }
+    ]
+  },
+  {
+    "name": "relative_order/stream_templates",
+    "minimum_score": -0.125,
+    "minimum_margin": 0.0,
+    "probe": [
+      5,
+      3,
+      3,
+      3,
+      5
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": null,
+        "start_tick": 26,
+        "decision_tick": 64
+      }
+    ]
+  },
+  {
+    "name": "relative_order/stream_templates",
+    "minimum_score": -0.125,
+    "minimum_margin": 0.0,
+    "probe": [
+      9,
+      3,
+      3,
+      3,
+      5
+    ],
+    "known_matches": [],
+    "events": [
+      {
+        "class_id": null,
+        "start_tick": 26,
+        "decision_tick": 68
+      }
+    ]
+  }
+]

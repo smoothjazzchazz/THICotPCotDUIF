@@ -1,0 +1,192 @@
+"""Measured comparison, unchanged acceptance gates, curves and replay evidence."""
+import csv
+import json
+from pathlib import Path
+import numpy as np
+from .receiver import StreamReceiver,load_weights
+from work.model.stream_reservoir import StreamReceiver as Receiver64,load_weights as load64
+from work.study.protocol_reservoir64_training30.report import adequacy
+from .training import write_json
+
+
+def replay(output):
+    rows=[]
+    for path in sorted((output/'final/traces').glob('*/*_phrase')):
+        group=path.parent.name;size=int(group.split('_')[0][1:]);variant=group.split('_',1)[1]
+        mode=path.name.split('_')[1]
+        loader,receiver=(load_weights,StreamReceiver) if size==32 else (load64,Receiver64)
+        directory=output/'models/i2c'/variant if size==32 else output/'baseline64'/variant
+        w,_=loader(directory/'selected.npz')
+        with np.load(path/'waveform.npz') as data:
+            rx=receiver(w,mode);actual=[]
+            for tick,line in enumerate(data['lines']):
+                e=rx.step(line,tick)
+                if e is not None:actual.append((e.kind,e.observation_tick,e.decision_tick))
+            np.testing.assert_array_equal(np.array(actual,dtype=np.int64).reshape(-1,3),data['events'])
+        rows.append(dict(trace=str(path.relative_to(output)),exact=True))
+    return rows
+
+
+def report(output):
+    from .run import HERE,VARIANTS,sha
+    analysis=output/'analysis';analysis.mkdir(exist_ok=True)
+    final=output/'final'
+    for p,d in json.loads((final/'manifest.json').read_text()).items():assert sha(final/p)==d,p
+    summary=json.loads((final/'summary.json').read_text())
+    records=[json.loads(p.read_text()) for p in sorted(final.glob('n*_*.json'))]
+    fits={v:json.loads((output/'models/i2c'/v/'fit.json').read_text()) for v in VARIANTS}
+    old={v:json.loads((output/'baseline64'/v/'fit.json').read_text()) for v in VARIANTS}
+    convergence=[dict(variant=v,**adequacy(f['history'])) for v,f in fits.items()]
+    write_json(analysis/'convergence.json',convergence)
+    write_json(analysis/'phrase_replays.json',replay(output))
+    epoch_rows=[]
+    for v in VARIANTS:
+        for n,source in ((32,fits),(64,old)):
+            for epoch in (12,30):
+                r=source[v]['history'][epoch-1]
+                epoch_rows.append(dict(nodes=n,variant=v,epoch=epoch,train_loss=r['train_loss'],
+                                      dev_loss=r['dev_loss'],**r['live']))
+    write_json(analysis/'epoch12_vs_30.json',epoch_rows)
+    fields=['nodes','variant','mode','control','condition','valid','passes','byte_exact','expected_bytes','output_bytes',
+        'event_errors','false_known','false_invalid','START_precision','START_recall','STOP_precision','STOP_recall',
+        'deadline_misses','buffer_overflows','recovery_success','peer_timeout']
+    with (analysis/'per_condition.csv').open('w',newline='') as handle:
+        writer=csv.DictWriter(handle,fieldnames=fields);writer.writeheader()
+        for r in records:
+            for c in r['conditions']:
+                t=c['symbols']['totals'];k=c['symbols']['by_kind']
+                row=dict(nodes=r['nodes'],variant=r['variant'],mode=r['mode'],control=r['control'],condition=c['condition'],
+                    valid=c['valid'],passes=c['passes'],byte_exact=c['bytes']['exact'],expected_bytes=c['bytes']['expected'],
+                    output_bytes=c['bytes']['recovered'],event_errors=t['errors'],false_known=t['false_known'],false_invalid=t['false_invalid'],
+                    deadline_misses=c['deadline_misses'],buffer_overflows=c['buffer_overflows'],recovery_success=c['recovery_success'],peer_timeout=c['peer_timeout'])
+                for name in ('START','STOP'):
+                    for metric in ('precision','recall'):row[name+'_'+metric]=k[name][metric]
+                writer.writerow(row)
+    plot(output,fits,old)
+    qualified=summary['qualification_by_node_count']
+    rows32=[r for r in records if r['nodes']==32 and r['control']=='trained']
+    main32=[r for r in rows32 if r['variant'].startswith('seed_')]
+    all_exact=all(c['bytes']['exact'] for r in main32 for c in r['conditions'] if c['valid'])
+    lead=('All three 32-node seeds pass every valid condition in both arithmetic modes.' if qualified['32'] else
+          'The 32-node main seeds do not all pass the strict I2C gate.')
+    lead+=' '+('All main seeds deliver every valid payload byte-exactly.' if all_exact else 'Some valid payload delivery failures remain.')
+    lines=['# 32 sparse nodes, I2C only, 30 epochs','',lead,'',
+        'All four candidates completed 30 epochs: main seeds 11/29/47 plus the seed-11 original-loss control. '
+        'There are 120 saved weight checkpoints and 120 optimizer checkpoints. Both previous experiments remain unchanged.', '',
+        '## Controlled comparison','',
+        'The node count falls from 64 to 32. Four incoming recurrent taps per node give 128 connections '
+        '(12.5% density), with a fixed graph generated by the same topology-seed rule. The six input features, '
+        'leak factors, update/quantization equations, eight classes and decision margin remain unchanged. '
+        'Input, recurrent and readout weights are trained. No new inference memory or protocol decoder was added.', '',
+        'Tick timing is unchanged: one model update per abstract tick, clock low/high 8–12 ticks, '
+        '18-tick target stretch requests, six-tick response setup deadline. The live controller, transmitter, '
+        'peer and independent decoder are reused. No physical Hz value or hardware speed has been established.', '',
+        'The exact same I2C train/dev files were used: 467,802 unique nonpadding training ticks '
+        '(459,385 transaction ticks), 12 streams, 512-tick TBPTT, Adam .003 and 2,820 updates per candidate. '
+        'That is 14,034,060 nonpadding tick presentations per candidate and 56,136,240 total. '
+        'State is continuous across chunks/transactions; padding contributes no loss. The prior weighted '
+        'loss, original-loss control, protocol-based checkpoint selection and convergence rules are unchanged.', '',
+        'Final data use a new seed family, generated after freezing all selections. The frozen 64-node '
+        'weights were evaluated on these same cases without retraining. UART was excluded from this experiment.', '',
+        '## Paired fresh final results','',
+        '| Nodes / candidate | Selected epoch | Float exact / strict | Quantized exact / strict | Phrase float / quantized |',
+        '| --- | ---: | ---: | ---: | --- |']
+    for n in (32,64):
+        for v in VARIANTS:
+            pair=[next(r for r in records if r['nodes']==n and r['variant']==v and r['mode']==m and r['control']=='trained') for m in ('float','quantized')]
+            text=[];phrase=[]
+            for r in pair:
+                s=r['summary'];text.append(f"{s['byte_exact_exchanges']}/{s['valid_exchanges']} / {s['strict_exchanges']}/{s['valid_exchanges']}")
+                phrase.append('Yes' if next(c for c in r['conditions'] if c['condition']=='phrase')['bytes']['exact'] else 'No')
+            lines.append(f"| {n} / {v} | {pair[0]['selected_epoch']} | {text[0]} | {text[1]} | {' / '.join(phrase)} |")
+    lines += ['', 'Exact payload delivery alone is not a strict pass. The 12 valid conditions include the '
+        'foreign-address negative case; 11 positive cases attempt 4,571 data bytes per model/mode. '
+        'They include the reserved phrase, every byte value, 2,048 random bytes, a 1,024-byte message, '
+        'repeated patterns and all timing corners. Malformed/recovery and idle/disturbance add two separate cases.', '',
+        'Strict all-main-seed qualification on the fresh cases: **32 nodes '+str(qualified['32'])+'; 64 nodes '+str(qualified['64'])+'**.', '',
+        '## Remaining failures and recovery','']
+    failure_digest=[]
+    for r in rows32:
+        valid=[c for c in r['conditions'] if c['valid']]
+        invalid=[c for c in r['conditions'] if not c['valid']]
+        digest=dict(variant=r['variant'],mode=r['mode'],valid_event_errors=sum(c['symbols']['totals']['errors'] for c in valid),
+            false_known=sum(c['symbols']['totals']['false_known'] for c in valid),
+            false_invalid=sum(c['symbols']['totals']['false_invalid'] for c in valid),
+            deadline_misses=sum(c['deadline_misses'] for c in valid),overflows=sum(c['buffer_overflows'] for c in r['conditions']),
+            failed_conditions=[c['condition'] for c in valid if not c['passes']],
+            recovery={c['condition']:c['recovery_success'] for c in invalid})
+        failure_digest.append(digest)
+        lines.append(f"- {r['variant']} / {r['mode']}: {digest['valid_event_errors']} valid-condition event errors; "
+            f"{digest['deadline_misses']} deadline misses; {digest['overflows']} overflows; "
+            f"recovery {sum(v is True for v in digest['recovery'].values())}/2. "
+            f"Failed valid conditions: {', '.join(digest['failed_conditions']) or 'none'}.")
+    write_json(analysis/'failure_digest.json',failure_digest)
+    controls=[r for r in records if r['control']!='trained']
+    nctrl=sum(len(r['conditions']) for r in controls)
+    ctrl_exact=sum(c['bytes']['exact'] for r in controls for c in r['conditions'])
+    ctrl_pass=sum(c['passes'] for r in controls for c in r['conditions'])
+    lines += ['',f'Disabled/no-recurrence controls: {ctrl_exact}/{nctrl} byte-exact and {ctrl_pass}/{nctrl} strict cases. '
+        'These are controls on the retained weights, not a claim of universal necessity.', '',
+        '## Training adequacy','']
+    for r in convergence:
+        lines.append(f"- {r['variant']}: **{r['status']}**; late dev-loss reduction {100*r['changes']['relative_dev_loss_reduction']:.1f}%, "
+            f"strict-exchange change {r['changes']['strict_exchanges']:+.2f}, boundary-F1 change {r['changes']['boundary_f1']:+.4f}.")
+    lines += ['', 'These labels apply the predeclared epochs 18/21/24 versus 24/27/30 rule. A decreasing '
+        'loss is distinguished from improving protocol behavior; 30 epochs do not prove convergence. '
+        'All epoch-12/30 comparisons and resumable states remain available. Failed seeds are not omitted.', '',
+        '## Logical resource comparison','',
+        '| Quantity | 32 nodes | 64 nodes |','| --- | ---: | ---: |',
+        '| Recurrent connections | 128 | 256 |','| Trained coefficients, including biases | 616 | 1,224 |',
+        '| Packed int16 coefficients | 1,232 bytes | 2,448 bytes |',
+        '| Packed int16 state, old/new buffers | 128 bytes | 256 bytes |',
+        '| Sparse weighted MACs per tick | 576 | 1,152 |','| Actual dense NumPy MACs per tick | 1,472 | 4,992 |','',
+        'The 8,194-byte packed tanh ROM, 4,096-byte I2C storage, 512-command scheduler and other '
+        'controller/preprocessing state remain. Total system storage therefore does not halve. '
+        'The current NumPy implementation stores dense arrays; these packed counts are estimates, '
+        'not synthesis, area, power or hardware timing results.', '',
+        '## Evidence and commands','',
+        '- [Preregistered recipe and commands](README.md), [plan](runs/run01/plan.json), '
+        '[frozen source/data/weight hashes](runs/run01/freeze.json).',
+        '- [Learning curves](runs/run01/analysis/learning_curves.png), [epoch 12 versus 30](runs/run01/analysis/epoch12_vs_30.json), '
+        '[per-condition CSV](runs/run01/analysis/per_condition.csv), [convergence](runs/run01/analysis/convergence.json).',
+        '- [All weights and optimizer states](runs/run01/models/i2c/), [full traces](runs/run01/final/traces/), '
+        '[phrase waveform figure](runs/run01/analysis/phrase_waveforms.png), [exact phrase replays](runs/run01/analysis/phrase_replays.json).',
+        '- [Preflight and tests](runs/run01/audit/preflight.json), [test log](runs/run01/audit/tests.log), '
+        '[all checkpoint checks and exact real continuation replays](runs/run01/audit/checkpoints.json).',
+        '- [Final summary](runs/run01/final/summary.json), [resource details](runs/run01/final/cost.json), '
+        '[preservation hashes](runs/run01/preservation.json).', '',
+        'The assumed protocol profiles and missing external source status are unchanged. '
+        'No electrical compliance, silicon frequency, reference-design adoption or project gate is claimed. USB has zero fitting steps.', '']
+    (HERE/'REPORT.md').write_text('\n'.join(lines))
+    write_json(analysis/'manifest.json',{str(p.relative_to(HERE)):sha(p) for p in sorted([*analysis.glob('*'),HERE/'REPORT.md'])
+                                       if p.is_file() and p.name!='manifest.json'})
+    print(json.dumps(dict(report=str(HERE/'REPORT.md'),qualification=qualified,convergence=convergence)),flush=True)
+
+
+def plot(output,fits,old):
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    from .run import VARIANTS
+    fig,axes=plt.subplots(4,3,figsize=(13,11),layout='constrained')
+    for i,v in enumerate(VARIANTS):
+        for source,label,style in ((fits,'32 nodes','-'),(old,'64 nodes','--')):
+            h=source[v]['history'];live=[r for r in h if 'live' in r]
+            axes[i,0].plot([r['epoch'] for r in h],[r['dev_loss'] for r in h],style,label=label)
+            axes[i,1].plot([r['epoch'] for r in live],[r['live']['boundary_f1'] for r in live],style)
+            axes[i,2].plot([r['epoch'] for r in live],[r['live']['strict_exchanges'] for r in live],style)
+        axes[i,0].set_ylabel(v);axes[i,0].set_yscale('log')
+        axes[i,1].set_ylim(-.02,1.02);axes[i,2].set_ylim(-.2,9.2)
+        for ax in axes[i]:ax.axvline(12,color='gray',lw=.8,alpha=.5);ax.grid(alpha=.2);ax.set_xlabel('Epoch')
+    for ax,title in zip(axes[0],('Development loss (same recipe per row)','Minimum START/STOP F1','Strict valid exchanges / 9')):ax.set_title(title)
+    axes[0,0].legend();fig.savefig(output/'analysis/learning_curves.png',dpi=160);plt.close(fig)
+    fig,axes=plt.subplots(3,1,figsize=(12,7),layout='constrained')
+    for ax,seed in zip(axes,(11,29,47)):
+        with np.load(output/'final/traces'/f'n32_seed_{seed}'/f'i2c_quantized_{seed}_phrase/waveform.npz') as f:
+            n=min(1400,len(f['lines']));ticks=np.arange(n)
+            ax.step(ticks,f['lines'][:n,0],where='post',label='SCL')
+            ax.step(ticks,f['lines'][:n,1]+1.4,where='post',label='SDA + 1.4')
+            e=f['events'];e=e[e[:,1]<n]
+            ax.scatter(e[:,1],3+e[:,0]/8,s=8,label='event class / 8 + 3')
+            ax.set_title(f'32 nodes, seed {seed}, quantized phrase prefix');ax.set_xlabel('Tick');ax.legend(fontsize=7,loc='upper right')
+    fig.savefig(output/'analysis/phrase_waveforms.png',dpi=160);plt.close(fig)

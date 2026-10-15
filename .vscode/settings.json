@@ -1,6 +1,5 @@
 {
-  "python.defaultInterpreterPath": "${workspaceFolder}/work/study/.venv/bin/python",
-  "python-envs.workspaceSearchPaths": [".venv", "*/.venv", "work/study/.venv"],
+  "python-envs.workspaceSearchPaths": [".venv", "*/.venv"],
   "verilog.linting.linter": "verilator",
   "verilog.formatting.verilogHDL.formatter": "verible-verilog-format"
 }

@@ -1,191 +1,271 @@
-# Python models
+# Shared waveform translator model
 
-This small scaffold demonstrates input waveform → recognized symbol → controller
-decision → output waveform. It uses Python's standard library, one input lane,
-and one output lane. Each loop iteration is one simulated tick; nothing sleeps.
+This is a readable, standard-library Python scaffold for **sample → recognition
+→ response waveform**. It starts from the simple pulse receiver/controller/TX
+model and preserves its tested behavior. It is not a complete golden model of
+the chip, a processor emulator, or a validated choice of memory architecture.
+Python 3.10 or newer is required.
 
-The original system example uses **run-length recognition**, not a reservoir. The skeleton checks
-component interaction, not reservoir effectiveness, hardware timing, or project
-completion. A separate experimental reservoir and comparison study are described
-below. Neither is the completed golden model or ISA reference described in v0.3
-section 7, and it does not establish that a project gate has passed.
+[Experimental scope](../../knowledgebase/experiments.md) permits replacing,
+bypassing, combining, or rearranging these stages. They are shared building
+blocks, not a permanent architecture. For ordinary experiments, change settings,
+swap a stage, or add a related implementation in its existing module. Reuse the
+runner rather than copy the pipeline into another modeling framework. Put
+experiment settings, stimuli, fitting, scoring, and results under `work/study/`.
 
-```text
-input levels (0 or 1)
-  → PulseReceiver
-  → RX event {class_id, start_tick}
-  → receive queue (deque)
-  → Controller
-  → transmit symbol ID
-  → Transmitter + TX_TABLE
-  → output levels (0 or 1), or None when no output is pending
-```
-
-## Run and read
+## Run and swap
 
 From the repository root:
 
 ```sh
-python3 -B -m work.model.system_simple_model
+python3 -B -m work.study.stage_demo.run_demo --memory history
+python3 -B -m work.study.stage_demo.run_demo --memory reservoir
+python3 -B -m work.study.stage_demo.run_demo --memory reservoir --stable-ticks 2
 ```
 
-This prints two tables: the two recognized pulses, then a three-tick unknown
-pulse with fresh component state. Each table also has input and output sequences
-aligned by tick. In the output column, `idle` means `None`, which is distinct
-from `0`. **`None` is a software marker, not an electrical state**: it does not
-specify low, high, or high impedance. A dash in the RX event column means no event.
-The high count is shown after receiver processing, so it is zero on an event tick.
+All three use the same runner. `--stable-ticks 1` passes samples through;
+`--stable-ticks 2` requires two equal samples before changing the conditioned
+level. `--delay-ticks 2` adds a deterministic two-sample delay before filtering.
+`--memory pulse` selects the original exact-width baseline. The earlier command,
+`python3 -B -m work.model.system_simple_model`, now runs the shared stage demo.
 
-Start with `run_simulation()` in [system_simple_model.py](system_simple_model.py).
-Its loop advances TX, samples RX, queues any new event, lets the controller handle
-one event, and records the trace, in that order. `print_trace()` only formats that
-trace; it does not step the components. `main()` contains the two example inputs.
+Each run prints every intermediate output and the entire memory vector at every
+tick. The [example README](../study/stage_demo/README.md) explains fitting and
+contains links to saved traces and settings. Neither memory is a selected winner.
 
-## What each component remembers and produces
+## Data flow and execution order
 
-| Component | Remembers | Produces |
+```text
+sampled 0/1 → conditioning → temporal measurements → memory
+          → readout scores → rejection/stabilization → event
+          → mapping controller → response request → transmitter → 0/1 or idle
+```
+
+There are two short pieces of execution code, both in
+[`system_simple_model.py`](system_simple_model.py):
+
+1. `run_simulation` advances TX from earlier requests.
+2. `StagedReceiver.step` visibly executes conditioning, encoding, memory, readout,
+   then decision, in that order. Readout sees the **new** memory state this tick.
+3. The controller consumes this tick's event and optionally queues a TX request.
+4. The runner snapshots the observation, event, request, and output into its trace.
+
+Thus a request made at tick `t` starts at `t+1` if TX is free, or later if earlier
+patterns are still playing. Patterns play contiguously without extra idle ticks.
+The old receive deque was consumed in the same tick it was filled; this runner
+calls the controller directly with the same timing. There is no modeled RX FIFO
+capacity, CPU instruction latency, or clock-domain scheduling.
+
+The runner takes an iterable of binary samples, including a one-pass generator.
+It never reads its length, a future sample, a label, or a generator boundary.
+It resets supplied components at the start of each call and begins at tick zero.
+It does **not** flush a final high run or drain TX when input ends; provide actual
+trailing input samples to advance time. For streaming receive experiments, call
+`receiver.step(level, tick)` with consecutive ticks and call `reset()` explicitly.
+
+## Stage contracts and where to edit
+
+| Stage and module | Input → output | Runtime state / update |
 | --- | --- | --- |
-| `PulseReceiver` | Pulse-length-to-class mapping, consecutive high count, starting tick | An event on the first low sample after a pulse, otherwise `None` |
-| Receive queue | Events waiting in an unbounded `deque` | The oldest event when the controller removes it |
-| `Controller` | Class-to-transmit-symbol mapping | At most one `send(symbol_id)` request per tick and a short action description |
-| `Transmitter` | Requested symbol list, current symbol index, position within its pattern | One output level per tick, or `None` when no output is pending |
+| `InputConditioner`, [`conditioning.py`](conditioning.py) | Raw 0/1 → `ConditionedSample(raw_level, delayed_level, level)` | Delay line, pending level/count, accepted level; delay first, then filter each tick. |
+| `TemporalEncoder`, [`temporal.py`](temporal.py) | Conditioned level + tick → `TemporalSample` | Current level, run start, last tick; detects transitions and completes the previous run on an observed edge. |
+| `ExplicitHistory` / `RecurrentReservoir`, [`memory.py`](memory.py) | `TemporalSample` → tuple of numbers | Last N feature frames, or recurrent node values; updates once each sample. Both expose `state` and `reset()`. |
+| `PrototypeReadout` / `PulseLengthReadout`, [`readout.py`](readout.py) | Memory tuple + measurements → `ClassScores` or `None` | Loaded parameters only; no fitting or mutable inference state. |
+| `DecisionStage`, [`decision.py`](decision.py) | Scores or `None` + tick → `DecisionOutput(candidate, stable_ticks, event)` | Pending class, first timestamp, count, emitted flag; rejects before stabilization. |
+| `MappingController`, [`controller.py`](controller.py) | `SymbolEvent` or `None` + tick → `ResponseRequest` or `None` | Last event/request, replaced each tick; mapping is copied configuration. |
+| `Transmitter`, [`transmit_simple_model.py`](transmit_simple_model.py) | `send(symbol_id)` and `step()` → sample or `None` | Request list, current symbol index, position; one pattern sample per tick. |
 
-Input levels and output levels are samples, while received class IDs and transmit
-symbol IDs are labels with separate meanings. The receiver maps two high ticks to
-class `0` and four to class `1`. Any other positive pulse length becomes unknown
-class `7`. Idle low samples emit nothing. A pulse needs a following low sample to
-finish; there is no look-ahead or automatic flush when the input list ends.
+Use the module in the table for new related variants. Use `StagedReceiver` to
+compose the first five stages, and `run_simulation` for the whole system. Add a
+new orchestration path only when the experiment requires a different execution
+order; explain that departure rather than quietly duplicating this one.
 
-The controller maps class `0` to transmit symbol `2`, and class `1` to transmit
-symbol `1`. It consumes unknown or unmapped events without transmitting. It only
-reads events and requests symbols; it never reads input samples or drives output
-levels. The trace retains newly emitted events even if consumed that tick.
+Construct stages directly, for example:
 
-The existing [transmit_simple_model.py](transmit_simple_model.py) is reused:
+```python
+from work.model.conditioning import InputConditioner
+from work.model.controller import MappingController
+from work.model.decision import DecisionStage
+from work.model.memory import ExplicitHistory, RecurrentReservoir
+from work.model.readout import PrototypeReadout
+from work.model.system_simple_model import StagedReceiver, run_simulation
+from work.model.temporal import TemporalEncoder
+from work.model.transmit_simple_model import Transmitter
 
-- `Transmitter([])` starts with no requests; an initial symbol list is also allowed.
-- `send(symbol_id)` appends a request. An unknown symbol ID raises `ValueError`.
-- `step()` plays queued patterns in order, with no inserted idle tick between them.
-- `TX_TABLE` currently has `0: [0, 0]`, `1: [0, 1]`, `2: [1, 0]`, `3: [1, 1]`.
+# fitted_prototypes and thresholds come from offline work/study code.
+receiver = StagedReceiver(
+    conditioner=InputConditioner(stable_ticks=2),
+    encoder=TemporalEncoder(),
+    memory=ExplicitHistory(depth=4),  # or RecurrentReservoir()
+    readout=PrototypeReadout(fitted_prototypes, trigger="falling"),
+    decision=DecisionStage(minimum_score=score_threshold,
+                           minimum_margin=margin_threshold),
+)
+trace = run_simulation(samples, receiver,
+                       MappingController({0: 2, 1: 1}),
+                       Transmitter(patterns={2: [1, 0], 1: [0, 1]}))
+```
 
-This transmitter has no capacity limit and keeps completed requests in its list,
-moving its index past them. That simple state is sufficient for these short runs;
-it is not the full hardware transmitter.
+Changing memory also requires fitting/loading matching readout parameters;
+dimensions alone do not establish compatible meanings. The demo's
+`build_receiver(DemoConfig(memory="reservoir", stable_ticks=2))` does this offline
+and returns an ordinary `StagedReceiver`. It does not implement another loop.
+Give each receiver its own stage instances; deliberately passing the same stateful
+instance twice shares it. Constructors copy supplied coefficient rows, mappings,
+and patterns so separately constructed models do not share mutable configuration.
+Reset clears runtime state and preserves loaded parameters. TX reset restores
+only the constructor's initial symbols, not later `send()` requests.
 
-## Follow the first pulse
+## Measurements, decisions, and timestamps
 
-1. Tick 1 starts a high pulse; the receiver remembers `start_tick = 1`.
-2. Tick 2 raises the high count to two. There is still no event.
-3. Tick 3 is low. The receiver emits `{"class_id": 0, "start_tick": 1}` and
-   clears its pulse state. The queue receives that event and the controller removes
-   it in the same tick, requesting transmit symbol `2`. Output is still `None`.
-4. Ticks 4 and 5 play symbol `2` as output levels `[1, 0]`.
+One model tick means one supplied, already sampled binary level. There is no
+physical clock frequency. The optional delay pipeline models exact digital delay
+only: no metastability, asynchronous phase, analog filtering, sub-tick edges,
+sampling jitter, or two-flop synchronizer reliability is simulated. Changes
+between samples are invisible. The filter resets to a configurable initial level
+(zero by default); its delay registers use that same level.
 
-TX advances before the controller runs, so a request made during tick `t` can
-first play during tick `t + 1` (or later if earlier requests are still playing).
-This is a simulation convention, not a hardware timing claim.
+The first observed sample starts a run at tick zero without inventing an edge.
+If input was already high before reset, only its observed portion is measured.
+`elapsed_ticks` is zero at the first sample of a run. On a transition at tick `t`,
+`completed_run.duration = t - run_start_tick`; the new level begins at `t`.
+This applies equally to high and low runs. Nothing here recognizes a class.
+Features are `(signed level, signed edge, min(elapsed_ticks, 7) / 7)`; exact
+uncapped timing remains in the measurement record.
 
-The second pulse starts at tick 5 and emits class `1` at tick 9. Symbol `1` plays
-`[0, 1]` at ticks 10 and 11. All other output ticks are `None`. Eight extra low
-samples give the last response time to finish. The separate three-tick pulse
-emits class `7` at tick 4 with `start_tick = 1`, and produces no transmit response.
+The history memory stores those frames oldest first, including the current
+frame, with numerical zero padding after reset. Padding is an initial memory
+value, not an observed low sample. The recurrent alternative uses three nodes
+by default, explicit matrices and one leak value:
 
-## Try a change
+```text
+drive[i] = sum(input_weight[i,j] * feature[j])
+         + sum(recurrent_weight[i,j] * old_state[j])
+new_state[i] = (1 - leak) * old_state[i] + leak * tanh(drive[i])
+```
 
-- **Input:** edit `input_levels` or `unknown_input_levels` in `main()`. Leave low
-  samples after the last pulse so it can finish and its response can play.
-- **Recognition:** edit `{2: 0, 4: 1}` passed to `PulseReceiver` in `run_simulation()`.
-- **Response:** edit `{0: 2, 1: 1}` passed to `Controller` there. Class `7` stays unknown.
-- **Transmit patterns:** edit `TX_TABLE` in `transmit_simple_model.py`.
+Every node reads the old state; the new tuple is committed together. These are
+floating-point starting models, not the reference 16-node six-bit reservoir.
+Neither saturation nor recurrence is presented as validated useful memory.
 
-For example, change the first pulse from two high samples to three and watch its
-class change to `7` and its response disappear. The checks below describe the
-original example, so intentional behavior changes may require updating them.
+`PrototypeReadout` scores negative mean squared distance to each prototype.
+The demo scores only measured falling edges; its timestamp is the start of the
+completed **conditioned** high run. No stimulus marker triggers the readout.
+`PulseLengthReadout` preserves the exact-width baseline by using measurements
+directly; that intentional memory bypass demonstrates no reservoir recognition.
 
-`run_simulation(input_levels, receiver=...)` also accepts an experimental reservoir
-receiver with the same `{class_id, start_tick}` event interface. The trace records
-its `receiver_state` observations; `high_count` is `None` for that receiver.
-The supplied receiver retains its state until its caller resets it. The default
-pulse example still constructs fresh components on every call.
+Decision rejects absent/invalid scores, a low best score, ties, or a small winning
+margin. One prototype has no competitor, so its margin is `None`; the score
+threshold still applies. Rejection produces an explicit unknown candidate and
+can produce an unknown event. A missing readout (`None`) means **no evaluation**,
+clears pending stabilization, and produces no event.
 
-The system scaffold does not implement an instruction interpreter, reflex
-arbitration, protocol framing, a hardware loader, finite FIFOs, RTL, or electrical
-behavior.
+`hold_ticks=1` disables the extra stabilization wait. Longer holds require fresh
+consecutive evaluations of the same class; use `trigger="every_tick"` for that.
+An isolated falling-edge score cannot satisfy a multi-tick hold. The first stable
+class after reset is eligible, including unknown. Only one event emits per
+uninterrupted candidate run; an absence or class change rearms it, allowing two
+separate pulses of the same class to produce two events.
 
-## Small checks
+For continuous scoring, `start_tick` is the beginning of the candidate run; for
+completion scoring, it is the measured pulse start. `decision_tick` is emission
+time. `requested_tick` records the controller's request time. These are unwrapped
+Python integers, not the reference 12-bit timestamp. Filtering/delay shifts
+observed pulse timestamps; they are not corrected back to an estimated pin edge.
 
-From the repository root:
+Keep these distinctions:
+
+| Value | Meaning |
+| --- | --- |
+| `event is None` | No new event this tick, even if a known candidate remains stable. |
+| `event.class_id is None` | An explicit unknown classification event. |
+| `event.class_id == 0` | Valid known class zero. |
+| `request.symbol_id == 0` | Valid requested pattern zero. |
+| `output_level is None` | Software idle / no scheduled output sample. Not electrical high impedance. |
+| `output_level == 0` | A real transmitted low sample. |
+
+`PulseReceiver`, the queue-based `Controller` wrapper, and trace `rx_event`
+preserve the old dictionaries with class 7 for unknown. New code should use
+`row["event"]` and the typed stage outputs; they do not reserve a numeric class.
+The legacy dictionary cannot distinguish a known class 7 from unknown.
+
+## Follow one pulse
+
+In the default history demo, input rises at tick 8 and stays high at tick 9.
+At tick 10 the observed falling edge completes a two-sample run starting at 8.
+Memory updates with that edge; the prototype readout prefers class 0; decision
+accepts it and emits `SymbolEvent(0, start_tick=8, decision_tick=10)`. The controller
+requests symbol 2 at tick 10. TX emits `1` at tick 11 and `0` at tick 12.
+
+The unfamiliar three-sample pulse completes at tick 21. Its scores fail rejection
+thresholds, so it emits an unknown event with start 18 and requests no response.
+With two-sample filtering, surviving edges and decisions shift one tick later;
+the one-tick glitch produces no conditioned high run and therefore no event.
+The trace prints features, full memory, scores, decision reason/hold count,
+timestamps, request, and TX level for every tick, including idle ticks.
+
+## Scope, cost, and checks
+
+For the demo's three features and two classes, history depth 4 holds 12 numeric
+values and its readout loads 24 prototype values. The reservoir holds 3 node
+values, 18 matrix weights plus one leak, and 6 prototype values. Each reservoir
+tick computes 18 weighted products, 6 blending products, and 3 `tanh` calls;
+history shifts four frames. A scored tick computes 24 or 6 squared differences
+respectively. The encoder has three scalar state fields; conditioning adds
+`delay_ticks` samples plus level/counter state. Decision and controller add their
+inspectable small records/counters. These are software storage/operation counts,
+not bit widths, cell counts, a hardware schedule, or measured execution time.
+
+All receive stages execute in the same simulated tick. Real preprocessing,
+buffering and arithmetic scheduling would need separate implementation evidence.
+TX retains completed requests in an unbounded list, and trace storage grows with
+the input length. This is deliberate scaffold simplicity, not finite hardware
+FIFO/backpressure behavior. Short examples include enough tail samples to finish
+transmission; the runner otherwise returns with queued work still inspectable.
 
 ```sh
 python3 -B -m unittest discover -s work/model -p 'test_*.py' -v
+python3 -B -m unittest discover -s work/study -p 'test_*.py' -v
+python3 -B work/tools/check_template.py
+git diff --check
 ```
 
-The two system checks cover the expected events and output ticks, and unknown-pulse
-consumption without a response. The existing three transmitter checks cover its
-current simple API and playback behavior.
+Checks cover the five pre-existing behaviors plus stage timing, synchronized
+state updates, explicit zeroes, unknown/absence, stabilization, queue order,
+reset/replay, instance isolation, and unchanged trace prefixes under different
+futures. The example check exercises both memories, the pulse baseline, both
+filters, and three sample delays through the same runner.
 
-## Experimental reservoir receiver
+This scaffold does not implement dual listeners, ISA, host loader, electrical
+behavior, full reference FIFOs, RTL arithmetic, or named protocols. The
+[reference architecture](../../knowledgebase/architecture.md),
+[doctrine](../../knowledgebase/doctrine.md), and
+[evidence gates](../../knowledgebase/phases.md) remain separate. No protocol
+compliance, hardware feasibility, or project gate pass follows from these checks.
+Historical study reports and their cleanup record remain intact in
+[`work/study/`](../study/ARCHIVE.md).
 
-[`reservoir_model.py`](reservoir_model.py) adds the following concrete stages:
+## Framed multi-run experiments
 
-```text
-sample -> FeatureExtractor -> IntegerReservoir -> HammingReadout or LinearReadout
-       -> DecisionRule -> Stabilizer -> {class_id, start_tick}
-```
+The [hero-shape study](../study/hero_shapes/README.md) adds reusable variants in
+the same stage modules and uses this same runner. `FramedTemporalEncoder` detects
+a loaded low-idle delimiter, invalidates startup without observed framing, and
+caps run counts so malformed prefixes cannot roll into a fresh valid count.
+`startup_ignore_ticks` excludes conditioner reset fill and settling; the study
+loads `delay_ticks + stable_ticks - 1`. Its frame-age limit includes delimiter
+waiting. These are explicit experimental assumptions, not reference mechanisms.
 
-The reservoir and receiver use only Python's standard library. Training and plots
-live in [`work/study/`](../study/README.md), with separate dependencies.
-Optional configuration selection lives in
-[`work/study/readout_comparison/select_reservoir.py`](../study/readout_comparison/select_reservoir.py). The study runner's
-`--select-reservoir` flag screens candidate settings and chooses one shared
-configuration on training/validation data. It leaves this model's arithmetic and
-the default fixed-configuration generator unchanged; see the study README for
-the command, selection criteria and test-data boundaries.
+`RunHistory` stores durations on observed edges and can normalize their total.
+`LastFallingLatch` wraps the existing sample history or reservoir, continuously
+updates that memory, and saves the final falling-edge vector while waiting for
+the delimiter. It adds a full vector of storage. No generated-example reset is
+introduced; run-history clearing uses the observable frame-start signal.
 
-Experimental choices, not amendments to the released design:
-
-- One input lane, already sampled once per receiver tick. Features are signed
-  level (-1/+1), signed edge (-1/0/+1), and `age.bit_length()`, capped at 7:
-  edge age 0 maps to 0, age 1 to 1, ages 2–3 to 2, and so on.
-  Reset assumes previous input 0 and edge age 0. This does not settle the four-lane
-  aperture or a hardware encoding.
-- Defaults are 16 nodes, signed six-bit state, three recurrent and two feature
-  taps per node. The seeded generator chooses topology, initial weights and
-  leaks once. Config files preserve the actual tap lists, not only the seed.
-- All updates use the previous state. Right shift is arithmetic, accumulation
-  uses unbounded Python integers, and saturation to [-32, 31] happens once after
-  the complete sum. Intermediate RTL widths remain to be chosen.
-- Readouts see the newly updated state in the same tick. Hamming quantizes with
-  `state >= 0`; linear scoring can use those bits or signed values divided by 32.
-  Linear coefficients and scores are floating point research values.
-- Higher scores win. Hamming scores are negative distances. Ties reject to class
-  7; score and margin thresholds are specific to each readout. The study uses
-  prototypes for two known patterns and background; unknown is rejection.
-  It does not define the final hardware packing of all eight prototype slots.
-- The stabilizer emits once a changed class holds for M ticks, including class 7.
-  First class after reset is eligible. Timestamps mark the candidate run's start
-  modulo 4096. No synchronizer or extra hardware pipeline latency is modeled.
-- Saturation bounds states but does not establish fading memory. For example,
-  the zero-input leak update keeps state 1 unchanged at leak shift 2. A focused
-  test preserves this known arithmetic behavior instead of claiming convergence.
-
-Each receiver exposes `observation` with features, states, scores and candidate
-class. `to_dict()` and `from_dict()` save/load its configuration, and `reset()`
-clears runtime state. In the study, every readout sees identical cached states;
-each has an independent stabilizer. Reload checks replay the uncached receiver.
-
-To connect a saved study configuration to the original controller/TX scaffold:
-
-```python
-import json
-from pathlib import Path
-from work.model.reservoir_model import ReservoirReceiver
-from work.model.system_simple_model import run_simulation
-
-settings = json.loads(Path("work/study/results/latest/config.json").read_text())
-receiver = ReservoirReceiver.from_dict(settings["methods"]["linear_full"]["receiver"])
-trace = run_simulation([0, 1, 1, 0, 0], receiver=receiver)
-```
-
-This shows the interface; that short input is not a complete trained pulse-order
-pattern. The controller responds only to classes 0 and 1, as in the original demo.
+`FramePrototypeReadout` scores loaded exemplars once per completed frame, with
+an optional measured run-count validity check. `StreamingTemplateReadout` instead
+accumulates worst-run error for each loaded class/scale, with either absolute
+tick error or relative error. It bypasses memory for recognition and stores only
+progress and error values, rather than the whole waveform. The readout receives
+the same observed framing and emits the same `ClassScores` interface. Controller
+and TX timing are unchanged. Definitions, fitting and all comparisons live in
+the study; no waveform constants are embedded in the shared stage classes.

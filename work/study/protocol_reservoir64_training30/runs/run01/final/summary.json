@@ -1,0 +1,1905 @@
+{
+  "qualification": {
+    "uart_n": false,
+    "uart_e": false,
+    "i2c": false
+  },
+  "models": [
+    {
+      "profile": "uart_n",
+      "variant": "seed_11",
+      "seed": 11,
+      "selected_epoch": 27,
+      "mode": "float",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.20490981963927857,
+        "macro_f1": 0.33184098140728724,
+        "false_events": 48571,
+        "event_errors": 73775,
+        "ticks": 752432,
+        "events": {
+          "BIT0": {
+            "correct": 5127,
+            "expected": 18604,
+            "emitted": 16369,
+            "precision": 0.31321400207709693,
+            "recall": 0.2755858955063427,
+            "f1": 0.29319760958453667
+          },
+          "BIT1": {
+            "correct": 10281,
+            "expected": 18220,
+            "emitted": 14513,
+            "precision": 0.7083993660855784,
+            "recall": 0.5642700329308452,
+            "f1": 0.6281734029878104
+          },
+          "START": {
+            "correct": 4601,
+            "expected": 4603,
+            "emitted": 12664,
+            "precision": 0.3633133291219204,
+            "recall": 0.9995655007603736,
+            "f1": 0.5329240748248103
+          },
+          "STOP": {
+            "correct": 818,
+            "expected": 4601,
+            "emitted": 3383,
+            "precision": 0.24179722140112325,
+            "recall": 0.177787437513584,
+            "f1": 0.20490981963927857
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 43799,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_n",
+      "variant": "seed_11",
+      "seed": 11,
+      "selected_epoch": 27,
+      "mode": "quantized",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.20672478206724781,
+        "macro_f1": 0.3312072710316748,
+        "false_events": 49413,
+        "event_errors": 74649,
+        "ticks": 752432,
+        "events": {
+          "BIT0": {
+            "correct": 5123,
+            "expected": 18604,
+            "emitted": 16610,
+            "precision": 0.30842865743528,
+            "recall": 0.27537088798107934,
+            "f1": 0.2909638212074743
+          },
+          "BIT1": {
+            "correct": 10241,
+            "expected": 18220,
+            "emitted": 14529,
+            "precision": 0.7048661298093468,
+            "recall": 0.5620746432491768,
+            "f1": 0.6254236770588415
+          },
+          "START": {
+            "correct": 4601,
+            "expected": 4603,
+            "emitted": 12664,
+            "precision": 0.3633133291219204,
+            "recall": 0.9995655007603736,
+            "f1": 0.5329240748248103
+          },
+          "STOP": {
+            "correct": 830,
+            "expected": 4601,
+            "emitted": 3429,
+            "precision": 0.24205307669874598,
+            "recall": 0.18039556618126495,
+            "f1": 0.20672478206724781
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 44524,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_n",
+      "variant": "seed_29",
+      "seed": 29,
+      "selected_epoch": 27,
+      "mode": "float",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.11036721444512071,
+        "macro_f1": 0.3878630016566453,
+        "false_events": 9902,
+        "event_errors": 29442,
+        "ticks": 752432,
+        "events": {
+          "BIT0": {
+            "correct": 10182,
+            "expected": 18604,
+            "emitted": 12745,
+            "precision": 0.7989015300117693,
+            "recall": 0.5473016555579445,
+            "f1": 0.6495900985677374
+          },
+          "BIT1": {
+            "correct": 12506,
+            "expected": 18220,
+            "emitted": 20007,
+            "precision": 0.6250812215724496,
+            "recall": 0.6863885839736553,
+            "f1": 0.654301933188584
+          },
+          "START": {
+            "correct": 3531,
+            "expected": 4603,
+            "emitted": 8847,
+            "precision": 0.3991183452017633,
+            "recall": 0.7671084075602868,
+            "f1": 0.5250557620817844
+          },
+          "STOP": {
+            "correct": 272,
+            "expected": 4601,
+            "emitted": 328,
+            "precision": 0.8292682926829268,
+            "recall": 0.05911758313410128,
+            "f1": 0.11036721444512071
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 11866,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_n",
+      "variant": "seed_29",
+      "seed": 29,
+      "selected_epoch": 27,
+      "mode": "quantized",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.11036721444512071,
+        "macro_f1": 0.38621689897678874,
+        "false_events": 10120,
+        "event_errors": 29799,
+        "ticks": 752432,
+        "events": {
+          "BIT0": {
+            "correct": 10159,
+            "expected": 18604,
+            "emitted": 12742,
+            "precision": 0.7972845707110344,
+            "recall": 0.5460653622876801,
+            "f1": 0.6481847763670006
+          },
+          "BIT1": {
+            "correct": 12390,
+            "expected": 18220,
+            "emitted": 20024,
+            "precision": 0.618757491010787,
+            "recall": 0.6800219538968166,
+            "f1": 0.6479447756510825
+          },
+          "START": {
+            "correct": 3531,
+            "expected": 4603,
+            "emitted": 8859,
+            "precision": 0.3985777175753471,
+            "recall": 0.7671084075602868,
+            "f1": 0.5245877284207399
+          },
+          "STOP": {
+            "correct": 272,
+            "expected": 4601,
+            "emitted": 328,
+            "precision": 0.8292682926829268,
+            "recall": 0.05911758313410128,
+            "f1": 0.11036721444512071
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 12037,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_n",
+      "variant": "seed_47",
+      "seed": 47,
+      "selected_epoch": 3,
+      "mode": "float",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.156134882402947,
+        "macro_f1": 0.1603908507497136,
+        "false_events": 21214,
+        "event_errors": 59261,
+        "ticks": 752432,
+        "events": {
+          "BIT0": {
+            "correct": 0,
+            "expected": 18604,
+            "emitted": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BIT1": {
+            "correct": 6081,
+            "expected": 18220,
+            "emitted": 7256,
+            "precision": 0.8380650496141124,
+            "recall": 0.3337541163556531,
+            "f1": 0.4773904851625059
+          },
+          "START": {
+            "correct": 1350,
+            "expected": 4603,
+            "emitted": 11440,
+            "precision": 0.11800699300699301,
+            "recall": 0.2932869867477732,
+            "f1": 0.16829769993143426
+          },
+          "STOP": {
+            "correct": 551,
+            "expected": 4601,
+            "emitted": 2457,
+            "precision": 0.22425722425722425,
+            "recall": 0.11975657465768311,
+            "f1": 0.156134882402947
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 2,
+            "expected": 3,
+            "emitted": 30488,
+            "precision": 6.559958016268695e-05,
+            "recall": 0.6666666666666666,
+            "f1": 0.00013118625168082385
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_n",
+      "variant": "seed_47",
+      "seed": 47,
+      "selected_epoch": 3,
+      "mode": "quantized",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.15639609009774755,
+        "macro_f1": 0.16045698216715293,
+        "false_events": 21290,
+        "event_errors": 59333,
+        "ticks": 752432,
+        "events": {
+          "BIT0": {
+            "correct": 0,
+            "expected": 18604,
+            "emitted": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BIT1": {
+            "correct": 6081,
+            "expected": 18220,
+            "emitted": 7256,
+            "precision": 0.8380650496141124,
+            "recall": 0.3337541163556531,
+            "f1": 0.4773904851625059
+          },
+          "START": {
+            "correct": 1353,
+            "expected": 4603,
+            "emitted": 11469,
+            "precision": 0.11797018048652891,
+            "recall": 0.2939387356072127,
+            "f1": 0.1683673469387755
+          },
+          "STOP": {
+            "correct": 552,
+            "expected": 4601,
+            "emitted": 2458,
+            "precision": 0.22457282343368593,
+            "recall": 0.11997391871332319,
+            "f1": 0.15639609009774755
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 2,
+            "expected": 3,
+            "emitted": 30534,
+            "precision": 6.550075325866247e-05,
+            "recall": 0.6666666666666666,
+            "f1": 0.00013098863673576317
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_n",
+      "variant": "original_loss_11",
+      "seed": 11,
+      "selected_epoch": 15,
+      "mode": "float",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.06786674943099524,
+        "macro_f1": 0.33924864316147063,
+        "false_events": 7954,
+        "event_errors": 32330,
+        "ticks": 752432,
+        "events": {
+          "BIT0": {
+            "correct": 10182,
+            "expected": 18604,
+            "emitted": 12594,
+            "precision": 0.808480228680324,
+            "recall": 0.5473016555579445,
+            "f1": 0.652734149624976
+          },
+          "BIT1": {
+            "correct": 9955,
+            "expected": 18220,
+            "emitted": 12442,
+            "precision": 0.8001125221025559,
+            "recall": 0.546377607025247,
+            "f1": 0.6493379427304155
+          },
+          "START": {
+            "correct": 1354,
+            "expected": 4603,
+            "emitted": 3696,
+            "precision": 0.36634199134199136,
+            "recall": 0.29415598522702585,
+            "f1": 0.3263043740209664
+          },
+          "STOP": {
+            "correct": 164,
+            "expected": 4601,
+            "emitted": 232,
+            "precision": 0.7068965517241379,
+            "recall": 0.03564442512497283,
+            "f1": 0.06786674943099524
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 11952,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_n",
+      "variant": "original_loss_11",
+      "seed": 11,
+      "selected_epoch": 15,
+      "mode": "quantized",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.06786674943099524,
+        "macro_f1": 0.3393608081477468,
+        "false_events": 7974,
+        "event_errors": 32341,
+        "ticks": 752432,
+        "events": {
+          "BIT0": {
+            "correct": 10189,
+            "expected": 18604,
+            "emitted": 12593,
+            "precision": 0.8091002938140237,
+            "recall": 0.5476779187271554,
+            "f1": 0.6532038337019586
+          },
+          "BIT1": {
+            "correct": 9957,
+            "expected": 18220,
+            "emitted": 12442,
+            "precision": 0.80027326796335,
+            "recall": 0.5464873765093304,
+            "f1": 0.6494683973648164
+          },
+          "START": {
+            "correct": 1354,
+            "expected": 4603,
+            "emitted": 3697,
+            "precision": 0.36624289964836354,
+            "recall": 0.29415598522702585,
+            "f1": 0.32626506024096386
+          },
+          "STOP": {
+            "correct": 164,
+            "expected": 4601,
+            "emitted": 232,
+            "precision": 0.7068965517241379,
+            "recall": 0.03564442512497283,
+            "f1": 0.06786674943099524
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 11980,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_11",
+      "seed": 11,
+      "selected_epoch": 3,
+      "mode": "float",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.24571320896928586,
+        "macro_f1": 0.11918787482660531,
+        "false_events": 25016,
+        "event_errors": 71105,
+        "ticks": 825977,
+        "events": {
+          "BIT0": {
+            "correct": 0,
+            "expected": 21034,
+            "emitted": 8,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BIT1": {
+            "correct": 0,
+            "expected": 20393,
+            "emitted": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "START": {
+            "correct": 3240,
+            "expected": 4603,
+            "emitted": 13902,
+            "precision": 0.23305999136814848,
+            "recall": 0.7038887681946556,
+            "f1": 0.35017562820859227
+          },
+          "STOP": {
+            "correct": 1304,
+            "expected": 4601,
+            "emitted": 6013,
+            "precision": 0.21686346249792118,
+            "recall": 0.28341664855466203,
+            "f1": 0.24571320896928586
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 1,
+            "expected": 3,
+            "emitted": 39572,
+            "precision": 2.5270393207318306e-05,
+            "recall": 0.3333333333333333,
+            "f1": 5.0536955148452307e-05
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_11",
+      "seed": 11,
+      "selected_epoch": 3,
+      "mode": "quantized",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.24571320896928586,
+        "macro_f1": 0.11920939197275762,
+        "false_events": 25407,
+        "event_errors": 71495,
+        "ticks": 825977,
+        "events": {
+          "BIT0": {
+            "correct": 0,
+            "expected": 21034,
+            "emitted": 8,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BIT1": {
+            "correct": 0,
+            "expected": 20393,
+            "emitted": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "START": {
+            "correct": 3241,
+            "expected": 4603,
+            "emitted": 13902,
+            "precision": 0.23313192346424974,
+            "recall": 0.7041060178144688,
+            "f1": 0.3502837071061875
+          },
+          "STOP": {
+            "correct": 1304,
+            "expected": 4601,
+            "emitted": 6013,
+            "precision": 0.21686346249792118,
+            "recall": 0.28341664855466203,
+            "f1": 0.24571320896928586
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 1,
+            "expected": 3,
+            "emitted": 39962,
+            "precision": 2.5023772583954755e-05,
+            "recall": 0.3333333333333333,
+            "f1": 5.004378831477543e-05
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_29",
+      "seed": 29,
+      "selected_epoch": 3,
+      "mode": "float",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.14404310297432515,
+        "macro_f1": 0.09867213009657612,
+        "false_events": 29548,
+        "event_errors": 75639,
+        "ticks": 825977,
+        "events": {
+          "BIT0": {
+            "correct": 2,
+            "expected": 21034,
+            "emitted": 8,
+            "precision": 0.25,
+            "recall": 9.508414947228297e-05,
+            "f1": 0.000190095998479232
+          },
+          "BIT1": {
+            "correct": 0,
+            "expected": 20393,
+            "emitted": 12,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "START": {
+            "correct": 3231,
+            "expected": 4603,
+            "emitted": 13906,
+            "precision": 0.2323457500359557,
+            "recall": 0.7019335216163372,
+            "f1": 0.3491274515100762
+          },
+          "STOP": {
+            "correct": 1310,
+            "expected": 4601,
+            "emitted": 13588,
+            "precision": 0.09640859581984104,
+            "recall": 0.2847207128885025,
+            "f1": 0.14404310297432515
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 29814,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_29",
+      "seed": 29,
+      "selected_epoch": 3,
+      "mode": "quantized",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.14404310297432515,
+        "macro_f1": 0.09868619465383374,
+        "false_events": 28882,
+        "event_errors": 74972,
+        "ticks": 825977,
+        "events": {
+          "BIT0": {
+            "correct": 2,
+            "expected": 21034,
+            "emitted": 8,
+            "precision": 0.25,
+            "recall": 9.508414947228297e-05,
+            "f1": 0.000190095998479232
+          },
+          "BIT1": {
+            "correct": 0,
+            "expected": 20393,
+            "emitted": 12,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "START": {
+            "correct": 3232,
+            "expected": 4603,
+            "emitted": 13908,
+            "precision": 0.23238423928674146,
+            "recall": 0.7021507712361503,
+            "f1": 0.34919777429636434
+          },
+          "STOP": {
+            "correct": 1310,
+            "expected": 4601,
+            "emitted": 13588,
+            "precision": 0.09640859581984104,
+            "recall": 0.2847207128885025,
+            "f1": 0.14404310297432515
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 29148,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_47",
+      "seed": 47,
+      "selected_epoch": 3,
+      "mode": "float",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.24734620795498147,
+        "macro_f1": 0.14036404864901372,
+        "false_events": 21808,
+        "event_errors": 67007,
+        "ticks": 825977,
+        "events": {
+          "BIT0": {
+            "correct": 10,
+            "expected": 21034,
+            "emitted": 15,
+            "precision": 0.6666666666666666,
+            "recall": 0.00047542074736141483,
+            "f1": 0.0009501639032733146
+          },
+          "BIT1": {
+            "correct": 0,
+            "expected": 20393,
+            "emitted": 18,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "START": {
+            "correct": 3491,
+            "expected": 4603,
+            "emitted": 10792,
+            "precision": 0.32348035581912526,
+            "recall": 0.7584184227677602,
+            "f1": 0.4535238713868139
+          },
+          "STOP": {
+            "correct": 1934,
+            "expected": 4601,
+            "emitted": 11037,
+            "precision": 0.17522877593548972,
+            "recall": 0.42034340360791134,
+            "f1": 0.24734620795498147
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 27786,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_47",
+      "seed": 47,
+      "selected_epoch": 3,
+      "mode": "quantized",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.24733039196879597,
+        "macro_f1": 0.14037508240257518,
+        "false_events": 21823,
+        "event_errors": 67021,
+        "ticks": 825977,
+        "events": {
+          "BIT0": {
+            "correct": 10,
+            "expected": 21034,
+            "emitted": 15,
+            "precision": 0.6666666666666666,
+            "recall": 0.00047542074736141483,
+            "f1": 0.0009501639032733146
+          },
+          "BIT1": {
+            "correct": 0,
+            "expected": 20393,
+            "emitted": 18,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "START": {
+            "correct": 3492,
+            "expected": 4603,
+            "emitted": 10794,
+            "precision": 0.3235130628126737,
+            "recall": 0.7586356723875733,
+            "f1": 0.45359485614080663
+          },
+          "STOP": {
+            "correct": 1934,
+            "expected": 4601,
+            "emitted": 11038,
+            "precision": 0.175212900887842,
+            "recall": 0.42034340360791134,
+            "f1": 0.24733039196879597
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 27798,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_e",
+      "variant": "original_loss_11",
+      "seed": 11,
+      "selected_epoch": 27,
+      "mode": "float",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.0,
+        "macro_f1": 0.2941534355827719,
+        "false_events": 6398,
+        "event_errors": 35450,
+        "ticks": 825977,
+        "events": {
+          "BIT0": {
+            "correct": 11878,
+            "expected": 21034,
+            "emitted": 16815,
+            "precision": 0.7063931013975617,
+            "recall": 0.5647047637158885,
+            "f1": 0.627651985521414
+          },
+          "BIT1": {
+            "correct": 8671,
+            "expected": 20393,
+            "emitted": 10499,
+            "precision": 0.8258881798266502,
+            "recall": 0.4251949198254303,
+            "f1": 0.5613751132979412
+          },
+          "START": {
+            "correct": 1033,
+            "expected": 4603,
+            "emitted": 2730,
+            "precision": 0.3783882783882784,
+            "recall": 0.22441885726699978,
+            "f1": 0.28174007909450427
+          },
+          "STOP": {
+            "correct": 0,
+            "expected": 4601,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 15377,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "uart_e",
+      "variant": "original_loss_11",
+      "seed": 11,
+      "selected_epoch": 27,
+      "mode": "quantized",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 10,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 4507,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.0,
+        "macro_f1": 0.294734819436941,
+        "false_events": 6049,
+        "event_errors": 35046,
+        "ticks": 825977,
+        "events": {
+          "BIT0": {
+            "correct": 11936,
+            "expected": 21034,
+            "emitted": 16815,
+            "precision": 0.7098424026167113,
+            "recall": 0.5674622040505848,
+            "f1": 0.6307167956881291
+          },
+          "BIT1": {
+            "correct": 8668,
+            "expected": 20393,
+            "emitted": 10497,
+            "precision": 0.8257597408783462,
+            "recall": 0.42504781052321877,
+            "f1": 0.5612172224020718
+          },
+          "START": {
+            "correct": 1033,
+            "expected": 4603,
+            "emitted": 2730,
+            "precision": 0.3783882783882784,
+            "recall": 0.22441885726699978,
+            "f1": 0.28174007909450427
+          },
+          "STOP": {
+            "correct": 0,
+            "expected": 4601,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 15028,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_11",
+      "seed": 11,
+      "selected_epoch": 30,
+      "mode": "float",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729300,
+        "events": {
+          "BIT0": {
+            "correct": 47003,
+            "expected": 47003,
+            "emitted": 47003,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37304,
+            "expected": 37304,
+            "emitted": 37304,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 14,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_11",
+      "seed": 11,
+      "selected_epoch": 30,
+      "mode": "quantized",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729300,
+        "events": {
+          "BIT0": {
+            "correct": 47003,
+            "expected": 47003,
+            "emitted": 47003,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37304,
+            "expected": 37304,
+            "emitted": 37304,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 14,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_29",
+      "seed": 29,
+      "selected_epoch": 30,
+      "mode": "float",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 0.9999624775535365,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729300,
+        "events": {
+          "BIT0": {
+            "correct": 47003,
+            "expected": 47003,
+            "emitted": 47003,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37304,
+            "expected": 37304,
+            "emitted": 37318,
+            "precision": 0.9996248459188596,
+            "recall": 1.0,
+            "f1": 0.9998123877676824
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_29",
+      "seed": 29,
+      "selected_epoch": 30,
+      "mode": "quantized",
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 0.9999624775535365,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729300,
+        "events": {
+          "BIT0": {
+            "correct": 47003,
+            "expected": 47003,
+            "emitted": 47003,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37304,
+            "expected": 37304,
+            "emitted": 37318,
+            "precision": 0.9996248459188596,
+            "recall": 1.0,
+            "f1": 0.9998123877676824
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_47",
+      "seed": 47,
+      "selected_epoch": 30,
+      "mode": "float",
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729300,
+        "events": {
+          "BIT0": {
+            "correct": 47003,
+            "expected": 47003,
+            "emitted": 47003,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37304,
+            "expected": 37304,
+            "emitted": 37304,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_47",
+      "seed": 47,
+      "selected_epoch": 30,
+      "mode": "quantized",
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729300,
+        "events": {
+          "BIT0": {
+            "correct": 47003,
+            "expected": 47003,
+            "emitted": 47003,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37304,
+            "expected": 37304,
+            "emitted": 37304,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "i2c",
+      "variant": "original_loss_11",
+      "seed": 11,
+      "selected_epoch": 30,
+      "mode": "float",
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729300,
+        "events": {
+          "BIT0": {
+            "correct": 47003,
+            "expected": 47003,
+            "emitted": 47003,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37304,
+            "expected": 37304,
+            "emitted": 37304,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "profile": "i2c",
+      "variant": "original_loss_11",
+      "seed": 11,
+      "selected_epoch": 30,
+      "mode": "quantized",
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729300,
+        "events": {
+          "BIT0": {
+            "correct": 47003,
+            "expected": 47003,
+            "emitted": 47003,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37304,
+            "expected": 37304,
+            "emitted": 37304,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1751 @@
+{
+  "background_events": [],
+  "conditions": {
+    "known_back_to_back": {
+      "cases": 10,
+      "correct_known": 10,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 10,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 10,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_clean": {
+      "cases": 10,
+      "correct_known": 10,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 10,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 10,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_glitch": {
+      "cases": 10,
+      "correct_known": 10,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 10,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 10,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_jitter": {
+      "cases": 10,
+      "correct_known": 10,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 10,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 10,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "recovery_known": {
+      "cases": 5,
+      "correct_known": 5,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 5,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "unknown_extra_edges": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_junk": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_missing_edges": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_near_long": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_partial": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_count": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_duration": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_prefix": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_suffix": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    }
+  },
+  "details": [
+    {
+      "case_id": "pulse_order-dev-000",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 90,
+          "start_tick": 47
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-001",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 175,
+          "start_tick": 131
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-002",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 245,
+          "start_tick": 202
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-003",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 316,
+          "start_tick": 273
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-004",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 384,
+          "start_tick": 342
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-005",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 438,
+          "start_tick": 395
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-006",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 521,
+          "start_tick": 478
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-007",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 608,
+          "start_tick": 562
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-008",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 657,
+          "start_tick": 614
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-009",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 740,
+          "start_tick": 675
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-010",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 817,
+          "start_tick": 774
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-011",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 872,
+          "start_tick": 826
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-012",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 941,
+          "start_tick": 906
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-013",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1012,
+          "start_tick": 966
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-014",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1098,
+          "start_tick": 1055
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-015",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1167,
+          "start_tick": 1126
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-016",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1242,
+          "start_tick": 1199
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-017",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 1286,
+          "start_tick": 1243
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-018",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1359,
+          "start_tick": 1316
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-019",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 1430,
+          "start_tick": 1387
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-020",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1495,
+          "start_tick": 1452
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-021",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 1582,
+          "start_tick": 1538
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-022",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 1661,
+          "start_tick": 1618
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-023",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1728,
+          "start_tick": 1689
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-024",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1803,
+          "start_tick": 1760
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-025",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1856,
+          "start_tick": 1810
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-026",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1907,
+          "start_tick": 1864
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-027",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1959,
+          "start_tick": 1913
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-028",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2017,
+          "start_tick": 1972
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-029",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2094,
+          "start_tick": 2051
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-030",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2170,
+          "start_tick": 2124
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-031",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2233,
+          "start_tick": 2190
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-032",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2272,
+          "start_tick": 2241
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-033",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2331,
+          "start_tick": 2285
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-034",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 2380,
+          "start_tick": 2337
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-035",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 2424,
+          "start_tick": 2381
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-036",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 2497,
+          "start_tick": 2454
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-037",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 2552,
+          "start_tick": 2509
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-038",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 2625,
+          "start_tick": 2584
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-039",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 2699,
+          "start_tick": 2656
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-040",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 2774,
+          "start_tick": 2731
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-041",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 2829,
+          "start_tick": 2785
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-042",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2884,
+          "start_tick": 2838
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-043",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2949,
+          "start_tick": 2903
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-044",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2990,
+          "start_tick": 2959
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-045",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3055,
+          "start_tick": 3010
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-046",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3140,
+          "start_tick": 3097
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-047",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3188,
+          "start_tick": 3145
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-048",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3257,
+          "start_tick": 3214
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-049",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3325,
+          "start_tick": 3279
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-050",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3476,
+          "start_tick": 3367
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-051",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 3531,
+          "start_tick": 3488
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-052",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 3602,
+          "start_tick": 3559
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-053",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 3646,
+          "start_tick": 3603
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-054",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 3715,
+          "start_tick": 3676
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-055",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 3795,
+          "start_tick": 3752
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-056",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 3881,
+          "start_tick": 3837
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-057",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 3952,
+          "start_tick": 3909
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-058",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 4013,
+          "start_tick": 3970
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-059",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 4089,
+          "start_tick": 4046
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-060",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4168,
+          "start_tick": 4127
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-061",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4240,
+          "start_tick": 4204
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-062",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 4319,
+          "start_tick": 4276
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-063",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4403,
+          "start_tick": 4357
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-064",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4481,
+          "start_tick": 4438
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-065",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4554,
+          "start_tick": 4511
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-066",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4644,
+          "start_tick": 4598
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-067",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4732,
+          "start_tick": 4686
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-068",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4778,
+          "start_tick": 4747
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-069",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4861,
+          "start_tick": 4818
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-070",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 4911,
+          "start_tick": 4868
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-071",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 4955,
+          "start_tick": 4912
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-072",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 5028,
+          "start_tick": 4985
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-073",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 5101,
+          "start_tick": 5058
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-074",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 5172,
+          "start_tick": 5131
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-075",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 5241,
+          "start_tick": 5198
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-076",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 5289,
+          "start_tick": 5246
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-077",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 5345,
+          "start_tick": 5300
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-078",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5421,
+          "start_tick": 5386
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-079",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5478,
+          "start_tick": 5432
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-080",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5553,
+          "start_tick": 5512
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-081",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5637,
+          "start_tick": 5594
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-082",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5689,
+          "start_tick": 5643
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-083",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5790,
+          "start_tick": 5702
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-084",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 5841,
+          "start_tick": 5798
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-dev-085",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5904,
+          "start_tick": 5861
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-086",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5958,
+          "start_tick": 5915
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-087",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6010,
+          "start_tick": 5964
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-dev-088",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 6087,
+          "start_tick": 6044
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-dev-089",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 6131,
+          "start_tick": 6088
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    }
+  ],
+  "latency": {
+    "from_end": {
+      "max": 21,
+      "mean": 21,
+      "min": 21,
+      "n": 45
+    },
+    "from_start": {
+      "max": 47,
+      "mean": 44.84444444444444,
+      "min": 41,
+      "n": 45
+    },
+    "timestamp_shift": {
+      "max": 2,
+      "mean": 2,
+      "min": 2,
+      "n": 45
+    }
+  },
+  "responses": {
+    "decision_to_response": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 45
+    },
+    "pending_tail_samples": 0,
+    "request_mismatch_ticks": [],
+    "requests": [
+      {
+        "decision_tick": 90,
+        "end_tick": 96,
+        "start_tick": 91,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 175,
+        "end_tick": 181,
+        "start_tick": 176,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 245,
+        "end_tick": 252,
+        "start_tick": 246,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 316,
+        "end_tick": 323,
+        "start_tick": 317,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 384,
+        "end_tick": 391,
+        "start_tick": 385,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 438,
+        "end_tick": 444,
+        "start_tick": 439,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 817,
+        "end_tick": 823,
+        "start_tick": 818,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1242,
+        "end_tick": 1248,
+        "start_tick": 1243,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1286,
+        "end_tick": 1293,
+        "start_tick": 1287,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1359,
+        "end_tick": 1365,
+        "start_tick": 1360,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1430,
+        "end_tick": 1437,
+        "start_tick": 1431,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1495,
+        "end_tick": 1501,
+        "start_tick": 1496,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1582,
+        "end_tick": 1589,
+        "start_tick": 1583,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1661,
+        "end_tick": 1668,
+        "start_tick": 1662,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1728,
+        "end_tick": 1734,
+        "start_tick": 1729,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1907,
+        "end_tick": 1913,
+        "start_tick": 1908,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 2380,
+        "end_tick": 2387,
+        "start_tick": 2381,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 2424,
+        "end_tick": 2430,
+        "start_tick": 2425,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 2497,
+        "end_tick": 2504,
+        "start_tick": 2498,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 2552,
+        "end_tick": 2559,
+        "start_tick": 2553,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 2625,
+        "end_tick": 2631,
+        "start_tick": 2626,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 2699,
+        "end_tick": 2705,
+        "start_tick": 2700,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 2774,
+        "end_tick": 2780,
+        "start_tick": 2775,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 2829,
+        "end_tick": 2836,
+        "start_tick": 2830,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 3531,
+        "end_tick": 3538,
+        "start_tick": 3532,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 3602,
+        "end_tick": 3608,
+        "start_tick": 3603,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 3646,
+        "end_tick": 3653,
+        "start_tick": 3647,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 3715,
+        "end_tick": 3722,
+        "start_tick": 3716,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 3795,
+        "end_tick": 3801,
+        "start_tick": 3796,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 3881,
+        "end_tick": 3887,
+        "start_tick": 3882,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 3952,
+        "end_tick": 3959,
+        "start_tick": 3953,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 4013,
+        "end_tick": 4020,
+        "start_tick": 4014,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 4089,
+        "end_tick": 4095,
+        "start_tick": 4090,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 4319,
+        "end_tick": 4325,
+        "start_tick": 4320,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 4911,
+        "end_tick": 4918,
+        "start_tick": 4912,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 4955,
+        "end_tick": 4961,
+        "start_tick": 4956,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 5028,
+        "end_tick": 5034,
+        "start_tick": 5029,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 5101,
+        "end_tick": 5108,
+        "start_tick": 5102,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 5172,
+        "end_tick": 5178,
+        "start_tick": 5173,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 5241,
+        "end_tick": 5248,
+        "start_tick": 5242,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 5289,
+        "end_tick": 5295,
+        "start_tick": 5290,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 5345,
+        "end_tick": 5352,
+        "start_tick": 5346,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 5841,
+        "end_tick": 5848,
+        "start_tick": 5842,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 6087,
+        "end_tick": 6093,
+        "start_tick": 6088,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 6131,
+        "end_tick": 6138,
+        "start_tick": 6132,
+        "symbol": 1
+      }
+    ],
+    "waveform_mismatch_ticks": []
+  },
+  "totals": {
+    "background_known": 0,
+    "background_samples": 1855,
+    "background_unknown": 0,
+    "cases": 90,
+    "correct_known": 45,
+    "decision_timing_errors": 0,
+    "duplicates": 0,
+    "early_or_late_known": 0,
+    "exact_cases": 90,
+    "explicit_unknown": 45,
+    "false_known_events": 0,
+    "known_cases": 45,
+    "missed_observations": 0,
+    "rejected_known": 0,
+    "timestamp_errors": 0,
+    "unknown_cases": 45,
+    "wrong_class_events": 0
+  }
+}

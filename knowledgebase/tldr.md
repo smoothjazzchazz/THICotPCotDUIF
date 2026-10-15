@@ -2,6 +2,8 @@
 
 This is the plain-language map of the chip. Read it before the pitch documents. If this file and [architecture.md](architecture.md) disagree, the architecture page wins, and v0.31 wins over v0.3. Numbers in the specs marked **[EST]** are guesses. Items marked **[VERIFY]** are not checked yet. This page does not turn either into facts.
 
+This map describes the reference design. For experimental work, [experiments.md](experiments.md) takes precedence on what may change. Agents may redraw the building: different memory, different listeners, different control and output paths. Keep the purpose of a configurable waveform translator and measure what the new arrangement buys.
+
 You do not need to have taped out a chip to start. You do need to be able to explain each block below in your own words before you merge code an agent wrote for that block.
 
 ## The picture, in plain English
@@ -311,7 +313,7 @@ From 5 Jan to 18 Jan, fix template precheck and gate-level failures. Do not add 
 - `src/`: Verilog the chip is built from. Template top stays put.
 - `test/`: cocotb. This is the template's test entry point.
 - `work/model/`: Python golden model. `work/study/`: the reservoir experiment. `work/fw/`: programs and weight files. `work/formal/`: proofs. `work/verification/`: logs.
-- `knowledgebase/placeholders/`: a list of documents we still need (pad behavior, real board clock, protocol framing details). They stay empty until someone files a real source. Do not paste a random datasheet in to feel productive.
+- `knowledgebase/protocols/`: checked UART, I2C, USB low-speed, and 10 Mbit Ethernet references, source links, and an audit of model assumptions. `knowledgebase/placeholders/` tracks remaining evidence such as pads, board clock, implementations, and qualification; a filed protocol source does not resolve those gaps.
 
 ## Glossary
 
@@ -406,4 +408,3 @@ What they are, in one line, and how they sit on this chip. Framing details we ha
 2. Run the template's cocotb test so you see a simulation pass on the adder.
 3. In Python, not Verilog, implement "TX table plays symbol 0 then symbol 1" and print the pin waveform.
 4. Only then ask an agent for a Verilog TX engine, and check it against your printout before anything else lands in `src/`.
-

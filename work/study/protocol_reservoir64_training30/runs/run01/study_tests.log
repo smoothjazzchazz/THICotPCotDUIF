@@ -1,0 +1,20 @@
+test_batched_dev_decisions_match_online_receiver (work.study.protocol_reservoir64_training30.test_training.TrainingTests.test_batched_dev_decisions_match_online_receiver) ... ok
+test_boundary_and_malformed_label_coverage (work.study.protocol_reservoir64_training30.test_training.TrainingTests.test_boundary_and_malformed_label_coverage) ... ok
+test_full_development_exchange_seeds_disjoint (work.study.protocol_reservoir64_training30.test_training.TrainingTests.test_full_development_exchange_seeds_disjoint) ... ok
+test_full_window_gradients_and_continuous_state (work.study.protocol_reservoir64_training30.test_training.TrainingTests.test_full_window_gradients_and_continuous_state) ... ok
+test_optimizer_restore_exact_continuation (work.study.protocol_reservoir64_training30.test_training.TrainingTests.test_optimizer_restore_exact_continuation) ... ok
+test_seeded_peer_preserves_original_path (work.study.protocol_reservoir64_training30.test_training.TrainingTests.test_seeded_peer_preserves_original_path) ... ok
+test_fixed_sparse_topology_and_causality (work.study.protocol_reservoir64.test_experiment.ExperimentTests.test_fixed_sparse_topology_and_causality) ... ok
+test_gradient_actual_internal_weights (work.study.protocol_reservoir64.test_experiment.ExperimentTests.test_gradient_actual_internal_weights) ... ok
+test_i2c_interactive_store_read_stretch_and_nack (work.study.protocol_reservoir64.test_experiment.ExperimentTests.test_i2c_interactive_store_read_stretch_and_nack) ... ok
+test_independent_i2c_generator (work.study.protocol_reservoir64.test_experiment.ExperimentTests.test_independent_i2c_generator) ... ok
+test_quantized_determinism_and_bounds (work.study.protocol_reservoir64.test_experiment.ExperimentTests.test_quantized_determinism_and_bounds) ... ok
+test_scheduler_causality_and_overflow (work.study.protocol_reservoir64.test_experiment.ExperimentTests.test_scheduler_causality_and_overflow) ... ok
+test_split_nonoverlap_and_no_reserved_phrase (work.study.protocol_reservoir64.test_experiment.ExperimentTests.test_split_nonoverlap_and_no_reserved_phrase) ... ok
+test_uart_generator_and_full_tx_all_bytes (work.study.protocol_reservoir64.test_experiment.ExperimentTests.test_uart_generator_and_full_tx_all_bytes) ... ok
+test_usb_source_gate_and_line_diagnostic (work.study.protocol_reservoir64.test_experiment.ExperimentTests.test_usb_source_gate_and_line_diagnostic) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.189s
+
+OK

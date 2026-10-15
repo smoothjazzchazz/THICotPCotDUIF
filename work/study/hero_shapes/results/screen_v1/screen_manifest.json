@@ -1,0 +1,47 @@
+{
+  "command": [
+    "/home/daniel/stuff/THICotPCotDUIF_exp/work/study/hero_shapes/run_study.py",
+    "screen",
+    "--output",
+    "work/study/hero_shapes/results/screen_v1"
+  ],
+  "created_utc": "2026-10-07T18:14:10.915766+00:00",
+  "git_head": "faf7ca2c2ed680570382f3a8e22f62b547c90a6b",
+  "initial_search_budget": "3 families x 7 architectures x <=12 rejection settings",
+  "python": "3.11.6",
+  "repeats": {
+    "dev": 5,
+    "heldout": 8,
+    "train": 8
+  },
+  "seeds": {
+    "dev": 29303,
+    "heldout": 94709,
+    "startup": 85703,
+    "train": 17301
+  },
+  "selection": "zero false known first; then worst-condition known recall; all architectures retained",
+  "source_hashes": {
+    "work/model/conditioning.py": "befde69c44e9cb9cadcfcb290e992ca47abf1383e5392873ad193f9ed9a32c9e",
+    "work/model/controller.py": "457f8de37c5826afbd8436495f315fa0acab7ef9a997745d0998896cf5744075",
+    "work/model/decision.py": "e4e7650edd153d602e1fd856d1da3c65c241783fc0536aa2e1e3c53a599efe63",
+    "work/model/memory.py": "1fe26f9062bf02c9954ada8bc34fa87e7cd5dd3249acbe682ca08f3aaf5a12e9",
+    "work/model/readout.py": "a23a2c262f43f583d38ad1be800298595268da0d7b68e065a038291552e331cd",
+    "work/model/system_simple_model.py": "8f0a592b93003c1937c12de8bf932a8a923d5ff2297deaa8dcbfa1c2df6c954b",
+    "work/model/temporal.py": "a3c7ecfa82b2f6c908ce6afba365ee572543a5146c3a2ee8841e95fac27a6505",
+    "work/model/test_frame_readout.py": "eff1889e44d65366e9ec3084e181b00e2292e06d5a6e48f626afc8b152b10363",
+    "work/model/test_stages.py": "15ac75bcabedb9fabef66c93b1f7e064e625f7da4a1e4a079bc0e9f68d22f552",
+    "work/model/test_system_simple_model.py": "b2642739da0927181788628f43635d23baa104531b321d57532ea5617e9dee79",
+    "work/model/test_transmit_simple_model.py": "baf5fbbe8d0fc3f822541e904af85845e82bab2f80cbc97670a77f934cefd02f",
+    "work/model/transmit_simple_model.py": "7fb5604f34d39456426c44887d0969df466a45f391fa0e9a5e1bc64e03adbc7a",
+    "work/study/hero_shapes/__init__.py": "db829af08ce21f43c2ef64c5cea62dc5eef9d8d2c55605330120d32cf83aa824",
+    "work/study/hero_shapes/fitting.py": "a948280c3a59ddce8a2b5b4d9e078b741ada596df98071406ba9e5682c6ee172",
+    "work/study/hero_shapes/models.py": "c98b3c5cf95766dba5aeba804f476c43d49d67fd1b4bd11888d809f0e0e8d77e",
+    "work/study/hero_shapes/replay.py": "3df6e32b6d389a915e3dd8d0e7ff012a28d12208abc88d4af9c9967ed896a0f0",
+    "work/study/hero_shapes/run_study.py": "d4334affe29cfb67689f407be45256bb384c6b04dc786fc07384e23237cc7b9f",
+    "work/study/hero_shapes/scoring.py": "239d2b955530ebc38f30b1436270a385983f2fc91b20040e966e9b28a683efa3",
+    "work/study/hero_shapes/stimuli.py": "99167c45c75f3ec08fdb817e56ddbb088ebb237ee403af289cdacc6b495ccf9f",
+    "work/study/hero_shapes/test_experiment.py": "e79ac02c0cb58f7fa470bd80f641ca2c0bbcd6f3c58374cfb3936abc320c1cbb",
+    "work/study/hero_shapes/test_stimuli.py": "3d6a50b2788bd9a37ab9ae8658c574bfd833cd2ccc34f578e35c66dae8da766c"
+  }
+}

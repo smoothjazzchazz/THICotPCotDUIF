@@ -1,0 +1,121 @@
+{
+  "architecture_hash": "25631ac2745c1222fd229d43e2cc28f2fd1018b0eb48242b1a1e19476a491bfd",
+  "parameters": {
+    "input_weights": 384,
+    "recurrent_weights": 256,
+    "state_bias": 64,
+    "readout_weights": 512,
+    "readout_bias": 8,
+    "total_trained": 1224,
+    "fixed_leaks": 64,
+    "recurrent_indices_bits": 1536
+  },
+  "logical_storage_bytes": {
+    "float64_coefficients": 9792,
+    "quantized_int16_coefficients": 2448,
+    "float64_state_double_buffer": 1024,
+    "quantized_state_double_buffer": 256,
+    "leak_q15": 128,
+    "recurrent_indices_packed": 192,
+    "tanh_lut_q14": 8194,
+    "preprocessor_previous_levels": 2,
+    "preprocessor_edge_ages": 2,
+    "event_register_64bit_timestamps_and_class": 17,
+    "decision_last_class": 1,
+    "tick_counter": 8,
+    "uart_byte_fifo": 32,
+    "uart_assembly_bits_and_count": 3,
+    "uart_queue_deadlines_64bit": 256,
+    "uart_schedule_counter": 8,
+    "i2c_byte_storage": 4096,
+    "i2c_controller_fields_upper_bound": 64,
+    "tx_pending_commands_512x25bytes": 12800,
+    "tx_output_latches": 4
+  },
+  "arithmetic_per_tick": {
+    "sparse_MAC": 1152,
+    "dense_numpy_MAC": 4992,
+    "leak_blend_products": 128,
+    "tanh_or_LUT": 64,
+    "bias_additions": 72,
+    "quant_accumulator_bits": 64,
+    "worst_case_drive_abs_bound": 88,
+    "worst_case_readout_abs_bound": 520,
+    "top_two_readout_comparisons_upper_bound": 16
+  },
+  "implementation_notes": [
+    "Float reference uses float64; quantized steps use int64 NumPy arrays for overflow-safe arithmetic.",
+    "Logical int16 parameter/state storage and sparse MAC counts are a packing proposal, not the Python process footprint.",
+    "Current NumPy execution stores dense 64x64 recurrence even though only 256 entries can be nonzero.",
+    "Tanh ROM generated once off-line; LUT and fixed-point rounding are used in online quantized steps.",
+    "Python logs, full traces, emitted-event lists and recovered-byte lists are diagnostic sinks, not runtime decision inputs.",
+    "Master/stimulus, training BPTT buffers and independent checkers are external to emulator; not counted as device storage.",
+    "No accelerator schedule, area, achievable frequency, power, electrical or silicon feasibility measured.",
+    "Linearization radii do not prove echo-state behavior or long-term stability."
+  ],
+  "trained_dynamics": [
+    {
+      "profile": "uart_n",
+      "seed": 11,
+      "recurrent_spectral_radius": 2.18827304613946,
+      "unsaturated_linearization_radius": 1.6633075650665226,
+      "max_abs_weight": 2.650001824170328
+    },
+    {
+      "profile": "uart_n",
+      "seed": 29,
+      "recurrent_spectral_radius": 2.4897909039310426,
+      "unsaturated_linearization_radius": 1.4757920149286223,
+      "max_abs_weight": 2.564441452564095
+    },
+    {
+      "profile": "uart_n",
+      "seed": 47,
+      "recurrent_spectral_radius": 1.4416953706620803,
+      "unsaturated_linearization_radius": 1.1475651550901613,
+      "max_abs_weight": 1.6165117019841002
+    },
+    {
+      "profile": "uart_e",
+      "seed": 11,
+      "recurrent_spectral_radius": 1.2067948018362855,
+      "unsaturated_linearization_radius": 1.0979626961145985,
+      "max_abs_weight": 1.5057653997334497
+    },
+    {
+      "profile": "uart_e",
+      "seed": 29,
+      "recurrent_spectral_radius": 1.2305515514929786,
+      "unsaturated_linearization_radius": 1.1144134385309739,
+      "max_abs_weight": 1.4509256356682023
+    },
+    {
+      "profile": "uart_e",
+      "seed": 47,
+      "recurrent_spectral_radius": 1.329751845957261,
+      "unsaturated_linearization_radius": 1.1444033734018362,
+      "max_abs_weight": 1.5931393025638303
+    },
+    {
+      "profile": "i2c",
+      "seed": 11,
+      "recurrent_spectral_radius": 1.3505584724896196,
+      "unsaturated_linearization_radius": 1.1092812203502471,
+      "max_abs_weight": 2.149222602549524
+    },
+    {
+      "profile": "i2c",
+      "seed": 29,
+      "recurrent_spectral_radius": 1.2330840760281494,
+      "unsaturated_linearization_radius": 1.0521659041476878,
+      "max_abs_weight": 1.804237815922713
+    },
+    {
+      "profile": "i2c",
+      "seed": 47,
+      "recurrent_spectral_radius": 1.3084242856952504,
+      "unsaturated_linearization_radius": 1.193684526549393,
+      "max_abs_weight": 1.806978764823207
+    }
+  ]
+}

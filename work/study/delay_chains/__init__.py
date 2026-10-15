@@ -1,1 +1,0 @@
-"""Finite delay-chain experiment."""

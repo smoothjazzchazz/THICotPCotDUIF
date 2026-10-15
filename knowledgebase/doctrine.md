@@ -1,12 +1,12 @@
 # Doctrine
 
-How this project decides what to build and what to show. Mechanisms stay in [architecture.md](architecture.md). This page wins on goals, success, and the order we present the chip.
+How this project decides what to build and what to show. Reference mechanisms stay in [architecture.md](architecture.md). This page wins on project goals, success, and the order we present the chip. [experiments.md](experiments.md) governs architectural exploration and its local success criteria.
 
 ## What it is for
 
 A waveform translator. After fabrication, a host loads weights and tables and the same pins speak whatever that file describes, inside the chip's timing and pin limits. The announcement's UART, SPI, and I2C are stepping stones: they have to work, through that same load path, so the chip covers the assignment. The chip is not designed to be the best decoder of those protocols.
 
-The point of the work is the behavior a fixed UART block plus an SPI block does not have:
+The reference design shows that purpose through behavior a fixed UART block plus an SPI block does not have:
 
 - A line code chosen because it is a shape in time, loaded after the silicon exists, decoded and sent back.
 - Pattern 7 when the wiggle matches nothing that was loaded.
@@ -37,4 +37,6 @@ Weird behavior first, coverage after. UART transmit out of a pin remains the fir
 
 ## Study
 
-G1 asks whether at least one temporal shape sticks in the nodes well enough to be the hero, and whether the boring file is good enough that the stepping-stone protocols can be firmware plus that file. Record both listeners. Do not set the pass mark as "better than a normal decoder."
+Experiments serve the waveform translator. They may challenge its entire architecture, including the reservoir and the boundaries between recognition, control, and output. The reference demonstrations above do not require every experimental candidate to retain both listeners, expose reservoir nodes, or route all behavior through the existing symbol interface. Useful comparisons with conventional designs are allowed; a familiar-protocol benchmark alone does not establish a configurable translator.
+
+For the reference design, G1 asks whether at least one temporal shape sticks in the nodes well enough to be the hero, and whether the boring file is good enough that the stepping-stone protocols can be firmware plus that file. Record both listeners for that gate. Independent experiments use the questions and evidence rules in [experiments.md](experiments.md); their results may support a later change to the design and its demonstrations.

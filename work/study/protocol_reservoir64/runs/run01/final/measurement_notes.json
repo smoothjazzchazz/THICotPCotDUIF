@@ -1,0 +1,11 @@
+{
+  "original_metrics_preserved": true,
+  "corrections": [
+    "In original I2C JSON, input_presented_bytes actually counts controller-recovered write bytes. The audited CSV labels that separately and uses len(peer_acks)-2 to count data-byte attempts made by the live master, excluding its two address cycles.",
+    "UART deadline_misses for a non-exact output is conservatively the expected byte count: these deadlines are failed or unverifiable, not evidence that every byte was delivered late. Latency samples are withheld unless output is wholly exact.",
+    "I2C fast_with_jitter/slow_with_jitter names are shared with UART; they mean fixed asymmetric low/high timings (8/12 or 12/8). The separate jitter case randomizes each low and high period over 8..12.",
+    "The cost file lists logical UART FIFO capacity and its actual encoded command/deadline representation. Do not sum an extra 32-byte data array into implemented Python state: no separate byte queue is allocated.",
+    "Each case is a complete write/read exchange or multi-frame UART stream, reset once at case start. Byte-exact cases and strict qualified cases are distinct."
+  ],
+  "audit_sha256": "6f6bcc1d568a11f70b7b9113105f0474b7405a3e9a32bf7abf6c8ad5216e298f"
+}

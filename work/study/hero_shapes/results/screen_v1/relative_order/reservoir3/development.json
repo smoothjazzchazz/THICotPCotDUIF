@@ -1,0 +1,1806 @@
+{
+  "background_events": [],
+  "conditions": {
+    "known_back_to_back": {
+      "cases": 10,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 0,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 10,
+      "known_recall": 0.0,
+      "missed_observations": 0,
+      "rejected_known": 10,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_clean": {
+      "cases": 20,
+      "correct_known": 2,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 2,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 20,
+      "known_recall": 0.1,
+      "missed_observations": 0,
+      "rejected_known": 18,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_glitch": {
+      "cases": 20,
+      "correct_known": 1,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 1,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 20,
+      "known_recall": 0.05,
+      "missed_observations": 0,
+      "rejected_known": 19,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_jitter": {
+      "cases": 20,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 0,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 20,
+      "known_recall": 0.0,
+      "missed_observations": 0,
+      "rejected_known": 20,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "recovery_known": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 0,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 5,
+      "known_recall": 0.0,
+      "missed_observations": 0,
+      "rejected_known": 5,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "unknown_extra_edges": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_junk": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_missing_edges": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_partial": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_count": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_duration": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_prefix": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_suffix": {
+      "cases": 5,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 5,
+      "explicit_unknown": 5,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 5,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    }
+  },
+  "details": [
+    {
+      "case_id": "relative_order-dev-000",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 108,
+          "start_tick": 47
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-001",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 195,
+          "start_tick": 134
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-002",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 274,
+          "start_tick": 233
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-003",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 355,
+          "start_tick": 315
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-004",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 452,
+          "start_tick": 392
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-005",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 530,
+          "start_tick": 469
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-006",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 588,
+          "start_tick": 548
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-007",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 680,
+          "start_tick": 619
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-008",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 766,
+          "start_tick": 705
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-009",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 845,
+          "start_tick": 805
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-010",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 909,
+          "start_tick": 869
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-011",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 963,
+          "start_tick": 921
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-012",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1025,
+          "start_tick": 985
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-013",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1109,
+          "start_tick": 1034
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-014",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1213,
+          "start_tick": 1152
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-015",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1283,
+          "start_tick": 1219
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-016",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1362,
+          "start_tick": 1301
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-017",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1417,
+          "start_tick": 1374
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-018",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1522,
+          "start_tick": 1458
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-019",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1569,
+          "start_tick": 1535
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-020",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1617,
+          "start_tick": 1577
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-021",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1665,
+          "start_tick": 1625
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-022",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1706,
+          "start_tick": 1666
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-023",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1797,
+          "start_tick": 1736
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-024",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1890,
+          "start_tick": 1831
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-025",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1973,
+          "start_tick": 1912
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-026",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2056,
+          "start_tick": 2016
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-027",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 2160,
+          "start_tick": 2099
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-028",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2225,
+          "start_tick": 2184
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-029",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2272,
+          "start_tick": 2232
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-030",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2341,
+          "start_tick": 2302
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-031",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2418,
+          "start_tick": 2357
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-032",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2469,
+          "start_tick": 2429
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-033",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2565,
+          "start_tick": 2504
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-034",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2625,
+          "start_tick": 2585
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-035",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2691,
+          "start_tick": 2648
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-036",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2768,
+          "start_tick": 2704
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-037",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2836,
+          "start_tick": 2796
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-038",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2934,
+          "start_tick": 2873
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-039",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2988,
+          "start_tick": 2948
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-040",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3064,
+          "start_tick": 3000
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-041",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3168,
+          "start_tick": 3096
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-042",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3214,
+          "start_tick": 3174
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-043",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3274,
+          "start_tick": 3233
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-044",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3328,
+          "start_tick": 3288
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-045",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3369,
+          "start_tick": 3329
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-046",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3460,
+          "start_tick": 3399
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-047",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3510,
+          "start_tick": 3470
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-048",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3586,
+          "start_tick": 3546
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-049",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3666,
+          "start_tick": 3624
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-050",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3745,
+          "start_tick": 3688
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-051",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3819,
+          "start_tick": 3757
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-052",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3916,
+          "start_tick": 3855
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-053",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3992,
+          "start_tick": 3951
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-054",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4058,
+          "start_tick": 4018
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-055",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4122,
+          "start_tick": 4082
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-056",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4211,
+          "start_tick": 4150
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-057",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4302,
+          "start_tick": 4241
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-058",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4365,
+          "start_tick": 4322
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-059",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4425,
+          "start_tick": 4391
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-060",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4514,
+          "start_tick": 4453
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-061",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4614,
+          "start_tick": 4553
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-062",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4683,
+          "start_tick": 4619
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-063",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4758,
+          "start_tick": 4724
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-064",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4842,
+          "start_tick": 4778
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-065",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4900,
+          "start_tick": 4860
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-066",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4968,
+          "start_tick": 4928
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-067",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5017,
+          "start_tick": 4977
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-068",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5058,
+          "start_tick": 5018
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-069",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5151,
+          "start_tick": 5088
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-070",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 5252,
+          "start_tick": 5191
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-071",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5331,
+          "start_tick": 5270
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-072",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5429,
+          "start_tick": 5368
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-073",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5498,
+          "start_tick": 5438
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-074",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5581,
+          "start_tick": 5541
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-075",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5631,
+          "start_tick": 5593
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-076",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5702,
+          "start_tick": 5663
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-077",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5750,
+          "start_tick": 5710
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-078",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5810,
+          "start_tick": 5770
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-079",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5887,
+          "start_tick": 5847
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-080",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5969,
+          "start_tick": 5908
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-081",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6032,
+          "start_tick": 5992
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-082",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6110,
+          "start_tick": 6067
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-083",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6217,
+          "start_tick": 6153
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-084",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6265,
+          "start_tick": 6224
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-085",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6330,
+          "start_tick": 6290
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-086",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6396,
+          "start_tick": 6356
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-087",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6529,
+          "start_tick": 6437
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-088",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6590,
+          "start_tick": 6550
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-089",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6672,
+          "start_tick": 6629
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-090",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6746,
+          "start_tick": 6706
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-091",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6787,
+          "start_tick": 6747
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-092",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6857,
+          "start_tick": 6817
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-093",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6918,
+          "start_tick": 6877
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-094",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6984,
+          "start_tick": 6923
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-095",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7030,
+          "start_tick": 6990
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-096",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7102,
+          "start_tick": 7043
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-097",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7151,
+          "start_tick": 7111
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-098",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7207,
+          "start_tick": 7164
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-099",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 7311,
+          "start_tick": 7250
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-100",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7392,
+          "start_tick": 7331
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-101",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7466,
+          "start_tick": 7405
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-102",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7520,
+          "start_tick": 7480
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "relative_order-dev-103",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7618,
+          "start_tick": 7560
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-104",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7690,
+          "start_tick": 7629
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-105",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7755,
+          "start_tick": 7706
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-106",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7843,
+          "start_tick": 7779
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-107",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7927,
+          "start_tick": 7863
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-108",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8023,
+          "start_tick": 7962
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-109",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8113,
+          "start_tick": 8052
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-110",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8268,
+          "start_tick": 8154
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-111",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8352,
+          "start_tick": 8312
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-112",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8426,
+          "start_tick": 8383
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "relative_order-dev-113",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8489,
+          "start_tick": 8449
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "relative_order-dev-114",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8530,
+          "start_tick": 8490
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    }
+  ],
+  "latency": {
+    "from_end": {
+      "max": 21,
+      "mean": 21,
+      "min": 21,
+      "n": 3
+    },
+    "from_start": {
+      "max": 63,
+      "mean": 63,
+      "min": 63,
+      "n": 3
+    },
+    "timestamp_shift": {
+      "max": 2,
+      "mean": 2,
+      "min": 2,
+      "n": 3
+    }
+  },
+  "responses": {
+    "decision_to_response": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 3
+    },
+    "pending_tail_samples": 0,
+    "request_mismatch_ticks": [],
+    "requests": [
+      {
+        "decision_tick": 2160,
+        "end_tick": 2167,
+        "start_tick": 2161,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 5252,
+        "end_tick": 5259,
+        "start_tick": 5253,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 7311,
+        "end_tick": 7318,
+        "start_tick": 7312,
+        "symbol": 1
+      }
+    ],
+    "waveform_mismatch_ticks": []
+  },
+  "totals": {
+    "background_known": 0,
+    "background_samples": 2322,
+    "background_unknown": 0,
+    "cases": 115,
+    "correct_known": 3,
+    "decision_timing_errors": 0,
+    "duplicates": 0,
+    "early_or_late_known": 0,
+    "exact_cases": 43,
+    "explicit_unknown": 40,
+    "false_known_events": 0,
+    "known_cases": 75,
+    "missed_observations": 0,
+    "rejected_known": 72,
+    "timestamp_errors": 0,
+    "unknown_cases": 40,
+    "wrong_class_events": 0
+  }
+}

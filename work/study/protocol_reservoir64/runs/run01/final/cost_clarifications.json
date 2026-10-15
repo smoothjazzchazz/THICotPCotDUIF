@@ -1,0 +1,15 @@
+{
+  "status": "post-freeze accounting clarification; original cost.json preserved",
+  "logical_counts_are_not_python_heap_measurements": true,
+  "notes": [
+    "Quantized StreamReceiver retains original dense float64 weights plus dense int64 quantized copies: 40,512 bytes each. These are software conveniences, not the packed 2,448-byte coefficient proposal.",
+    "Its LUT uses 32,776 actual NumPy bytes (int64); its persistent state uses 512 bytes. Packed int16 figures describe the explicit arithmetic widths, not NumPy containers.",
+    "Array scratch for a quantized update includes six input features, a 64-value int64 drive, LUT indices/proposals, leak-blend temporaries and eight int64 output logits. Python/NumPy allocation overhead and peak transient heap were not benchmarked.",
+    "The sparse hardware schedule has not been implemented. The logical sparse MAC count excludes masked zero taps, whereas current NumPy evaluates the full recurrent matrix.",
+    "top_two_readout_comparisons_upper_bound in cost.json is a possible linear selection estimate, not a count of actual NumPy argsort comparisons; the code sorts eight logits.",
+    "Packed runtime counters/timestamps assume 64-bit fields; Python counters are unbounded and timestamp wrapping is not modeled. Add a sequence counter, controller last-event timestamp, mode and overflow flag alongside the listed buffer/assembly fields.",
+    "UART capacity is 32 outstanding encoded frames held in the shared command scheduler and a bounded list of deadlines. Do not also count an implemented 32-byte data array: no such queue exists.",
+    "The preprocessor itself stores two previous levels and two capped edge ages, not six independent temporal features. Its six-value feature vector is a current-tick scratch product.",
+    "All emitted-event, received-byte, command-history and waveform lists are diagnostic sinks. Controllers never read these logs to choose subsequent output. Stored I2C bytes and pending scheduler commands do drive future decisions and are included explicitly."
+  ]
+}

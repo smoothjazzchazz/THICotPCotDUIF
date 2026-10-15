@@ -1,0 +1,70 @@
+{
+  "ticks": 64,
+  "fixed_lines": [
+    1,
+    1
+  ],
+  "probes": [
+    {
+      "variant": "original_loss_11",
+      "mode": "float",
+      "events": []
+    },
+    {
+      "variant": "original_loss_11",
+      "mode": "quantized",
+      "events": []
+    },
+    {
+      "variant": "seed_11",
+      "mode": "float",
+      "events": []
+    },
+    {
+      "variant": "seed_11",
+      "mode": "quantized",
+      "events": []
+    },
+    {
+      "variant": "seed_29",
+      "mode": "float",
+      "events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ]
+    },
+    {
+      "variant": "seed_29",
+      "mode": "quantized",
+      "events": [
+        {
+          "kind": "BIT1",
+          "tick": 0
+        }
+      ]
+    },
+    {
+      "variant": "seed_47",
+      "mode": "float",
+      "events": [
+        {
+          "kind": "INVALID",
+          "tick": 1
+        }
+      ]
+    },
+    {
+      "variant": "seed_47",
+      "mode": "quantized",
+      "events": [
+        {
+          "kind": "INVALID",
+          "tick": 1
+        }
+      ]
+    }
+  ],
+  "note": "Diagnostic after freeze; no weights or acceptance criteria changed."
+}

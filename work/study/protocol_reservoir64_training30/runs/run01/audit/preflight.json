@@ -1,0 +1,519 @@
+{
+  "passed": true,
+  "profiles": {
+    "uart_n": {
+      "splits": {
+        "train": {
+          "class_counts": {
+            "NONE": 418615,
+            "BIT0": 10191,
+            "BIT1": 10401,
+            "START": 2574,
+            "STOP": 2547,
+            "FALL": 0,
+            "INVALID": 27,
+            "BOUNDARY": 0
+          },
+          "transactions": 247,
+          "independent_clean_decoder_failures": [
+            1005006
+          ],
+          "frames": 2574,
+          "complete_frames_inside_128": 0,
+          "complete_frames_inside_512": 1769,
+          "i2c_boundary_labels_exact": false,
+          "uart_cell_centers_independently_reconstructed": true
+        },
+        "dev": {
+          "class_counts": {
+            "NONE": 24016,
+            "BIT0": 558,
+            "BIT1": 602,
+            "START": 145,
+            "STOP": 145,
+            "FALL": 0,
+            "INVALID": 0,
+            "BOUNDARY": 0
+          },
+          "transactions": 15,
+          "independent_clean_decoder_failures": [],
+          "frames": 145,
+          "complete_frames_inside_128": 0,
+          "complete_frames_inside_512": 100,
+          "i2c_boundary_labels_exact": false,
+          "uart_cell_centers_independently_reconstructed": true
+        }
+      },
+      "original_class_counts": {
+        "NONE": 61097,
+        "BIT0": 1462,
+        "BIT1": 1610,
+        "START": 384,
+        "STOP": 381,
+        "FALL": 0,
+        "INVALID": 3,
+        "BOUNDARY": 0
+      },
+      "original_loss_weights": [
+        1.0,
+        6.409128694687081,
+        6.344097441623403,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0
+      ],
+      "main_loss_weights": [
+        1.0,
+        12.818257389374162,
+        12.688194883246807,
+        48.0,
+        48.0,
+        12.0,
+        48.0,
+        12.0
+      ],
+      "original_loss_class_mass": [
+        0.6843565369727961,
+        0.10677840461217468,
+        0.10787295486395851,
+        0.05049605177553534,
+        0.049966372910757,
+        0.0,
+        0.0005296788647783427,
+        0.0
+      ],
+      "main_loss_class_mass": [
+        0.4509383628426262,
+        0.14071752474449034,
+        0.1421599737368582,
+        0.13309206933801263,
+        0.13169599868062087,
+        0.0,
+        0.0013960706573917408,
+        0.0
+      ],
+      "initial_stop_credit_trace": [
+        {
+          "lag": 0,
+          "norm": 0.7882650940705016
+        },
+        {
+          "lag": 16,
+          "norm": 0.04540670693474147
+        },
+        {
+          "lag": 64,
+          "norm": 0.000626497745353372
+        },
+        {
+          "lag": 128,
+          "norm": 7.940591275103316e-05
+        },
+        {
+          "lag": 160,
+          "norm": 3.838488116865186e-05
+        },
+        {
+          "lag": 176,
+          "norm": 2.152267083097403e-05
+        },
+        {
+          "lag": 256,
+          "norm": 1.1502807429863422e-06
+        },
+        {
+          "lag": 511,
+          "norm": 4.303561225353913e-11
+        }
+      ],
+      "unsupported_label_classes": [
+        "FALL",
+        "BOUNDARY"
+      ]
+    },
+    "uart_e": {
+      "splits": {
+        "train": {
+          "class_counts": {
+            "NONE": 400041,
+            "BIT0": 10697,
+            "BIT1": 9571,
+            "START": 2252,
+            "STOP": 2229,
+            "FALL": 0,
+            "INVALID": 23,
+            "BOUNDARY": 0
+          },
+          "transactions": 208,
+          "independent_clean_decoder_failures": [
+            1108003
+          ],
+          "frames": 2252,
+          "complete_frames_inside_128": 0,
+          "complete_frames_inside_512": 1477,
+          "i2c_boundary_labels_exact": false,
+          "uart_cell_centers_independently_reconstructed": true
+        },
+        "dev": {
+          "class_counts": {
+            "NONE": 20501,
+            "BIT0": 513,
+            "BIT1": 504,
+            "START": 113,
+            "STOP": 113,
+            "FALL": 0,
+            "INVALID": 0,
+            "BOUNDARY": 0
+          },
+          "transactions": 14,
+          "independent_clean_decoder_failures": [],
+          "frames": 113,
+          "complete_frames_inside_128": 0,
+          "complete_frames_inside_512": 75,
+          "i2c_boundary_labels_exact": false,
+          "uart_cell_centers_independently_reconstructed": true
+        }
+      },
+      "original_class_counts": {
+        "NONE": 67264,
+        "BIT0": 1694,
+        "BIT1": 1762,
+        "START": 384,
+        "STOP": 381,
+        "FALL": 0,
+        "INVALID": 3,
+        "BOUNDARY": 0
+      },
+      "original_loss_weights": [
+        1.0,
+        6.11534910080047,
+        6.46507539589611,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0
+      ],
+      "main_loss_weights": [
+        1.0,
+        12.23069820160094,
+        12.93015079179222,
+        48.0,
+        48.0,
+        12.0,
+        48.0,
+        12.0
+      ],
+      "original_loss_class_mass": [
+        0.6880861694010529,
+        0.11251788868618895,
+        0.1064312675824067,
+        0.04648233716517571,
+        0.046007606368195675,
+        0.0,
+        0.0004747307969800361,
+        0.0
+      ],
+      "main_loss_class_mass": [
+        0.45938465316586646,
+        0.15023987857234028,
+        0.14211269785267278,
+        0.12413138520456028,
+        0.12286361350842134,
+        0.0,
+        0.001267771696138937,
+        0.0
+      ],
+      "initial_stop_credit_trace": [
+        {
+          "lag": 0,
+          "norm": 0.7882650940705016
+        },
+        {
+          "lag": 16,
+          "norm": 0.04394630193360391
+        },
+        {
+          "lag": 64,
+          "norm": 0.0008632757515223817
+        },
+        {
+          "lag": 128,
+          "norm": 0.00010942988343007486
+        },
+        {
+          "lag": 160,
+          "norm": 2.716602575371368e-05
+        },
+        {
+          "lag": 176,
+          "norm": 1.8496411648134807e-05
+        },
+        {
+          "lag": 256,
+          "norm": 1.943268410463578e-06
+        },
+        {
+          "lag": 511,
+          "norm": 2.8784554604653423e-10
+        }
+      ],
+      "unsupported_label_classes": [
+        "FALL",
+        "BOUNDARY"
+      ]
+    },
+    "i2c": {
+      "splits": {
+        "train": {
+          "class_counts": {
+            "NONE": 422153,
+            "BIT0": 12698,
+            "BIT1": 9779,
+            "START": 383,
+            "STOP": 312,
+            "FALL": 22477,
+            "INVALID": 0,
+            "BOUNDARY": 0
+          },
+          "transactions": 105,
+          "independent_clean_decoder_failures": [],
+          "frames": 0,
+          "complete_frames_inside_128": 0,
+          "complete_frames_inside_512": 0,
+          "i2c_boundary_labels_exact": true,
+          "uart_cell_centers_independently_reconstructed": false
+        },
+        "dev": {
+          "class_counts": {
+            "NONE": 26853,
+            "BIT0": 762,
+            "BIT1": 642,
+            "START": 22,
+            "STOP": 14,
+            "FALL": 1404,
+            "INVALID": 0,
+            "BOUNDARY": 0
+          },
+          "transactions": 11,
+          "independent_clean_decoder_failures": [],
+          "frames": 0,
+          "complete_frames_inside_128": 0,
+          "complete_frames_inside_512": 0,
+          "i2c_boundary_labels_exact": true,
+          "uart_cell_centers_independently_reconstructed": false
+        }
+      },
+      "original_class_counts": {
+        "NONE": 68451,
+        "BIT0": 2174,
+        "BIT1": 1534,
+        "START": 24,
+        "STOP": 12,
+        "FALL": 3708,
+        "INVALID": 0,
+        "BOUNDARY": 0
+      },
+      "original_loss_weights": [
+        1.0,
+        5.765902291311401,
+        6.570338078710643,
+        12.0,
+        12.0,
+        4.333769084516473,
+        12.0,
+        12.0
+      ],
+      "main_loss_weights": [
+        1.0,
+        11.531804582622803,
+        13.140676157421286,
+        48.0,
+        48.0,
+        4.333769084516473,
+        48.0,
+        12.0
+      ],
+      "original_loss_class_mass": [
+        0.634463635430094,
+        0.1100371812380801,
+        0.09656483849528189,
+        0.006907436091740937,
+        0.005626945327997839,
+        0.1463999634168054,
+        0.0,
+        0.0
+      ],
+      "main_loss_class_mass": [
+        0.5099348996383675,
+        0.1768794800448786,
+        0.15522333661662552,
+        0.022206743040915845,
+        0.018090088325759122,
+        0.11766545233345346,
+        0.0,
+        0.0
+      ],
+      "initial_stop_credit_trace": [
+        {
+          "lag": 0,
+          "norm": 0.7882650940705016
+        },
+        {
+          "lag": 16,
+          "norm": 0.05477743979156049
+        },
+        {
+          "lag": 64,
+          "norm": 0.0017862770494818552
+        },
+        {
+          "lag": 128,
+          "norm": 1.450417460124076e-05
+        },
+        {
+          "lag": 160,
+          "norm": 1.2365394303378887e-06
+        },
+        {
+          "lag": 176,
+          "norm": 3.4970337475552493e-07
+        },
+        {
+          "lag": 256,
+          "norm": 1.4510782567701668e-09
+        },
+        {
+          "lag": 511,
+          "norm": 1.2579241150127739e-18
+        }
+      ],
+      "unsupported_label_classes": [
+        "INVALID",
+        "BOUNDARY"
+      ]
+    }
+  },
+  "gradient_audit": {
+    "finite_difference": [
+      {
+        "parameter": "wx",
+        "index": [
+          3,
+          1
+        ],
+        "analytic": 0.023733596107480638,
+        "finite_difference": 0.02373359606622216,
+        "absolute_error": 4.1258479271943926e-11
+      },
+      {
+        "parameter": "wh",
+        "index": [
+          0,
+          7
+        ],
+        "analytic": -0.03194465907448081,
+        "finite_difference": -0.031944658829274886,
+        "absolute_error": 2.4520592500909544e-10
+      },
+      {
+        "parameter": "wh",
+        "index": [
+          25,
+          24
+        ],
+        "analytic": 0.008078861015428903,
+        "finite_difference": 0.008078860957994038,
+        "absolute_error": 5.743486415632493e-11
+      },
+      {
+        "parameter": "wh",
+        "index": [
+          62,
+          61
+        ],
+        "analytic": -0.01014676317803402,
+        "finite_difference": -0.01014676307420359,
+        "absolute_error": 1.038304286299363e-10
+      },
+      {
+        "parameter": "wo",
+        "index": [
+          4,
+          7
+        ],
+        "analytic": -0.03186794807996649,
+        "finite_difference": -0.03186794828025086,
+        "absolute_error": 2.0028436548136241e-10
+      },
+      {
+        "parameter": "b",
+        "index": [
+          7
+        ],
+        "analytic": 1.2325419409758378,
+        "finite_difference": 1.232541940865417,
+        "absolute_error": 1.1042078362777374e-10
+      },
+      {
+        "parameter": "bo",
+        "index": [
+          3
+        ],
+        "analytic": -3.4929412425096493,
+        "finite_difference": -3.4929412425555024,
+        "absolute_error": 4.5853099095438665e-11
+      }
+    ],
+    "chunked_state_max_error": 0.0,
+    "group_gradient_norms": {
+      "wx": 0.6422657125634592,
+      "wh": 0.6690067363311779,
+      "b": 11.483624155708421,
+      "wo": 2.3607812388464615,
+      "bo": 7.2279722670316495
+    }
+  },
+  "distinct_transaction_seeds": 600,
+  "split_seed_overlap": 0,
+  "sources": {
+    "work/model/stream_reservoir.py": "440ddd7e5e7850e543c52bf4e0a36f25407204250e8ffb0d4c0bbc2fab504856",
+    "work/model/transmit_simple_model.py": "b2a07c0f013b94026eb23bc7d3942bb16934cee710c2260ba7a3ef7d556c0462",
+    "work/study/protocol_reservoir64/README.md": "c2af8d3cc56f4b50227ed760a798aab6ebec145e9cad035690537927b9e0a551",
+    "work/study/protocol_reservoir64/__init__.py": "f0ba0bbb8a68d1fbf657c2f8952f77d019ddca9bc351c5900062b414009cdb6d",
+    "work/study/protocol_reservoir64/checkers.py": "313db41153e07daab0a62288717868288e1a5c0d4cfc53f99db3407235ad9dcf",
+    "work/study/protocol_reservoir64/controllers.py": "130a258c1c7979f78279bdf7fb4d1a474b2cb5b54d8ba3799fce1828753ffc17",
+    "work/study/protocol_reservoir64/data.py": "67f25bd8fc46af0ba09a09528bbace7041a87916a4a3fd83033c4a6442ee148e",
+    "work/study/protocol_reservoir64/evaluation.py": "0de4842b825c3b514dbdce06c320252cb8155444f10da6bad92d6dd0816377d1",
+    "work/study/protocol_reservoir64/i2c_emitter.py": "ab2cd2ba050435f823f1a3cb07e68c50fe76f5611ff1e3e8e643ba81f5cd2195",
+    "work/study/protocol_reservoir64/profiles.py": "2373610f522b9f082d6e84f8079b22d0aab2fc7535d3e746ea2843ef18e73fb8",
+    "work/study/protocol_reservoir64/run.py": "eb9a6b5bc8ade8943eb26285a5367a5a922629ddfe1eb0b29d9dcc4f69c363ed",
+    "work/study/protocol_reservoir64/scoring.py": "a370f0b4e4c6a18f01ba7f668b8eec2b1ac55a916d7719a457cd005f7b72479a",
+    "work/study/protocol_reservoir64/simulation.py": "2176beae41c1f1e70f1759de06f5937a4540366f2dd840ca3756faa0957b94b9",
+    "work/study/protocol_reservoir64/test_experiment.py": "711c17fb422ba0420bca04a1fac4385455b2bfdf9b702d95aea902cb29974ef0",
+    "work/study/protocol_reservoir64/training.py": "9a3d4d84c95c070279a218424df4baab4ce138ff36f7d3956404ff48f3af7e46",
+    "work/study/protocol_reservoir64/uart_emitter.py": "67974358766cc15ca1df8c14a2a8692632c15044fc2f421eb604698eb2f62fc0",
+    "work/study/protocol_reservoir64/usb_emitter.py": "abab5ce81e39b08cb78edf26532bfaed9b6e8b6bb08adf4239c4f5fe10d95995",
+    "work/study/protocol_reservoir64_training30/README.md": "13e9c2b7431ac113d39e72b33a0778813d3426dab7275c4f46625a1a94ad0080",
+    "work/study/protocol_reservoir64_training30/__init__.py": "f9611699268512e6155bdcb7a7ef3429032537e3405394feb7d25118bb3745e8",
+    "work/study/protocol_reservoir64_training30/audit.py": "a9e8beea3d0638af91a5cdfe3ebf3480666be6f2260bc85ddb67ba6d6ece8c30",
+    "work/study/protocol_reservoir64_training30/data.py": "f656809b10a41aca1123cba167544e4d5dbb7833c0d4dfdcb466c632ab11f825",
+    "work/study/protocol_reservoir64_training30/evaluation.py": "0d3672c8fa7fb0d3d01d19b82118ed27ef4e069a88ae46921684f7529527660e",
+    "work/study/protocol_reservoir64_training30/metrics.py": "771960d677c098c90f659091fd56ca5a659d0d3de048ec7edbbb88e6becc1206",
+    "work/study/protocol_reservoir64_training30/report.py": "b4d84a61698ef663b1b95c3cd3cf6268c3f0c517dda2cd089ab0e4936ed93d01",
+    "work/study/protocol_reservoir64_training30/run.py": "7bdcf21a0ad9cb1a6837ccc18dfb470eb52d265bd3e538ad36acf40cbf458a40",
+    "work/study/protocol_reservoir64_training30/simulation.py": "87e4146e4c10dfb7111c9edeaff55f1b703a4ec0ab2ce8502450f03fd8930b19",
+    "work/study/protocol_reservoir64_training30/test_training.py": "61672aeb4887630e6e40fca236c8aabcdeabbb7c13531dfa61dc8ca263d04737",
+    "work/study/protocol_reservoir64_training30/training.py": "f6d6c6303db050aa705b0f7aa55bb76f257377c020521283b3e5eb66600003da"
+  },
+  "supervision_notes": [
+    "UART pulses checked against frame payload, parity and actual line level; low stop cells label INVALID.",
+    "I2C labels match independent observed edge contract, including all repeated START/STOP and malformed edges.",
+    "I2C malformed packets contain valid physical edges; no synthetic INVALID event is invented for them.",
+    "BOUNDARY is unused by both declared profiles; I2C INVALID arises from uncertain decisions, not a teacher boundary class.",
+    "A 512-tick window removes the 128-tick hard cutoff for most whole UART frames; it does not guarantee nonvanishing gradients.",
+    "Full live development scoring, including startup and tails, is separate from teacher-forced waveform loss."
+  ]
+}

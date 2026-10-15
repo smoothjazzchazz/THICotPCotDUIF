@@ -1,0 +1,29 @@
+test_config_copy_reset_and_dimension_check (test_frame_readout.FramePrototypeTests.test_config_copy_reset_and_dimension_check) ... ok
+test_constructor_validation (test_frame_readout.FramePrototypeTests.test_constructor_validation) ... ok
+test_nearest_exemplar_and_completion_timestamp (test_frame_readout.FramePrototypeTests.test_nearest_exemplar_and_completion_timestamp) ... ok
+test_validity_and_optional_count_gate (test_frame_readout.FramePrototypeTests.test_validity_and_optional_count_gate) ... ok
+test_constructor_validation (test_frame_readout.StreamingTemplateTests.test_constructor_validation) ... ok
+test_count_invalid_frame_and_recovery (test_frame_readout.StreamingTemplateTests.test_count_invalid_frame_and_recovery) ... ok
+test_only_delimiter_emits_and_leading_idle_is_excluded (test_frame_readout.StreamingTemplateTests.test_only_delimiter_emits_and_leading_idle_is_excluded) ... ok
+test_reset_configuration_copy_and_instance_independence (test_frame_readout.StreamingTemplateTests.test_reset_configuration_copy_and_instance_independence) ... ok
+test_scale_is_global_and_error_is_worst_run (test_frame_readout.StreamingTemplateTests.test_scale_is_global_and_error_is_worst_run) ... ok
+test_threshold_is_loaded_in_decision_and_is_inclusive (test_frame_readout.StreamingTemplateTests.test_threshold_is_loaded_in_decision_and_is_inclusive) ... ok
+test_conditioning_latency_is_in_event_timestamps (test_stages.StageTests.test_conditioning_latency_is_in_event_timestamps) ... ok
+test_continuous_readout_through_runner (test_stages.StageTests.test_continuous_readout_through_runner) ... ok
+test_filter_delay_and_reset (test_stages.StageTests.test_filter_delay_and_reset) ... ok
+test_memory_order_and_parallel_recurrence (test_stages.StageTests.test_memory_order_and_parallel_recurrence) ... ok
+test_readout_scores_and_dimension_mismatch (test_stages.StageTests.test_readout_scores_and_dimension_mismatch) ... ok
+test_reset_replay_independence_and_causal_prefix (test_stages.StageTests.test_reset_replay_independence_and_causal_prefix) ... ok
+test_stabilization_unknown_and_absence (test_stages.StageTests.test_stabilization_unknown_and_absence) ... ok
+test_temporal_measurement_and_initial_high (test_stages.StageTests.test_temporal_measurement_and_initial_high) ... ok
+test_zero_request_timing_backlog_and_transmitter_reset (test_stages.StageTests.test_zero_request_timing_backlog_and_transmitter_reset) ... ok
+test_recognized_pulses (test_system_simple_model.SystemTests.test_recognized_pulses) ... ok
+test_unknown_pulse (test_system_simple_model.SystemTests.test_unknown_pulse) ... ok
+test_arrival_during_playback (test_transmit_simple_model.TransmitterTests.test_arrival_during_playback) ... ok
+test_empty_and_invalid_request (test_transmit_simple_model.TransmitterTests.test_empty_and_invalid_request) ... ok
+test_symbol_sequence (test_transmit_simple_model.TransmitterTests.test_symbol_sequence) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.004s
+
+OK

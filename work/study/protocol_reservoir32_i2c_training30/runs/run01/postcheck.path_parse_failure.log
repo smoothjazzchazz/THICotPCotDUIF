@@ -1,0 +1,10 @@
+All frozen hashes match; 2439 previous files unchanged.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/daniel/stuff/THICotPCotDUIF_exp/work/study/protocol_reservoir32_i2c_training30/runs/run01/analysis/postcheck.py", line 136, in <module>
+    main()
+  File "/home/daniel/stuff/THICotPCotDUIF_exp/work/study/protocol_reservoir32_i2c_training30/runs/run01/analysis/postcheck.py", line 95, in main
+    group, name = row['trace'].split('/')
+    ^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)

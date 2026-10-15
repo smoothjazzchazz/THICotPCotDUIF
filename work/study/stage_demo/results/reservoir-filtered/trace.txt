@@ -1,0 +1,132 @@
+
+Stage demo: {'memory': 'reservoir', 'stable_ticks': 2, 'delay_ticks': 0}
+raw -> delayed -> conditioned; elapsed starts at 0; '-' means absent
+t=00 in=0->0->0 edge=+0 elapsed=0 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.0) memory=(-0.498, -0.218, 0.148) scores=- decision=no evaluation
+t=01 in=0->0->0 edge=+0 elapsed=1 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.143) memory=(-0.719, -0.346, 0.222) scores=- decision=no evaluation
+t=02 in=0->0->0 edge=+0 elapsed=2 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.286) memory=(-0.805, -0.411, 0.28) scores=- decision=no evaluation
+t=03 in=0->0->0 edge=+0 elapsed=3 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.429) memory=(-0.836, -0.434, 0.339) scores=- decision=no evaluation
+t=04 in=0->0->0 edge=+0 elapsed=4 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.571) memory=(-0.845, -0.428, 0.399) scores=- decision=no evaluation
+t=05 in=0->0->0 edge=+0 elapsed=5 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.714) memory=(-0.844, -0.403, 0.459) scores=- decision=no evaluation
+t=06 in=0->0->0 edge=+0 elapsed=6 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.857) memory=(-0.84, -0.363, 0.515) scores=- decision=no evaluation
+t=07 in=0->0->0 edge=+0 elapsed=7 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.834, -0.311, 0.568) scores=- decision=no evaluation
+t=08 in=1->1->0 edge=+0 elapsed=8 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.829, -0.269, 0.589) scores=- decision=no evaluation
+t=09 in=1->1->1 edge=+1 elapsed=0 done=0x9@0 | event=- request=- tx=idle
+     features=(1.0, 1.0, 0.0) memory=(0.158, -0.236, 0.428) scores=- decision=no evaluation
+t=10 in=0->0->1 edge=+0 elapsed=1 done=- | event=- request=- tx=idle
+     features=(1.0, 0.0, 0.143) memory=(0.556, 0.093, 0.108) scores=- decision=no evaluation
+t=11 in=0->0->0 edge=-1 elapsed=0 done=1x2@9 | event=0@9,emit=11 request=2 tx=idle
+     features=(-1.0, -1.0, 0.0) memory=(-0.316, 0.154, -0.13) scores=[(0, -0.00015), (1, -0.04064)] decision=0 (accepted, hold=1)
+t=12 in=0->0->0 edge=+0 elapsed=1 done=- | event=- request=- tx=1
+     features=(-1.0, 0.0, 0.143) memory=(-0.621, -0.093, 0.106) scores=- decision=no evaluation
+t=13 in=0->0->0 edge=+0 elapsed=2 done=- | event=- request=- tx=0
+     features=(-1.0, 0.0, 0.286) memory=(-0.756, -0.24, 0.234) scores=- decision=no evaluation
+t=14 in=0->0->0 edge=+0 elapsed=3 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.429) memory=(-0.81, -0.318, 0.321) scores=- decision=no evaluation
+t=15 in=0->0->0 edge=+0 elapsed=4 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.571) memory=(-0.83, -0.349, 0.393) scores=- decision=no evaluation
+t=16 in=0->0->0 edge=+0 elapsed=5 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.714) memory=(-0.836, -0.348, 0.457) scores=- decision=no evaluation
+t=17 in=0->0->0 edge=+0 elapsed=6 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.857) memory=(-0.835, -0.323, 0.515) scores=- decision=no evaluation
+t=18 in=1->1->0 edge=+0 elapsed=7 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.83, -0.282, 0.568) scores=- decision=no evaluation
+t=19 in=1->1->1 edge=+1 elapsed=0 done=0x8@11 | event=- request=- tx=idle
+     features=(1.0, 1.0, 0.0) memory=(0.156, -0.247, 0.419) scores=- decision=no evaluation
+t=20 in=1->1->1 edge=+0 elapsed=1 done=- | event=- request=- tx=idle
+     features=(1.0, 0.0, 0.143) memory=(0.554, 0.084, 0.104) scores=- decision=no evaluation
+t=21 in=0->0->1 edge=+0 elapsed=2 done=- | event=- request=- tx=idle
+     features=(1.0, 0.0, 0.286) memory=(0.745, 0.323, 0.026) scores=- decision=no evaluation
+t=22 in=0->0->0 edge=-1 elapsed=0 done=1x3@19 | event=unknown@19,emit=22 request=- tx=idle
+     features=(-1.0, -1.0, 0.0) memory=(-0.196, 0.319, -0.154) scores=[(0, -0.01149), (1, -0.00726)] decision=unknown (below score threshold, hold=1)
+t=23 in=0->0->0 edge=+0 elapsed=1 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.143) memory=(-0.555, 0.032, 0.103) scores=- decision=no evaluation
+t=24 in=0->0->0 edge=+0 elapsed=2 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.286) memory=(-0.723, -0.147, 0.237) scores=- decision=no evaluation
+t=25 in=0->0->0 edge=+0 elapsed=3 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.429) memory=(-0.794, -0.251, 0.325) scores=- decision=no evaluation
+t=26 in=0->0->0 edge=+0 elapsed=4 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.571) memory=(-0.821, -0.301, 0.396) scores=- decision=no evaluation
+t=27 in=0->0->0 edge=+0 elapsed=5 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.714) memory=(-0.83, -0.313, 0.458) scores=- decision=no evaluation
+t=28 in=0->0->0 edge=+0 elapsed=6 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.857) memory=(-0.831, -0.298, 0.516) scores=- decision=no evaluation
+t=29 in=1->1->0 edge=+0 elapsed=7 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.827, -0.263, 0.569) scores=- decision=no evaluation
+t=30 in=1->1->1 edge=+1 elapsed=0 done=0x8@22 | event=- request=- tx=idle
+     features=(1.0, 1.0, 0.0) memory=(0.159, -0.233, 0.419) scores=- decision=no evaluation
+t=31 in=1->1->1 edge=+0 elapsed=1 done=- | event=- request=- tx=idle
+     features=(1.0, 0.0, 0.143) memory=(0.557, 0.095, 0.104) scores=- decision=no evaluation
+t=32 in=1->1->1 edge=+0 elapsed=2 done=- | event=- request=- tx=idle
+     features=(1.0, 0.0, 0.286) memory=(0.747, 0.33, 0.027) scores=- decision=no evaluation
+t=33 in=0->0->1 edge=+0 elapsed=3 done=- | event=- request=- tx=idle
+     features=(1.0, 0.0, 0.429) memory=(0.829, 0.496, 0.047) scores=- decision=no evaluation
+t=34 in=0->0->0 edge=-1 elapsed=0 done=1x4@30 | event=1@30,emit=34 request=1 tx=idle
+     features=(-1.0, -1.0, 0.0) memory=(-0.131, 0.441, -0.138) scores=[(0, -0.03451), (1, -2e-05)] decision=1 (accepted, hold=1)
+t=35 in=0->0->0 edge=+0 elapsed=1 done=- | event=- request=- tx=0
+     features=(-1.0, 0.0, 0.143) memory=(-0.515, 0.128, 0.115) scores=- decision=no evaluation
+t=36 in=0->0->0 edge=+0 elapsed=2 done=- | event=- request=- tx=1
+     features=(-1.0, 0.0, 0.286) memory=(-0.701, -0.074, 0.246) scores=- decision=no evaluation
+t=37 in=0->0->0 edge=+0 elapsed=3 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.429) memory=(-0.782, -0.196, 0.33) scores=- decision=no evaluation
+t=38 in=0->0->0 edge=+0 elapsed=4 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.571) memory=(-0.814, -0.26, 0.399) scores=- decision=no evaluation
+t=39 in=0->0->0 edge=+0 elapsed=5 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.714) memory=(-0.826, -0.283, 0.46) scores=- decision=no evaluation
+t=40 in=0->0->0 edge=+0 elapsed=6 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.857) memory=(-0.828, -0.276, 0.517) scores=- decision=no evaluation
+t=41 in=1->1->0 edge=+0 elapsed=7 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.825, -0.247, 0.569) scores=- decision=no evaluation
+t=42 in=0->0->0 edge=+0 elapsed=8 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.822, -0.221, 0.59) scores=- decision=no evaluation
+t=43 in=0->0->0 edge=+0 elapsed=9 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.82, -0.2, 0.598) scores=- decision=no evaluation
+t=44 in=0->0->0 edge=+0 elapsed=10 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.818, -0.184, 0.602) scores=- decision=no evaluation
+t=45 in=0->0->0 edge=+0 elapsed=11 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.817, -0.171, 0.603) scores=- decision=no evaluation
+t=46 in=0->0->0 edge=+0 elapsed=12 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.816, -0.161, 0.604) scores=- decision=no evaluation
+t=47 in=0->0->0 edge=+0 elapsed=13 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.815, -0.154, 0.604) scores=- decision=no evaluation
+t=48 in=0->0->0 edge=+0 elapsed=14 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.814, -0.148, 0.604) scores=- decision=no evaluation
+t=49 in=0->0->0 edge=+0 elapsed=15 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.813, -0.144, 0.604) scores=- decision=no evaluation
+t=50 in=1->1->0 edge=+0 elapsed=16 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 1.0) memory=(-0.813, -0.14, 0.604) scores=- decision=no evaluation
+t=51 in=1->1->1 edge=+1 elapsed=0 done=0x17@34 | event=- request=- tx=idle
+     features=(1.0, 1.0, 0.0) memory=(0.181, -0.138, 0.436) scores=- decision=no evaluation
+t=52 in=0->0->1 edge=+0 elapsed=1 done=- | event=- request=- tx=idle
+     features=(1.0, 0.0, 0.143) memory=(0.574, 0.167, 0.114) scores=- decision=no evaluation
+t=53 in=0->0->0 edge=-1 elapsed=0 done=1x2@51 | event=0@51,emit=53 request=2 tx=idle
+     features=(-1.0, -1.0, 0.0) memory=(-0.3, 0.21, -0.126) scores=[(0, -0.00047), (1, -0.0288)] decision=0 (accepted, hold=1)
+t=54 in=0->0->0 edge=+0 elapsed=1 done=- | event=- request=- tx=1
+     features=(-1.0, 0.0, 0.143) memory=(-0.61, -0.049, 0.109) scores=- decision=no evaluation
+t=55 in=0->0->0 edge=+0 elapsed=2 done=- | event=- request=- tx=0
+     features=(-1.0, 0.0, 0.286) memory=(-0.749, -0.208, 0.236) scores=- decision=no evaluation
+t=56 in=0->0->0 edge=+0 elapsed=3 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.429) memory=(-0.806, -0.295, 0.323) scores=- decision=no evaluation
+t=57 in=0->0->0 edge=+0 elapsed=4 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.571) memory=(-0.828, -0.333, 0.394) scores=- decision=no evaluation
+t=58 in=0->0->0 edge=+0 elapsed=5 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.714) memory=(-0.834, -0.336, 0.457) scores=- decision=no evaluation
+t=59 in=0->0->0 edge=+0 elapsed=6 done=- | event=- request=- tx=idle
+     features=(-1.0, 0.0, 0.857) memory=(-0.833, -0.315, 0.515) scores=- decision=no evaluation
+
+Per-condition diagnostic (no held-out accuracy claim):
+  known short: 0; correct=True, raw-start latency=3
+  unfamiliar width: unknown; correct=True, raw-start latency=4
+  known long: 1; correct=True, raw-start latency=5
+  one-tick glitch: no event; correct=True, raw-start latency=None
+  known short after junk: 0; correct=True, raw-start latency=3
+False known events on unfamiliar/background: 0
+All expected: True

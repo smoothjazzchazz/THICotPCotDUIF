@@ -1,0 +1,2891 @@
+{
+  "background_events": [],
+  "conditions": {
+    "known_back_to_back": {
+      "cases": 16,
+      "correct_known": 16,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 16,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 16,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_clean": {
+      "cases": 16,
+      "correct_known": 16,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 16,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 16,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_glitch": {
+      "cases": 16,
+      "correct_known": 16,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 16,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 16,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "known_jitter": {
+      "cases": 16,
+      "correct_known": 1,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 1,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 16,
+      "known_recall": 0.0625,
+      "missed_observations": 0,
+      "rejected_known": 15,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "recovery_known": {
+      "cases": 8,
+      "correct_known": 8,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 0,
+      "false_known_events": 0,
+      "known_cases": 8,
+      "known_recall": 1.0,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 0,
+      "unknown_rejection": null,
+      "wrong_class_events": 0
+    },
+    "unknown_extra_edges": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_junk": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_missing_delimiter": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_missing_edges": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_near_long": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_partial": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_prefix_splice": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_count": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_duration": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_prefix": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_same_suffix": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    },
+    "unknown_suffix_splice": {
+      "cases": 8,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 8,
+      "explicit_unknown": 8,
+      "false_known_events": 0,
+      "known_cases": 0,
+      "known_recall": null,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 8,
+      "unknown_rejection": 1.0,
+      "wrong_class_events": 0
+    }
+  },
+  "details": [
+    {
+      "case_id": "pulse_order-heldout-000",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 74,
+          "start_tick": 27
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-001",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 131,
+          "start_tick": 88
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-002",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 205,
+          "start_tick": 159
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-003",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 279,
+          "start_tick": 236
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-004",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 331,
+          "start_tick": 288
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-005",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 406,
+          "start_tick": 363
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-006",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 539,
+          "start_tick": 440
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-007",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 592,
+          "start_tick": 549
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-008",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 663,
+          "start_tick": 622
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-009",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 718,
+          "start_tick": 675
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-010",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 786,
+          "start_tick": 740
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-011",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 860,
+          "start_tick": 814
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-012",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 958,
+          "start_tick": 881
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-013",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1035,
+          "start_tick": 988
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-014",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1098,
+          "start_tick": 1052
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-015",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1137,
+          "start_tick": 1106
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-016",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1201,
+          "start_tick": 1158
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-017",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1285,
+          "start_tick": 1238
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-018",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1344,
+          "start_tick": 1301
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-019",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1409,
+          "start_tick": 1366
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-020",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 1453,
+          "start_tick": 1410
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-021",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1526,
+          "start_tick": 1483
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-022",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 1595,
+          "start_tick": 1552
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-023",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1648,
+          "start_tick": 1606
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-024",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 1708,
+          "start_tick": 1665
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-025",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1760,
+          "start_tick": 1713
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-026",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 1838,
+          "start_tick": 1795
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-027",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 1934,
+          "start_tick": 1852
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-028",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2003,
+          "start_tick": 1960
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-029",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2070,
+          "start_tick": 2027
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-030",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2154,
+          "start_tick": 2111
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-031",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2234,
+          "start_tick": 2189
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-032",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2369,
+          "start_tick": 2271
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-033",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 2456,
+          "start_tick": 2413
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-034",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2527,
+          "start_tick": 2492
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-035",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2618,
+          "start_tick": 2571
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-036",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2708,
+          "start_tick": 2662
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-037",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2777,
+          "start_tick": 2731
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-038",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2843,
+          "start_tick": 2796
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-039",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 2929,
+          "start_tick": 2883
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-040",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 3012,
+          "start_tick": 2969
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-041",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 3056,
+          "start_tick": 3013
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-042",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 3129,
+          "start_tick": 3086
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-043",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3183,
+          "start_tick": 3135
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-044",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 3241,
+          "start_tick": 3198
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-045",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3312,
+          "start_tick": 3269
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-046",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 3396,
+          "start_tick": 3353
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-047",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 3444,
+          "start_tick": 3401
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-048",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3492,
+          "start_tick": 3449
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-049",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3557,
+          "start_tick": 3514
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-050",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3642,
+          "start_tick": 3601
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-051",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3702,
+          "start_tick": 3659
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-052",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3831,
+          "start_tick": 3745
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-053",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3899,
+          "start_tick": 3852
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-054",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 3959,
+          "start_tick": 3928
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-055",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4016,
+          "start_tick": 3970
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-056",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4095,
+          "start_tick": 4049
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-057",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4185,
+          "start_tick": 4139
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-058",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4249,
+          "start_tick": 4202
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-059",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4350,
+          "start_tick": 4258
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-060",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 4428,
+          "start_tick": 4385
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-061",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 4485,
+          "start_tick": 4442
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-062",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 4529,
+          "start_tick": 4486
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-063",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4602,
+          "start_tick": 4559
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-064",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 4686,
+          "start_tick": 4643
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-065",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 4739,
+          "start_tick": 4696
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-066",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 4805,
+          "start_tick": 4762
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-067",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 4886,
+          "start_tick": 4844
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-068",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 4956,
+          "start_tick": 4913
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-069",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5010,
+          "start_tick": 4975
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-070",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5096,
+          "start_tick": 5053
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-071",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5167,
+          "start_tick": 5121
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-072",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5225,
+          "start_tick": 5182
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-073",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5319,
+          "start_tick": 5239
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-074",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 5398,
+          "start_tick": 5355
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-075",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5501,
+          "start_tick": 5415
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-076",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5589,
+          "start_tick": 5543
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-077",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5648,
+          "start_tick": 5601
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-078",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5732,
+          "start_tick": 5685
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-079",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5810,
+          "start_tick": 5764
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-080",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5883,
+          "start_tick": 5840
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-081",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 5940,
+          "start_tick": 5895
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-082",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 6015,
+          "start_tick": 5972
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-083",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 6059,
+          "start_tick": 6016
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-084",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 6132,
+          "start_tick": 6089
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-085",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 6199,
+          "start_tick": 6156
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-086",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6282,
+          "start_tick": 6238
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-087",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 6364,
+          "start_tick": 6321
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-088",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 6414,
+          "start_tick": 6371
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-089",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6476,
+          "start_tick": 6431
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-090",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6545,
+          "start_tick": 6499
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-091",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6632,
+          "start_tick": 6589
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-092",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6760,
+          "start_tick": 6674
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-093",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6845,
+          "start_tick": 6802
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-094",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6909,
+          "start_tick": 6863
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-095",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 6983,
+          "start_tick": 6940
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-096",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7064,
+          "start_tick": 7019
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-097",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7120,
+          "start_tick": 7081
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-098",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 7207,
+          "start_tick": 7164
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-099",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7282,
+          "start_tick": 7235
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-100",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7339,
+          "start_tick": 7292
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-101",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7388,
+          "start_tick": 7357
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-102",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7444,
+          "start_tick": 7398
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-103",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 7500,
+          "start_tick": 7457
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-104",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 7544,
+          "start_tick": 7501
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-105",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 7617,
+          "start_tick": 7574
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-106",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 7674,
+          "start_tick": 7631
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-107",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 7747,
+          "start_tick": 7704
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-108",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7798,
+          "start_tick": 7752
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-109",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 7881,
+          "start_tick": 7838
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-110",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 7964,
+          "start_tick": 7921
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-111",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8087,
+          "start_tick": 8001
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-112",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8171,
+          "start_tick": 8125
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-113",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8246,
+          "start_tick": 8200
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-114",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8312,
+          "start_tick": 8265
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-115",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8391,
+          "start_tick": 8345
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-116",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8502,
+          "start_tick": 8425
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-117",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 8571,
+          "start_tick": 8528
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-118",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8647,
+          "start_tick": 8602
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-119",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8732,
+          "start_tick": 8685
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-120",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8784,
+          "start_tick": 8753
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-121",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8852,
+          "start_tick": 8809
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-122",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8916,
+          "start_tick": 8873
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-123",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 8978,
+          "start_tick": 8935
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-124",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 9026,
+          "start_tick": 8983
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-125",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 9070,
+          "start_tick": 9027
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-126",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9143,
+          "start_tick": 9100
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-127",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 9203,
+          "start_tick": 9160
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-128",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 9271,
+          "start_tick": 9228
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-129",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 9333,
+          "start_tick": 9290
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-130",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9393,
+          "start_tick": 9350
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-131",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 9479,
+          "start_tick": 9436
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-132",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9541,
+          "start_tick": 9498
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-133",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9596,
+          "start_tick": 9565
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-134",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9671,
+          "start_tick": 9626
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-135",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9737,
+          "start_tick": 9691
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-136",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9831,
+          "start_tick": 9754
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-137",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9905,
+          "start_tick": 9859
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-138",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 9990,
+          "start_tick": 9947
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-139",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10047,
+          "start_tick": 10001
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-140",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10127,
+          "start_tick": 10080
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-141",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10210,
+          "start_tick": 10167
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-142",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10274,
+          "start_tick": 10227
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-143",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10376,
+          "start_tick": 10297
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-144",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 10450,
+          "start_tick": 10407
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-145",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 10529,
+          "start_tick": 10486
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-146",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 10573,
+          "start_tick": 10530
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-147",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10645,
+          "start_tick": 10603
+        }
+      ],
+      "exact": false,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-148",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 10727,
+          "start_tick": 10684
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-149",
+      "condition": "known_jitter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 10808,
+          "start_tick": 10762
+        }
+      ],
+      "exact": false,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-150",
+      "condition": "known_glitch",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 10885,
+          "start_tick": 10842
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-151",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 10961,
+          "start_tick": 10918
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-152",
+      "condition": "known_clean",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 11029,
+          "start_tick": 10986
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-153",
+      "condition": "unknown_near_long",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11087,
+          "start_tick": 11042
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-154",
+      "condition": "unknown_missing_delimiter",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11182,
+          "start_tick": 11100
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-155",
+      "condition": "unknown_missing_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11267,
+          "start_tick": 11224
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-156",
+      "condition": "unknown_same_duration",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11320,
+          "start_tick": 11277
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-157",
+      "condition": "unknown_same_prefix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11396,
+          "start_tick": 11350
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-158",
+      "condition": "unknown_partial",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11470,
+          "start_tick": 11435
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-159",
+      "condition": "unknown_prefix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11553,
+          "start_tick": 11506
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-160",
+      "condition": "unknown_same_suffix",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11628,
+          "start_tick": 11582
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-161",
+      "condition": "unknown_extra_edges",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11682,
+          "start_tick": 11639
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-162",
+      "condition": "unknown_suffix_splice",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11769,
+          "start_tick": 11722
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-163",
+      "condition": "unknown_same_count",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11849,
+          "start_tick": 11803
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-164",
+      "condition": "unknown_junk",
+      "events": [
+        {
+          "class_id": null,
+          "decision_tick": 11931,
+          "start_tick": 11893
+        }
+      ],
+      "exact": true,
+      "expected": null
+    },
+    {
+      "case_id": "pulse_order-heldout-165",
+      "condition": "recovery_known",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 11998,
+          "start_tick": 11955
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    },
+    {
+      "case_id": "pulse_order-heldout-166",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 1,
+          "decision_tick": 12077,
+          "start_tick": 12034
+        }
+      ],
+      "exact": true,
+      "expected": 1
+    },
+    {
+      "case_id": "pulse_order-heldout-167",
+      "condition": "known_back_to_back",
+      "events": [
+        {
+          "class_id": 0,
+          "decision_tick": 12121,
+          "start_tick": 12078
+        }
+      ],
+      "exact": true,
+      "expected": 0
+    }
+  ],
+  "latency": {
+    "from_end": {
+      "max": 21,
+      "mean": 21,
+      "min": 21,
+      "n": 57
+    },
+    "from_start": {
+      "max": 45,
+      "mean": 44.98245614035088,
+      "min": 44,
+      "n": 57
+    },
+    "timestamp_shift": {
+      "max": 2,
+      "mean": 2,
+      "min": 2,
+      "n": 57
+    }
+  },
+  "responses": {
+    "decision_to_response": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 57
+    },
+    "pending_tail_samples": 0,
+    "request_mismatch_ticks": [],
+    "requests": [
+      {
+        "decision_tick": 131,
+        "end_tick": 137,
+        "start_tick": 132,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 279,
+        "end_tick": 285,
+        "start_tick": 280,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 331,
+        "end_tick": 338,
+        "start_tick": 332,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 406,
+        "end_tick": 413,
+        "start_tick": 407,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 592,
+        "end_tick": 599,
+        "start_tick": 593,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1409,
+        "end_tick": 1415,
+        "start_tick": 1410,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1453,
+        "end_tick": 1460,
+        "start_tick": 1454,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1526,
+        "end_tick": 1532,
+        "start_tick": 1527,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1595,
+        "end_tick": 1602,
+        "start_tick": 1596,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1648,
+        "end_tick": 1654,
+        "start_tick": 1649,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 1708,
+        "end_tick": 1715,
+        "start_tick": 1709,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 1838,
+        "end_tick": 1844,
+        "start_tick": 1839,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 2456,
+        "end_tick": 2462,
+        "start_tick": 2457,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 3012,
+        "end_tick": 3019,
+        "start_tick": 3013,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 3056,
+        "end_tick": 3062,
+        "start_tick": 3057,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 3129,
+        "end_tick": 3136,
+        "start_tick": 3130,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 3241,
+        "end_tick": 3248,
+        "start_tick": 3242,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 3396,
+        "end_tick": 3402,
+        "start_tick": 3397,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 3444,
+        "end_tick": 3450,
+        "start_tick": 3445,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 4428,
+        "end_tick": 4435,
+        "start_tick": 4429,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 4485,
+        "end_tick": 4491,
+        "start_tick": 4486,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 4529,
+        "end_tick": 4536,
+        "start_tick": 4530,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 4686,
+        "end_tick": 4692,
+        "start_tick": 4687,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 4739,
+        "end_tick": 4746,
+        "start_tick": 4740,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 4805,
+        "end_tick": 4812,
+        "start_tick": 4806,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 4956,
+        "end_tick": 4962,
+        "start_tick": 4957,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 5398,
+        "end_tick": 5404,
+        "start_tick": 5399,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 6015,
+        "end_tick": 6022,
+        "start_tick": 6016,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 6059,
+        "end_tick": 6065,
+        "start_tick": 6060,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 6132,
+        "end_tick": 6139,
+        "start_tick": 6133,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 6199,
+        "end_tick": 6206,
+        "start_tick": 6200,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 6364,
+        "end_tick": 6370,
+        "start_tick": 6365,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 6414,
+        "end_tick": 6420,
+        "start_tick": 6415,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 7207,
+        "end_tick": 7214,
+        "start_tick": 7208,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 7500,
+        "end_tick": 7506,
+        "start_tick": 7501,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 7544,
+        "end_tick": 7551,
+        "start_tick": 7545,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 7617,
+        "end_tick": 7624,
+        "start_tick": 7618,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 7674,
+        "end_tick": 7680,
+        "start_tick": 7675,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 7747,
+        "end_tick": 7754,
+        "start_tick": 7748,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 7964,
+        "end_tick": 7970,
+        "start_tick": 7965,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 8571,
+        "end_tick": 8577,
+        "start_tick": 8572,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 9026,
+        "end_tick": 9033,
+        "start_tick": 9027,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 9070,
+        "end_tick": 9076,
+        "start_tick": 9071,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 9203,
+        "end_tick": 9209,
+        "start_tick": 9204,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 9271,
+        "end_tick": 9278,
+        "start_tick": 9272,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 9333,
+        "end_tick": 9339,
+        "start_tick": 9334,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 9479,
+        "end_tick": 9486,
+        "start_tick": 9480,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 10450,
+        "end_tick": 10457,
+        "start_tick": 10451,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 10529,
+        "end_tick": 10535,
+        "start_tick": 10530,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 10573,
+        "end_tick": 10580,
+        "start_tick": 10574,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 10727,
+        "end_tick": 10733,
+        "start_tick": 10728,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 10885,
+        "end_tick": 10892,
+        "start_tick": 10886,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 10961,
+        "end_tick": 10967,
+        "start_tick": 10962,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 11029,
+        "end_tick": 11036,
+        "start_tick": 11030,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 11998,
+        "end_tick": 12004,
+        "start_tick": 11999,
+        "symbol": 0
+      },
+      {
+        "decision_tick": 12077,
+        "end_tick": 12084,
+        "start_tick": 12078,
+        "symbol": 1
+      },
+      {
+        "decision_tick": 12121,
+        "end_tick": 12127,
+        "start_tick": 12122,
+        "symbol": 0
+      }
+    ],
+    "waveform_mismatch_ticks": []
+  },
+  "totals": {
+    "background_known": 0,
+    "background_samples": 3643,
+    "background_unknown": 0,
+    "cases": 168,
+    "correct_known": 57,
+    "decision_timing_errors": 0,
+    "duplicates": 0,
+    "early_or_late_known": 0,
+    "exact_cases": 153,
+    "explicit_unknown": 96,
+    "false_known_events": 0,
+    "known_cases": 72,
+    "missed_observations": 0,
+    "rejected_known": 15,
+    "timestamp_errors": 0,
+    "unknown_cases": 96,
+    "wrong_class_events": 0
+  }
+}

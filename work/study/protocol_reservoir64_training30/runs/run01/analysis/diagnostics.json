@@ -1,0 +1,1298 @@
+[
+  {
+    "profile": "uart_n",
+    "seed": 11,
+    "epoch": 12,
+    "near_saturated_state_fraction": 0.18919957110010613,
+    "state_std_mean": 0.5703934571388845,
+    "variance_dimensions_99": 14,
+    "max_abs_weight": 2.4957997336577225,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 1.9239081500886033
+      },
+      {
+        "lag": 16,
+        "norm": 1.6072990384433605
+      },
+      {
+        "lag": 64,
+        "norm": 0.02502012165992726
+      },
+      {
+        "lag": 128,
+        "norm": 0.017185451028865567
+      },
+      {
+        "lag": 160,
+        "norm": 0.028289150649527552
+      },
+      {
+        "lag": 176,
+        "norm": 0.008652965110626406
+      },
+      {
+        "lag": 256,
+        "norm": 0.00011144994289570746
+      },
+      {
+        "lag": 511,
+        "norm": 9.301862751388562e-14
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 133,
+        "top_class_at_teacher_tick": 0.3684210526315789,
+        "top_class_within_two_ticks": 0.5037593984962406,
+        "mean_true_logit_margin": 0.08859412820368485
+      },
+      "BIT1": {
+        "expected": 115,
+        "top_class_at_teacher_tick": 0.6521739130434783,
+        "top_class_within_two_ticks": 0.7565217391304347,
+        "mean_true_logit_margin": 0.06307327118237857
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 1.575691185647013
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.0967741935483871,
+        "top_class_within_two_ticks": 0.1935483870967742,
+        "mean_true_logit_margin": -0.3014677946087107
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "uart_n",
+    "seed": 11,
+    "epoch": 30,
+    "near_saturated_state_fraction": 0.24033869826671383,
+    "state_std_mean": 0.5892625627619044,
+    "variance_dimensions_99": 16,
+    "max_abs_weight": 2.672243131287516,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 2.3805340224665548
+      },
+      {
+        "lag": 16,
+        "norm": 1.9535878911091193
+      },
+      {
+        "lag": 64,
+        "norm": 0.023457700320646348
+      },
+      {
+        "lag": 128,
+        "norm": 0.00019980410540585414
+      },
+      {
+        "lag": 160,
+        "norm": 4.4528471807278384e-05
+      },
+      {
+        "lag": 176,
+        "norm": 1.8488741371212196e-05
+      },
+      {
+        "lag": 256,
+        "norm": 9.977123637573236e-08
+      },
+      {
+        "lag": 511,
+        "norm": 1.0174877393666359e-14
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 133,
+        "top_class_at_teacher_tick": 0.48872180451127817,
+        "top_class_within_two_ticks": 0.5413533834586466,
+        "mean_true_logit_margin": 0.22123139279365522
+      },
+      "BIT1": {
+        "expected": 115,
+        "top_class_at_teacher_tick": 0.6347826086956522,
+        "top_class_within_two_ticks": 0.8173913043478261,
+        "mean_true_logit_margin": 0.10797436225827928
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 1.836331284341365
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.25806451612903225,
+        "top_class_within_two_ticks": 0.2903225806451613,
+        "mean_true_logit_margin": -0.18412832959266578
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "uart_n",
+    "seed": 29,
+    "epoch": 12,
+    "near_saturated_state_fraction": 0.18748618234877962,
+    "state_std_mean": 0.4851135681049158,
+    "variance_dimensions_99": 12,
+    "max_abs_weight": 2.2598511826811,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 2.756868471942304
+      },
+      {
+        "lag": 16,
+        "norm": 2.7337688908312914
+      },
+      {
+        "lag": 64,
+        "norm": 0.012420474829670736
+      },
+      {
+        "lag": 128,
+        "norm": 0.0011560263910005493
+      },
+      {
+        "lag": 160,
+        "norm": 0.00036784657325579826
+      },
+      {
+        "lag": 176,
+        "norm": 9.755425221269434e-05
+      },
+      {
+        "lag": 256,
+        "norm": 1.261597664860837e-06
+      },
+      {
+        "lag": 511,
+        "norm": 1.0340771961011328e-11
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 133,
+        "top_class_at_teacher_tick": 0.6015037593984962,
+        "top_class_within_two_ticks": 0.6165413533834586,
+        "mean_true_logit_margin": 0.6299805111717458
+      },
+      "BIT1": {
+        "expected": 115,
+        "top_class_at_teacher_tick": 0.8521739130434782,
+        "top_class_within_two_ticks": 0.9739130434782609,
+        "mean_true_logit_margin": 0.15851684452636353
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.967741935483871,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 1.2788018015042981
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.2903225806451613,
+        "top_class_within_two_ticks": 0.3225806451612903,
+        "mean_true_logit_margin": -0.06511092987306753
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "uart_n",
+    "seed": 29,
+    "epoch": 30,
+    "near_saturated_state_fraction": 0.26338654050229926,
+    "state_std_mean": 0.4994942382495052,
+    "variance_dimensions_99": 15,
+    "max_abs_weight": 2.6164812557706862,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 3.1177489281593793
+      },
+      {
+        "lag": 16,
+        "norm": 3.8717361996865867
+      },
+      {
+        "lag": 64,
+        "norm": 0.19294633362497507
+      },
+      {
+        "lag": 128,
+        "norm": 0.007535433618761748
+      },
+      {
+        "lag": 160,
+        "norm": 0.0037832436570721683
+      },
+      {
+        "lag": 176,
+        "norm": 0.0004631271656273867
+      },
+      {
+        "lag": 256,
+        "norm": 1.7488833316642733e-05
+      },
+      {
+        "lag": 511,
+        "norm": 1.4749658900672485e-10
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 133,
+        "top_class_at_teacher_tick": 0.6766917293233082,
+        "top_class_within_two_ticks": 0.7669172932330827,
+        "mean_true_logit_margin": 0.7018005793847203
+      },
+      "BIT1": {
+        "expected": 115,
+        "top_class_at_teacher_tick": 0.9043478260869565,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 0.34530080593341633
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.9032258064516129,
+        "top_class_within_two_ticks": 0.9032258064516129,
+        "mean_true_logit_margin": 1.5764829759743366
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.16129032258064516,
+        "top_class_within_two_ticks": 0.22580645161290322,
+        "mean_true_logit_margin": -0.06607293388128255
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "uart_n",
+    "seed": 47,
+    "epoch": 12,
+    "near_saturated_state_fraction": 0.1574770074283693,
+    "state_std_mean": 0.5266044327115673,
+    "variance_dimensions_99": 15,
+    "max_abs_weight": 2.281994099191751,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 2.1962595645225345
+      },
+      {
+        "lag": 16,
+        "norm": 0.8098709986702382
+      },
+      {
+        "lag": 64,
+        "norm": 0.007276989965954559
+      },
+      {
+        "lag": 128,
+        "norm": 3.0108447520520638e-05
+      },
+      {
+        "lag": 160,
+        "norm": 1.38344175851926e-06
+      },
+      {
+        "lag": 176,
+        "norm": 2.1654745765849324e-07
+      },
+      {
+        "lag": 256,
+        "norm": 2.70649985253812e-10
+      },
+      {
+        "lag": 511,
+        "norm": 3.166903286072067e-20
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 133,
+        "top_class_at_teacher_tick": 0.5338345864661654,
+        "top_class_within_two_ticks": 0.631578947368421,
+        "mean_true_logit_margin": 0.1954218742613086
+      },
+      "BIT1": {
+        "expected": 115,
+        "top_class_at_teacher_tick": 0.6956521739130435,
+        "top_class_within_two_ticks": 0.7652173913043478,
+        "mean_true_logit_margin": 0.03792511747378104
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 1.511574731211118
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.06451612903225806,
+        "top_class_within_two_ticks": 0.06451612903225806,
+        "mean_true_logit_margin": -0.3537027594212597
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "uart_n",
+    "seed": 47,
+    "epoch": 30,
+    "near_saturated_state_fraction": 0.18933498408206578,
+    "state_std_mean": 0.5516004586048351,
+    "variance_dimensions_99": 19,
+    "max_abs_weight": 2.6774507286691374,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 2.7362173699332666
+      },
+      {
+        "lag": 16,
+        "norm": 0.6533764339046443
+      },
+      {
+        "lag": 64,
+        "norm": 0.004614081042310562
+      },
+      {
+        "lag": 128,
+        "norm": 5.9718622808719405e-05
+      },
+      {
+        "lag": 160,
+        "norm": 8.26090808600465e-06
+      },
+      {
+        "lag": 176,
+        "norm": 1.2725465764656757e-06
+      },
+      {
+        "lag": 256,
+        "norm": 3.463332061061401e-09
+      },
+      {
+        "lag": 511,
+        "norm": 7.211056288907862e-17
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 133,
+        "top_class_at_teacher_tick": 0.6466165413533834,
+        "top_class_within_two_ticks": 0.6766917293233082,
+        "mean_true_logit_margin": 0.616240364606472
+      },
+      "BIT1": {
+        "expected": 115,
+        "top_class_at_teacher_tick": 0.7565217391304347,
+        "top_class_within_two_ticks": 0.8260869565217391,
+        "mean_true_logit_margin": 0.26719499710859224
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 1.6000966338408122
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.12903225806451613,
+        "top_class_within_two_ticks": 0.12903225806451613,
+        "mean_true_logit_margin": -0.31733537690870844
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "uart_e",
+    "seed": 11,
+    "epoch": 12,
+    "near_saturated_state_fraction": 0.17722989949748744,
+    "state_std_mean": 0.5685346994612226,
+    "variance_dimensions_99": 11,
+    "max_abs_weight": 2.5285718626952445,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 1.7591764883860406
+      },
+      {
+        "lag": 16,
+        "norm": 0.07430670925130069
+      },
+      {
+        "lag": 64,
+        "norm": 0.0003816551904267222
+      },
+      {
+        "lag": 128,
+        "norm": 3.2717115346263964e-07
+      },
+      {
+        "lag": 160,
+        "norm": 1.5296767205843214e-08
+      },
+      {
+        "lag": 176,
+        "norm": 2.566646246527001e-09
+      },
+      {
+        "lag": 256,
+        "norm": 5.956105351617611e-13
+      },
+      {
+        "lag": 511,
+        "norm": 3.895361446084139e-24
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 137,
+        "top_class_at_teacher_tick": 0.4306569343065693,
+        "top_class_within_two_ticks": 0.6131386861313869,
+        "mean_true_logit_margin": 0.21232080973506892
+      },
+      "BIT1": {
+        "expected": 142,
+        "top_class_at_teacher_tick": 0.20422535211267606,
+        "top_class_within_two_ticks": 0.4014084507042254,
+        "mean_true_logit_margin": -0.3967023859043516
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 0.8291503914344591
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.3870967741935484,
+        "top_class_within_two_ticks": 0.45161290322580644,
+        "mean_true_logit_margin": -0.5535877427080581
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "uart_e",
+    "seed": 11,
+    "epoch": 30,
+    "near_saturated_state_fraction": 0.23170540201005024,
+    "state_std_mean": 0.5926133576536838,
+    "variance_dimensions_99": 14,
+    "max_abs_weight": 2.8114464823787886,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 2.2943850946649897
+      },
+      {
+        "lag": 16,
+        "norm": 0.14051766656140532
+      },
+      {
+        "lag": 64,
+        "norm": 0.006032503661472111
+      },
+      {
+        "lag": 128,
+        "norm": 9.59857676396643e-06
+      },
+      {
+        "lag": 160,
+        "norm": 2.511981993319957e-06
+      },
+      {
+        "lag": 176,
+        "norm": 6.03073013417912e-07
+      },
+      {
+        "lag": 256,
+        "norm": 1.858300778827805e-09
+      },
+      {
+        "lag": 511,
+        "norm": 7.111392682960362e-16
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 137,
+        "top_class_at_teacher_tick": 0.45985401459854014,
+        "top_class_within_two_ticks": 0.5328467153284672,
+        "mean_true_logit_margin": 0.30426969241306173
+      },
+      "BIT1": {
+        "expected": 142,
+        "top_class_at_teacher_tick": 0.4788732394366197,
+        "top_class_within_two_ticks": 0.5422535211267606,
+        "mean_true_logit_margin": -0.2227058263228281
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 0.7786957856650666
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.22580645161290322,
+        "top_class_within_two_ticks": 0.3225806451612903,
+        "mean_true_logit_margin": -0.4416086837250024
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "uart_e",
+    "seed": 29,
+    "epoch": 12,
+    "near_saturated_state_fraction": 0.17040672110552763,
+    "state_std_mean": 0.4521860584250542,
+    "variance_dimensions_99": 11,
+    "max_abs_weight": 2.558312325522212,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 2.245044786971663
+      },
+      {
+        "lag": 16,
+        "norm": 5.263762979254896
+      },
+      {
+        "lag": 64,
+        "norm": 0.12258447184469864
+      },
+      {
+        "lag": 128,
+        "norm": 0.001460972176536733
+      },
+      {
+        "lag": 160,
+        "norm": 2.2936469598017334e-05
+      },
+      {
+        "lag": 176,
+        "norm": 4.3046485733228646e-06
+      },
+      {
+        "lag": 256,
+        "norm": 5.630717172122907e-08
+      },
+      {
+        "lag": 511,
+        "norm": 6.926876028399371e-16
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 137,
+        "top_class_at_teacher_tick": 0.5474452554744526,
+        "top_class_within_two_ticks": 0.635036496350365,
+        "mean_true_logit_margin": 0.14883074067051166
+      },
+      "BIT1": {
+        "expected": 142,
+        "top_class_at_teacher_tick": 0.6056338028169014,
+        "top_class_within_two_ticks": 0.9788732394366197,
+        "mean_true_logit_margin": -0.04225092027945978
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 0.8044189616374093
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.2903225806451613,
+        "top_class_within_two_ticks": 0.45161290322580644,
+        "mean_true_logit_margin": -0.6263879915039747
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "uart_e",
+    "seed": 29,
+    "epoch": 30,
+    "near_saturated_state_fraction": 0.21909547738693466,
+    "state_std_mean": 0.4624946282606977,
+    "variance_dimensions_99": 14,
+    "max_abs_weight": 2.721171235264424,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 2.4160280048216327
+      },
+      {
+        "lag": 16,
+        "norm": 4.600878206683941
+      },
+      {
+        "lag": 64,
+        "norm": 0.17414102674353432
+      },
+      {
+        "lag": 128,
+        "norm": 0.004069789322118601
+      },
+      {
+        "lag": 160,
+        "norm": 7.280543095595737e-05
+      },
+      {
+        "lag": 176,
+        "norm": 2.3688707924081424e-05
+      },
+      {
+        "lag": 256,
+        "norm": 1.7465673954163471e-06
+      },
+      {
+        "lag": 511,
+        "norm": 5.475382006410733e-13
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 137,
+        "top_class_at_teacher_tick": 0.6058394160583942,
+        "top_class_within_two_ticks": 0.7445255474452555,
+        "mean_true_logit_margin": 0.4252921431941871
+      },
+      "BIT1": {
+        "expected": 142,
+        "top_class_at_teacher_tick": 0.5352112676056338,
+        "top_class_within_two_ticks": 0.676056338028169,
+        "mean_true_logit_margin": -0.10471056934779227
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.967741935483871,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 0.9368408704380176
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.3548387096774194,
+        "top_class_within_two_ticks": 0.3548387096774194,
+        "mean_true_logit_margin": -0.43531232814452864
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "uart_e",
+    "seed": 47,
+    "epoch": 12,
+    "near_saturated_state_fraction": 0.15211474036850922,
+    "state_std_mean": 0.5095687180314534,
+    "variance_dimensions_99": 13,
+    "max_abs_weight": 2.2369358801112953,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 2.0246506306020233
+      },
+      {
+        "lag": 16,
+        "norm": 2.092964538088552
+      },
+      {
+        "lag": 64,
+        "norm": 0.051207789700402254
+      },
+      {
+        "lag": 128,
+        "norm": 0.0006250501096521563
+      },
+      {
+        "lag": 160,
+        "norm": 6.26601052106981e-05
+      },
+      {
+        "lag": 176,
+        "norm": 8.900861341339297e-06
+      },
+      {
+        "lag": 256,
+        "norm": 5.7690388672298415e-08
+      },
+      {
+        "lag": 511,
+        "norm": 2.8865058185225523e-16
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 137,
+        "top_class_at_teacher_tick": 0.6788321167883211,
+        "top_class_within_two_ticks": 0.7956204379562044,
+        "mean_true_logit_margin": 0.38984867152681213
+      },
+      "BIT1": {
+        "expected": 142,
+        "top_class_at_teacher_tick": 0.14084507042253522,
+        "top_class_within_two_ticks": 0.2887323943661972,
+        "mean_true_logit_margin": -0.45752745730257777
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.9354838709677419,
+        "top_class_within_two_ticks": 0.967741935483871,
+        "mean_true_logit_margin": 0.6820499442491991
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.3870967741935484,
+        "top_class_within_two_ticks": 0.45161290322580644,
+        "mean_true_logit_margin": -0.6033847815010188
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "uart_e",
+    "seed": 47,
+    "epoch": 30,
+    "near_saturated_state_fraction": 0.18779313232830822,
+    "state_std_mean": 0.5783351716608619,
+    "variance_dimensions_99": 17,
+    "max_abs_weight": 2.733963946403249,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 2.5303419420324444
+      },
+      {
+        "lag": 16,
+        "norm": 3.788438643894317
+      },
+      {
+        "lag": 64,
+        "norm": 0.6027598929408081
+      },
+      {
+        "lag": 128,
+        "norm": 0.007756577343965696
+      },
+      {
+        "lag": 160,
+        "norm": 0.0009931104256889782
+      },
+      {
+        "lag": 176,
+        "norm": 0.00015709272448488846
+      },
+      {
+        "lag": 256,
+        "norm": 4.407257091586478e-06
+      },
+      {
+        "lag": 511,
+        "norm": 7.652656182698563e-13
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 137,
+        "top_class_at_teacher_tick": 0.5401459854014599,
+        "top_class_within_two_ticks": 0.6642335766423357,
+        "mean_true_logit_margin": 0.40208447034589795
+      },
+      "BIT1": {
+        "expected": 142,
+        "top_class_at_teacher_tick": 0.5140845070422535,
+        "top_class_within_two_ticks": 0.7605633802816901,
+        "mean_true_logit_margin": -0.09844921833825
+      },
+      "START": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 0.7871997090202888
+      },
+      "STOP": {
+        "expected": 31,
+        "top_class_at_teacher_tick": 0.3548387096774194,
+        "top_class_within_two_ticks": 0.3870967741935484,
+        "mean_true_logit_margin": -0.34388190008025693
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "i2c",
+    "seed": 11,
+    "epoch": 12,
+    "near_saturated_state_fraction": 0.021732411314783068,
+    "state_std_mean": 0.42369143689180905,
+    "variance_dimensions_99": 13,
+    "max_abs_weight": 1.8688462007892719,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 3.164049044880835
+      },
+      {
+        "lag": 16,
+        "norm": 0.4302881245557188
+      },
+      {
+        "lag": 64,
+        "norm": 0.0049767226942319075
+      },
+      {
+        "lag": 128,
+        "norm": 4.4589576389339994e-05
+      },
+      {
+        "lag": 160,
+        "norm": 2.9874102506430116e-06
+      },
+      {
+        "lag": 176,
+        "norm": 1.0894021762325503e-06
+      },
+      {
+        "lag": 256,
+        "norm": 2.9366645081460026e-09
+      },
+      {
+        "lag": 511,
+        "norm": 2.693796460494878e-17
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 193,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 7.300044898930233
+      },
+      "BIT1": {
+        "expected": 162,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 7.191997043781515
+      },
+      "START": {
+        "expected": 8,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 4.345121462247503
+      },
+      "STOP": {
+        "expected": 5,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 3.9214515711950275
+      },
+      "FALL": {
+        "expected": 355,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 6.117659654163588
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "i2c",
+    "seed": 11,
+    "epoch": 30,
+    "near_saturated_state_fraction": 0.03426661611499406,
+    "state_std_mean": 0.43404455388804547,
+    "variance_dimensions_99": 13,
+    "max_abs_weight": 2.149222602549524,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 3.76827262176869
+      },
+      {
+        "lag": 16,
+        "norm": 0.4660766568198691
+      },
+      {
+        "lag": 64,
+        "norm": 0.0048548257135186765
+      },
+      {
+        "lag": 128,
+        "norm": 3.4840766026304785e-05
+      },
+      {
+        "lag": 160,
+        "norm": 2.1965552939894948e-06
+      },
+      {
+        "lag": 176,
+        "norm": 7.803907634402507e-07
+      },
+      {
+        "lag": 256,
+        "norm": 1.7909799214109048e-09
+      },
+      {
+        "lag": 511,
+        "norm": 8.99956253680776e-18
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 193,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 9.464936691505777
+      },
+      "BIT1": {
+        "expected": 162,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 9.292034205911955
+      },
+      "START": {
+        "expected": 8,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 6.347039791348482
+      },
+      "STOP": {
+        "expected": 5,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 5.927432947207347
+      },
+      "FALL": {
+        "expected": 355,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 8.211512557575332
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "i2c",
+    "seed": 29,
+    "epoch": 12,
+    "near_saturated_state_fraction": 0.020685662007121193,
+    "state_std_mean": 0.4074275008285954,
+    "variance_dimensions_99": 15,
+    "max_abs_weight": 1.607226539698949,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 3.047654168151384
+      },
+      {
+        "lag": 16,
+        "norm": 0.20744412187696576
+      },
+      {
+        "lag": 64,
+        "norm": 0.001744785905959522
+      },
+      {
+        "lag": 128,
+        "norm": 6.249124861780167e-06
+      },
+      {
+        "lag": 160,
+        "norm": 4.270946160056401e-07
+      },
+      {
+        "lag": 176,
+        "norm": 1.2453303826191617e-07
+      },
+      {
+        "lag": 256,
+        "norm": 1.1673963543008455e-10
+      },
+      {
+        "lag": 511,
+        "norm": 5.539723734831558e-20
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 193,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 7.256128035678757
+      },
+      "BIT1": {
+        "expected": 162,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 7.289039087470445
+      },
+      "START": {
+        "expected": 8,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 3.9560572431277965
+      },
+      "STOP": {
+        "expected": 5,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 3.9973973721863807
+      },
+      "FALL": {
+        "expected": 355,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 6.05963569061707
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "i2c",
+    "seed": 29,
+    "epoch": 30,
+    "near_saturated_state_fraction": 0.028837119214031388,
+    "state_std_mean": 0.42323120577459117,
+    "variance_dimensions_99": 15,
+    "max_abs_weight": 1.804237815922713,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 3.5860293131089156
+      },
+      {
+        "lag": 16,
+        "norm": 0.22821499808171336
+      },
+      {
+        "lag": 64,
+        "norm": 0.002275817220685331
+      },
+      {
+        "lag": 128,
+        "norm": 9.075645159372222e-06
+      },
+      {
+        "lag": 160,
+        "norm": 6.377013656552881e-07
+      },
+      {
+        "lag": 176,
+        "norm": 1.869720694948052e-07
+      },
+      {
+        "lag": 256,
+        "norm": 1.8814817799106962e-10
+      },
+      {
+        "lag": 511,
+        "norm": 1.2545999142833953e-19
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 193,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 9.259287714538436
+      },
+      "BIT1": {
+        "expected": 162,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 9.401151884339995
+      },
+      "START": {
+        "expected": 8,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 6.18337005640166
+      },
+      "STOP": {
+        "expected": 5,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 5.977304126129882
+      },
+      "FALL": {
+        "expected": 355,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 8.215397330245855
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "i2c",
+    "seed": 47,
+    "epoch": 12,
+    "near_saturated_state_fraction": 0.014691579849663721,
+    "state_std_mean": 0.41284394291584225,
+    "variance_dimensions_99": 14,
+    "max_abs_weight": 1.6361271409299012,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 2.9069655799755343
+      },
+      {
+        "lag": 16,
+        "norm": 0.19550962747787778
+      },
+      {
+        "lag": 64,
+        "norm": 0.004188348650921557
+      },
+      {
+        "lag": 128,
+        "norm": 3.968449987325635e-05
+      },
+      {
+        "lag": 160,
+        "norm": 2.5485567315016852e-06
+      },
+      {
+        "lag": 176,
+        "norm": 1.064705087875701e-06
+      },
+      {
+        "lag": 256,
+        "norm": 2.6732397681888824e-09
+      },
+      {
+        "lag": 511,
+        "norm": 6.345669205797362e-18
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 193,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 7.601537139970772
+      },
+      "BIT1": {
+        "expected": 162,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 7.100060347398786
+      },
+      "START": {
+        "expected": 8,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 4.365270552439346
+      },
+      "STOP": {
+        "expected": 5,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 4.0841005718142185
+      },
+      "FALL": {
+        "expected": 355,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 5.95953530248715
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  },
+  {
+    "profile": "i2c",
+    "seed": 47,
+    "epoch": 30,
+    "near_saturated_state_fraction": 0.02103801265989714,
+    "state_std_mean": 0.4238155046739338,
+    "variance_dimensions_99": 15,
+    "max_abs_weight": 1.806978764823207,
+    "stop_credit_trace": [
+      {
+        "lag": 0,
+        "norm": 3.495226326941483
+      },
+      {
+        "lag": 16,
+        "norm": 0.20081069235570975
+      },
+      {
+        "lag": 64,
+        "norm": 0.00393595977571178
+      },
+      {
+        "lag": 128,
+        "norm": 3.713428632871057e-05
+      },
+      {
+        "lag": 160,
+        "norm": 2.2964330950178568e-06
+      },
+      {
+        "lag": 176,
+        "norm": 9.83489565359366e-07
+      },
+      {
+        "lag": 256,
+        "norm": 2.3438011036480316e-09
+      },
+      {
+        "lag": 511,
+        "norm": 5.517098751064056e-18
+      }
+    ],
+    "event_logit_diagnostics": {
+      "BIT0": {
+        "expected": 193,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 9.612918188421613
+      },
+      "BIT1": {
+        "expected": 162,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 9.138486934585362
+      },
+      "START": {
+        "expected": 8,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 6.255852300923593
+      },
+      "STOP": {
+        "expected": 5,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 6.065566093071975
+      },
+      "FALL": {
+        "expected": 355,
+        "top_class_at_teacher_tick": 1.0,
+        "top_class_within_two_ticks": 1.0,
+        "mean_true_logit_margin": 8.034852364099502
+      }
+    },
+    "interpretation": "Sensitivity and separability diagnostics, not a proof of state collisions or insufficient capacity."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "arithmetic": "one stored duration per edge; 5 normalization divisions each sample in this readable implementation",
+  "conditioning_delay_samples": 1,
+  "latch_values": 0,
+  "memory_values": 5,
+  "note": "loaded run-count gate plus duration slots; normalization could be deferred to decision but is not timed here",
+  "prototype_vectors": 16,
+  "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+  "score_parameter_values": 80,
+  "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+}

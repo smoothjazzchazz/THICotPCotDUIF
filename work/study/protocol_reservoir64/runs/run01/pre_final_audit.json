@@ -1,0 +1,15 @@
+{
+  "critical_training_sources_unchanged": {
+    "work/model/stream_reservoir.py": true,
+    "work/study/protocol_reservoir64/training.py": true,
+    "work/study/protocol_reservoir64/data.py": true,
+    "work/study/protocol_reservoir64/uart_emitter.py": true
+  },
+  "final_test_generated": false,
+  "notes": [
+    "Profile parameter tables saved before evaluation.",
+    "Completed interactive jitter and disturbance tests; no refitting.",
+    "Scoring, output traces and resource accounting completed before freeze.",
+    "18-tick SCL hold is the controller implementation; actual peer wait is measured."
+  ]
+}

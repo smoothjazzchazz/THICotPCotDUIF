@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/daniel/stuff/THICotPCotDUIF_exp/work/study/protocol_reservoir64_training30/run.py", line 166, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/home/daniel/stuff/THICotPCotDUIF_exp/work/study/protocol_reservoir64_training30/run.py", line 153, in main
+    preflight(args.output)
+  File "/home/daniel/stuff/THICotPCotDUIF_exp/work/study/protocol_reservoir64_training30/audit.py", line 132, in preflight
+    write_json(directory / 'preflight.json',result)
+  File "/home/daniel/stuff/THICotPCotDUIF_exp/work/study/protocol_reservoir64_training30/training.py", line 24, in write_json
+    temp.write_text(json.dumps(obj, indent=2, allow_nan=False) + '\n')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/home/daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/home/daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/home/daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/home/daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/home/daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/home/daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/home/daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/home/daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/home/daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable

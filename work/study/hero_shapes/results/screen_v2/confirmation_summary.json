@@ -1,0 +1,1490 @@
+[
+  {
+    "cost": {
+      "arithmetic": "actual dense loops: 18 drive products + 6 blend products + 3 tanh/sample; 48 squared differences/decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 3,
+      "loaded_values": 19,
+      "memory_values": 3,
+      "note": "sparse conceptual connectivity still uses dense Python arithmetic; floating-point sensitivity is unquantized",
+      "prototype_vectors": 16,
+      "recurrent_nonzero": 6,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 48,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 55
+      },
+      "from_start": {
+        "max": 52,
+        "mean": 52,
+        "min": 52,
+        "n": 55
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 55
+      }
+    },
+    "name": "gap_order/reservoir3",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 55
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3466,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 55,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 151,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 17,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "actual dense loops: 304 drive products + 32 blend products + 16 tanh/sample; 256 squared differences/decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 16,
+      "loaded_values": 305,
+      "memory_values": 16,
+      "note": "sparse conceptual connectivity still uses dense Python arithmetic; floating-point sensitivity is unquantized",
+      "prototype_vectors": 16,
+      "recurrent_nonzero": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 256,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 54
+      },
+      "from_start": {
+        "max": 52,
+        "mean": 52,
+        "min": 52,
+        "n": 54
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 54
+      }
+    },
+    "name": "gap_order/ring16",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 54
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3466,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 54,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 150,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 18,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "one stored duration per edge; 7 normalization divisions each sample in this readable implementation",
+      "conditioning_delay_samples": 1,
+      "latch_values": 0,
+      "memory_values": 7,
+      "note": "loaded run-count gate plus duration slots; normalization could be deferred to decision but is not timed here",
+      "prototype_vectors": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 112,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 56
+      },
+      "from_start": {
+        "max": 52,
+        "mean": 52,
+        "min": 52,
+        "n": 56
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 56
+      }
+    },
+    "name": "gap_order/run_history",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 56
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3466,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 56,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 152,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 16,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "shift 12 frames/sample; 576 squared differences per decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 36,
+      "memory_values": 36,
+      "prototype_vectors": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 576,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": null,
+        "mean": null,
+        "min": null,
+        "n": 0
+      },
+      "from_start": {
+        "max": null,
+        "mean": null,
+        "min": null,
+        "n": 0
+      },
+      "timestamp_shift": {
+        "max": null,
+        "mean": null,
+        "min": null,
+        "n": 0
+      }
+    },
+    "name": "gap_order/sample12",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 1
+    },
+    "startup_passes": false,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3466,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 96,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 71,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 1
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "shift 64 frames/sample; 3072 squared differences per decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 192,
+      "memory_values": 192,
+      "prototype_vectors": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 3072,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 39
+      },
+      "from_start": {
+        "max": 52,
+        "mean": 52,
+        "min": 52,
+        "n": 39
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 39
+      }
+    },
+    "name": "gap_order/sample64",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 39
+    },
+    "startup_passes": false,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3466,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 39,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 135,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 33,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "actual dense loops: 304 drive products + 32 blend products + 16 tanh/sample; 256 squared differences/decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 16,
+      "loaded_values": 305,
+      "memory_values": 16,
+      "note": "sparse conceptual connectivity still uses dense Python arithmetic; floating-point sensitivity is unquantized",
+      "prototype_vectors": 16,
+      "recurrent_nonzero": 62,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 256,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 55
+      },
+      "from_start": {
+        "max": 52,
+        "mean": 52,
+        "min": 52,
+        "n": 55
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 55
+      }
+    },
+    "name": "gap_order/sparse16",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 55
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3466,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 55,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 151,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 17,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "per completed run: 2 absolute errors/max updates; no temporal matrix products",
+      "conditioning_delay_samples": 1,
+      "latch_values": 0,
+      "loaded_values": 15,
+      "memory_values": 3,
+      "note": "three feature values are trace-only; run index and hypothesis errors carry recognition",
+      "numeric_state_values": 2,
+      "prototype_vectors": 0,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 0,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 72
+      },
+      "from_start": {
+        "max": 56,
+        "mean": 51.97222222222222,
+        "min": 48,
+        "n": 72
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 72
+      }
+    },
+    "name": "gap_order/stream_intervals",
+    "passes": true,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 72
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3466,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 72,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 168,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "per completed run: 2 relative errors/max updates; no temporal matrix products",
+      "conditioning_delay_samples": 1,
+      "latch_values": 0,
+      "loaded_values": 15,
+      "memory_values": 3,
+      "note": "three feature values are trace-only; run index and hypothesis errors carry recognition",
+      "numeric_state_values": 2,
+      "prototype_vectors": 0,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 0,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 56
+      },
+      "from_start": {
+        "max": 52,
+        "mean": 52,
+        "min": 52,
+        "n": 56
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 56
+      }
+    },
+    "name": "gap_order/stream_templates",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 56
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3466,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 56,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 152,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 16,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "actual dense loops: 18 drive products + 6 blend products + 3 tanh/sample; 48 squared differences/decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 3,
+      "loaded_values": 19,
+      "memory_values": 3,
+      "note": "sparse conceptual connectivity still uses dense Python arithmetic; floating-point sensitivity is unquantized",
+      "prototype_vectors": 16,
+      "recurrent_nonzero": 6,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 48,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 55
+      },
+      "from_start": {
+        "max": 45,
+        "mean": 45,
+        "min": 45,
+        "n": 55
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 55
+      }
+    },
+    "name": "pulse_order/reservoir3",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 55
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3643,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 55,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 151,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 17,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "actual dense loops: 304 drive products + 32 blend products + 16 tanh/sample; 256 squared differences/decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 16,
+      "loaded_values": 305,
+      "memory_values": 16,
+      "note": "sparse conceptual connectivity still uses dense Python arithmetic; floating-point sensitivity is unquantized",
+      "prototype_vectors": 16,
+      "recurrent_nonzero": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 256,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 23
+      },
+      "from_start": {
+        "max": 48,
+        "mean": 45.04347826086956,
+        "min": 44,
+        "n": 23
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 23
+      }
+    },
+    "name": "pulse_order/ring16",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 23
+    },
+    "startup_passes": false,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3643,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 23,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 119,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 49,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "one stored duration per edge; 5 normalization divisions each sample in this readable implementation",
+      "conditioning_delay_samples": 1,
+      "latch_values": 0,
+      "memory_values": 5,
+      "note": "loaded run-count gate plus duration slots; normalization could be deferred to decision but is not timed here",
+      "prototype_vectors": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 80,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 65
+      },
+      "from_start": {
+        "max": 48,
+        "mean": 45.04615384615385,
+        "min": 44,
+        "n": 65
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 65
+      }
+    },
+    "name": "pulse_order/run_history",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 65
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3643,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 65,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 161,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 7,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "shift 12 frames/sample; 576 squared differences per decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 36,
+      "memory_values": 36,
+      "prototype_vectors": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 576,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 61
+      },
+      "from_start": {
+        "max": 50,
+        "mean": 45.26229508196721,
+        "min": 45,
+        "n": 61
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 61
+      }
+    },
+    "name": "pulse_order/sample12",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 77
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3643,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 61,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 141,
+      "explicit_unknown": 80,
+      "false_known_events": 16,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 11,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "shift 64 frames/sample; 3072 squared differences per decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 192,
+      "memory_values": 192,
+      "prototype_vectors": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 3072,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": null,
+        "mean": null,
+        "min": null,
+        "n": 0
+      },
+      "from_start": {
+        "max": null,
+        "mean": null,
+        "min": null,
+        "n": 0
+      },
+      "timestamp_shift": {
+        "max": null,
+        "mean": null,
+        "min": null,
+        "n": 0
+      }
+    },
+    "name": "pulse_order/sample64",
+    "passes": false,
+    "response_latency": {
+      "max": null,
+      "mean": null,
+      "min": null,
+      "n": 0
+    },
+    "startup_passes": false,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3643,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 0,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 96,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 72,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "actual dense loops: 304 drive products + 32 blend products + 16 tanh/sample; 256 squared differences/decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 16,
+      "loaded_values": 305,
+      "memory_values": 16,
+      "note": "sparse conceptual connectivity still uses dense Python arithmetic; floating-point sensitivity is unquantized",
+      "prototype_vectors": 16,
+      "recurrent_nonzero": 62,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 256,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 15
+      },
+      "from_start": {
+        "max": 45,
+        "mean": 45,
+        "min": 45,
+        "n": 15
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 15
+      }
+    },
+    "name": "pulse_order/sparse16",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 15
+    },
+    "startup_passes": false,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3643,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 15,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 111,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 57,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "per completed run: 2 absolute errors/max updates; no temporal matrix products",
+      "conditioning_delay_samples": 1,
+      "latch_values": 0,
+      "loaded_values": 11,
+      "memory_values": 3,
+      "note": "three feature values are trace-only; run index and hypothesis errors carry recognition",
+      "numeric_state_values": 2,
+      "prototype_vectors": 0,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 0,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 72
+      },
+      "from_start": {
+        "max": 50,
+        "mean": 45.30555555555556,
+        "min": 44,
+        "n": 72
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 72
+      }
+    },
+    "name": "pulse_order/stream_intervals",
+    "passes": true,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 72
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3643,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 72,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 168,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "per completed run: 2 relative errors/max updates; no temporal matrix products",
+      "conditioning_delay_samples": 1,
+      "latch_values": 0,
+      "loaded_values": 11,
+      "memory_values": 3,
+      "note": "three feature values are trace-only; run index and hypothesis errors carry recognition",
+      "numeric_state_values": 2,
+      "prototype_vectors": 0,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 0,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 57
+      },
+      "from_start": {
+        "max": 45,
+        "mean": 44.98245614035088,
+        "min": 44,
+        "n": 57
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 57
+      }
+    },
+    "name": "pulse_order/stream_templates",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 57
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 3643,
+      "background_unknown": 0,
+      "cases": 168,
+      "correct_known": 57,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 153,
+      "explicit_unknown": 96,
+      "false_known_events": 0,
+      "known_cases": 72,
+      "missed_observations": 0,
+      "rejected_known": 15,
+      "timestamp_errors": 0,
+      "unknown_cases": 96,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "actual dense loops: 18 drive products + 6 blend products + 3 tanh/sample; 48 squared differences/decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 3,
+      "loaded_values": 19,
+      "memory_values": 3,
+      "note": "sparse conceptual connectivity still uses dense Python arithmetic; floating-point sensitivity is unquantized",
+      "prototype_vectors": 16,
+      "recurrent_nonzero": 6,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 48,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 22
+      },
+      "from_start": {
+        "max": 63,
+        "mean": 59.18181818181818,
+        "min": 42,
+        "n": 22
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 22
+      }
+    },
+    "name": "relative_order/reservoir3",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 22
+    },
+    "startup_passes": false,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 4738,
+      "background_unknown": 0,
+      "cases": 224,
+      "correct_known": 22,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 126,
+      "explicit_unknown": 104,
+      "false_known_events": 0,
+      "known_cases": 120,
+      "missed_observations": 0,
+      "rejected_known": 98,
+      "timestamp_errors": 0,
+      "unknown_cases": 104,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "actual dense loops: 304 drive products + 32 blend products + 16 tanh/sample; 256 squared differences/decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 16,
+      "loaded_values": 305,
+      "memory_values": 16,
+      "note": "sparse conceptual connectivity still uses dense Python arithmetic; floating-point sensitivity is unquantized",
+      "prototype_vectors": 16,
+      "recurrent_nonzero": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 256,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 36
+      },
+      "from_start": {
+        "max": 63,
+        "mean": 52.5,
+        "min": 42,
+        "n": 36
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 36
+      }
+    },
+    "name": "relative_order/ring16",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 36
+    },
+    "startup_passes": false,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 4738,
+      "background_unknown": 0,
+      "cases": 224,
+      "correct_known": 36,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 140,
+      "explicit_unknown": 104,
+      "false_known_events": 0,
+      "known_cases": 120,
+      "missed_observations": 0,
+      "rejected_known": 84,
+      "timestamp_errors": 0,
+      "unknown_cases": 104,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "one stored duration per edge; 5 normalization divisions each sample in this readable implementation",
+      "conditioning_delay_samples": 1,
+      "latch_values": 0,
+      "memory_values": 5,
+      "note": "loaded run-count gate plus duration slots; normalization could be deferred to decision but is not timed here",
+      "prototype_vectors": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 80,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 89
+      },
+      "from_start": {
+        "max": 67,
+        "mean": 50.7752808988764,
+        "min": 42,
+        "n": 89
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 89
+      }
+    },
+    "name": "relative_order/run_history",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 97
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 4738,
+      "background_unknown": 0,
+      "cases": 224,
+      "correct_known": 89,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 185,
+      "explicit_unknown": 96,
+      "false_known_events": 8,
+      "known_cases": 120,
+      "missed_observations": 0,
+      "rejected_known": 31,
+      "timestamp_errors": 0,
+      "unknown_cases": 104,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "shift 12 frames/sample; 576 squared differences per decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 36,
+      "memory_values": 36,
+      "prototype_vectors": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 576,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 31
+      },
+      "from_start": {
+        "max": 67,
+        "mean": 43.54838709677419,
+        "min": 40,
+        "n": 31
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 31
+      }
+    },
+    "name": "relative_order/sample12",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 37
+    },
+    "startup_passes": false,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 4738,
+      "background_unknown": 0,
+      "cases": 224,
+      "correct_known": 31,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 132,
+      "explicit_unknown": 101,
+      "false_known_events": 3,
+      "known_cases": 120,
+      "missed_observations": 0,
+      "rejected_known": 86,
+      "timestamp_errors": 0,
+      "unknown_cases": 104,
+      "wrong_class_events": 3
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "shift 64 frames/sample; 3072 squared differences per decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 192,
+      "memory_values": 192,
+      "prototype_vectors": 16,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 3072,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 16
+      },
+      "from_start": {
+        "max": 63,
+        "mean": 63,
+        "min": 63,
+        "n": 16
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 16
+      }
+    },
+    "name": "relative_order/sample64",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 16
+    },
+    "startup_passes": false,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 4738,
+      "background_unknown": 0,
+      "cases": 224,
+      "correct_known": 16,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 120,
+      "explicit_unknown": 104,
+      "false_known_events": 0,
+      "known_cases": 120,
+      "missed_observations": 0,
+      "rejected_known": 104,
+      "timestamp_errors": 0,
+      "unknown_cases": 104,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "actual dense loops: 304 drive products + 32 blend products + 16 tanh/sample; 256 squared differences/decision",
+      "conditioning_delay_samples": 1,
+      "latch_values": 16,
+      "loaded_values": 305,
+      "memory_values": 16,
+      "note": "sparse conceptual connectivity still uses dense Python arithmetic; floating-point sensitivity is unquantized",
+      "prototype_vectors": 16,
+      "recurrent_nonzero": 62,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 256,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 37
+      },
+      "from_start": {
+        "max": 63,
+        "mean": 52.21621621621622,
+        "min": 42,
+        "n": 37
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 37
+      }
+    },
+    "name": "relative_order/sparse16",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 37
+    },
+    "startup_passes": false,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 4738,
+      "background_unknown": 0,
+      "cases": 224,
+      "correct_known": 37,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 141,
+      "explicit_unknown": 104,
+      "false_known_events": 0,
+      "known_cases": 120,
+      "missed_observations": 0,
+      "rejected_known": 83,
+      "timestamp_errors": 0,
+      "unknown_cases": 104,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "per completed run: 4 absolute errors/max updates; no temporal matrix products",
+      "conditioning_delay_samples": 1,
+      "latch_values": 0,
+      "loaded_values": 12,
+      "memory_values": 3,
+      "note": "three feature values are trace-only; run index and hypothesis errors carry recognition",
+      "numeric_state_values": 4,
+      "prototype_vectors": 0,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 0,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 120
+      },
+      "from_start": {
+        "max": 67,
+        "mean": 51.175,
+        "min": 39,
+        "n": 120
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 120
+      }
+    },
+    "name": "relative_order/stream_intervals",
+    "passes": true,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 120
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 4738,
+      "background_unknown": 0,
+      "cases": 224,
+      "correct_known": 120,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 224,
+      "explicit_unknown": 104,
+      "false_known_events": 0,
+      "known_cases": 120,
+      "missed_observations": 0,
+      "rejected_known": 0,
+      "timestamp_errors": 0,
+      "unknown_cases": 104,
+      "wrong_class_events": 0
+    }
+  },
+  {
+    "cost": {
+      "arithmetic": "per completed run: 4 relative errors/max updates; no temporal matrix products",
+      "conditioning_delay_samples": 1,
+      "latch_values": 0,
+      "loaded_values": 12,
+      "memory_values": 3,
+      "note": "three feature values are trace-only; run index and hypothesis errors carry recognition",
+      "numeric_state_values": 4,
+      "prototype_vectors": 0,
+      "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+      "score_parameter_values": 0,
+      "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+    },
+    "latency": {
+      "from_end": {
+        "max": 21,
+        "mean": 21,
+        "min": 21,
+        "n": 88
+      },
+      "from_start": {
+        "max": 63,
+        "mean": 50.59090909090909,
+        "min": 42,
+        "n": 88
+      },
+      "timestamp_shift": {
+        "max": 2,
+        "mean": 2,
+        "min": 2,
+        "n": 88
+      }
+    },
+    "name": "relative_order/stream_templates",
+    "passes": false,
+    "response_latency": {
+      "max": 1,
+      "mean": 1,
+      "min": 1,
+      "n": 88
+    },
+    "startup_passes": true,
+    "totals": {
+      "background_known": 0,
+      "background_samples": 4738,
+      "background_unknown": 0,
+      "cases": 224,
+      "correct_known": 88,
+      "decision_timing_errors": 0,
+      "duplicates": 0,
+      "early_or_late_known": 0,
+      "exact_cases": 192,
+      "explicit_unknown": 104,
+      "false_known_events": 0,
+      "known_cases": 120,
+      "missed_observations": 0,
+      "rejected_known": 32,
+      "timestamp_errors": 0,
+      "unknown_cases": 104,
+      "wrong_class_events": 0
+    }
+  }
+]

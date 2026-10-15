@@ -1,0 +1,55 @@
+{
+  "source": "declared experimental assumptions, not a trusted standard",
+  "checks": [
+    {
+      "profile": "8N1",
+      "byte": 83,
+      "literal_fields": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "pass_check": true
+    },
+    {
+      "profile": "8E1",
+      "byte": 83,
+      "literal_fields": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "pass_check": true
+    },
+    {
+      "profile": "I2C assumed address write",
+      "literal_address_bits": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "ack": 0,
+      "pass_check": true
+    }
+  ]
+}

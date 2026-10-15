@@ -1,0 +1,23 @@
+{
+  "model_tests": {
+    "count": 24,
+    "passed": true,
+    "command": "python3 -B -m unittest discover -s work/model -p 'test_*.py' -v"
+  },
+  "study_tests": {
+    "count": 14,
+    "passed": true,
+    "command": "python3 -B -m unittest discover -s work/study -p 'test_*.py' -v"
+  },
+  "template_check": {
+    "passed": null,
+    "reason": "missing template-cmos5l tag; fatal: bad revision 'template-cmos5l'"
+  },
+  "git_diff_check": true,
+  "new_python_whitespace_check": true,
+  "result_links_resolve": true,
+  "frozen_source_and_config_hashes_match": true,
+  "preexisting_tracked_changes_preserved": true,
+  "frozen_template_files_changed": false,
+  "replay_saved_json_config": true
+}

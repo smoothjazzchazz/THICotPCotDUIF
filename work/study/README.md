@@ -1,4 +1,27 @@
-# Reservoir studies
+# Architecture studies
+
+Current runnable example: [shared-stage waveform demo](stage_demo/README.md).
+It keeps stimulus generation, offline fitting, scoring and results here while
+reusing the common stages and runner in [work/model](../model/README.md).
+Typical new experiments should configure, swap or extend those stage modules
+rather than duplicate the pipeline. An experiment can still justify a different
+decomposition under the scope amendment below.
+
+New experiments follow [experimental scope](../../knowledgebase/experiments.md).
+Agents may explore reservoir and total system architectures in a descriptive
+folder here, with their own models and a short README stating the question,
+assumptions, comparison, and results. Existing model interfaces and the reference
+design's mechanisms are available comparisons, not limits on the experiment.
+
+The previous study implementations and raw artifacts were cleared on 6 October
+2026. Their Markdown reports remain. [ARCHIVE.md](ARCHIVE.md) records the cleanup
+and how to recover exact code and data from Git history.
+
+## Historical study index
+
+The notes below are retained from the previous studies. Their commands and
+non-Markdown links refer to the pre-cleanup tree. They describe past work and
+do not add requirements for new experiments.
 
 Experiments for G1: find a temporal shape that can be loaded, decoded, and
 re-emitted, including class 7 for unknown input. Goals and gates are in

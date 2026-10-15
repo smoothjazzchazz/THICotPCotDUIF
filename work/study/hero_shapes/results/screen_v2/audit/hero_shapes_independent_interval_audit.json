@@ -1,0 +1,44 @@
+[
+  {
+    "family": "pulse_order",
+    "config_threshold": -1.0,
+    "config_margin": 0.0,
+    "counts": {
+      "all_jitter": 486,
+      "one_run_outside_envelope": 20,
+      "prefix": 2,
+      "suffix": 2,
+      "missing_delimiter": 2
+    },
+    "startup_cut_cases": 48,
+    "failures": []
+  },
+  {
+    "family": "gap_order",
+    "config_threshold": -1.0,
+    "config_margin": 0.0,
+    "counts": {
+      "all_jitter": 4374,
+      "one_run_outside_envelope": 24,
+      "prefix": 2,
+      "suffix": 2,
+      "missing_delimiter": 2
+    },
+    "startup_cut_cases": 62,
+    "failures": []
+  },
+  {
+    "family": "relative_order",
+    "config_threshold": -1.0,
+    "config_margin": 0.0,
+    "counts": {
+      "all_jitter": 972,
+      "one_run_outside_envelope": 34,
+      "prefix": 4,
+      "suffix": 4,
+      "missing_delimiter": 4
+    },
+    "startup_cut_cases": 126,
+    "failures": []
+  }
+]

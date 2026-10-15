@@ -1,0 +1,15 @@
+All frozen hashes match; 2439 previous files unchanged.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/daniel/stuff/THICotPCotDUIF_exp/work/study/protocol_reservoir32_i2c_training30/run.py", line 133, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/daniel/stuff/THICotPCotDUIF_exp/work/study/protocol_reservoir32_i2c_training30/run.py", line 130, in main
+    report(a.output)
+  File "/home/daniel/stuff/THICotPCotDUIF_exp/work/study/protocol_reservoir32_i2c_training30/report.py", line 161, in report
+    write_json(analysis/'manifest.json',{str(p.relative_to(HERE)):sha(p) for p in sorted([*analysis.glob('*'),HERE/'REPORT.md'])
+                                             ^^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 682, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'work/study/protocol_reservoir32_i2c_training30/runs/run01/analysis/convergence.json' is not in the subpath of '/home/daniel/stuff/THICotPCotDUIF_exp/work/study/protocol_reservoir32_i2c_training30'

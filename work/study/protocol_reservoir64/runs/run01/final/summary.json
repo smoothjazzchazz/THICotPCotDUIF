@@ -1,0 +1,188 @@
+{
+  "qualification": {
+    "uart_n": false,
+    "uart_e": false,
+    "i2c": false
+  },
+  "usb": {
+    "status": "not_started",
+    "reason": "UART/I2C frozen end-to-end gate failed",
+    "additional_source_blocks": [
+      "checked packet field layout",
+      "CRC5/CRC16 polynomials and bit order",
+      "sync/EOP acceptance and handshake timing",
+      "configured-device transaction profile"
+    ],
+    "fit_steps": 0
+  },
+  "models": [
+    {
+      "profile": "uart_n",
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "uart_n",
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "quantized",
+      "qualified": false
+    },
+    {
+      "profile": "uart_n",
+      "variant": "seed_29",
+      "seed": 29,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "uart_n",
+      "variant": "seed_29",
+      "seed": 29,
+      "mode": "quantized",
+      "qualified": false
+    },
+    {
+      "profile": "uart_n",
+      "variant": "seed_47",
+      "seed": 47,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "uart_n",
+      "variant": "seed_47",
+      "seed": 47,
+      "mode": "quantized",
+      "qualified": false
+    },
+    {
+      "profile": "uart_n",
+      "variant": "readout_only",
+      "seed": 11,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "uart_n",
+      "variant": "readout_only",
+      "seed": 11,
+      "mode": "quantized",
+      "qualified": false
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "quantized",
+      "qualified": false
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_29",
+      "seed": 29,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_29",
+      "seed": 29,
+      "mode": "quantized",
+      "qualified": false
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_47",
+      "seed": 47,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "uart_e",
+      "variant": "seed_47",
+      "seed": 47,
+      "mode": "quantized",
+      "qualified": false
+    },
+    {
+      "profile": "uart_e",
+      "variant": "readout_only",
+      "seed": 11,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "uart_e",
+      "variant": "readout_only",
+      "seed": 11,
+      "mode": "quantized",
+      "qualified": false
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "quantized",
+      "qualified": false
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_29",
+      "seed": 29,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_29",
+      "seed": 29,
+      "mode": "quantized",
+      "qualified": false
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_47",
+      "seed": 47,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "i2c",
+      "variant": "seed_47",
+      "seed": 47,
+      "mode": "quantized",
+      "qualified": false
+    },
+    {
+      "profile": "i2c",
+      "variant": "readout_only",
+      "seed": 11,
+      "mode": "float",
+      "qualified": false
+    },
+    {
+      "profile": "i2c",
+      "variant": "readout_only",
+      "seed": 11,
+      "mode": "quantized",
+      "qualified": false
+    }
+  ]
+}

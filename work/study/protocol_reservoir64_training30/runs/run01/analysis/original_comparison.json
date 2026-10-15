@@ -1,0 +1,1010 @@
+[
+  {
+    "run": "original",
+    "profile": "uart_n",
+    "seed": 11,
+    "mode": "float",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.10900820945196361,
+    "overall_event_precision": 0.10222425667381037,
+    "boundary_recall": {
+      "START": 0.0019968937208786333,
+      "STOP": 0.0,
+      "BIT0": 0.16698060941828255,
+      "BIT1": 0.10496501166277908
+    },
+    "totals": {
+      "correct": 4913,
+      "expected": 45070,
+      "emitted": 48061,
+      "false_known": 9987,
+      "false_invalid": 8148,
+      "errors": 58292
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_n",
+    "seed": 11,
+    "mode": "float",
+    "selected_epoch": 27,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.4512979809185711,
+    "overall_event_precision": 0.23002284395992129,
+    "boundary_recall": {
+      "START": 1.0,
+      "STOP": 0.17128910583536722,
+      "BIT0": 0.27361348240348077,
+      "BIT1": 0.5638862506285267
+    },
+    "totals": {
+      "correct": 20340,
+      "expected": 45070,
+      "emitted": 88426,
+      "false_known": 13225,
+      "false_invalid": 33950,
+      "errors": 71905
+    }
+  },
+  {
+    "run": "original",
+    "profile": "uart_n",
+    "seed": 11,
+    "mode": "quantized",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.10867539383181718,
+    "overall_event_precision": 0.10109808454425363,
+    "boundary_recall": {
+      "START": 0.0019968937208786333,
+      "STOP": 0.0,
+      "BIT0": 0.16698060941828255,
+      "BIT1": 0.10413195601466178
+    },
+    "totals": {
+      "correct": 4898,
+      "expected": 45070,
+      "emitted": 48448,
+      "false_known": 9987,
+      "false_invalid": 8534,
+      "errors": 58693
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_n",
+    "seed": 11,
+    "mode": "quantized",
+    "selected_epoch": 27,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.4506101619702685,
+    "overall_event_precision": 0.2270709645680296,
+    "boundary_recall": {
+      "START": 1.0,
+      "STOP": 0.17395163079653872,
+      "BIT0": 0.27339318169301097,
+      "BIT1": 0.5617073579529582
+    },
+    "totals": {
+      "correct": 20309,
+      "expected": 45070,
+      "emitted": 89439,
+      "false_known": 13544,
+      "false_invalid": 34459,
+      "errors": 72764
+    }
+  },
+  {
+    "run": "original",
+    "profile": "uart_n",
+    "seed": 29,
+    "mode": "float",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.37095629021522075,
+    "overall_event_precision": 0.2727450692507219,
+    "boundary_recall": {
+      "START": 0.1428888395828711,
+      "STOP": 0.0,
+      "BIT0": 0.47041551246537394,
+      "BIT1": 0.42119293568810395
+    },
+    "totals": {
+      "correct": 16719,
+      "expected": 45070,
+      "emitted": 61299,
+      "false_known": 12404,
+      "false_invalid": 14053,
+      "errors": 54808
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_n",
+    "seed": 29,
+    "mode": "float",
+    "selected_epoch": 27,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.57570445972931,
+    "overall_event_precision": 0.49277371569651507,
+    "boundary_recall": {
+      "START": 0.7656978034169071,
+      "STOP": 0.06012868870645662,
+      "BIT0": 0.5473921903398139,
+      "BIT1": 0.6864070618470306
+    },
+    "totals": {
+      "correct": 25947,
+      "expected": 45070,
+      "emitted": 52655,
+      "false_known": 6613,
+      "false_invalid": 3055,
+      "errors": 28791
+    }
+  },
+  {
+    "run": "original",
+    "profile": "uart_n",
+    "seed": 29,
+    "mode": "quantized",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.36711781672953187,
+    "overall_event_precision": 0.26970284764217833,
+    "boundary_recall": {
+      "START": 0.1428888395828711,
+      "STOP": 0.0,
+      "BIT0": 0.4605540166204986,
+      "BIT1": 0.42147062090414306
+    },
+    "totals": {
+      "correct": 16546,
+      "expected": 45070,
+      "emitted": 61349,
+      "false_known": 12577,
+      "false_invalid": 13930,
+      "errors": 55031
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_n",
+    "seed": 29,
+    "mode": "quantized",
+    "selected_epoch": 27,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.5726869314399823,
+    "overall_event_precision": 0.48831753599334055,
+    "boundary_recall": {
+      "START": 0.7656978034169071,
+      "STOP": 0.06012868870645662,
+      "BIT0": 0.5462906867874648,
+      "BIT1": 0.6799262528632884
+    },
+    "totals": {
+      "correct": 25811,
+      "expected": 45070,
+      "emitted": 52857,
+      "false_known": 6763,
+      "false_invalid": 3125,
+      "errors": 29147
+    }
+  },
+  {
+    "run": "original",
+    "profile": "uart_n",
+    "seed": 47,
+    "mode": "float",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.18779676059463057,
+    "overall_event_precision": 0.3114054451802796,
+    "boundary_recall": {
+      "START": 0.24938983802973153,
+      "STOP": 0.0,
+      "BIT0": 0.2720775623268698,
+      "BIT1": 0.13489947795179386
+    },
+    "totals": {
+      "correct": 8464,
+      "expected": 45070,
+      "emitted": 27180,
+      "false_known": 1363,
+      "false_invalid": 1230,
+      "errors": 39199
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_n",
+    "seed": 47,
+    "mode": "float",
+    "selected_epoch": 3,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.173086310184158,
+    "overall_event_precision": 0.15410295918770495,
+    "boundary_recall": {
+      "START": 0.2893277124473042,
+      "STOP": 0.11537608165076547,
+      "BIT0": 0.0,
+      "BIT1": 0.3339292697916085
+    },
+    "totals": {
+      "correct": 7801,
+      "expected": 45070,
+      "emitted": 50622,
+      "false_known": 8928,
+      "false_invalid": 11891,
+      "errors": 58088
+    }
+  },
+  {
+    "run": "original",
+    "profile": "uart_n",
+    "seed": 47,
+    "mode": "quantized",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.18779676059463057,
+    "overall_event_precision": 0.3113939884478128,
+    "boundary_recall": {
+      "START": 0.24938983802973153,
+      "STOP": 0.0,
+      "BIT0": 0.2720775623268698,
+      "BIT1": 0.13489947795179386
+    },
+    "totals": {
+      "correct": 8464,
+      "expected": 45070,
+      "emitted": 27181,
+      "false_known": 1364,
+      "false_invalid": 1230,
+      "errors": 39200
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_n",
+    "seed": 47,
+    "mode": "quantized",
+    "selected_epoch": 3,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.17317506101619703,
+    "overall_event_precision": 0.15395691967808112,
+    "boundary_recall": {
+      "START": 0.28999334368759705,
+      "STOP": 0.1155979587308631,
+      "BIT0": 0.0,
+      "BIT1": 0.3339292697916085
+    },
+    "totals": {
+      "correct": 7805,
+      "expected": 45070,
+      "emitted": 50696,
+      "false_known": 8936,
+      "false_invalid": 11957,
+      "errors": 58158
+    }
+  },
+  {
+    "run": "original",
+    "profile": "uart_e",
+    "seed": 11,
+    "mode": "float",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.32571555358331483,
+    "overall_event_precision": 0.36303140666801553,
+    "boundary_recall": {
+      "START": 0.002218770800976259,
+      "STOP": 0.0,
+      "BIT0": 0.407668726582648,
+      "BIT1": 0.38776733959624227
+    },
+    "totals": {
+      "correct": 16148,
+      "expected": 49577,
+      "emitted": 44481,
+      "false_known": 5325,
+      "false_invalid": 5962,
+      "errors": 44716
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_e",
+    "seed": 11,
+    "mode": "float",
+    "selected_epoch": 3,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.08979970550860278,
+    "overall_event_precision": 0.07640950828112933,
+    "boundary_recall": {
+      "START": 0.7049034834701575,
+      "STOP": 0.28289327712447304,
+      "BIT0": 0.0,
+      "BIT1": 0.0
+    },
+    "totals": {
+      "correct": 4452,
+      "expected": 49577,
+      "emitted": 58265,
+      "false_known": 3553,
+      "false_invalid": 20925,
+      "errors": 69603
+    }
+  },
+  {
+    "run": "original",
+    "profile": "uart_e",
+    "seed": 11,
+    "mode": "quantized",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.3322710127680174,
+    "overall_event_precision": 0.37324119179789284,
+    "boundary_recall": {
+      "START": 0.002218770800976259,
+      "STOP": 0.0,
+      "BIT0": 0.40698749452581384,
+      "BIT1": 0.40470717569458325
+    },
+    "totals": {
+      "correct": 16473,
+      "expected": 49577,
+      "emitted": 44135,
+      "false_known": 4979,
+      "false_invalid": 5962,
+      "errors": 44045
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_e",
+    "seed": 11,
+    "mode": "quantized",
+    "selected_epoch": 3,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.08981987615224801,
+    "overall_event_precision": 0.07592238968833118,
+    "boundary_recall": {
+      "START": 0.7051253605502552,
+      "STOP": 0.28289327712447304,
+      "BIT0": 0.0,
+      "BIT1": 0.0
+    },
+    "totals": {
+      "correct": 4453,
+      "expected": 49577,
+      "emitted": 58652,
+      "false_known": 3551,
+      "false_invalid": 21315,
+      "errors": 69990
+    }
+  },
+  {
+    "run": "original",
+    "profile": "uart_e",
+    "seed": 29,
+    "mode": "float",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.2557839320652722,
+    "overall_event_precision": 0.2104625495825934,
+    "boundary_recall": {
+      "START": 0.0019968937208786333,
+      "STOP": 0.0,
+      "BIT0": 0.3944333609070118,
+      "BIT1": 0.22816310213871677
+    },
+    "totals": {
+      "correct": 12681,
+      "expected": 49577,
+      "emitted": 60253,
+      "false_known": 17939,
+      "false_invalid": 4487,
+      "errors": 59322
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_e",
+    "seed": 29,
+    "mode": "float",
+    "selected_epoch": 3,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.0897593642213123,
+    "overall_event_precision": 0.0791730420239832,
+    "boundary_recall": {
+      "START": 0.7026847126691813,
+      "STOP": 0.2842245396050588,
+      "BIT0": 9.729992702505473e-05,
+      "BIT1": 0.0
+    },
+    "totals": {
+      "correct": 4450,
+      "expected": 49577,
+      "emitted": 56206,
+      "false_known": 10921,
+      "false_invalid": 18044,
+      "errors": 74092
+    }
+  },
+  {
+    "run": "original",
+    "profile": "uart_e",
+    "seed": 29,
+    "mode": "quantized",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.2552191540432055,
+    "overall_event_precision": 0.21014432578764677,
+    "boundary_recall": {
+      "START": 0.0019968937208786333,
+      "STOP": 0.0,
+      "BIT0": 0.3930222373607124,
+      "BIT1": 0.22821307215670597
+    },
+    "totals": {
+      "correct": 12653,
+      "expected": 49577,
+      "emitted": 60211,
+      "false_known": 18010,
+      "false_invalid": 4380,
+      "errors": 59314
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_e",
+    "seed": 29,
+    "mode": "quantized",
+    "selected_epoch": 3,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.08977953486495754,
+    "overall_event_precision": 0.08012024336681427,
+    "boundary_recall": {
+      "START": 0.7029065897492789,
+      "STOP": 0.2842245396050588,
+      "BIT0": 9.729992702505473e-05,
+      "BIT1": 0.0
+    },
+    "totals": {
+      "correct": 4451,
+      "expected": 49577,
+      "emitted": 55554,
+      "false_known": 10921,
+      "false_invalid": 17390,
+      "errors": 73437
+    }
+  },
+  {
+    "run": "original",
+    "profile": "uart_e",
+    "seed": 47,
+    "mode": "float",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.2969320451015592,
+    "overall_event_precision": 0.4331999293743747,
+    "boundary_recall": {
+      "START": 0.002218770800976259,
+      "STOP": 0.0,
+      "BIT0": 0.44377402559486157,
+      "BIT1": 0.2793823705776534
+    },
+    "totals": {
+      "correct": 14721,
+      "expected": 49577,
+      "emitted": 33982,
+      "false_known": 6546,
+      "false_invalid": 166,
+      "errors": 41568
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_e",
+    "seed": 47,
+    "mode": "float",
+    "selected_epoch": 3,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.10750953062912237,
+    "overall_event_precision": 0.10953105092269122,
+    "boundary_recall": {
+      "START": 0.7597071222542712,
+      "STOP": 0.42067894386509874,
+      "BIT0": 0.00048649963512527365,
+      "BIT1": 0.0
+    },
+    "totals": {
+      "correct": 5330,
+      "expected": 49577,
+      "emitted": 48662,
+      "false_known": 246,
+      "false_invalid": 21116,
+      "errors": 65609
+    }
+  },
+  {
+    "run": "original",
+    "profile": "uart_e",
+    "seed": 47,
+    "mode": "quantized",
+    "selected_epoch": 12,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.2970328983197854,
+    "overall_event_precision": 0.4333343142159315,
+    "boundary_recall": {
+      "START": 0.002218770800976259,
+      "STOP": 0.0,
+      "BIT0": 0.44377402559486157,
+      "BIT1": 0.27963222066759946
+    },
+    "totals": {
+      "correct": 14726,
+      "expected": 49577,
+      "emitted": 33983,
+      "false_known": 6541,
+      "false_invalid": 172,
+      "errors": 41564
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "uart_e",
+    "seed": 47,
+    "mode": "quantized",
+    "selected_epoch": 3,
+    "exact_cases": 0,
+    "strict_cases": 0,
+    "cases": 10,
+    "exact_case_bytes": 0,
+    "total_output_bytes": 0,
+    "overall_event_recall": 0.10752970127276762,
+    "overall_event_precision": 0.10951784210201944,
+    "boundary_recall": {
+      "START": 0.7599289993343687,
+      "STOP": 0.42067894386509874,
+      "BIT0": 0.00048649963512527365,
+      "BIT1": 0.0
+    },
+    "totals": {
+      "correct": 5331,
+      "expected": 49577,
+      "emitted": 48677,
+      "false_known": 246,
+      "false_invalid": 21131,
+      "errors": 65623
+    }
+  },
+  {
+    "run": "original",
+    "profile": "i2c",
+    "seed": 11,
+    "mode": "float",
+    "selected_epoch": 12,
+    "exact_cases": 10,
+    "strict_cases": 0,
+    "cases": 12,
+    "exact_case_bytes": 4315,
+    "total_output_bytes": 4315,
+    "overall_event_recall": 0.9999065368151485,
+    "overall_event_precision": 0.9999875372325179,
+    "boundary_recall": {
+      "START": 0.9166666666666666,
+      "STOP": 0.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 160476,
+      "expected": 160491,
+      "emitted": 160478,
+      "false_known": 0,
+      "false_invalid": 0,
+      "errors": 15
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "i2c",
+    "seed": 11,
+    "mode": "float",
+    "selected_epoch": 30,
+    "exact_cases": 12,
+    "strict_cases": 0,
+    "cases": 12,
+    "exact_case_bytes": 4571,
+    "total_output_bytes": 4571,
+    "overall_event_recall": 1.0,
+    "overall_event_precision": 0.9999273216200011,
+    "boundary_recall": {
+      "START": 1.0,
+      "STOP": 1.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 165099,
+      "expected": 165099,
+      "emitted": 165111,
+      "false_known": 0,
+      "false_invalid": 12,
+      "errors": 12
+    }
+  },
+  {
+    "run": "original",
+    "profile": "i2c",
+    "seed": 11,
+    "mode": "quantized",
+    "selected_epoch": 12,
+    "exact_cases": 10,
+    "strict_cases": 0,
+    "cases": 12,
+    "exact_case_bytes": 4315,
+    "total_output_bytes": 4315,
+    "overall_event_recall": 0.9999065368151485,
+    "overall_event_precision": 0.9999875372325179,
+    "boundary_recall": {
+      "START": 0.9166666666666666,
+      "STOP": 0.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 160476,
+      "expected": 160491,
+      "emitted": 160478,
+      "false_known": 0,
+      "false_invalid": 0,
+      "errors": 15
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "i2c",
+    "seed": 11,
+    "mode": "quantized",
+    "selected_epoch": 30,
+    "exact_cases": 12,
+    "strict_cases": 0,
+    "cases": 12,
+    "exact_case_bytes": 4571,
+    "total_output_bytes": 4571,
+    "overall_event_recall": 1.0,
+    "overall_event_precision": 0.9999273216200011,
+    "boundary_recall": {
+      "START": 1.0,
+      "STOP": 1.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 165099,
+      "expected": 165099,
+      "emitted": 165111,
+      "false_known": 0,
+      "false_invalid": 12,
+      "errors": 12
+    }
+  },
+  {
+    "run": "original",
+    "profile": "i2c",
+    "seed": 29,
+    "mode": "float",
+    "selected_epoch": 12,
+    "exact_cases": 2,
+    "strict_cases": 0,
+    "cases": 12,
+    "exact_case_bytes": 128,
+    "total_output_bytes": 128,
+    "overall_event_recall": 0.9997180616740088,
+    "overall_event_precision": 0.9997532952703179,
+    "boundary_recall": {
+      "START": 0.5416666666666666,
+      "STOP": 0.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 85101,
+      "expected": 85125,
+      "emitted": 85122,
+      "false_known": 12,
+      "false_invalid": 0,
+      "errors": 36
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "i2c",
+    "seed": 29,
+    "mode": "float",
+    "selected_epoch": 30,
+    "exact_cases": 12,
+    "strict_cases": 0,
+    "cases": 12,
+    "exact_case_bytes": 4571,
+    "total_output_bytes": 4571,
+    "overall_event_recall": 1.0,
+    "overall_event_precision": 0.9999273216200011,
+    "boundary_recall": {
+      "START": 1.0,
+      "STOP": 1.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 165099,
+      "expected": 165099,
+      "emitted": 165111,
+      "false_known": 12,
+      "false_invalid": 0,
+      "errors": 12
+    }
+  },
+  {
+    "run": "original",
+    "profile": "i2c",
+    "seed": 29,
+    "mode": "quantized",
+    "selected_epoch": 12,
+    "exact_cases": 2,
+    "strict_cases": 0,
+    "cases": 12,
+    "exact_case_bytes": 128,
+    "total_output_bytes": 128,
+    "overall_event_recall": 0.9997180616740088,
+    "overall_event_precision": 0.9997532952703179,
+    "boundary_recall": {
+      "START": 0.5416666666666666,
+      "STOP": 0.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 85101,
+      "expected": 85125,
+      "emitted": 85122,
+      "false_known": 12,
+      "false_invalid": 0,
+      "errors": 36
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "i2c",
+    "seed": 29,
+    "mode": "quantized",
+    "selected_epoch": 30,
+    "exact_cases": 12,
+    "strict_cases": 0,
+    "cases": 12,
+    "exact_case_bytes": 4571,
+    "total_output_bytes": 4571,
+    "overall_event_recall": 1.0,
+    "overall_event_precision": 0.9999273216200011,
+    "boundary_recall": {
+      "START": 1.0,
+      "STOP": 1.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 165099,
+      "expected": 165099,
+      "emitted": 165111,
+      "false_known": 12,
+      "false_invalid": 0,
+      "errors": 12
+    }
+  },
+  {
+    "run": "original",
+    "profile": "i2c",
+    "seed": 47,
+    "mode": "float",
+    "selected_epoch": 12,
+    "exact_cases": 10,
+    "strict_cases": 0,
+    "cases": 12,
+    "exact_case_bytes": 4315,
+    "total_output_bytes": 4315,
+    "overall_event_recall": 0.9999065368151485,
+    "overall_event_precision": 0.999925228054434,
+    "boundary_recall": {
+      "START": 0.9166666666666666,
+      "STOP": 0.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 160476,
+      "expected": 160491,
+      "emitted": 160488,
+      "false_known": 12,
+      "false_invalid": 0,
+      "errors": 27
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "i2c",
+    "seed": 47,
+    "mode": "float",
+    "selected_epoch": 30,
+    "exact_cases": 12,
+    "strict_cases": 12,
+    "cases": 12,
+    "exact_case_bytes": 4571,
+    "total_output_bytes": 4571,
+    "overall_event_recall": 1.0,
+    "overall_event_precision": 1.0,
+    "boundary_recall": {
+      "START": 1.0,
+      "STOP": 1.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 165099,
+      "expected": 165099,
+      "emitted": 165099,
+      "false_known": 0,
+      "false_invalid": 0,
+      "errors": 0
+    }
+  },
+  {
+    "run": "original",
+    "profile": "i2c",
+    "seed": 47,
+    "mode": "quantized",
+    "selected_epoch": 12,
+    "exact_cases": 10,
+    "strict_cases": 0,
+    "cases": 12,
+    "exact_case_bytes": 4315,
+    "total_output_bytes": 4315,
+    "overall_event_recall": 0.9999065368151485,
+    "overall_event_precision": 0.999925228054434,
+    "boundary_recall": {
+      "START": 0.9166666666666666,
+      "STOP": 0.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 160476,
+      "expected": 160491,
+      "emitted": 160488,
+      "false_known": 12,
+      "false_invalid": 0,
+      "errors": 27
+    }
+  },
+  {
+    "run": "training30",
+    "profile": "i2c",
+    "seed": 47,
+    "mode": "quantized",
+    "selected_epoch": 30,
+    "exact_cases": 12,
+    "strict_cases": 12,
+    "cases": 12,
+    "exact_case_bytes": 4571,
+    "total_output_bytes": 4571,
+    "overall_event_recall": 1.0,
+    "overall_event_precision": 1.0,
+    "boundary_recall": {
+      "START": 1.0,
+      "STOP": 1.0,
+      "BIT0": 1.0,
+      "BIT1": 1.0
+    },
+    "totals": {
+      "correct": 165099,
+      "expected": 165099,
+      "emitted": 165099,
+      "false_known": 0,
+      "false_invalid": 0,
+      "errors": 0
+    }
+  }
+]

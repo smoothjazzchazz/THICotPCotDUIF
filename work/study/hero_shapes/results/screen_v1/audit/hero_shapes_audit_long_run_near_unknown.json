@@ -1,0 +1,120 @@
+[
+  {
+    "family": "pulse_order",
+    "unknown": [
+      4,
+      4,
+      6,
+      4,
+      4
+    ],
+    "known_matches": [],
+    "threshold": -0.34,
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 26,
+        "decision_tick": 67
+      }
+    ]
+  },
+  {
+    "family": "pulse_order",
+    "unknown": [
+      4,
+      4,
+      10,
+      4,
+      4
+    ],
+    "known_matches": [],
+    "threshold": -0.34,
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 26,
+        "decision_tick": 71
+      }
+    ]
+  },
+  {
+    "family": "gap_order",
+    "unknown": [
+      4,
+      3,
+      4,
+      7,
+      4,
+      3,
+      4
+    ],
+    "known_matches": [],
+    "threshold": -0.34,
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 26,
+        "decision_tick": 74
+      }
+    ]
+  },
+  {
+    "family": "gap_order",
+    "unknown": [
+      4,
+      3,
+      4,
+      11,
+      4,
+      3,
+      4
+    ],
+    "known_matches": [],
+    "threshold": -0.34,
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 26,
+        "decision_tick": 78
+      }
+    ]
+  },
+  {
+    "family": "relative_order",
+    "unknown": [
+      3,
+      3,
+      5,
+      3,
+      5
+    ],
+    "known_matches": [],
+    "threshold": -0.34,
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 26,
+        "decision_tick": 64
+      }
+    ]
+  },
+  {
+    "family": "relative_order",
+    "unknown": [
+      3,
+      3,
+      9,
+      3,
+      5
+    ],
+    "known_matches": [],
+    "threshold": -0.34,
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 26,
+        "decision_tick": 68
+      }
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 # What changed from v0.2 to v0.3
 
-Source: v0.3 section 0. Build the v0.3 column. The v0.2 column is not in scope.
+Source: v0.3 section 0. These are historical changes leading to the current reference design, v0.3 as amended by v0.31. Experiments may revisit either version's ideas under [experiments.md](experiments.md).
 
 - **Reservoir.** v0.2: optional coprocessor (`RES_MATCH` flag). v0.3: the receive-side symbol layer. All line-coded receive goes through it. A judge must not be able to delete it and still see a PIO clone.
 - **Contexts.** v0.2: 2 to 4 barrel contexts plus a timed pin scheduler. v0.3: a single context. Autonomous receive and transmit symbol engines provide the concurrency and the exact pin timing. Barrel threading is out. Extra contexts are Tier 3.

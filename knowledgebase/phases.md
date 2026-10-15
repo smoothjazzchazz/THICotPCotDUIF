@@ -2,6 +2,8 @@
 
 From v0.3 section 9, as amended by v0.31 section 7. Deadline 18 Jan 2027. Feature freeze 4 Jan 2027. A gate is passed only when the artifact below exists and the check is true. A narrative is not a pass.
 
+These are gates for the reference implementation. Experiments follow [experiments.md](experiments.md) and may change architecture or test one subsystem without satisfying this whole checklist. Their local success is research evidence, not a gate pass. Adoption of a different design must identify which gate requirements need amendment.
+
 Thresholds v0.3 calls proposed stay proposed until the team writes a replacement in this file.
 
 Holiday weeks are slack-prone. Assume reduced throughput from 24 Dec 2026.
@@ -33,7 +35,7 @@ Traces to generate:
 
 Record, for both listeners, symbol accuracy, false positives, latency, and whether node state for the hero shape is visibly distinct. Also record cells. A gap versus the edge listener on UART is data for the disagreement bit, not a grade.
 
-Open parameters, not yet fixed: nodes (12, 16, or 24), state bits, leak set, quantization (1 or 2 bits), `M`, topology seed. If 1-bit Hamming cannot hold the hero shape, try a richer readout before declaring the shape impossible. Area still has to fit at G0.
+Reference-design parameters still to investigate: nodes (12, 16, or 24), state bits, leak set, quantization (1 or 2 bits), `M`, topology seed. These are starting candidates, not the limits of experimental work. If 1-bit Hamming cannot hold the hero shape, try a richer readout before declaring the shape impossible. Reference hardware still has to fit at G0; larger research comparisons must report their cost separately.
 
 Also due at or before G1: the receive-aperture decision (per-lane pin selects or literal classes), made in the golden model and recorded here, and the boring pass-through file demonstrated in the model.
 

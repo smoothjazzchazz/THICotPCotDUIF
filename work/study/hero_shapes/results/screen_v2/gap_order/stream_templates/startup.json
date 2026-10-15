@@ -1,0 +1,449 @@
+[
+  {
+    "name": "startup",
+    "result": {
+      "background_events": [],
+      "conditions": {
+        "startup_partial_high": {
+          "cases": 1,
+          "correct_known": 0,
+          "decision_timing_errors": 0,
+          "duplicates": 0,
+          "early_or_late_known": 0,
+          "exact_cases": 1,
+          "explicit_unknown": 1,
+          "false_known_events": 0,
+          "known_cases": 0,
+          "known_recall": null,
+          "missed_observations": 0,
+          "rejected_known": 0,
+          "timestamp_errors": 0,
+          "unknown_cases": 1,
+          "unknown_rejection": 1.0,
+          "wrong_class_events": 0
+        },
+        "startup_recovery_known": {
+          "cases": 2,
+          "correct_known": 2,
+          "decision_timing_errors": 0,
+          "duplicates": 0,
+          "early_or_late_known": 0,
+          "exact_cases": 2,
+          "explicit_unknown": 0,
+          "false_known_events": 0,
+          "known_cases": 2,
+          "known_recall": 1.0,
+          "missed_observations": 0,
+          "rejected_known": 0,
+          "timestamp_errors": 0,
+          "unknown_cases": 0,
+          "unknown_rejection": null,
+          "wrong_class_events": 0
+        }
+      },
+      "details": [
+        {
+          "case_id": "gap_order-startup_partial_high-000",
+          "condition": "startup_partial_high",
+          "events": [
+            {
+              "class_id": null,
+              "decision_tick": 50,
+              "start_tick": 2
+            }
+          ],
+          "exact": true,
+          "expected": null
+        },
+        {
+          "case_id": "gap_order-startup_partial_high-001",
+          "condition": "startup_recovery_known",
+          "events": [
+            {
+              "class_id": 0,
+              "decision_tick": 105,
+              "start_tick": 55
+            }
+          ],
+          "exact": true,
+          "expected": 0
+        },
+        {
+          "case_id": "gap_order-startup_partial_high-002",
+          "condition": "startup_recovery_known",
+          "events": [
+            {
+              "class_id": 1,
+              "decision_tick": 160,
+              "start_tick": 110
+            }
+          ],
+          "exact": true,
+          "expected": 1
+        }
+      ],
+      "latency": {
+        "from_end": {
+          "max": 21,
+          "mean": 21,
+          "min": 21,
+          "n": 2
+        },
+        "from_start": {
+          "max": 52,
+          "mean": 52,
+          "min": 52,
+          "n": 2
+        },
+        "timestamp_shift": {
+          "max": 2,
+          "mean": 2,
+          "min": 2,
+          "n": 2
+        }
+      },
+      "responses": {
+        "decision_to_response": {
+          "max": 1,
+          "mean": 1,
+          "min": 1,
+          "n": 2
+        },
+        "pending_tail_samples": 0,
+        "request_mismatch_ticks": [],
+        "requests": [
+          {
+            "decision_tick": 105,
+            "end_tick": 111,
+            "start_tick": 106,
+            "symbol": 0
+          },
+          {
+            "decision_tick": 160,
+            "end_tick": 167,
+            "start_tick": 161,
+            "symbol": 1
+          }
+        ],
+        "waveform_mismatch_ticks": []
+      },
+      "totals": {
+        "background_known": 0,
+        "background_samples": 27,
+        "background_unknown": 0,
+        "cases": 3,
+        "correct_known": 2,
+        "decision_timing_errors": 0,
+        "duplicates": 0,
+        "early_or_late_known": 0,
+        "exact_cases": 3,
+        "explicit_unknown": 1,
+        "false_known_events": 0,
+        "known_cases": 2,
+        "missed_observations": 0,
+        "rejected_known": 0,
+        "timestamp_errors": 0,
+        "unknown_cases": 1,
+        "wrong_class_events": 0
+      }
+    }
+  },
+  {
+    "name": "startup",
+    "result": {
+      "background_events": [],
+      "conditions": {
+        "startup_mid_low": {
+          "cases": 1,
+          "correct_known": 0,
+          "decision_timing_errors": 0,
+          "duplicates": 0,
+          "early_or_late_known": 0,
+          "exact_cases": 1,
+          "explicit_unknown": 1,
+          "false_known_events": 0,
+          "known_cases": 0,
+          "known_recall": null,
+          "missed_observations": 0,
+          "rejected_known": 0,
+          "timestamp_errors": 0,
+          "unknown_cases": 1,
+          "unknown_rejection": 1.0,
+          "wrong_class_events": 0
+        },
+        "startup_recovery_known": {
+          "cases": 2,
+          "correct_known": 2,
+          "decision_timing_errors": 0,
+          "duplicates": 0,
+          "early_or_late_known": 0,
+          "exact_cases": 2,
+          "explicit_unknown": 0,
+          "false_known_events": 0,
+          "known_cases": 2,
+          "known_recall": 1.0,
+          "missed_observations": 0,
+          "rejected_known": 0,
+          "timestamp_errors": 0,
+          "unknown_cases": 0,
+          "unknown_rejection": null,
+          "wrong_class_events": 0
+        }
+      },
+      "details": [
+        {
+          "case_id": "gap_order-startup_mid_low-000",
+          "condition": "startup_mid_low",
+          "events": [
+            {
+              "class_id": null,
+              "decision_tick": 46,
+              "start_tick": 9
+            }
+          ],
+          "exact": true,
+          "expected": null
+        },
+        {
+          "case_id": "gap_order-startup_mid_low-001",
+          "condition": "startup_recovery_known",
+          "events": [
+            {
+              "class_id": 0,
+              "decision_tick": 101,
+              "start_tick": 51
+            }
+          ],
+          "exact": true,
+          "expected": 0
+        },
+        {
+          "case_id": "gap_order-startup_mid_low-002",
+          "condition": "startup_recovery_known",
+          "events": [
+            {
+              "class_id": 1,
+              "decision_tick": 156,
+              "start_tick": 106
+            }
+          ],
+          "exact": true,
+          "expected": 1
+        }
+      ],
+      "latency": {
+        "from_end": {
+          "max": 21,
+          "mean": 21,
+          "min": 21,
+          "n": 2
+        },
+        "from_start": {
+          "max": 52,
+          "mean": 52,
+          "min": 52,
+          "n": 2
+        },
+        "timestamp_shift": {
+          "max": 2,
+          "mean": 2,
+          "min": 2,
+          "n": 2
+        }
+      },
+      "responses": {
+        "decision_to_response": {
+          "max": 1,
+          "mean": 1,
+          "min": 1,
+          "n": 2
+        },
+        "pending_tail_samples": 0,
+        "request_mismatch_ticks": [],
+        "requests": [
+          {
+            "decision_tick": 101,
+            "end_tick": 107,
+            "start_tick": 102,
+            "symbol": 0
+          },
+          {
+            "decision_tick": 156,
+            "end_tick": 163,
+            "start_tick": 157,
+            "symbol": 1
+          }
+        ],
+        "waveform_mismatch_ticks": []
+      },
+      "totals": {
+        "background_known": 0,
+        "background_samples": 34,
+        "background_unknown": 0,
+        "cases": 3,
+        "correct_known": 2,
+        "decision_timing_errors": 0,
+        "duplicates": 0,
+        "early_or_late_known": 0,
+        "exact_cases": 3,
+        "explicit_unknown": 1,
+        "false_known_events": 0,
+        "known_cases": 2,
+        "missed_observations": 0,
+        "rejected_known": 0,
+        "timestamp_errors": 0,
+        "unknown_cases": 1,
+        "wrong_class_events": 0
+      }
+    }
+  },
+  {
+    "name": "startup",
+    "result": {
+      "background_events": [],
+      "conditions": {
+        "startup_no_delimiter": {
+          "cases": 1,
+          "correct_known": 0,
+          "decision_timing_errors": 0,
+          "duplicates": 0,
+          "early_or_late_known": 0,
+          "exact_cases": 1,
+          "explicit_unknown": 1,
+          "false_known_events": 0,
+          "known_cases": 0,
+          "known_recall": null,
+          "missed_observations": 0,
+          "rejected_known": 0,
+          "timestamp_errors": 0,
+          "unknown_cases": 1,
+          "unknown_rejection": 1.0,
+          "wrong_class_events": 0
+        },
+        "startup_recovery_known": {
+          "cases": 2,
+          "correct_known": 2,
+          "decision_timing_errors": 0,
+          "duplicates": 0,
+          "early_or_late_known": 0,
+          "exact_cases": 2,
+          "explicit_unknown": 0,
+          "false_known_events": 0,
+          "known_cases": 2,
+          "known_recall": 1.0,
+          "missed_observations": 0,
+          "rejected_known": 0,
+          "timestamp_errors": 0,
+          "unknown_cases": 0,
+          "unknown_rejection": null,
+          "wrong_class_events": 0
+        }
+      },
+      "details": [
+        {
+          "case_id": "gap_order-startup_no_delimiter-000",
+          "condition": "startup_no_delimiter",
+          "events": [
+            {
+              "class_id": null,
+              "decision_tick": 71,
+              "start_tick": 21
+            }
+          ],
+          "exact": true,
+          "expected": null
+        },
+        {
+          "case_id": "gap_order-startup_no_delimiter-001",
+          "condition": "startup_recovery_known",
+          "events": [
+            {
+              "class_id": 0,
+              "decision_tick": 126,
+              "start_tick": 76
+            }
+          ],
+          "exact": true,
+          "expected": 0
+        },
+        {
+          "case_id": "gap_order-startup_no_delimiter-002",
+          "condition": "startup_recovery_known",
+          "events": [
+            {
+              "class_id": 1,
+              "decision_tick": 181,
+              "start_tick": 131
+            }
+          ],
+          "exact": true,
+          "expected": 1
+        }
+      ],
+      "latency": {
+        "from_end": {
+          "max": 21,
+          "mean": 21,
+          "min": 21,
+          "n": 2
+        },
+        "from_start": {
+          "max": 52,
+          "mean": 52,
+          "min": 52,
+          "n": 2
+        },
+        "timestamp_shift": {
+          "max": 2,
+          "mean": 2,
+          "min": 2,
+          "n": 2
+        }
+      },
+      "responses": {
+        "decision_to_response": {
+          "max": 1,
+          "mean": 1,
+          "min": 1,
+          "n": 2
+        },
+        "pending_tail_samples": 0,
+        "request_mismatch_ticks": [],
+        "requests": [
+          {
+            "decision_tick": 126,
+            "end_tick": 132,
+            "start_tick": 127,
+            "symbol": 0
+          },
+          {
+            "decision_tick": 181,
+            "end_tick": 188,
+            "start_tick": 182,
+            "symbol": 1
+          }
+        ],
+        "waveform_mismatch_ticks": []
+      },
+      "totals": {
+        "background_known": 0,
+        "background_samples": 46,
+        "background_unknown": 0,
+        "cases": 3,
+        "correct_known": 2,
+        "decision_timing_errors": 0,
+        "duplicates": 0,
+        "early_or_late_known": 0,
+        "exact_cases": 3,
+        "explicit_unknown": 1,
+        "false_known_events": 0,
+        "known_cases": 2,
+        "missed_observations": 0,
+        "rejected_known": 0,
+        "timestamp_errors": 0,
+        "unknown_cases": 1,
+        "wrong_class_events": 0
+      }
+    }
+  }
+]

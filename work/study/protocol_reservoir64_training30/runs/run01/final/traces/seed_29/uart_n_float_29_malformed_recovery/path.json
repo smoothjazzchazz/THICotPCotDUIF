@@ -1,0 +1,686 @@
+{
+  "expected_ascii": "\b(\\x93Idt\\xd1DjM`\\xbb\r|2=\\xa5\\xb1\\xc5\\xd8\u0004\\xee/\\xc4\\xdb\\x9a\\xf5\\x93\\x85\\xd3\\xdd7r\\xe6\\x89\\x87\\xa7\\x86\u000eH\r%\\xc1\\xa6\\xd3/\\xe4\u0004\u0002\\xc4\\xba\u0001\\x9c\\x8b\\xeekhb=\u0016M\\xf2\t\\xe9",
+  "expected_hex": "082893496474d1446a4d60bb0d7c323da5b1c5d804ee2fc4db9af59385d3dd3772e68987a7860e480d25c1a6d32fe40402c4ba019c8bee6b68623d164df209e9",
+  "recovered_by_controller": [],
+  "independently_decoded_output": [],
+  "result": {
+    "bytes": {
+      "substitutions": 0,
+      "deletions": 62,
+      "insertions": 0,
+      "expected": 62,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "output_bytes": [],
+    "controller_bytes": {
+      "substitutions": 0,
+      "deletions": 62,
+      "insertions": 0,
+      "expected": 62,
+      "recovered": 0,
+      "exact": false,
+      "alignment": "difflib sequence alignment; exactness is direct byte equality"
+    },
+    "symbols": {
+      "totals": {
+        "expected": 640,
+        "emitted": 737,
+        "correct": 357,
+        "wrong_class": 257,
+        "missing": 26,
+        "false_known": 88,
+        "false_invalid": 35,
+        "duplicates": 42,
+        "errors": 406
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 271,
+          "correct": 143,
+          "missed_or_wrong": 128,
+          "emitted": 178,
+          "precision": 0.8033707865168539,
+          "recall": 0.5276752767527675,
+          "f1": 0.6369710467706013
+        },
+        "BIT1": {
+          "expected": 241,
+          "correct": 165,
+          "missed_or_wrong": 76,
+          "emitted": 264,
+          "precision": 0.625,
+          "recall": 0.6846473029045643,
+          "f1": 0.6534653465346535
+        },
+        "START": {
+          "expected": 64,
+          "correct": 49,
+          "missed_or_wrong": 15,
+          "emitted": 139,
+          "precision": 0.35251798561151076,
+          "recall": 0.765625,
+          "f1": 0.4827586206896552
+        },
+        "STOP": {
+          "expected": 62,
+          "correct": 0,
+          "missed_or_wrong": 62,
+          "emitted": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 2,
+          "correct": 0,
+          "missed_or_wrong": 2,
+          "emitted": 153,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 357,
+        "minimum": -2,
+        "mean": -1.380952380952381,
+        "maximum": -1
+      }
+    },
+    "output_errors": [],
+    "response_latency": {
+      "n": 0,
+      "minimum": null,
+      "mean": null,
+      "maximum": null
+    },
+    "latency_note": "paired by byte index only when the entire output sequence is exact",
+    "deadline_misses": 62,
+    "controller_errors": 139,
+    "buffer_overflows": 0,
+    "recovery_success": false,
+    "malformed_false_bytes": 0,
+    "ticks": 11517,
+    "input_presented_bytes": 64,
+    "passes": false
+  },
+  "command_log": [],
+  "controller_errors": [
+    [
+      49,
+      "invalid"
+    ],
+    [
+      102,
+      "invalid"
+    ],
+    [
+      182,
+      "invalid"
+    ],
+    [
+      292,
+      "restart"
+    ],
+    [
+      340,
+      "restart"
+    ],
+    [
+      371,
+      "invalid"
+    ],
+    [
+      436,
+      "restart"
+    ],
+    [
+      484,
+      "restart"
+    ],
+    [
+      532,
+      "restart"
+    ],
+    [
+      580,
+      "restart"
+    ],
+    [
+      628,
+      "restart"
+    ],
+    [
+      724,
+      "restart"
+    ],
+    [
+      772,
+      "invalid"
+    ],
+    [
+      884,
+      "restart"
+    ],
+    [
+      915,
+      "invalid"
+    ],
+    [
+      980,
+      "invalid"
+    ],
+    [
+      1107,
+      "invalid"
+    ],
+    [
+      1204,
+      "restart"
+    ],
+    [
+      1268,
+      "restart"
+    ],
+    [
+      1300,
+      "invalid"
+    ],
+    [
+      1348,
+      "restart"
+    ],
+    [
+      1411,
+      "invalid"
+    ],
+    [
+      1523,
+      "invalid"
+    ],
+    [
+      1588,
+      "restart"
+    ],
+    [
+      1732,
+      "extra bit"
+    ],
+    [
+      1780,
+      "invalid"
+    ],
+    [
+      1811,
+      "invalid"
+    ],
+    [
+      1859,
+      "invalid"
+    ],
+    [
+      1924,
+      "invalid"
+    ],
+    [
+      1972,
+      "invalid"
+    ],
+    [
+      2100,
+      "restart"
+    ],
+    [
+      2179,
+      "invalid"
+    ],
+    [
+      2260,
+      "invalid"
+    ],
+    [
+      2356,
+      "invalid"
+    ],
+    [
+      2420,
+      "restart"
+    ],
+    [
+      2483,
+      "invalid"
+    ],
+    [
+      2580,
+      "restart"
+    ],
+    [
+      2613,
+      "invalid"
+    ],
+    [
+      2723,
+      "invalid"
+    ],
+    [
+      2773,
+      "invalid"
+    ],
+    [
+      2883,
+      "invalid"
+    ],
+    [
+      2932,
+      "invalid"
+    ],
+    [
+      3156,
+      "restart"
+    ],
+    [
+      3187,
+      "invalid"
+    ],
+    [
+      3284,
+      "restart"
+    ],
+    [
+      3330,
+      "invalid"
+    ],
+    [
+      3428,
+      "invalid"
+    ],
+    [
+      3492,
+      "invalid"
+    ],
+    [
+      3572,
+      "invalid"
+    ],
+    [
+      3652,
+      "invalid"
+    ],
+    [
+      3764,
+      "restart"
+    ],
+    [
+      3843,
+      "invalid"
+    ],
+    [
+      3892,
+      "invalid"
+    ],
+    [
+      3939,
+      "invalid"
+    ],
+    [
+      3987,
+      "invalid"
+    ],
+    [
+      4068,
+      "restart"
+    ],
+    [
+      4099,
+      "invalid"
+    ],
+    [
+      4164,
+      "invalid"
+    ],
+    [
+      4212,
+      "invalid"
+    ],
+    [
+      4372,
+      "invalid"
+    ],
+    [
+      4436,
+      "restart"
+    ],
+    [
+      4484,
+      "invalid"
+    ],
+    [
+      4532,
+      "invalid"
+    ],
+    [
+      4691,
+      "invalid"
+    ],
+    [
+      4756,
+      "restart"
+    ],
+    [
+      4787,
+      "invalid"
+    ],
+    [
+      4852,
+      "invalid"
+    ],
+    [
+      4948,
+      "invalid"
+    ],
+    [
+      5012,
+      "invalid"
+    ],
+    [
+      5076,
+      "invalid"
+    ],
+    [
+      5140,
+      "restart"
+    ],
+    [
+      5188,
+      "restart"
+    ],
+    [
+      5236,
+      "invalid"
+    ],
+    [
+      5300,
+      "invalid"
+    ],
+    [
+      5412,
+      "invalid"
+    ],
+    [
+      5492,
+      "invalid"
+    ],
+    [
+      5620,
+      "restart"
+    ],
+    [
+      5651,
+      "invalid"
+    ],
+    [
+      5780,
+      "restart"
+    ],
+    [
+      5811,
+      "invalid"
+    ],
+    [
+      5892,
+      "restart"
+    ],
+    [
+      5923,
+      "invalid"
+    ],
+    [
+      5988,
+      "invalid"
+    ],
+    [
+      6100,
+      "restart"
+    ],
+    [
+      6148,
+      "invalid"
+    ],
+    [
+      6260,
+      "restart"
+    ],
+    [
+      6306,
+      "invalid"
+    ],
+    [
+      6388,
+      "restart"
+    ],
+    [
+      6420,
+      "invalid"
+    ],
+    [
+      6580,
+      "restart"
+    ],
+    [
+      6612,
+      "restart"
+    ],
+    [
+      6645,
+      "invalid"
+    ],
+    [
+      6740,
+      "restart"
+    ],
+    [
+      6883,
+      "invalid"
+    ],
+    [
+      6948,
+      "invalid"
+    ],
+    [
+      7012,
+      "restart"
+    ],
+    [
+      7043,
+      "invalid"
+    ],
+    [
+      7091,
+      "invalid"
+    ],
+    [
+      7156,
+      "restart"
+    ],
+    [
+      7187,
+      "invalid"
+    ],
+    [
+      7252,
+      "invalid"
+    ],
+    [
+      7332,
+      "invalid"
+    ],
+    [
+      7444,
+      "restart"
+    ],
+    [
+      7492,
+      "invalid"
+    ],
+    [
+      7604,
+      "restart"
+    ],
+    [
+      7650,
+      "invalid"
+    ],
+    [
+      7748,
+      "restart"
+    ],
+    [
+      7794,
+      "invalid"
+    ],
+    [
+      7924,
+      "restart"
+    ],
+    [
+      8003,
+      "invalid"
+    ],
+    [
+      8068,
+      "restart"
+    ],
+    [
+      8099,
+      "invalid"
+    ],
+    [
+      8164,
+      "invalid"
+    ],
+    [
+      8212,
+      "invalid"
+    ],
+    [
+      8419,
+      "invalid"
+    ],
+    [
+      8484,
+      "invalid"
+    ],
+    [
+      8531,
+      "invalid"
+    ],
+    [
+      8580,
+      "invalid"
+    ],
+    [
+      8708,
+      "invalid"
+    ],
+    [
+      8772,
+      "invalid"
+    ],
+    [
+      8852,
+      "invalid"
+    ],
+    [
+      8900,
+      "invalid"
+    ],
+    [
+      9060,
+      "restart"
+    ],
+    [
+      9091,
+      "invalid"
+    ],
+    [
+      9140,
+      "invalid"
+    ],
+    [
+      9268,
+      "restart"
+    ],
+    [
+      9300,
+      "invalid"
+    ],
+    [
+      9460,
+      "restart"
+    ],
+    [
+      9508,
+      "invalid"
+    ],
+    [
+      9556,
+      "invalid"
+    ],
+    [
+      9652,
+      "invalid"
+    ],
+    [
+      9748,
+      "restart"
+    ],
+    [
+      9828,
+      "restart"
+    ],
+    [
+      9876,
+      "invalid"
+    ],
+    [
+      9972,
+      "invalid"
+    ],
+    [
+      10066,
+      "invalid"
+    ],
+    [
+      10132,
+      "restart"
+    ],
+    [
+      10180,
+      "restart"
+    ],
+    [
+      10211,
+      "invalid"
+    ]
+  ]
+}

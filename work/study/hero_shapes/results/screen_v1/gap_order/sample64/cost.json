@@ -1,0 +1,10 @@
+{
+  "arithmetic": "shift 64 frames/sample; 3072 squared differences per decision",
+  "conditioning_delay_samples": 1,
+  "latch_values": 192,
+  "memory_values": 192,
+  "prototype_vectors": 16,
+  "schedule": "RX stages execute within one modeled tick; TX first; unbounded software TX queue",
+  "score_parameter_values": 3072,
+  "shared_control": "conditioner levels/count; encoder run/tick; framer flags/count/start; decision/controller records"
+}

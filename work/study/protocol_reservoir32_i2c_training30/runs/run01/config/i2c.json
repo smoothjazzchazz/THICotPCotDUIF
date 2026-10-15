@@ -1,0 +1,24 @@
+{
+  "profile": "i2c",
+  "architecture_hash": "c42ec3e157dceab20b7f82faa3eab237accce863fd68f67ea58147dff03e663a",
+  "decision_margin": 0.15,
+  "weight_files": [
+    "models/i2c/seed_11/selected.npz",
+    "models/i2c/seed_29/selected.npz",
+    "models/i2c/seed_47/selected.npz"
+  ],
+  "source_status": "explicit experimental assumptions; protocol source still missing",
+  "program": "i2c_store_read",
+  "address": 50,
+  "capacity": 4096,
+  "stretch_ticks": 18,
+  "setup_deadline_ticks": 6,
+  "low_ticks": [
+    8,
+    12
+  ],
+  "high_ticks": [
+    8,
+    12
+  ]
+}

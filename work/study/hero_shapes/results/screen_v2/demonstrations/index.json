@@ -1,0 +1,338 @@
+[
+  {
+    "family": "pulse_order",
+    "model": "stream_intervals",
+    "case": {
+      "boundary_challenge": false,
+      "class_id": 0,
+      "condition": "known_clean",
+      "conditioned_runs": [
+        4,
+        4,
+        8,
+        4,
+        4
+      ],
+      "end_tick": 258,
+      "expected_valid_frame": true,
+      "id": "pulse_order-heldout-003",
+      "jitter_delta": null,
+      "nominal_class_id": 0,
+      "notes": "",
+      "raw_runs": [
+        4,
+        4,
+        8,
+        4,
+        4
+      ],
+      "scale": 1,
+      "start_tick": 234,
+      "trailing_idle_ticks": 28
+    },
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 236,
+        "decision_tick": 279,
+        "response_start_tick": 280
+      }
+    ],
+    "trace": "pulse_order-known.txt"
+  },
+  {
+    "family": "pulse_order",
+    "model": "stream_intervals",
+    "case": {
+      "boundary_challenge": false,
+      "class_id": null,
+      "condition": "unknown_same_duration",
+      "conditioned_runs": [
+        6,
+        6,
+        4,
+        4,
+        4
+      ],
+      "end_tick": 1323,
+      "expected_valid_frame": true,
+      "id": "pulse_order-heldout-018",
+      "jitter_delta": null,
+      "nominal_class_id": 1,
+      "notes": "",
+      "raw_runs": [
+        6,
+        6,
+        4,
+        4,
+        4
+      ],
+      "scale": 1,
+      "start_tick": 1299,
+      "trailing_idle_ticks": 41
+    },
+    "events": [
+      {
+        "class_id": null,
+        "start_tick": 1301,
+        "decision_tick": 1344,
+        "response_start_tick": null
+      }
+    ],
+    "trace": "pulse_order-unknown.txt"
+  },
+  {
+    "family": "gap_order",
+    "model": "stream_intervals",
+    "case": {
+      "boundary_challenge": false,
+      "class_id": 0,
+      "condition": "known_clean",
+      "conditioned_runs": [
+        4,
+        3,
+        4,
+        9,
+        4,
+        3,
+        4
+      ],
+      "end_tick": 136,
+      "expected_valid_frame": true,
+      "id": "gap_order-heldout-001",
+      "jitter_delta": null,
+      "nominal_class_id": 0,
+      "notes": "",
+      "raw_runs": [
+        4,
+        3,
+        4,
+        9,
+        4,
+        3,
+        4
+      ],
+      "scale": 1,
+      "start_tick": 105,
+      "trailing_idle_ticks": 26
+    },
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 107,
+        "decision_tick": 157,
+        "response_start_tick": 158
+      }
+    ],
+    "trace": "gap_order-known.txt"
+  },
+  {
+    "family": "gap_order",
+    "model": "stream_intervals",
+    "case": {
+      "boundary_challenge": false,
+      "class_id": null,
+      "condition": "unknown_same_duration",
+      "conditioned_runs": [
+        4,
+        9,
+        2,
+        5,
+        4,
+        3,
+        4
+      ],
+      "end_tick": 829,
+      "expected_valid_frame": true,
+      "id": "gap_order-heldout-010",
+      "jitter_delta": null,
+      "nominal_class_id": 1,
+      "notes": "",
+      "raw_runs": [
+        4,
+        9,
+        2,
+        5,
+        4,
+        3,
+        4
+      ],
+      "scale": 1,
+      "start_tick": 798,
+      "trailing_idle_ticks": 31
+    },
+    "events": [
+      {
+        "class_id": null,
+        "start_tick": 800,
+        "decision_tick": 850,
+        "response_start_tick": null
+      }
+    ],
+    "trace": "gap_order-unknown.txt"
+  },
+  {
+    "family": "relative_order",
+    "model": "stream_intervals",
+    "case": {
+      "boundary_challenge": false,
+      "class_id": 0,
+      "condition": "known_clean",
+      "conditioned_runs": [
+        3,
+        3,
+        7,
+        3,
+        5
+      ],
+      "end_tick": 46,
+      "expected_valid_frame": true,
+      "id": "relative_order-heldout-000",
+      "jitter_delta": null,
+      "nominal_class_id": 0,
+      "notes": "",
+      "raw_runs": [
+        3,
+        3,
+        7,
+        3,
+        5
+      ],
+      "scale": 1,
+      "start_tick": 25,
+      "trailing_idle_ticks": 40
+    },
+    "events": [
+      {
+        "class_id": 0,
+        "start_tick": 27,
+        "decision_tick": 67,
+        "response_start_tick": 68
+      }
+    ],
+    "trace": "relative_order-known.txt"
+  },
+  {
+    "family": "relative_order",
+    "model": "stream_intervals",
+    "case": {
+      "boundary_challenge": false,
+      "class_id": null,
+      "condition": "unknown_same_duration",
+      "conditioned_runs": [
+        12,
+        6,
+        8,
+        6,
+        10
+      ],
+      "end_tick": 1441,
+      "expected_valid_frame": true,
+      "id": "relative_order-heldout-018",
+      "jitter_delta": null,
+      "nominal_class_id": 1,
+      "notes": "",
+      "raw_runs": [
+        12,
+        6,
+        8,
+        6,
+        10
+      ],
+      "scale": 2,
+      "start_tick": 1399,
+      "trailing_idle_ticks": 24
+    },
+    "events": [
+      {
+        "class_id": null,
+        "start_tick": 1401,
+        "decision_tick": 1462,
+        "response_start_tick": null
+      }
+    ],
+    "trace": "relative_order-unknown.txt"
+  },
+  {
+    "family": "pulse_order",
+    "model": "sample12",
+    "case": {
+      "boundary_challenge": false,
+      "class_id": null,
+      "condition": "unknown_same_suffix",
+      "conditioned_runs": [
+        11,
+        4,
+        4,
+        4,
+        4
+      ],
+      "end_tick": 839,
+      "expected_valid_frame": true,
+      "id": "pulse_order-heldout-011",
+      "jitter_delta": null,
+      "nominal_class_id": 1,
+      "notes": "",
+      "raw_runs": [
+        11,
+        4,
+        4,
+        4,
+        4
+      ],
+      "scale": 1,
+      "start_tick": 812,
+      "trailing_idle_ticks": 40
+    },
+    "events": [
+      {
+        "class_id": 1,
+        "start_tick": 814,
+        "decision_tick": 860,
+        "response_start_tick": 861
+      }
+    ],
+    "trace": "pulse_order-sample12-failure.txt"
+  },
+  {
+    "family": "relative_order",
+    "model": "run_history",
+    "case": {
+      "boundary_challenge": false,
+      "class_id": null,
+      "condition": "unknown_out_of_scale",
+      "conditioned_runs": [
+        21,
+        9,
+        9,
+        9,
+        15
+      ],
+      "end_tick": 1633,
+      "expected_valid_frame": true,
+      "id": "relative_order-heldout-021",
+      "jitter_delta": null,
+      "nominal_class_id": 1,
+      "notes": "",
+      "raw_runs": [
+        21,
+        9,
+        9,
+        9,
+        15
+      ],
+      "scale": 3,
+      "start_tick": 1570,
+      "trailing_idle_ticks": 43
+    },
+    "events": [
+      {
+        "class_id": 1,
+        "start_tick": 1572,
+        "decision_tick": 1654,
+        "response_start_tick": 1655
+      }
+    ],
+    "trace": "relative_order-run_history-failure.txt"
+  }
+]

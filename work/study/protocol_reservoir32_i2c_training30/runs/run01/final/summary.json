@@ -1,0 +1,1608 @@
+{
+  "qualification_by_node_count": {
+    "32": false,
+    "64": false
+  },
+  "models": [
+    {
+      "nodes": 32,
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "float",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 32,
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "quantized",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 32,
+      "variant": "seed_29",
+      "seed": 29,
+      "mode": "float",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 0.9999626557123424,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37496,
+            "precision": 0.9996266268401963,
+            "recall": 1.0,
+            "f1": 0.9998132785617114
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 32,
+      "variant": "seed_29",
+      "seed": 29,
+      "mode": "quantized",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 0.9999626557123424,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37496,
+            "precision": 0.9996266268401963,
+            "recall": 1.0,
+            "f1": 0.9998132785617114
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 32,
+      "variant": "seed_47",
+      "seed": 47,
+      "mode": "float",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 14,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 32,
+      "variant": "seed_47",
+      "seed": 47,
+      "mode": "quantized",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 14,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 32,
+      "variant": "original_loss_11",
+      "seed": 11,
+      "mode": "float",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 32,
+      "variant": "original_loss_11",
+      "seed": 11,
+      "mode": "quantized",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 64,
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "float",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 14,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 64,
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "quantized",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 14,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 64,
+      "variant": "seed_29",
+      "seed": 29,
+      "mode": "float",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 0.9999626557123424,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37496,
+            "precision": 0.9996266268401963,
+            "recall": 1.0,
+            "f1": 0.9998132785617114
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 64,
+      "variant": "seed_29",
+      "seed": 29,
+      "mode": "quantized",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 0.9999626557123424,
+        "false_events": 14,
+        "event_errors": 14,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37496,
+            "precision": 0.9996266268401963,
+            "recall": 1.0,
+            "f1": 0.9998132785617114
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 64,
+      "variant": "seed_47",
+      "seed": 47,
+      "mode": "float",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 64,
+      "variant": "seed_47",
+      "seed": 47,
+      "mode": "quantized",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 64,
+      "variant": "original_loss_11",
+      "seed": 11,
+      "mode": "float",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 64,
+      "variant": "original_loss_11",
+      "seed": 11,
+      "mode": "quantized",
+      "control": "trained",
+      "selected_epoch": 30,
+      "qualified": true,
+      "summary": {
+        "strict_exchanges": 12,
+        "valid_exchanges": 12,
+        "byte_exact_exchanges": 12,
+        "aligned_bytes": 4571,
+        "expected_bytes": 4571,
+        "aligned_byte_fraction": 1.0,
+        "boundary_f1": 1.0,
+        "macro_f1": 1.0,
+        "false_events": 0,
+        "event_errors": 0,
+        "ticks": 1729473,
+        "events": {
+          "BIT0": {
+            "correct": 46825,
+            "expected": 46825,
+            "emitted": 46825,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 37482,
+            "expected": 37482,
+            "emitted": 37482,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 61,
+            "expected": 61,
+            "emitted": 61,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "STOP": {
+            "correct": 48,
+            "expected": 48,
+            "emitted": 48,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 84307,
+            "expected": 84307,
+            "emitted": 84307,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 32,
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "float",
+      "control": "disabled",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 3,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 795,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.0,
+        "macro_f1": 0.0,
+        "false_events": 0,
+        "event_errors": 135,
+        "ticks": 1458,
+        "events": {
+          "BIT0": {
+            "correct": 0,
+            "expected": 30,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BIT1": {
+            "correct": 0,
+            "expected": 33,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "START": {
+            "correct": 0,
+            "expected": 6,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "STOP": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 63,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 32,
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "float",
+      "control": "no_recurrence",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 3,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 795,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.2857142857142857,
+        "macro_f1": 0.8571428571428571,
+        "false_events": 81,
+        "event_errors": 81,
+        "ticks": 1458,
+        "events": {
+          "BIT0": {
+            "correct": 30,
+            "expected": 30,
+            "emitted": 30,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 33,
+            "expected": 33,
+            "emitted": 33,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 6,
+            "expected": 6,
+            "emitted": 36,
+            "precision": 0.16666666666666666,
+            "recall": 1.0,
+            "f1": 0.2857142857142857
+          },
+          "STOP": {
+            "correct": 3,
+            "expected": 3,
+            "emitted": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 63,
+            "expected": 63,
+            "emitted": 63,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 51,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 32,
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "quantized",
+      "control": "disabled",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 3,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 795,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.0,
+        "macro_f1": 0.0,
+        "false_events": 0,
+        "event_errors": 135,
+        "ticks": 1458,
+        "events": {
+          "BIT0": {
+            "correct": 0,
+            "expected": 30,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BIT1": {
+            "correct": 0,
+            "expected": 33,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "START": {
+            "correct": 0,
+            "expected": 6,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "STOP": {
+            "correct": 0,
+            "expected": 3,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "FALL": {
+            "correct": 0,
+            "expected": 63,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "nodes": 32,
+      "variant": "seed_11",
+      "seed": 11,
+      "mode": "quantized",
+      "control": "no_recurrence",
+      "selected_epoch": 30,
+      "qualified": false,
+      "summary": {
+        "strict_exchanges": 0,
+        "valid_exchanges": 3,
+        "byte_exact_exchanges": 0,
+        "aligned_bytes": 0,
+        "expected_bytes": 795,
+        "aligned_byte_fraction": 0.0,
+        "boundary_f1": 0.2857142857142857,
+        "macro_f1": 0.8571428571428571,
+        "false_events": 81,
+        "event_errors": 81,
+        "ticks": 1458,
+        "events": {
+          "BIT0": {
+            "correct": 30,
+            "expected": 30,
+            "emitted": 30,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "BIT1": {
+            "correct": 33,
+            "expected": 33,
+            "emitted": 33,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "START": {
+            "correct": 6,
+            "expected": 6,
+            "emitted": 36,
+            "precision": 0.16666666666666666,
+            "recall": 1.0,
+            "f1": 0.2857142857142857
+          },
+          "STOP": {
+            "correct": 3,
+            "expected": 3,
+            "emitted": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "FALL": {
+            "correct": 63,
+            "expected": 63,
+            "emitted": 63,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "INVALID": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 51,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "BOUNDARY": {
+            "correct": 0,
+            "expected": 0,
+            "emitted": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    }
+  ]
+}

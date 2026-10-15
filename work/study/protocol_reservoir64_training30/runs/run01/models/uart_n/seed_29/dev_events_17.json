@@ -1,0 +1,354 @@
+[
+  {
+    "stream": 0,
+    "symbols": {
+      "totals": {
+        "expected": 310,
+        "emitted": 489,
+        "correct": 185,
+        "wrong_class": 109,
+        "missing": 16,
+        "false_known": 115,
+        "false_invalid": 80,
+        "duplicates": 32,
+        "errors": 320
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 133,
+          "correct": 61,
+          "missed_or_wrong": 72,
+          "emitted": 87,
+          "precision": 0.7011494252873564,
+          "recall": 0.45864661654135336,
+          "f1": 0.5545454545454546
+        },
+        "BIT1": {
+          "expected": 115,
+          "correct": 94,
+          "missed_or_wrong": 21,
+          "emitted": 183,
+          "precision": 0.5136612021857924,
+          "recall": 0.8173913043478261,
+          "f1": 0.6308724832214765
+        },
+        "START": {
+          "expected": 31,
+          "correct": 28,
+          "missed_or_wrong": 3,
+          "emitted": 70,
+          "precision": 0.4,
+          "recall": 0.9032258064516129,
+          "f1": 0.5544554455445545
+        },
+        "STOP": {
+          "expected": 31,
+          "correct": 2,
+          "missed_or_wrong": 29,
+          "emitted": 10,
+          "precision": 0.2,
+          "recall": 0.06451612903225806,
+          "f1": 0.0975609756097561
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 139,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 185,
+        "minimum": -2,
+        "mean": -0.9783783783783784,
+        "maximum": 0
+      }
+    },
+    "ticks": 5654
+  },
+  {
+    "stream": 1,
+    "symbols": {
+      "totals": {
+        "expected": 300,
+        "emitted": 456,
+        "correct": 169,
+        "wrong_class": 111,
+        "missing": 20,
+        "false_known": 116,
+        "false_invalid": 60,
+        "duplicates": 37,
+        "errors": 307
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 121,
+          "correct": 49,
+          "missed_or_wrong": 72,
+          "emitted": 77,
+          "precision": 0.6363636363636364,
+          "recall": 0.4049586776859504,
+          "f1": 0.494949494949495
+        },
+        "BIT1": {
+          "expected": 119,
+          "correct": 93,
+          "missed_or_wrong": 26,
+          "emitted": 176,
+          "precision": 0.5284090909090909,
+          "recall": 0.7815126050420168,
+          "f1": 0.6305084745762712
+        },
+        "START": {
+          "expected": 30,
+          "correct": 25,
+          "missed_or_wrong": 5,
+          "emitted": 69,
+          "precision": 0.36231884057971014,
+          "recall": 0.8333333333333334,
+          "f1": 0.5050505050505051
+        },
+        "STOP": {
+          "expected": 30,
+          "correct": 2,
+          "missed_or_wrong": 28,
+          "emitted": 11,
+          "precision": 0.18181818181818182,
+          "recall": 0.06666666666666667,
+          "f1": 0.0975609756097561
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 123,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 169,
+        "minimum": -2,
+        "mean": -0.8165680473372781,
+        "maximum": 1
+      }
+    },
+    "ticks": 5303
+  },
+  {
+    "stream": 2,
+    "symbols": {
+      "totals": {
+        "expected": 280,
+        "emitted": 422,
+        "correct": 164,
+        "wrong_class": 91,
+        "missing": 25,
+        "false_known": 105,
+        "false_invalid": 62,
+        "duplicates": 31,
+        "errors": 283
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 112,
+          "correct": 46,
+          "missed_or_wrong": 66,
+          "emitted": 76,
+          "precision": 0.6052631578947368,
+          "recall": 0.4107142857142857,
+          "f1": 0.48936170212765956
+        },
+        "BIT1": {
+          "expected": 112,
+          "correct": 87,
+          "missed_or_wrong": 25,
+          "emitted": 157,
+          "precision": 0.554140127388535,
+          "recall": 0.7767857142857143,
+          "f1": 0.6468401486988847
+        },
+        "START": {
+          "expected": 28,
+          "correct": 28,
+          "missed_or_wrong": 0,
+          "emitted": 59,
+          "precision": 0.4745762711864407,
+          "recall": 1.0,
+          "f1": 0.6436781609195402
+        },
+        "STOP": {
+          "expected": 28,
+          "correct": 3,
+          "missed_or_wrong": 25,
+          "emitted": 18,
+          "precision": 0.16666666666666666,
+          "recall": 0.10714285714285714,
+          "f1": 0.13043478260869565
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 112,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 164,
+        "minimum": -2,
+        "mean": -0.8292682926829268,
+        "maximum": 2
+      }
+    },
+    "ticks": 4979
+  },
+  {
+    "stream": 3,
+    "symbols": {
+      "totals": {
+        "expected": 560,
+        "emitted": 802,
+        "correct": 292,
+        "wrong_class": 245,
+        "missing": 23,
+        "false_known": 185,
+        "false_invalid": 80,
+        "duplicates": 86,
+        "errors": 533
+      },
+      "by_kind": {
+        "BIT0": {
+          "expected": 192,
+          "correct": 61,
+          "missed_or_wrong": 131,
+          "emitted": 91,
+          "precision": 0.6703296703296703,
+          "recall": 0.3177083333333333,
+          "f1": 0.43109540636042404
+        },
+        "BIT1": {
+          "expected": 256,
+          "correct": 178,
+          "missed_or_wrong": 78,
+          "emitted": 340,
+          "precision": 0.5235294117647059,
+          "recall": 0.6953125,
+          "f1": 0.5973154362416108
+        },
+        "START": {
+          "expected": 56,
+          "correct": 52,
+          "missed_or_wrong": 4,
+          "emitted": 152,
+          "precision": 0.34210526315789475,
+          "recall": 0.9285714285714286,
+          "f1": 0.5
+        },
+        "STOP": {
+          "expected": 56,
+          "correct": 1,
+          "missed_or_wrong": 55,
+          "emitted": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.017857142857142856,
+          "f1": 0.03389830508474576
+        },
+        "FALL": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "INVALID": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 216,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "BOUNDARY": {
+          "expected": 0,
+          "correct": 0,
+          "missed_or_wrong": 0,
+          "emitted": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "timing_error": {
+        "n": 292,
+        "minimum": -2,
+        "mean": -0.886986301369863,
+        "maximum": 2
+      }
+    },
+    "ticks": 9530
+  }
+]
